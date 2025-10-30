@@ -6,75 +6,89 @@
 <title>Struct DelayedPublicMutable documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct DelayedPublicMutable</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_current_delay">get_current_delay</a></li>
+<li><a href="#get_current_value">get_current_value</a></li>
+<li><a href="#get_current_value">get_current_value</a></li>
+<li><a href="#get_current_value">get_current_value</a></li>
+<li><a href="#get_scheduled_delay">get_scheduled_delay</a></li>
+<li><a href="#get_scheduled_value">get_scheduled_value</a></li>
+<li><a href="#new">new</a></li>
+<li><a href="#schedule_and_return_value_change">schedule_and_return_value_change</a></li>
+<li><a href="#schedule_delay_change">schedule_delay_change</a></li>
+<li><a href="#schedule_value_change">schedule_value_change</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot<M+1>-for-DelayedPublicMutable">HasStorageSlot<M+1></a></li>
+</ul><h2>In module delayed_public_mutable</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">delayed_public_mutable</a></div><h1>Struct <span class="struct">DelayedPublicMutable</span></h1><pre><code>pub struct DelayedPublicMutable&lt;T, let InitialDelay: u64, Context&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">delayed_public_mutable</a></div><h1>Struct <span id="struct" class="struct">DelayedPublicMutable</span></h1><pre><code>pub struct DelayedPublicMutable&lt;T, let InitialDelay: u64, Context&gt;
 { /* private fields */ }
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;Context, let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, Context&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, Context&gt;</code>
+<code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, Context&gt;</code>
 
-<div class="padded-description"></div><h3><code class="code-header">impl&lt;let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
+<h3><code class="code-header">impl&lt;let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">get_current_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> T
+<code id="get_current_value" class="code-header">pub fn <span class="fn">get_current_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> T
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><h3><code class="code-header">impl&lt;let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
+<h3><code class="code-header">impl&lt;let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
-<code class="code-header">pub unconstrained fn <span class="fn">get_current_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
+<code id="get_current_value" class="code-header">pub unconstrained fn <span class="fn">get_current_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><h3><code class="code-header">impl&lt;let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
+<h3><code class="code-header">impl&lt;let InitialDelay: u64, T&gt; <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">schedule_value_change</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, new_value: T)
+<code id="schedule_value_change" class="code-header">pub fn <span class="fn">schedule_value_change</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, new_value: T)
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">schedule_and_return_value_change</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, new_value: T) -> ScheduledValueChange&lt;T&gt;
+<code id="schedule_and_return_value_change" class="code-header">pub fn <span class="fn">schedule_and_return_value_change</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, new_value: T) -> ScheduledValueChange&lt;T&gt;
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">schedule_delay_change</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, new_delay: u64)
+<code id="schedule_delay_change" class="code-header">pub fn <span class="fn">schedule_delay_change</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, new_delay: u64)
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_current_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
+<code id="get_current_value" class="code-header">pub fn <span class="fn">get_current_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_current_delay</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> u64
+<code id="get_current_delay" class="code-header">pub fn <span class="fn">get_current_delay</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> u64
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_scheduled_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> (T, u64)
+<code id="get_scheduled_value" class="code-header">pub fn <span class="fn">get_scheduled_value</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> (T, u64)
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_scheduled_delay</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> (u64, u64)
+<code id="get_scheduled_delay" class="code-header">pub fn <span class="fn">get_scheduled_delay</span>(self: <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> (u64, u64)
 where
     T: Packable<N = <T as Packable>::N>,
     T: Eq
 </code>
 
-<div class="padded-description"></div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;Context, let InitialDelay: u64, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, Context&gt;
+<h2>Trait implementations</h2><h3 id="impl-HasStorageSlot<M+1>-for-DelayedPublicMutable"><code class="code-header">impl&lt;Context, let InitialDelay: u64, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, Context&gt;
 where
     DelayedPublicMutableValues&lt;T, InitialDelay&gt;: Packable<N = M>
 </code></h3>

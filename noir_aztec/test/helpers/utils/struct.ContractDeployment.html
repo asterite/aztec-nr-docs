@@ -6,8 +6,15 @@
 <title>Struct ContractDeployment documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct ContractDeployment</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#with_private_initializer">with_private_initializer</a></li>
+<li><a href="#with_public_initializer">with_public_initializer</a></li>
+<li><a href="#without_initializer">without_initializer</a></li>
+</ul><h2>In module utils</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.ContractDeployment.html" class="struct">ContractDeployment</a></div></li>
+<li><a href="struct.TestAccount.html" class="struct">TestAccount</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">test</a>::<a href="../index.html">helpers</a>::<a href="index.html">utils</a></div><h1>Struct <span class="struct">ContractDeployment</span></h1><pre><code>pub struct ContractDeployment&lt;let N: u32&gt; {
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">test</a>::<a href="../index.html">helpers</a>::<a href="index.html">utils</a></div><h1>Struct <span id="struct" class="struct">ContractDeployment</span></h1><pre><code>pub struct ContractDeployment&lt;let N: u32&gt; {
     pub env: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
     pub path: str<N>,
     pub secret: Field,
@@ -18,7 +25,7 @@
 <div class="padded-description"></div><h3><code class="code-header">secret: Field</code></h3>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;</code></h3>
 
-<code class="code-header">pub unconstrained fn <span class="fn">with_private_initializer</span>&lt;T, let P: u32&gt;(
+<code id="with_private_initializer" class="code-header">pub unconstrained fn <span class="fn">with_private_initializer</span>&lt;T, let P: u32&gt;(
     self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;,
     from: AztecAddress,
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;P, T&gt;,
@@ -46,7 +53,7 @@ unconstrained fn test_deployment() {
 }
 </code></pre>
 </div>
-</div><code class="code-header">pub unconstrained fn <span class="fn">with_public_initializer</span>&lt;let P: u32, T&gt;(
+</div><code id="with_public_initializer" class="code-header">pub unconstrained fn <span class="fn">with_public_initializer</span>&lt;let P: u32, T&gt;(
     self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;,
     from: AztecAddress,
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;P, T&gt;,
@@ -74,7 +81,7 @@ unconstrained fn test_deployment() {
 }
 </code></pre>
 </div>
-</div><code class="code-header">pub unconstrained fn <span class="fn">without_initializer</span>(self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;) -> AztecAddress</code>
+</div><code id="without_initializer" class="code-header">pub unconstrained fn <span class="fn">without_initializer</span>(self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;) -> AztecAddress</code>
 
 <div class="padded-description"><div class="comments">
 <p>Finalizes a contract deployment prepared via <code>TestEnvironment::deploy</code> without calling any initializer function.</p>

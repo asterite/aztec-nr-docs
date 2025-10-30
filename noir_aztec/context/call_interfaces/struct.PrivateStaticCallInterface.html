@@ -6,20 +6,31 @@
 <title>Struct PrivateStaticCallInterface documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct PrivateStaticCallInterface</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<li><a href="#view">view</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface<M>-for-PrivateStaticCallInterface">CallInterface<M></a></li>
+</ul><h2>In module call_interfaces</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a></div></li>
+<li><a href="struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a></div></li>
+<li><a href="struct.PublicCallInterface.html" class="struct">PublicCallInterface</a></div></li>
+<li><a href="struct.PublicStaticCallInterface.html" class="struct">PublicStaticCallInterface</a></div></li>
+<li><a href="struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a></div></li>
+</ul><h3>Traits</h3><ul class="item-list"><li><a href="trait.CallInterface.html" class="trait">CallInterface</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">call_interfaces</a></div><h1>Struct <span class="struct">PrivateStaticCallInterface</span></h1><pre><code>pub struct PrivateStaticCallInterface&lt;let M: u32, T&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">call_interfaces</a></div><h1>Struct <span id="struct" class="struct">PrivateStaticCallInterface</span></h1><pre><code>pub struct PrivateStaticCallInterface&lt;let M: u32, T&gt;
 { /* private fields */ }
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>(
+<code id="new" class="code-header">pub fn <span class="fn">new</span>(
     target_contract: AztecAddress,
     selector: FunctionSelector,
     name: str<M>,
     args: [Field],
 ) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+<code id="view" class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
     T: Deserialize<N = <T as Deserialize>::N>
 </code>
@@ -36,7 +47,7 @@ of every #[private] function as <code>context</code>, through the
 #[private] annotation's macro.</li>
 </ul>
 </div>
-</div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-CallInterface<M>-for-PrivateStaticCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code></h3>
 
 </main>
 </body>

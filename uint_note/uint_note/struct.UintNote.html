@@ -6,8 +6,23 @@
 <title>Struct UintNote documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct UintNote</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_owner">get_owner</a></li>
+<li><a href="#get_value">get_value</a></li>
+<li><a href="#new">new</a></li>
+<li><a href="#partial">partial</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-UintNote">Eq</a></li>
+<li><a href="#impl-NoteType-for-UintNote">NoteType</a></li>
+<li><a href="#impl-NoteProperties-for-UintNote">NoteProperties</a></li>
+<li><a href="#impl-Serialize-for-UintNote">Serialize</a></li>
+<li><a href="#impl-Packable-for-UintNote">Packable</a></li>
+<li><a href="#impl-NoteHash-for-UintNote">NoteHash</a></li>
+</ul><h2>In module uint_note</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></div></li>
+<li><a href="struct.UintNote.html" class="struct">UintNote</a></div></li>
+<li><a href="struct.PartialUintNote.html" class="struct">PartialUintNote</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span class="struct">UintNote</span></h1><pre><code>pub struct UintNote
+<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span id="struct" class="struct">UintNote</span></h1><pre><code>pub struct UintNote
 { /* private fields */ }
 </code></pre>
 <div class="comments">
@@ -15,13 +30,13 @@
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>(value: u128, owner: AztecAddress) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
+<code id="new" class="code-header">pub fn <span class="fn">new</span>(value: u128, owner: AztecAddress) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> u128</code>
+<code id="get_value" class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> u128</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_owner</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> AztecAddress</code>
+<code id="get_owner" class="code-header">pub fn <span class="fn">get_owner</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> AztecAddress</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">partial</span>(
+<code id="partial" class="code-header">pub fn <span class="fn">partial</span>(
     owner: AztecAddress,
     storage_slot: Field,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
@@ -41,17 +56,17 @@ belong to the same owner.</p>
 <p>As part of the partial note creation process, a log will be sent to <code>recipient</code> so that they can discover the
 note. <code>recipient</code> will typically be the same as <code>owner</code>.</p>
 </div>
-</div><h2>Trait implementations</h2><h3><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-UintNote"><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<h3><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+<h3 id="impl-NoteType-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<h3><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a>&gt; for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+<h3 id="impl-NoteProperties-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a>&gt; for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<h3><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+<h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<h3><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+<h3 id="impl-Packable-for-UintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<h3><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+<h3 id="impl-NoteHash-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
 </main>
 </body>

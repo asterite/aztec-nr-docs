@@ -6,8 +6,14 @@
 <title>Struct RetrievedNote documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct RetrievedNote</h2><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq<>-for-RetrievedNote">Eq<></a></li>
+<li><a href="#impl-Serialize<>-for-RetrievedNote">Serialize<></a></li>
+<li><a href="#impl-Packable<>-for-RetrievedNote">Packable<></a></li>
+</ul><h2>In module retrieved_note</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.RetrievedNote.html" class="struct">RetrievedNote</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">retrieved_note</a></div><h1>Struct <span class="struct">RetrievedNote</span></h1><pre><code>pub struct RetrievedNote&lt;Note&gt; {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">retrieved_note</a></div><h1>Struct <span id="struct" class="struct">RetrievedNote</span></h1><pre><code>pub struct RetrievedNote&lt;Note&gt; {
     pub note: Note,
     pub contract_address: AztecAddress,
     pub metadata: <a href="../../../noir_aztec/note/note_metadata/struct.NoteMetadata.html" class="struct">NoteMetadata</a>,
@@ -20,17 +26,17 @@ pending (created in the current transaction) or settled (created in a previous t
 <h2>Fields</h2><h3><code class="code-header">note: Note</code></h3>
 <div class="padded-description"></div><h3><code class="code-header">contract_address: AztecAddress</code></h3>
 <div class="padded-description"></div><h3><code class="code-header">metadata: <a href="../../../noir_aztec/note/note_metadata/struct.NoteMetadata.html" class="struct">NoteMetadata</a></code></h3>
-<div class="padded-description"></div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;Note&gt; Eq for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
+<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Eq<>-for-RetrievedNote"><code class="code-header">impl&lt;Note&gt; Eq for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
 where
     Note: Eq
 </code></h3>
 
-<h3><code class="code-header">impl&lt;Note&gt; Serialize for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
+<h3 id="impl-Serialize<>-for-RetrievedNote"><code class="code-header">impl&lt;Note&gt; Serialize for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
 where
     Note: Serialize<N = <(resolved type) as Serialize>::N>
 </code></h3>
 
-<h3><code class="code-header">impl&lt;Note&gt; Packable for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
+<h3 id="impl-Packable<>-for-RetrievedNote"><code class="code-header">impl&lt;Note&gt; Packable for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
 where
     Note: Packable<N = <(resolved type) as Packable>::N>
 </code></h3>

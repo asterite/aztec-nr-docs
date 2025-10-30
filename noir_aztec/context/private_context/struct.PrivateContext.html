@@ -6,8 +6,52 @@
 <title>Struct PrivateContext documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct PrivateContext</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call_private_function">call_private_function</a></li>
+<li><a href="#call_private_function_no_args">call_private_function_no_args</a></li>
+<li><a href="#call_private_function_with_args_hash">call_private_function_with_args_hash</a></li>
+<li><a href="#call_public_function">call_public_function</a></li>
+<li><a href="#call_public_function_no_args">call_public_function_no_args</a></li>
+<li><a href="#call_public_function_with_calldata_hash">call_public_function_with_calldata_hash</a></li>
+<li><a href="#chain_id">chain_id</a></li>
+<li><a href="#consume_l1_to_l2_message">consume_l1_to_l2_message</a></li>
+<li><a href="#emit_contract_class_log">emit_contract_class_log</a></li>
+<li><a href="#emit_private_log">emit_private_log</a></li>
+<li><a href="#emit_raw_note_log">emit_raw_note_log</a></li>
+<li><a href="#end_setup">end_setup</a></li>
+<li><a href="#finish">finish</a></li>
+<li><a href="#gas_settings">gas_settings</a></li>
+<li><a href="#get_args_hash">get_args_hash</a></li>
+<li><a href="#get_block_header">get_block_header</a></li>
+<li><a href="#get_block_header_at">get_block_header_at</a></li>
+<li><a href="#message_portal">message_portal</a></li>
+<li><a href="#msg_sender">msg_sender</a></li>
+<li><a href="#new">new</a></li>
+<li><a href="#push_note_hash">push_note_hash</a></li>
+<li><a href="#push_note_hash_read_request">push_note_hash_read_request</a></li>
+<li><a href="#push_nullifier">push_nullifier</a></li>
+<li><a href="#push_nullifier_for_note_hash">push_nullifier_for_note_hash</a></li>
+<li><a href="#push_nullifier_read_request">push_nullifier_read_request</a></li>
+<li><a href="#request_nsk_app">request_nsk_app</a></li>
+<li><a href="#request_ovsk_app">request_ovsk_app</a></li>
+<li><a href="#selector">selector</a></li>
+<li><a href="#set_as_fee_payer">set_as_fee_payer</a></li>
+<li><a href="#set_include_by_timestamp">set_include_by_timestamp</a></li>
+<li><a href="#set_public_teardown_function">set_public_teardown_function</a></li>
+<li><a href="#set_public_teardown_function_with_calldata_hash">set_public_teardown_function_with_calldata_hash</a></li>
+<li><a href="#set_return_hash">set_return_hash</a></li>
+<li><a href="#static_call_private_function">static_call_private_function</a></li>
+<li><a href="#static_call_private_function_no_args">static_call_private_function_no_args</a></li>
+<li><a href="#static_call_public_function">static_call_public_function</a></li>
+<li><a href="#static_call_public_function_no_args">static_call_public_function_no_args</a></li>
+<li><a href="#this_address">this_address</a></li>
+<li><a href="#version">version</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-PrivateContext">Eq</a></li>
+<li><a href="#impl-Empty-for-PrivateContext">Empty</a></li>
+</ul><h2>In module private_context</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateContext.html" class="struct">PrivateContext</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">private_context</a></div><h1>Struct <span class="struct">PrivateContext</span></h1><pre><code>pub struct PrivateContext {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">private_context</a></div><h1>Struct <span id="struct" class="struct">PrivateContext</span></h1><pre><code>pub struct PrivateContext {
     pub inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>,
     pub side_effect_counter: u32,
     pub min_revertible_side_effect_counter: u32,
@@ -194,9 +238,9 @@ error will be thrown by the LSP or when they compile their contract.</p>
 <div class="padded-description"></div><h3><code class="code-header">last_key_validation_requests: [Option&lt;KeyValidationRequest&gt;; 4]</code></h3>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>(inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>, args_hash: Field) -> <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code>
+<code id="new" class="code-header">pub fn <span class="fn">new</span>(inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>, args_hash: Field) -> <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">msg_sender</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> AztecAddress</code>
+<code id="msg_sender" class="code-header">pub fn <span class="fn">msg_sender</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> AztecAddress</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the contract address that initiated this function call.</p>
@@ -218,7 +262,7 @@ this function (be it an app contract or a user's account contract).
 Returns <code>-1</code> for the first function call of the tx.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">this_address</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> AztecAddress</code>
+</div><code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> AztecAddress</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the contract address of the current function being executed.</p>
@@ -231,7 +275,7 @@ access control or when interacting with other contracts.</p>
 executed.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">chain_id</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> Field</code>
+</div><code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the chain ID of the current network.</p>
@@ -244,7 +288,7 @@ multi-chain contract logic.</p>
 <li><code>Field</code> - The chain ID as a field element</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">version</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> Field</code>
+</div><code id="version" class="code-header">pub fn <span class="fn">version</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the Aztec protocol version that this transaction is executing
@@ -258,7 +302,7 @@ cryptographic primitives.</p>
 <li><code>Field</code> - The protocol version as a field element</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">gas_settings</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> GasSettings</code>
+</div><code id="gas_settings" class="code-header">pub fn <span class="fn">gas_settings</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> GasSettings</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the gas settings for the current transaction.</p>
@@ -271,7 +315,7 @@ accounting for L2 computation and data availability (DA) costs.</p>
 <li><code>GasSettings</code> - Struct containing gas limits and fee information</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">selector</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> FunctionSelector</code>
+</div><code id="selector" class="code-header">pub fn <span class="fn">selector</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> FunctionSelector</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the function selector of the currently executing function.</p>
@@ -292,7 +336,7 @@ protocol's kernel circuits to identify each private function and ensure
 the correct one is being executed.</p>
 <p>Used internally for function dispatch and call verification.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">get_args_hash</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> Field</code>
+</div><code id="get_args_hash" class="code-header">pub fn <span class="fn">get_args_hash</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the hash of the arguments passed to the current function.</p>
@@ -310,7 +354,7 @@ body of your private function.</p>
 <li>The hash can be used to retrieve the original arguments from the PXE.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">push_note_hash</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, note_hash: Field)</code>
+</div><code id="push_note_hash" class="code-header">pub fn <span class="fn">push_note_hash</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, note_hash: Field)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Pushes a new note_hash to the Aztec blockchain's global Note Hash Tree
@@ -346,7 +390,7 @@ please open an issue on GitHub to describe your use case: it might be
 that new functionality should be added to aztec-nr.</p>
 </blockquote>
 </div>
-</div><code class="code-header">pub fn <span class="fn">push_nullifier</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, nullifier: Field)</code>
+</div><code id="push_nullifier" class="code-header">pub fn <span class="fn">push_nullifier</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, nullifier: Field)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Pushes a new nullifier to the Aztec blockchain's global Nullifier Tree
@@ -387,7 +431,7 @@ between different smart contracts.</li>
 indexed merkle tree which supports efficient non-membership proofs).</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">push_nullifier_for_note_hash</span>(
+</div><code id="push_nullifier_for_note_hash" class="code-header">pub fn <span class="fn">push_nullifier_for_note_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     nullifier: Field,
     nullified_note_hash: Field,
@@ -417,7 +461,7 @@ use this information to feed hints to the kernel circuits for
 created it, we can &quot;squash&quot; (delete) the note and nullifier (and any
 private logs associated with the note), to save on data emission costs.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">get_block_header</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> BlockHeader</code>
+</div><code id="get_block_header" class="code-header">pub fn <span class="fn">get_block_header</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> BlockHeader</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the anchor block header - the historical block header that this
@@ -441,7 +485,7 @@ from the mempool. Therefore, the chosen block header <em>must</em> be one
 from within the last 24 hours.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">get_block_header_at</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, block_number: u32) -> BlockHeader</code>
+</div><code id="get_block_header_at" class="code-header">pub fn <span class="fn">get_block_header_at</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, block_number: u32) -> BlockHeader</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the header of any historical block at or before the anchor
@@ -483,7 +527,7 @@ private functions of a tx share a common anchor block header. Therefore,
 the cost (constraint-wise) of calling <code>get_block_header</code> is effectively
 free.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">set_return_hash</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, returns_hasher: <a href="../../../noir_aztec/hash/struct.ArgsHasher.html" class="struct">ArgsHasher</a>)</code>
+</div><code id="set_return_hash" class="code-header">pub fn <span class="fn">set_return_hash</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, returns_hasher: <a href="../../../noir_aztec/hash/struct.ArgsHasher.html" class="struct">ArgsHasher</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sets the hash of the return values for this private function.</p>
@@ -493,7 +537,7 @@ free.</p>
 <li><code>returns_hasher</code> - A hasher containing the return values to hash</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">finish</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> PrivateCircuitPublicInputs</code>
+</div><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> PrivateCircuitPublicInputs</code>
 
 <div class="padded-description"><div class="comments">
 <p>Builds the PrivateCircuitPublicInputs for this private function, to
@@ -501,7 +545,7 @@ ensure compatibility with the protocol's kernel circuits.</p>
 <p>Very low-level function: This function is automatically called by the
 #[private] macro.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">set_as_fee_payer</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)</code>
+</div><code id="set_as_fee_payer" class="code-header">pub fn <span class="fn">set_as_fee_payer</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Designates this contract as the fee payer for the transaction.</p>
@@ -515,7 +559,7 @@ and it must have sufficient fee-juice balance (&gt;= the gas limits
 specified in the TxContext) by the time we reach the public setup phase
 of the tx.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">end_setup</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)</code>
+</div><code id="end_setup" class="code-header">pub fn <span class="fn">end_setup</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Declares the end of the &quot;setup phase&quot; of this tx.</p>
@@ -543,7 +587,7 @@ function are considered part of the setup phase.</p>
 PrivateContext's <em>current</em> side effect counter.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">set_include_by_timestamp</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, include_by_timestamp: u64)</code>
+</div><code id="set_include_by_timestamp" class="code-header">pub fn <span class="fn">set_include_by_timestamp</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, include_by_timestamp: u64)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sets a deadline (an &quot;include-by timestamp&quot;) for when this transaction
@@ -585,7 +629,7 @@ will need to be discussed. Wallets that deviate from a standard might
 accidentally reveal which wallet each transaction originates from.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">push_note_hash_read_request</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, note_hash: Field)</code>
+</div><code id="push_note_hash_read_request" class="code-header">pub fn <span class="fn">push_note_hash_read_request</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, note_hash: Field)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Makes a request to the protocol's kernel circuit to ensure a note_hash
@@ -631,7 +675,7 @@ a function can read a note which was created earlier in the tx (rather
 than performing the read in a later tx, after waiting for the earlier tx
 to be included, to ensure the note is included in the tree).</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">push_nullifier_read_request</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, nullifier: Field)</code>
+</div><code id="push_nullifier_read_request" class="code-header">pub fn <span class="fn">push_nullifier_read_request</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, nullifier: Field)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Requests to read a specific nullifier from the nullifier tree.</p>
@@ -656,7 +700,7 @@ a function can read a nullifier which was created earlier in the tx
 (rather than performing the read in a later tx, after waiting for the
 earlier tx to be included, to ensure the note is included in the tree).</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">request_nsk_app</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, npk_m_hash: Field) -> Field</code>
+</div><code id="request_nsk_app" class="code-header">pub fn <span class="fn">request_nsk_app</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, npk_m_hash: Field) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Requests the app-siloed nullifier secret key (nsk_app) for the given
@@ -690,7 +734,7 @@ whose PXE is executing this function.</li>
 <code>npk_m_hash</code>.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">request_ovsk_app</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, ovpk_m_hash: Field) -> Field</code>
+</div><code id="request_ovsk_app" class="code-header">pub fn <span class="fn">request_ovsk_app</span>(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, ovpk_m_hash: Field) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Requests the app-siloed nullifier secret key (nsk_app) for the given
@@ -720,7 +764,7 @@ logs to a user's address public key.</p>
 <li>The application-specific outgoing viewing secret key</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">message_portal</span>(
+</div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     recipient: EthAddress,
     content: Field,
@@ -752,7 +796,7 @@ This content has a very specific layout.
 docs:start:context_message_portal</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">consume_l1_to_l2_message</span>(
+</div><code id="consume_l1_to_l2_message" class="code-header">pub fn <span class="fn">consume_l1_to_l2_message</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     content: Field,
     secret: Field,
@@ -790,7 +834,7 @@ consume them.</p>
 <p>Validates message existence in the L1-to-L2 message tree and nullifies
 the message to prevent double-consumption.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">emit_private_log</span>(
+</div><code id="emit_private_log" class="code-header">pub fn <span class="fn">emit_private_log</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     log: [Field; 18],
     length: u32,
@@ -854,7 +898,7 @@ to apply, so ideally all wallets should agree on standards for this.</li>
 </ul>
 <h4>Advanced</h4>
 </div>
-</div><code class="code-header">pub fn <span class="fn">emit_raw_note_log</span>(
+</div><code id="emit_raw_note_log" class="code-header">pub fn <span class="fn">emit_raw_note_log</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     log: [Field; 18],
     length: u32,
@@ -879,9 +923,9 @@ new note_hash when it was pushed to this</li>
 emitted regardless of note squashing, consider using <code>emit_private_log</code>
 instead, or emitting additional events.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">emit_contract_class_log</span>&lt;let N: u32&gt;(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, log: [Field; N])</code>
+</div><code id="emit_contract_class_log" class="code-header">pub fn <span class="fn">emit_contract_class_log</span>&lt;let N: u32&gt;(&mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, log: [Field; N])</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">call_private_function</span>&lt;let ArgsCount: u32&gt;(
+<code id="call_private_function" class="code-header">pub fn <span class="fn">call_private_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -955,7 +999,7 @@ circuits after this function completes</li>
 <li>The call inherits the current transaction's context and gas limits</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">static_call_private_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="static_call_private_function" class="code-header">pub fn <span class="fn">static_call_private_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -981,7 +1025,7 @@ calls.</p>
 <code>.get_preimage()</code> to extract the actual return values.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">call_private_function_no_args</span>(
+</div><code id="call_private_function_no_args" class="code-header">pub fn <span class="fn">call_private_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1003,7 +1047,7 @@ but slightly more efficient to use when no arguments are needed.</p>
 <code>.get_preimage()</code> to extract the actual return values.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">static_call_private_function_no_args</span>(
+</div><code id="static_call_private_function_no_args" class="code-header">pub fn <span class="fn">static_call_private_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1024,7 +1068,7 @@ the safety of <code>static_call_private_function</code>.</p>
 <code>.get_preimage()</code> to extract the actual return values.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">call_private_function_with_args_hash</span>(
+</div><code id="call_private_function_with_args_hash" class="code-header">pub fn <span class="fn">call_private_function_with_args_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1049,7 +1093,7 @@ hash of the arguments.</p>
 <li><code>ReturnsHash</code> - Hash of the called function's return values</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">call_public_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="call_public_function" class="code-header">pub fn <span class="fn">call_public_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1084,7 +1128,7 @@ See also: https://docs.aztec.network/developers/reference/considerations/privacy
 <li><code>args</code> - Array of arguments to pass to the public function</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">static_call_public_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="static_call_public_function" class="code-header">pub fn <span class="fn">static_call_public_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1105,7 +1149,7 @@ making private -&gt; public function calls.</p>
 <li><code>args</code> - Array of arguments to pass to the public function</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">call_public_function_no_args</span>(
+</div><code id="call_public_function_no_args" class="code-header">pub fn <span class="fn">call_public_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1122,7 +1166,7 @@ take any input parameters. It's otherwise equivalent to
 <li><code>function_selector</code> - 4-byte identifier of the function to call</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">static_call_public_function_no_args</span>(
+</div><code id="static_call_public_function_no_args" class="code-header">pub fn <span class="fn">static_call_public_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1138,7 +1182,7 @@ the safety of <code>static_call_public_function</code>.</p>
 <li><code>function_selector</code> - 4-byte identifier of the function to call</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">call_public_function_with_calldata_hash</span>(
+</div><code id="call_public_function_with_calldata_hash" class="code-header">pub fn <span class="fn">call_public_function_with_calldata_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     calldata_hash: Field,
@@ -1160,7 +1204,7 @@ performance optimization and advanced use cases.</p>
 <li><code>is_static_call</code> - Whether this should be a read-only call</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">set_public_teardown_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="set_public_teardown_function" class="code-header">pub fn <span class="fn">set_public_teardown_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     function_selector: FunctionSelector,
@@ -1189,7 +1233,7 @@ is unlikely. For app logic with unpredictable gas consumption, a
 refund might be important to the user (e.g. if a heft function reverts
 very early). Wallet/FPC/Paymaster developers should be mindful of this.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">set_public_teardown_function_with_calldata_hash</span>(
+</div><code id="set_public_teardown_function_with_calldata_hash" class="code-header">pub fn <span class="fn">set_public_teardown_function_with_calldata_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     contract_address: AztecAddress,
     calldata_hash: Field,
@@ -1211,9 +1255,9 @@ function</li>
 <li><code>is_static_call</code> - Whether this should be a read-only call</li>
 </ul>
 </div>
-</div><h2>Trait implementations</h2><h3><code class="code-header">impl Eq for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-PrivateContext"><code class="code-header">impl Eq for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
-<h3><code class="code-header">impl Empty for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
+<h3 id="impl-Empty-for-PrivateContext"><code class="code-header">impl Empty for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
 </main>
 </body>

@@ -6,8 +6,16 @@
 <title>Struct PublicMutable documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct PublicMutable</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<li><a href="#read">read</a></li>
+<li><a href="#read">read</a></li>
+<li><a href="#write">write</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot<M>-for-PublicMutable">HasStorageSlot<M></a></li>
+</ul><h2>In module public_mutable</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicMutable.html" class="struct">PublicMutable</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">public_mutable</a></div><h1>Struct <span class="struct">PublicMutable</span></h1><pre><code>pub struct PublicMutable&lt;T, Context&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">public_mutable</a></div><h1>Struct <span id="struct" class="struct">PublicMutable</span></h1><pre><code>pub struct PublicMutable&lt;T, Context&gt;
 { /* private fields */ }
 </code></pre>
 <div class="comments">
@@ -43,7 +51,7 @@ access to the current state during public function execution.</p>
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
+<code id="read" class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
     T: Packable<N = <T as Packable>::N>
 </code>
@@ -56,7 +64,7 @@ where
 </ul>
 <p>docs:start:public_mutable_struct_read</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">write</span>(self: <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, value: T)
+</div><code id="write" class="code-header">pub fn <span class="fn">write</span>(self: <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, value: T)
 where
     T: Packable<N = <T as Packable>::N>
 </code>
@@ -75,7 +83,7 @@ the same transaction.</p>
 </div>
 </div><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
-<code class="code-header">pub unconstrained fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
+<code id="read" class="code-header">pub unconstrained fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
 where
     T: Packable<N = <T as Packable>::N>
 </code>
@@ -91,7 +99,7 @@ is an unconstrained environment on the user's local device.</p>
 </div>
 </div><h3><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;</code>
+<code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;</code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a new PublicMutable state variable.</p>
@@ -110,7 +118,7 @@ behind the scenes.</li>
 </ul>
 <p>docs:start:public_mutable_struct_new</p>
 </div>
-</div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;Context, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M&gt; for <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;
+</div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot<M>-for-PublicMutable"><code class="code-header">impl&lt;Context, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M&gt; for <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;
 where
     T: Packable<N = M>
 </code></h3>

@@ -6,11 +6,21 @@
 <title>Trait NoteHash documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Trait NoteHash</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_note_hash">compute_note_hash</a></li>
+<li><a href="#compute_nullifier">compute_nullifier</a></li>
+<li><a href="#compute_nullifier_unconstrained">compute_nullifier_unconstrained</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-NoteHash-for-MockNote">NoteHash</a></li>
+</ul><h2>In module note_interface</h2><h3>Traits</h3><ul class="item-list"><li><a href="trait.NoteType.html" class="trait">NoteType</a></div></li>
+<li><a href="trait.NoteHash.html" class="trait">NoteHash</a></div></li>
+<li><a href="trait.NoteProperties.html" class="trait">NoteProperties</a></div></li>
+<li><a href="trait.PartialNote.html" class="trait">PartialNote</a></div></li>
+</ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_interface</a></div><h1>Trait <span class="trait">NoteHash</span></h1><pre><code>pub trait NoteHash {
 }</code></pre>
 
-<h2>Methods</h2><code class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: Self, storage_slot: Field) -> Field</code>
+<h2>Methods</h2><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: Self, storage_slot: Field) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the non-siloed note hash, i.e. the inner hash computed by the contract during private execution. Note
@@ -19,7 +29,7 @@ the state tree.</p>
 <p>This should be a commitment to the packed note, including the storage slot (for indexing) and some random
 value (to prevent brute force trial-hashing attacks).</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">compute_nullifier</span>(
+</div><code id="compute_nullifier" class="code-header">pub fn <span class="fn">compute_nullifier</span>(
     self: Self,
     context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     note_hash_for_nullify: Field,
@@ -36,14 +46,14 @@ to reduce the total gate count of the circuit.</p>
 we require the kernel's assistance to do this in order to prevent having to reveal private keys to application
 circuits.</p>
 </div>
-</div><code class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: Self, note_hash_for_nullify: Field) -> Field</code>
+</div><code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: Self, note_hash_for_nullify: Field) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Like <code>compute_nullifier</code>, except this variant is unconstrained: there are no guarantees on the returned value
 being correct. Because of that it doesn't need to take a context (since it won't perform any kernel key
 validation requests).</p>
 </div>
-</div><h2>Implementors</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for MockNote</code></h3>
+</div><h2>Implementors</h2><h3 id="impl-NoteHash-for-MockNote"><code class="code-header">impl <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for MockNote</code></h3>
 
 </main>
 </body>

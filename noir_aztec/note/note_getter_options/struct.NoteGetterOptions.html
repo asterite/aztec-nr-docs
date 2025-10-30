@@ -6,8 +6,26 @@
 <title>Struct NoteGetterOptions documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct NoteGetterOptions</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<li><a href="#select">select</a></li>
+<li><a href="#set_limit">set_limit</a></li>
+<li><a href="#set_offset">set_offset</a></li>
+<li><a href="#set_status">set_status</a></li>
+<li><a href="#sort">sort</a></li>
+<li><a href="#with_filter">with_filter</a></li>
+<li><a href="#with_preprocessor">with_preprocessor</a></li>
+</ul><h2>In module note_getter_options</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PropertySelector.html" class="struct">PropertySelector</a></div></li>
+<li><a href="struct.Select.html" class="struct">Select</a></div></li>
+<li><a href="struct.SortOrderEnum.html" class="struct">SortOrderEnum</a></div></li>
+<li><a href="struct.Sort.html" class="struct">Sort</a></div></li>
+<li><a href="struct.NoteStatusEnum.html" class="struct">NoteStatusEnum</a></div></li>
+<li><a href="struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a></div></li>
+</ul><h3>Globals</h3><ul class="item-list"><li><a href="global.SortOrder.html" class="global">SortOrder</a></div></li>
+<li><a href="global.NoteStatus.html" class="global">NoteStatus</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter_options</a></div><h1>Struct <span class="struct">NoteGetterOptions</span></h1><pre><code>pub struct NoteGetterOptions&lt;Note, let N: u32, PreprocessorArgs, FilterArgs&gt; {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter_options</a></div><h1>Struct <span id="struct" class="struct">NoteGetterOptions</span></h1><pre><code>pub struct NoteGetterOptions&lt;Note, let N: u32, PreprocessorArgs, FilterArgs&gt; {
     pub selects: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, N&gt;,
     pub sorts: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, N&gt;,
     pub limit: u32,
@@ -30,15 +48,15 @@
 <div class="padded-description"></div><h3><code class="code-header">status: u8</code></h3>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;FilterArgs, let M: u32, Note&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">with_filter</span>(filter: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], filter_args: FilterArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;
+<code id="with_filter" class="code-header">pub fn <span class="fn">with_filter</span>(filter: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], filter_args: FilterArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: Packable<N = M>
 </code>
 
-<div class="padded-description"></div><h3><code class="code-header">impl&lt;FilterArgs, let N: u32, Note, PreprocessorArgs&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code></h3>
+<h3><code class="code-header">impl&lt;FilterArgs, let N: u32, Note, PreprocessorArgs&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">select</span>&lt;T&gt;(
+<code id="select" class="code-header">pub fn <span class="fn">select</span>&lt;T&gt;(
     &mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;,
     property_selector: <a href="../../../noir_aztec/note/note_getter_options/struct.PropertySelector.html" class="struct">PropertySelector</a>,
     comparator: u8,
@@ -48,34 +66,34 @@ where
     T: ToField
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">sort</span>(
+<code id="sort" class="code-header">pub fn <span class="fn">sort</span>(
     &mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;,
     property_selector: <a href="../../../noir_aztec/note/note_getter_options/struct.PropertySelector.html" class="struct">PropertySelector</a>,
     order: u8,
 ) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">set_limit</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;, limit: u32) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
+<code id="set_limit" class="code-header">pub fn <span class="fn">set_limit</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;, limit: u32) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">set_offset</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;, offset: u32) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
+<code id="set_offset" class="code-header">pub fn <span class="fn">set_offset</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;, offset: u32) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">set_status</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;, status: u8) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
+<code id="set_status" class="code-header">pub fn <span class="fn">set_status</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;, status: u8) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, N, PreprocessorArgs, FilterArgs&gt;</code>
 
-<div class="padded-description"></div><h3><code class="code-header">impl&lt;let M: u32, Note&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, Field&gt;</code></h3>
+<h3><code class="code-header">impl&lt;let M: u32, Note&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, Field&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, Field&gt;
+<code id="new" class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, Field&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: Packable<N = M>
 </code>
 
-<div class="padded-description"></div><h3><code class="code-header">impl&lt;let M: u32, Note, PreprocessorArgs&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;</code></h3>
+<h3><code class="code-header">impl&lt;let M: u32, Note, PreprocessorArgs&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">with_preprocessor</span>(preprocessor: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], PreprocessorArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], preprocessor_args: PreprocessorArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;
+<code id="with_preprocessor" class="code-header">pub fn <span class="fn">with_preprocessor</span>(preprocessor: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], PreprocessorArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], preprocessor_args: PreprocessorArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: Packable<N = M>
 </code>
 
-<div class="padded-description"></div></main>
+</main>
 </body>
 </html>

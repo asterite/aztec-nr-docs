@@ -6,8 +6,22 @@
 <title>Struct PartialUintNote documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct PartialUintNote</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#complete">complete</a></li>
+<li><a href="#complete_from_private">complete_from_private</a></li>
+<li><a href="#compute_validity_commitment">compute_validity_commitment</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-PartialUintNote">Eq</a></li>
+<li><a href="#impl-Serialize-for-PartialUintNote">Serialize</a></li>
+<li><a href="#impl-Deserialize-for-PartialUintNote">Deserialize</a></li>
+<li><a href="#impl-Packable-for-PartialUintNote">Packable</a></li>
+<li><a href="#impl-ToField-for-PartialUintNote">ToField</a></li>
+<li><a href="#impl-FromField-for-PartialUintNote">FromField</a></li>
+</ul><h2>In module uint_note</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></div></li>
+<li><a href="struct.UintNote.html" class="struct">UintNote</a></div></li>
+<li><a href="struct.PartialUintNote.html" class="struct">PartialUintNote</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span class="struct">PartialUintNote</span></h1><pre><code>pub struct PartialUintNote
+<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span id="struct" class="struct">PartialUintNote</span></h1><pre><code>pub struct PartialUintNote
 { /* private fields */ }
 </code></pre>
 <div class="comments">
@@ -18,7 +32,7 @@ of course that its value is known).</p>
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<code class="code-header">pub fn <span class="fn">complete</span>(
+<code id="complete" class="code-header">pub fn <span class="fn">complete</span>(
     self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>,
     context: &mut <a href="../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
     completer: AztecAddress,
@@ -28,7 +42,7 @@ of course that its value is known).</p>
 <div class="padded-description"><div class="comments">
 <p>Completes the partial note, creating a new note that can be used like any other UintNote.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">complete_from_private</span>(
+</div><code id="complete_from_private" class="code-header">pub fn <span class="fn">complete_from_private</span>(
     self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     completer: AztecAddress,
@@ -39,7 +53,7 @@ of course that its value is known).</p>
 <p>Completes the partial note, creating a new note that can be used like any other UintNote. Same as <code>complete</code>
 function but works from private context.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">compute_validity_commitment</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, completer: AztecAddress) -> Field</code>
+</div><code id="compute_validity_commitment" class="code-header">pub fn <span class="fn">compute_validity_commitment</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, completer: AztecAddress) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Computes a validity commitment for this partial note. The commitment cryptographically binds the note's private
@@ -48,17 +62,17 @@ this commitment from the nullifier tree and verify that both the partial note (e
 corresponds to the correct owner, and that we're using the correct state variable) and completer are
 legitimate.</p>
 </div>
-</div><h2>Trait implementations</h2><h3><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-PartialUintNote"><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<h3><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+<h3 id="impl-Serialize-for-PartialUintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<h3><code class="code-header">impl Deserialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+<h3 id="impl-Deserialize-for-PartialUintNote"><code class="code-header">impl Deserialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<h3><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+<h3 id="impl-Packable-for-PartialUintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<h3><code class="code-header">impl ToField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+<h3 id="impl-ToField-for-PartialUintNote"><code class="code-header">impl ToField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<h3><code class="code-header">impl FromField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+<h3 id="impl-FromField-for-PartialUintNote"><code class="code-header">impl FromField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
 </main>
 </body>

@@ -6,8 +6,17 @@
 <title>Struct NoteViewerOptions documentation</title>
 </head>
 <body>
+<nav class="sidebar">
+<h1>aztec-nr</h1><h2>Struct NoteViewerOptions</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<li><a href="#select">select</a></li>
+<li><a href="#set_limit">set_limit</a></li>
+<li><a href="#set_offset">set_offset</a></li>
+<li><a href="#set_status">set_status</a></li>
+<li><a href="#sort">sort</a></li>
+</ul><h2>In module note_viewer_options</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a></div></li>
+</ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_viewer_options</a></div><h1>Struct <span class="struct">NoteViewerOptions</span></h1><pre><code>pub struct NoteViewerOptions&lt;Note, let M: u32&gt; {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_viewer_options</a></div><h1>Struct <span id="struct" class="struct">NoteViewerOptions</span></h1><pre><code>pub struct NoteViewerOptions&lt;Note, let M: u32&gt; {
     pub selects: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, M&gt;,
     pub sorts: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, M&gt;,
     pub limit: u32,
@@ -22,13 +31,13 @@
 <div class="padded-description"></div><h3><code class="code-header">status: u8</code></h3>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, Note&gt; <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code></h3>
 
-<code class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;
+<code id="new" class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: Packable<N = M>
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">select</span>&lt;T&gt;(
+<code id="select" class="code-header">pub fn <span class="fn">select</span>&lt;T&gt;(
     &mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;,
     property_selector: <a href="../../../noir_aztec/note/note_getter_options/struct.PropertySelector.html" class="struct">PropertySelector</a>,
     comparator: u8,
@@ -38,18 +47,18 @@ where
     T: ToField
 </code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">sort</span>(
+<code id="sort" class="code-header">pub fn <span class="fn">sort</span>(
     &mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;,
     property_selector: <a href="../../../noir_aztec/note/note_getter_options/struct.PropertySelector.html" class="struct">PropertySelector</a>,
     order: u8,
 ) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">set_limit</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;, limit: u32) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
+<code id="set_limit" class="code-header">pub fn <span class="fn">set_limit</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;, limit: u32) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">set_offset</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;, offset: u32) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
+<code id="set_offset" class="code-header">pub fn <span class="fn">set_offset</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;, offset: u32) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
 
-<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">set_status</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;, status: u8) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
+<code id="set_status" class="code-header">pub fn <span class="fn">set_status</span>(&mut self: &mut <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;, status: u8) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;</code>
 
-<div class="padded-description"></div></main>
+</main>
 </body>
 </html>
