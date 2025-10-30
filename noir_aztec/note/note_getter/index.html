@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Module note_getter documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::note_getter</div><h1>Module <span class="module">note_getter</span></h1><h2>Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.get_note.html" class="fn">get_note</a></div><div class="item-description"></div></li>
+<li><div class="item-name"><a href="fn.get_notes.html" class="fn">get_notes</a></div><div class="item-description">Returns a BoundedVec of notes that have been proven to have been created by this contract, either in the current or
+past transactions (i.e. pending or settled notes). A second BoundedVec contains the note hashes used for the read
+requests, which can save constraints when computing the note's nullifiers.</div></li>
+<li><div class="item-name"><a href="fn.view_notes.html" class="fn">view_notes</a></div><div class="item-description">Unconstrained variant of <code>get_notes</code>, meant to be used in unconstrained execution contexts. Notably only the note
+content is returned, and not any of the information used when proving its existence (e.g. note nonce, note hash,
+etc.).</div></li>
+</ul></main>
+</body>
+</html>

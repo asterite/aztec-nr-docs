@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function notify_created_contract_class_log documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">logs</a></div><h1>Function <span class="fn">notify_created_contract_class_log</span></h1><pre><code>pub unconstrained fn notify_created_contract_class_log&lt;let N: u32&gt;(
+    contract_address: AztecAddress,
+    message: [Field; N],
+    length: u32,
+    counter: u32,
+)</code></pre>
+
+<div class="comments">
+<p>The below only exists to broadcast the raw log, so we can provide it to the base rollup later to be constrained.</p>
+</div>
+</main>
+</body>
+</html>

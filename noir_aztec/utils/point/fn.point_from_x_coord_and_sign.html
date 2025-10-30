@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function point_from_x_coord_and_sign documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::<a href="index.html">point</a></div><h1>Function <span class="fn">point_from_x_coord_and_sign</span></h1><pre><code>pub fn point_from_x_coord_and_sign(x: Field, sign: bool) -> EmbeddedCurvePoint</code></pre>
+
+<div class="comments">
+<p>Uses the x coordinate and sign flag (+/-) to reconstruct the point.
+The y coordinate can be derived from the x coordinate and the &quot;sign&quot; flag by solving the grumpkin curve
+equation for y.
+@param x - The x coordinate of the point
+@param sign - The &quot;sign&quot; of the y coordinate - determines whether y &lt;= (Fr.MODULUS - 1) / 2</p>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles.css">
+<title>Function compute_public_bytecode_commitment documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">noir_aztec</a>::<a href="index.html">hash</a></div><h1>Function <span class="fn">compute_public_bytecode_commitment</span></h1><pre><code>pub fn compute_public_bytecode_commitment(packed_public_bytecode: [Field; 3000]) -> Field</code></pre>
+
+<div class="comments">
+<p>Computes the public bytecode commitment for a contract class.
+The commitment is <code>hash([separator, ...bytecode])</code> where bytecode omits the length prefix present
+in <code>packed_bytecode</code>.</p>
+<p>@param packed_bytecode - The packed bytecode of the contract class. 0th word is the length in bytes.
+packed_bytecode is mutable so that we can avoid copying the array to construct one starting with
+separator instead of length.
+@returns The public bytecode commitment.</p>
+</div>
+</main>
+</body>
+</html>

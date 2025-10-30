@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles.css">
+<title>Struct PartialUintNote documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span class="struct">PartialUintNote</span></h1><pre><code>pub struct PartialUintNote
+{ /* private fields */ }
+</code></pre>
+<div class="comments">
+<p>A partial instance of a UintNote. This value represents a private commitment to the owner, randomness and storage
+slot, but the value field has not yet been set. A partial note can be completed in public with the <code>complete</code>
+function (revealing the value to the public), resulting in a UintNote that can be used like any other one (except
+of course that its value is known).</p>
+</div>
+<h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<code class="code-header">pub fn <span class="fn">complete</span>(
+    self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>,
+    context: &mut <a href="../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
+    completer: AztecAddress,
+    value: u128,
+)</code>
+
+<div class="padded-description"><div class="comments">
+<p>Completes the partial note, creating a new note that can be used like any other UintNote.</p>
+</div>
+</div><code class="code-header">pub fn <span class="fn">complete_from_private</span>(
+    self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>,
+    context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
+    completer: AztecAddress,
+    value: u128,
+)</code>
+
+<div class="padded-description"><div class="comments">
+<p>Completes the partial note, creating a new note that can be used like any other UintNote. Same as <code>complete</code>
+function but works from private context.</p>
+</div>
+</div><code class="code-header">pub fn <span class="fn">compute_validity_commitment</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, completer: AztecAddress) -> Field</code>
+
+<div class="padded-description"><div class="comments">
+<p>Computes a validity commitment for this partial note. The commitment cryptographically binds the note's private
+data with the designated completer address. When the note is later completed in public execution, we can load
+this commitment from the nullifier tree and verify that both the partial note (e.g. that the storage slot
+corresponds to the correct owner, and that we're using the correct state variable) and completer are
+legitimate.</p>
+</div>
+</div><h2>Trait implementations</h2><h3><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<h3><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<h3><code class="code-header">impl Deserialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<h3><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<h3><code class="code-header">impl ToField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<h3><code class="code-header">impl FromField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+</main>
+</body>
+</html>

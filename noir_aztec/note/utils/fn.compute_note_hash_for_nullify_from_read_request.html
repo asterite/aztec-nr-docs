@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function compute_note_hash_for_nullify_from_read_request documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">utils</a></div><h1>Function <span class="fn">compute_note_hash_for_nullify_from_read_request</span></h1><pre><code>pub fn compute_note_hash_for_nullify_from_read_request&lt;Note&gt;(retrieved_note: <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, note_hash_for_read_request: Field) -> Field</code></pre>
+
+<div class="comments">
+<p>Same as <code>compute_note_hash_for_nullify</code>, except it takes the note hash used in a read request (i.e. what
+<code>compute_note_hash_for_read_request</code> would return). This is useful in scenarios where that hash has already been
+computed to reduce constraints by reusing this value.</p>
+</div>
+</main>
+</body>
+</html>

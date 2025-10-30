@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function notify_created_note documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">notes</a></div><h1>Function <span class="fn">notify_created_note</span></h1><pre><code>pub fn notify_created_note&lt;let N: u32&gt;(
+    storage_slot: Field,
+    note_type_id: Field,
+    packed_note: [Field; N],
+    note_hash: Field,
+    counter: u32,
+)</code></pre>
+
+<div class="comments">
+<p>Notifies the simulator that a note has been created, so that it can be returned in future read requests in the same
+transaction. This note should only be added to the non-volatile database if found in an actual block.</p>
+</div>
+</main>
+</body>
+</html>

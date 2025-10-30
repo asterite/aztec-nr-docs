@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct PrivateCallInterface documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">call_interfaces</a></div><h1>Struct <span class="struct">PrivateCallInterface</span></h1><pre><code>pub struct PrivateCallInterface&lt;let M: u32, T&gt;
+{ /* private fields */ }
+</code></pre>
+<h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
+
+<code class="code-header">pub fn <span class="fn">new</span>(
+    target_contract: AztecAddress,
+    selector: FunctionSelector,
+    name: str<M>,
+    args: [Field],
+    is_static: bool,
+) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Makes the call to this private function.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+<h4>Returns</h4>
+<ul>
+<li><code>T</code> - Whatever data the called function has returned.</li>
+</ul>
+<p>This enables contracts to interact with each other while maintaining
+privacy. This &quot;composability&quot; of private contract functions is a key
+feature of the Aztec network.</p>
+<p>If a user's transaction includes multiple private function calls, then
+by the design of Aztec, the following information will remain private[1]:</p>
+<ul>
+<li>The function selectors and contract addresses of all private function
+calls will remain private, so an observer of the public mempool will
+not be able to look at a tx and deduce which private functions have
+been executed.</li>
+<li>The arguments and return values of all private function calls will
+remain private.</li>
+<li>The person who initiated the tx will remain private.</li>
+<li>The notes and nullifiers and private logs that are emitted by all
+private function calls will (if designed well) not leak any user
+secrets, nor leak which functions have been executed.</li>
+</ul>
+<p>[1] Caveats: Some of these privacy guarantees depend on how app
+developers design their smart contracts. Some actions <em>can</em> leak
+information, such as:</p>
+<ul>
+<li>Calling an internal public function.</li>
+<li>Calling a public function and not setting msg_sender to Option::none
+(see https://github.com/AztecProtocol/aztec-packages/pull/16433)</li>
+<li>Calling any public function will always leak details about the nature
+of the transaction, so devs should be careful in their contract
+designs. If it can be done in a private function, then that will give
+the best privacy.</li>
+<li>Not padding the side-effects of a tx to some standardised, uniform
+size. The kernel circuits can take hints to pad side-effects, so a
+wallet should be able to request for a particular amount of padding.
+Wallets should ideally agree on some standard.
+<ul>
+<li>Padding should include:
+<ul>
+<li>Padding the lengths of note &amp; nullifier arrays</li>
+<li>Padding private logs with random fields, up to some standardised
+size.
+See also: https://docs.aztec.network/developers/reference/considerations/privacy_considerations</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>Advanced</h4>
+<ul>
+<li>The call is added to the private call stack and executed by kernel
+circuits after this function completes</li>
+<li>The called function can modify its own contract's private state</li>
+<li>Side effects from the called function are included in this transaction</li>
+<li>The call inherits the current transaction's context and gas limits</li>
+</ul>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+<h4>Returns</h4>
+<ul>
+<li><code>T</code> - Whatever data the called function has returned.</li>
+</ul>
+</div>
+</div><code class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Makes a <em>read-only</em> call to this private function.</p>
+<p>This is similar to Solidity's <code>staticcall</code>. The called function
+cannot modify state, emit L2-&gt;L1 messages, nor emit events. Any nested
+calls are constrained to also be staticcalls.</p>
+<p>See <code>call</code> for more general info on private function calls.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+<h4>Returns</h4>
+<ul>
+<li><code>T</code> - Whatever data the called function has returned.</li>
+</ul>
+</div>
+</div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct PendingPreviousPhaseNoteMetadata documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_metadata</a></div><h1>Struct <span class="struct">PendingPreviousPhaseNoteMetadata</span></h1><pre><code>pub struct PendingPreviousPhaseNoteMetadata
+{ /* private fields */ }
+</code></pre>
+<div class="comments">
+<p>The metadata required to both prove a note's existence and destroy it, by computing the correct note hash for kernel
+read requests, as well as the correct nullifier to avoid double-spends.</p>
+<p>This represents a pending previous phase note, i.e. a note that was created in the transaction that is currently
+being executed, during the previous execution phase. Because there are only two phases and their order is always the
+same (first non-revertible and then revertible) this implies that the note was created in the non-revertible phase,
+and that the current phase is the revertible phase.</p>
+</div>
+<h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/note/note_metadata/struct.PendingPreviousPhaseNoteMetadata.html" class="struct">PendingPreviousPhaseNoteMetadata</a></code></h3>
+
+<code class="code-header">pub fn <span class="fn">new</span>(note_nonce: Field) -> <a href="../../../noir_aztec/note/note_metadata/struct.PendingPreviousPhaseNoteMetadata.html" class="struct">PendingPreviousPhaseNoteMetadata</a></code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">note_nonce</span>(self: <a href="../../../noir_aztec/note/note_metadata/struct.PendingPreviousPhaseNoteMetadata.html" class="struct">PendingPreviousPhaseNoteMetadata</a>) -> Field</code>
+
+<div class="padded-description"></div></main>
+</body>
+</html>

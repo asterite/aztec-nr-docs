@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function discover_new_messages documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">messages</a>::<a href="index.html">discovery</a></div><h1>Function <span class="fn">discover_new_messages</span></h1><pre><code>pub unconstrained fn discover_new_messages&lt;Env&gt;(contract_address: AztecAddress, compute_note_hash_and_nullifier: ComputeNoteHashAndNullifier&lt;Env&gt;)</code></pre>
+
+<div class="comments">
+<p>Performs the message discovery process, in which private are downloaded and inspected to find new private notes,
+partial notes and events, etc., and pending partial notes are processed to search for their completion logs.
+This is the mechanism via which a contract updates its knowledge of its private state.</p>
+<p>Receives the address of the contract on which discovery is performed along with its
+<code>compute_note_hash_and_nullifier</code> function.</p>
+</div>
+</main>
+</body>
+</html>

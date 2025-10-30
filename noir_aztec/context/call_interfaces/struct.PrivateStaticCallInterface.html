@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct PrivateStaticCallInterface documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">call_interfaces</a></div><h1>Struct <span class="struct">PrivateStaticCallInterface</span></h1><pre><code>pub struct PrivateStaticCallInterface&lt;let M: u32, T&gt;
+{ /* private fields */ }
+</code></pre>
+<h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code></h3>
+
+<code class="code-header">pub fn <span class="fn">new</span>(
+    target_contract: AztecAddress,
+    selector: FunctionSelector,
+    name: str<M>,
+    args: [Field],
+) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Makes a read-only call to this private function.</p>
+<p>This is similar to Solidity's <code>staticcall</code>. The called function
+cannot modify state, emit L2-&gt;L1 messages, nor emit events. Any nested
+calls are constrained to also be staticcalls.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+</div>
+</div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;</code></h3>
+
+</main>
+</body>
+</html>

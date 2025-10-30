@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Function bytes_to_fields documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">utils</a>::<a href="../index.html">conversion</a>::<a href="index.html">bytes_to_fields</a></div><h1>Function <span class="fn">bytes_to_fields</span></h1><pre><code>pub fn bytes_to_fields&lt;let N: u32&gt;(bytes: [u8; N]) -> [Field; N / 31]</code></pre>
+
+<div class="comments">
+<p>Converts the input bytes into an array of fields. A Field is ~254 bits meaning that each field can store 31 whole
+bytes. Use <code>bytes_from_fields</code> to obtain the original bytes array.</p>
+<p>The input bytes are chunked into chunks of 31 bytes. Each 31-byte chunk is viewed as big-endian, and is converted
+into a Field.
+For example, [1, 10, 3, ..., 0] (31 bytes) is encoded as [1 * 256^30 + 10 * 256^29 + 3 * 256^28 + ... + 0]
+Note: N must be a multiple of 31 bytes</p>
+</div>
+</main>
+</body>
+</html>

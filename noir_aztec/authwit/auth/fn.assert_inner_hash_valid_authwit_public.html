@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function assert_inner_hash_valid_authwit_public documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">authwit</a>::<a href="index.html">auth</a></div><h1>Function <span class="fn">assert_inner_hash_valid_authwit_public</span></h1><pre><code>pub unconstrained fn assert_inner_hash_valid_authwit_public(
+    context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
+    on_behalf_of: AztecAddress,
+    inner_hash: Field,
+)</code></pre>
+
+<div class="comments">
+<p>Assert that <code>on_behalf_of</code> has authorized a specific <code>inner_hash</code> in the authentication registry</p>
+<p>Compute the <code>inner_hash</code> using the <code>msg_sender</code>, <code>selector</code> and <code>args_hash</code> and then make a call out to the
+<code>on_behalf_of</code> contract to verify that the <code>inner_hash</code> is valid.</p>
+<p>Note that the authentication registry will take the <code>msg_sender</code> into account as the consumer, so this will only
+work if the <code>msg_sender</code> is the same as the <code>consumer</code> when the <code>message_hash</code> was inserted into the registry.</p>
+<p>@param on_behalf_of The address that has allegedly authorized the <code>inner_hash</code></p>
+</div>
+</main>
+</body>
+</html>

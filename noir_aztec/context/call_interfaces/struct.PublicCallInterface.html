@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct PublicCallInterface documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">call_interfaces</a></div><h1>Struct <span class="struct">PublicCallInterface</span></h1><pre><code>pub struct PublicCallInterface&lt;let M: u32, T&gt;
+{ /* private fields */ }
+</code></pre>
+<h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;</code></h3>
+
+<code class="code-header">pub fn <span class="fn">new</span>(
+    target_contract: AztecAddress,
+    selector: FunctionSelector,
+    name: str<M>,
+    args: [Field],
+    is_static: bool,
+) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">with_gas</span>(&mut self: &mut <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, gas_opts: <a href="../../../noir_aztec/context/gas/struct.GasOpts.html" class="struct">GasOpts</a>) -> &mut <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub unconstrained fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Makes the call to this public function.</p>
+<p>Will revert if the called function reverts or runs out of gas.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PublicContext -- made magically available to the body
+of every #[public] function as <code>context</code>, through the
+#[public] annotation's macro.</li>
+</ul>
+<h4>Returns</h4>
+<ul>
+<li><code>T</code> - Whatever data the called function has returned.</li>
+</ul>
+</div>
+</div><code class="code-header">pub unconstrained fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Makes a read-only call to this public function.</p>
+<p>This is similar to Solidity's <code>staticcall</code>. The called function
+cannot modify state or emit events. Any nested calls are constrained to
+also be staticcalls.</p>
+<p>Will revert if the called function reverts or runs out of gas.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PublicContext -- made magically available to the body
+of every #[public] function as <code>context</code>, through the
+#[public] annotation's macro.</li>
+</ul>
+<h4>Returns</h4>
+<ul>
+<li><code>T</code> - Whatever data the called function has returned.</li>
+</ul>
+</div>
+</div><code class="code-header">pub fn <span class="fn">enqueue</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Enqueues a call to this public function, to be executed later.</p>
+<p>Unlike private functions which execute immediately on the user's device,
+public function calls are &quot;enqueued&quot; and executed some time later by a
+block proposer.</p>
+<p>This means a public function cannot return any values back to a private
+function, because by the time the public function is being executed,
+the private function which called it has already completed execution.
+(In fact, the private function has been executed and proven, along with
+all other private function calls of the user's tx. A single proof of the
+tx has been submitted to the Aztec network, and some time later a
+proposer has picked the tx up from the mempool and begun executing all
+of the enqueued public functions).</p>
+<h4>Privacy warning</h4>
+<p>Enqueueing a public function call is an inherently leaky action.
+Many interesting applications will require some interaction with public
+state, but smart contract developers should try to use public function
+calls sparingly, and carefully.
+<em>Internal</em> public function calls are especially leaky, because they
+completely leak which private contract made the call.
+See also: https://docs.aztec.network/developers/reference/considerations/privacy_considerations</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+</div>
+</div><code class="code-header">pub fn <span class="fn">enqueue_view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Enqueues a read-only call to this public function.</p>
+<p>This is similar to Solidity's <code>staticcall</code>. The called function
+cannot modify state, emit L2-&gt;L1 messages, nor emit events. Any nested
+calls are constrained to also be staticcalls.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+</div>
+</div><code class="code-header">pub fn <span class="fn">set_as_teardown</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code>
+
+<div class="padded-description"><div class="comments">
+<p>Enqueues a call to this public function, and designates it to be the
+teardown function for this tx. Only one teardown function call can be
+made by a tx.</p>
+<p>Niche function: Only wallet developers and paymaster contract developers
+(aka Fee-payment contracts) will need to make use of this function.</p>
+<p>Aztec supports a three-phase execution model: setup, app logic, teardown.
+The phases exist to enable a fee payer to take on the risk of paying
+a transaction fee, safe in the knowledge that their payment (in whatever
+token or method the user chooses) will succeed, regardless of whether
+the app logic will succeed. The &quot;setup&quot; phase ensures the fee payer
+has sufficient balance to pay the proposer their fees.
+The teardown phase is primarily intended to: calculate exactly
+how much the user owes, based on gas consumption, and refund the user
+any change.</p>
+<p>Note: in some cases, the cost of refunding the user (i.e. DA costs of
+tx side-effects) might exceed the refund amount. For app logic with
+fairly stable and predictable gas consumption, a material refund amount
+is unlikely. For app logic with unpredictable gas consumption, a
+refund might be important to the user (e.g. if a hefty function reverts
+very early). Wallet/FPC/Paymaster developers should be mindful of this.</p>
+<p>See <code>enqueue</code> for more information about enqueuing public function calls.</p>
+<h4>Arguments</h4>
+<ul>
+<li><code>context</code> - The PrivateContext -- made magically available to the body
+of every #[private] function as <code>context</code>, through the
+#[private] annotation's macro.</li>
+</ul>
+</div>
+</div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;</code></h3>
+
+</main>
+</body>
+</html>

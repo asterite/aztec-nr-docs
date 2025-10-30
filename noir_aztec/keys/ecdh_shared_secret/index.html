@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Module ecdh_shared_secret documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">keys</a>::ecdh_shared_secret</div><h1>Module <span class="module">ecdh_shared_secret</span></h1><h2>Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.derive_ecdh_shared_secret.html" class="fn">derive_ecdh_shared_secret</a></div><div class="item-description">Computes a standard ecdh shared secret: [secret] * public_key = shared_secret.
+The input secret is known only to one party. The output shared secret is derivable
+by both parties, through this function.
+E.g.:
+Epk = esk * G // ephemeral keypair
+Pk = sk * G // recipient keypair
+Shared secret S = esk * Pk = sk * Epk // see how this function can be called with two different sets of inputs, depending on which secret the caller knows (either esk or sk)?</div></li>
+<li><div class="item-name"><a href="fn.derive_ecdh_shared_secret_using_aztec_address.html" class="fn">derive_ecdh_shared_secret_using_aztec_address</a></div><div class="item-description">Computes a standard ecdh shared secret using the address public key of the given address:
+[ephemeral_secret] * recipient_address_public_key = shared_secret.
+The intention is that the <em>creator</em> of a shared secret would call this function,
+given the address of their intended recipient.</div></li>
+</ul></main>
+</body>
+</html>

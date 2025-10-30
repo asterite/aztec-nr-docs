@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Module nonce_discovery documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::nonce_discovery</div><h1>Module <span class="module">nonce_discovery</span></h1><h2>Structs</h2><ul class="item-list"><li><div class="item-name"><a href="struct.DiscoveredNoteInfo.html" class="struct">DiscoveredNoteInfo</a></div><div class="item-description">A struct with the discovered information of a complete note, required for delivery to PXE. Note that this is <em>not</em>
+the complete note information, since it does not include content, storage slot, etc.</div></li>
+</ul><h2>Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.attempt_note_nonce_discovery.html" class="fn">attempt_note_nonce_discovery</a></div><div class="item-description">Searches for note nonces that will result in a note that was emitted in a transaction. While rare, it is possible
+for multiple notes to have the exact same packed content and storage slot but different nonces, resulting in
+different unique note hashes. Because of this this function returns a <em>vector</em> of discovered notes, though in most
+cases it will contain a single element.</div></li>
+</ul></main>
+</body>
+</html>

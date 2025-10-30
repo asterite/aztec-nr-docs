@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function view_notes documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter</a></div><h1>Function <span class="fn">view_notes</span></h1><pre><code>pub unconstrained fn view_notes&lt;Note, let M: u32&gt;(storage_slot: Field, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;) -> BoundedVec&lt;Note, 10&gt;
+where
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
+    Note: Packable<N = M>,
+    Note: Eq
+</code></pre>
+
+<div class="comments">
+<p>Unconstrained variant of <code>get_notes</code>, meant to be used in unconstrained execution contexts. Notably only the note
+content is returned, and not any of the information used when proving its existence (e.g. note nonce, note hash,
+etc.).</p>
+</div>
+</main>
+</body>
+</html>

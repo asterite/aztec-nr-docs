@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function decode_message documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">messages</a>::<a href="index.html">encoding</a></div><h1>Function <span class="fn">decode_message</span></h1><pre><code>pub unconstrained fn decode_message(message: BoundedVec&lt;Field, 14&gt;) -> (u64, u64, BoundedVec&lt;Field, 13&gt;)</code></pre>
+
+<div class="comments">
+<p>Decodes a standard aztec-nr message, i.e. one created via <code>encode_message</code>, returning the original encoded values.</p>
+<p>Note that <code>encode_message</code> returns a fixed size array while this function takes a <code>BoundedVec</code>: this is because
+prior to decoding the message type is unknown, and consequentially not known at compile time. If working with
+fixed-size messages, consider using <code>BoundedVec::from_array</code> to convert them.</p>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function remove_constraints_if documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::<a href="index.html">remove_constraints</a></div><h1>Function <span class="fn">remove_constraints_if</span></h1><pre><code>pub fn remove_constraints_if&lt;Env, T&gt;(condition: bool, f: fn[Env]() -> T) -> T</code></pre>
+
+<div class="comments">
+<p>Calls a function and returns its return value, removing any constraints associated with calling the function if
+<code>condition</code> is true, behaving as if the function was unconstrained.</p>
+<p>Requires <code>condition</code> to be a compile time constant.</p>
+</div>
+</main>
+</body>
+</html>

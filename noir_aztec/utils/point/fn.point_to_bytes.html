@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function point_to_bytes documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::<a href="index.html">point</a></div><h1>Function <span class="fn">point_to_bytes</span></h1><pre><code>pub fn point_to_bytes(p: EmbeddedCurvePoint) -> [u8; 32]</code></pre>
+
+<div class="comments">
+<p>Converts a point to a byte array.</p>
+<p>We don't serialize the point at infinity flag because this function is used in situations where we do not want
+to waste the extra byte (encrypted log).</p>
+</div>
+</main>
+</body>
+</html>

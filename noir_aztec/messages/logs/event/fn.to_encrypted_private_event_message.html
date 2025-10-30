@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Function to_encrypted_private_event_message documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">event</a></div><h1>Function <span class="fn">to_encrypted_private_event_message</span></h1><pre><code>pub fn to_encrypted_private_event_message&lt;Event&gt;(event: Event, recipient: AztecAddress) -> ([Field; 17], Field)
+where
+    Event: <a href="../../../../noir_aztec/event/event_interface/trait.EventInterface.html" class="trait">EventInterface</a>,
+    Event: Serialize<N = <Event as Serialize>::N>
+</code></pre>
+
+<div class="comments">
+<p>Creates an encrypted private event message (i.e. one of type <code>PRIVATE_EVENT_MSG_TYPE_ID</code>) by encoding the contents
+of the event and then encrypting them for <code>recipient</code>.</p>
+</div>
+</main>
+</body>
+</html>

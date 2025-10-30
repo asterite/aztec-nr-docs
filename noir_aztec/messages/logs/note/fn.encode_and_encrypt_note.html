@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Function encode_and_encrypt_note documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">note</a></div><h1>Function <span class="fn">encode_and_encrypt_note</span></h1><pre><code>pub fn encode_and_encrypt_note&lt;Note&gt;(context: &mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, recipient: AztecAddress) -> fn[(&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, AztecAddress)](<a href="../../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;)
+where
+    Note: <a href="../../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
+    Note: Packable<N = <Note as Packable>::N>
+</code></pre>
+
+<div class="comments">
+<p>Sends an encrypted message to <code>recipient</code> with the content of the note, which they will discover when processing
+private logs.</p>
+</div>
+</main>
+</body>
+</html>

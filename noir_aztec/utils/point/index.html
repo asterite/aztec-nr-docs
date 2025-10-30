@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Module point documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::point</div><h1>Module <span class="module">point</span></h1><h2>Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.point_to_bytes.html" class="fn">point_to_bytes</a></div><div class="item-description">Converts a point to a byte array.</div></li>
+<li><div class="item-name"><a href="fn.get_sign_of_point.html" class="fn">get_sign_of_point</a></div><div class="item-description">Returns: true if p.y &lt;= MOD_DIV_2, else false.</div></li>
+<li><div class="item-name"><a href="fn.point_from_x_coord.html" class="fn">point_from_x_coord</a></div><div class="item-description"></div></li>
+<li><div class="item-name"><a href="fn.point_from_x_coord_and_sign.html" class="fn">point_from_x_coord_and_sign</a></div><div class="item-description">Uses the x coordinate and sign flag (+/-) to reconstruct the point.
+The y coordinate can be derived from the x coordinate and the &quot;sign&quot; flag by solving the grumpkin curve
+equation for y.
+@param x - The x coordinate of the point
+@param sign - The &quot;sign&quot; of the y coordinate - determines whether y &lt;= (Fr.MODULUS - 1) / 2</div></li>
+</ul></main>
+</body>
+</html>

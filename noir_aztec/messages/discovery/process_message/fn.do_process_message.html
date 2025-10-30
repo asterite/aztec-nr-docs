@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Function do_process_message documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::<a href="index.html">process_message</a></div><h1>Function <span class="fn">do_process_message</span></h1><pre><code>pub unconstrained fn do_process_message&lt;Env&gt;(
+    contract_address: AztecAddress,
+    compute_note_hash_and_nullifier: ComputeNoteHashAndNullifier&lt;Env&gt;,
+    message_ciphertext: BoundedVec&lt;Field, 17&gt;,
+    message_context: <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a>,
+)</code></pre>
+
+<div class="comments">
+<p>Processes a message that can contain notes, partial notes, or events.</p>
+<p>Notes result in nonce discovery being performed prior to delivery, which requires knowledge of the transaction hash
+in which the notes would've been created (typically the same transaction in which the log was emitted), along with
+the list of unique note hashes in said transaction and the <code>compute_note_hash_and_nullifier</code> function. Once
+discovered, the notes are enqueued for validation.</p>
+<p>Partial notes result in a pending partial note entry being stored in a PXE capsule, which will later be retrieved to
+search for the note's completion public log.</p>
+<p>Events are processed by computing an event commitment from the serialized event data and its randomness field, then
+enqueueing the event data and commitment for validation.</p>
+</div>
+</main>
+</body>
+</html>

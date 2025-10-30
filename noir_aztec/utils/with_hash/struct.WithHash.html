@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct WithHash documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::<a href="index.html">with_hash</a></div><h1>Struct <span class="struct">WithHash</span></h1><pre><code>pub struct WithHash&lt;T, let M: u32&gt;
+{ /* private fields */ }
+</code></pre>
+<div class="comments">
+<p>A struct that allows for efficient reading of value <code>T</code> from public storage in private.</p>
+<p>The efficient reads are achieved by verifying large values through a single hash check
+and then proving inclusion only of the hash in public storage. This reduces the number
+of required tree inclusion proofs from <code>M</code> to 1.</p>
+<h2>Type Parameters</h2>
+<ul>
+<li><code>T</code>: The underlying type being wrapped, must implement <code>Packable&lt;N&gt;</code></li>
+<li><code>M</code>: The number of field elements required to pack values of type <code>T</code></li>
+</ul>
+</div>
+<h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;</code></h3>
+
+<code class="code-header">pub fn <span class="fn">new</span>(value: T) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
+where
+    T: Packable<N = M>,
+    T: Eq
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> T
+where
+    T: Packable<N = M>,
+    T: Eq
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">get_hash</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> Field
+where
+    T: Packable<N = M>,
+    T: Eq
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">public_storage_read</span>(context: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field) -> T
+where
+    T: Packable<N = M>,
+    T: Eq
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub unconstrained fn <span class="fn">utility_public_storage_read</span>(context: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
+where
+    T: Packable<N = M>,
+    T: Eq
+</code>
+
+<div class="padded-description"></div><code class="code-header">pub fn <span class="fn">historical_public_storage_read</span>(
+    header: BlockHeader,
+    address: AztecAddress,
+    storage_slot: Field,
+) -> T
+where
+    T: Packable<N = M>,
+    T: Eq
+</code>
+
+<div class="padded-description"></div><h2>Trait implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; Packable for <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
+where
+    T: Packable<N = M>
+</code></h3>
+
+</main>
+</body>
+</html>

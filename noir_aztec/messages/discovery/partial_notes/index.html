@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Module partial_notes documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::partial_notes</div><h1>Module <span class="module">partial_notes</span></h1><h2>Globals</h2><ul class="item-list"><li><div class="item-name"><a href="global.MAX_PARTIAL_NOTE_PRIVATE_PACKED_LEN.html" class="global">MAX_PARTIAL_NOTE_PRIVATE_PACKED_LEN</a></div><div class="item-description">Partial notes have a maximum packed length of their private fields bound by extra content in their private message
+(e.g. the storage slot, note completion log tag, etc.).</div></li>
+<li><div class="item-name"><a href="global.DELIVERED_PENDING_PARTIAL_NOTE_ARRAY_LENGTH_CAPSULES_SLOT.html" class="global">DELIVERED_PENDING_PARTIAL_NOTE_ARRAY_LENGTH_CAPSULES_SLOT</a></div><div class="item-description">The slot in the PXE capsules where we store a <code>CapsuleArray</code> of <code>DeliveredPendingPartialNote</code>.</div></li>
+</ul><h2>Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.process_partial_note_private_msg.html" class="fn">process_partial_note_private_msg</a></div><div class="item-description"></div></li>
+<li><div class="item-name"><a href="fn.fetch_and_process_partial_note_completion_logs.html" class="fn">fetch_and_process_partial_note_completion_logs</a></div><div class="item-description">Searches for logs that would result in the completion of pending partial notes, ultimately resulting in the notes
+being delivered to PXE if completed.</div></li>
+</ul></main>
+</body>
+</html>

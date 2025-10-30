@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function copy documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">capsules</a></div><h1>Function <span class="fn">copy</span></h1><pre><code>pub unconstrained fn copy(
+    contract_address: AztecAddress,
+    src_slot: Field,
+    dst_slot: Field,
+    num_entries: u32,
+)</code></pre>
+
+<div class="comments">
+<p>Copies a number of contiguous entries in the per-contract non-volatile database. This allows for efficient data
+structures by avoiding repeated calls to <code>loadCapsule</code> and <code>storeCapsule</code>.
+Supports overlapping source and destination regions (which will result in the overlapped source values being
+overwritten). All copied slots must exist in the database (i.e. have been stored and not deleted)</p>
+</div>
+</main>
+</body>
+</html>

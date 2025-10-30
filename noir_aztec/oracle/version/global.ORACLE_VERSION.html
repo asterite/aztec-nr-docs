@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Global ORACLE_VERSION documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">version</a></div><h1>Global <span class="global">ORACLE_VERSION</span></h1><pre><code>pub global ORACLE_VERSION: Field;</code></pre>
+
+<div class="comments">
+<p>The ORACLE_VERSION constant is used to check that the oracle interface is in sync between PXE and Aztec.nr. We need
+to version the oracle interface to ensure that developers get a reasonable error message if they use incompatible
+versions of Aztec.nr and PXE. The TypeScript counterpart is in <code>oracle_version.ts</code>.</p>
+<p>@dev Whenever a contract function or Noir test is run, the <code>utilityAssertCompatibleOracleVersion</code> oracle is called and
+if the oracle version is incompatible an error is thrown.</p>
+</div>
+</main>
+</body>
+</html>

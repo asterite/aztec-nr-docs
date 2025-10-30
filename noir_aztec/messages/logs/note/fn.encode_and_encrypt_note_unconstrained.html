@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Function encode_and_encrypt_note_unconstrained documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">note</a></div><h1>Function <span class="fn">encode_and_encrypt_note_unconstrained</span></h1><pre><code>pub fn encode_and_encrypt_note_unconstrained&lt;Note&gt;(context: &mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, recipient: AztecAddress) -> fn[(&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, AztecAddress)](<a href="../../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;)
+where
+    Note: <a href="../../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
+    Note: Packable<N = <Note as Packable>::N>
+</code></pre>
+
+<div class="comments">
+<p>Same as <code>encode_and_encrypt_note</code>, except encryption is unconstrained. This means that the sender is free to make
+the log contents be whatever they wish, potentially resulting in scenarios in which the recipient is unable to
+decrypt and process the payload, <strong>leading to the note being lost</strong>.</p>
+<p>Only use this function in scenarios where the recipient not receiving the note is an acceptable outcome.</p>
+</div>
+</main>
+</body>
+</html>

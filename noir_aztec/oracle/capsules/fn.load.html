@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function load documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">capsules</a></div><h1>Function <span class="fn">load</span></h1><pre><code>pub unconstrained fn load&lt;T&gt;(contract_address: AztecAddress, slot: Field) -> Option&lt;T&gt;
+where
+    T: Deserialize<N = <T as Deserialize>::N>
+</code></pre>
+
+<div class="comments">
+<p>Returns data previously stored via <code>storeCapsule</code> in the per-contract non-volatile database. Returns Option::none() if
+nothing was stored at the given slot.</p>
+</div>
+</main>
+</body>
+</html>

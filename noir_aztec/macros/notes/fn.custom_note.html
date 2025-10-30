@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function custom_note documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">macros</a>::<a href="index.html">notes</a></div><h1>Function <span class="fn">custom_note</span></h1><pre><code>pub fn custom_note(s: TypeDefinition) -> Quoted</code></pre>
+
+<div class="comments">
+<p>Generates code for a custom note implementation that requires specialized note hash or nullifier computation.</p>
+<h2>Generated Code</h2>
+<ul>
+<li>NoteTypeProperties: Defines the structure and properties of note fields</li>
+<li>NoteType trait implementation: Provides the note type ID</li>
+</ul>
+<h2>Requirements</h2>
+<p>The note struct must:</p>
+<ul>
+<li>Implement the <code>Packable</code> trait</li>
+<li>Not exceed <code>MAX_NOTE_PACKED_LEN</code> when packed</li>
+</ul>
+<p>Unlike the <code>#[note]</code> macro, there is no requirement for an <code>owner</code> field.</p>
+<h2>Registration</h2>
+<p>Registers the note in the global <code>NOTES</code> BoundedVec to enable note processing functionality.</p>
+<h2>Use Cases</h2>
+<p>Use this macro when implementing a note that needs custom:</p>
+<ul>
+<li>Note hash computation logic</li>
+<li>Nullifier computation logic</li>
+</ul>
+<p>The macro omits generating default NoteHash trait implementation, allowing you to provide your own.</p>
+<h2>Example</h2>
+<pre><code>#[custom_note]
+struct CustomNote {
+    value: Field,
+    metadata: Field
+}
+
+impl NoteHash for CustomNote {
+    // Custom note hash computation...
+    fn compute_note_hash(...) -&gt; Field { ... }
+
+    // Custom nullifier computation...
+    fn compute_nullifier(...) -&gt; Field { ... }
+    fn compute_nullifier_unconstrained(...) -&gt; Field { ... }
+}
+</code></pre>
+</div>
+</main>
+</body>
+</html>

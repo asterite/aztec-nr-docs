@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function storage documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">macros</a>::<a href="index.html">storage</a></div><h1>Function <span class="fn">storage</span></h1><pre><code>pub fn storage(s: TypeDefinition) -> Quoted</code></pre>
+
+<div class="comments">
+<p>Marks a struct as the one describing the storage layout of a contract.</p>
+<p>The contract's storage is accessed via the <code>storage</code> variable, which will will automatically be made available in
+all functions as an instance of the struct this macro was applied to.</p>
+<p>Only a single struct in the entire contract should have this macro (or <code>storage_no_init</code>) applied to it, and the
+struct has to be called 'Storage'.</p>
+</div>
+</main>
+</body>
+</html>

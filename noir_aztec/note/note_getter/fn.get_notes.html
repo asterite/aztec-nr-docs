@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function get_notes documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter</a></div><h1>Function <span class="fn">get_notes</span></h1><pre><code>pub fn get_notes&lt;Note, let M: u32, PreprocessorArgs, FilterArgs&gt;(
+    context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
+    storage_slot: Field,
+    options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;,
+) -> (BoundedVec&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, 16&gt;, BoundedVec&lt;Field, 16&gt;)
+where
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
+    Note: Eq,
+    Note: Packable<N = M>
+</code></pre>
+
+<div class="comments">
+<p>Returns a BoundedVec of notes that have been proven to have been created by this contract, either in the current or
+past transactions (i.e. pending or settled notes). A second BoundedVec contains the note hashes used for the read
+requests, which can save constraints when computing the note's nullifiers.</p>
+<p>WARNING: recall that notes are never destroyed! Note existence therefore does not imply that the note is <em>current</em>
+or <em>valid</em> - this typically requires also emitting the note's nullifier to prove that it had not been emitted
+before. Because of this, calling this function directly from end-user applications should be discouraged, and safe
+abstractions such as aztec-nr's state variables should be used instead.</p>
+</div>
+</main>
+</body>
+</html>

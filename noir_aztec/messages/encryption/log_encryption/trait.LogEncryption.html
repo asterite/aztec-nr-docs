@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Trait LogEncryption documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">encryption</a>::<a href="index.html">log_encryption</a></div><h1>Trait <span class="trait">LogEncryption</span></h1><pre><code>pub trait LogEncryption {
+}</code></pre>
+
+<div class="comments">
+<p>Trait for encrypting and decrypting private logs in the Aztec protocol.</p>
+<p>This trait defines the interface for encrypting plaintext data into private logs that can be
+emitted on-chain or delivered out-of-band, and decrypting those logs back into their original plaintext.</p>
+<h2>Type Parameters</h2>
+<ul>
+<li><code>PLAINTEXT_LEN</code>: Length of the plaintext array in fields</li>
+<li><code>PRIVATE_LOG_CIPHERTEXT_LEN</code>: Fixed length of encrypted logs (defined globally)</li>
+<li><code>PRIVATE_LOG_PLAINTEXT_SIZE_IN_FIELDS</code>: Maximum size of decrypted plaintext (defined globally)</li>
+</ul>
+<h2>Note on privacy sets</h2>
+<p>To preserve privacy, <code>encrypt_log</code> returns a fixed-length array ensuring all log types are indistinguishable
+on-chain. Implementations of this trait must handle padding the encrypted log to match this standardized length.</p>
+</div>
+<h2>Methods</h2><code class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: u32&gt;(plaintext: [Field; PlaintextLen], recipient: AztecAddress) -> [Field; 17]</code>
+
+<div class="padded-description"><div class="comments">
+<p>Encrypts a plaintext field array into a private log that can be emitted on-chain.</p>
+<h3>Arguments</h3>
+<ul>
+<li><code>plaintext</code> - Array of Field elements to encrypt</li>
+<li><code>recipient</code> - Aztec address of intended recipient who can decrypt the log</li>
+</ul>
+<h3>Returns</h3>
+<p>Fixed-size array of encrypted Field elements representing the private log</p>
+</div>
+</div><code class="code-header">pub unconstrained fn <span class="fn">decrypt_log</span>(ciphertext: BoundedVec&lt;Field, 17&gt;, recipient: AztecAddress) -> BoundedVec&lt;Field, 14&gt;</code>
+
+<div class="padded-description"><div class="comments">
+<p>Decrypts a private log back into its original plaintext fields.
+This function is unconstrained since decryption happens when processing logs in an unconstrained context.</p>
+<h3>Arguments</h3>
+<ul>
+<li><code>ciphertext</code> - Bounded vector containing the encrypted log fields</li>
+<li><code>recipient</code> - Aztec address of the recipient who can decrypt</li>
+</ul>
+<h3>Returns</h3>
+<p>Bounded vector containing the decrypted plaintext fields</p>
+<h3>Note on use of BoundedVec</h3>
+<p><code>BoundedVec</code> is required since the log length cannot be determined at compile time. This is because
+the <code>Contract::process_log</code> function is designed to work with all the private logs, emitted by a given contract
+and not just by 1 log type.</p>
+</div>
+</div><h2>Implementors</h2><h3><code class="code-header">impl <a href="../../../../noir_aztec/messages/encryption/log_encryption/trait.LogEncryption.html" class="trait">LogEncryption</a> for <a href="../../../../noir_aztec/messages/encryption/aes128/struct.AES128.html" class="struct">AES128</a></code></h3>
+
+</main>
+</body>
+</html>

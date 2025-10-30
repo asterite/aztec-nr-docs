@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function create_note documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">lifecycle</a></div><h1>Function <span class="fn">create_note</span></h1><pre><code>pub fn create_note&lt;Note&gt;(
+    context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
+    storage_slot: Field,
+    note: Note,
+) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
+where
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
+    Note: Packable<N = <Note as Packable>::N>
+</code></pre>
+
+</main>
+</body>
+</html>

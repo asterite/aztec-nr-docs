@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function get_notes documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">notes</a></div><h1>Function <span class="fn">get_notes</span></h1><pre><code>pub unconstrained fn get_notes&lt;Note, let M: u32, let MaxNotes: u32&gt;(
+    storage_slot: Field,
+    num_selects: u8,
+    select_by_indexes: [u8; M],
+    select_by_offsets: [u8; M],
+    select_by_lengths: [u8; M],
+    select_values: [Field; M],
+    select_comparators: [u8; M],
+    sort_by_indexes: [u8; M],
+    sort_by_offsets: [u8; M],
+    sort_by_lengths: [u8; M],
+    sort_order: [u8; M],
+    limit: u32,
+    offset: u32,
+    status: u8,
+) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; MaxNotes]
+where
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
+    Note: Packable<N = <Note as Packable>::N>
+</code></pre>
+
+</main>
+</body>
+</html>

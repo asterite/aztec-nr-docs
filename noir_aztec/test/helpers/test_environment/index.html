@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Module test_environment documentation</title>
+</head>
+<body>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">test</a>::<a href="../index.html">helpers</a>::test_environment</div><h1>Module <span class="module">test_environment</span></h1><h2>Structs</h2><ul class="item-list"><li><div class="item-name"><a href="struct.TestEnvironment.html" class="struct">TestEnvironment</a></div><div class="item-description">This represents an Aztec test run, and contains all the methods utilized during one to interact with the network and
+manipulate its state (e.g. create accounts, make contract calls, etc.). Each test is expected to have its own
+instance of <code>TestEnvironment</code>, as tests execute in parallel and so cannot share this object.</div></li>
+<li><div class="item-name"><a href="struct.PrivateContextOptions.html" class="struct">PrivateContextOptions</a></div><div class="item-description">Configuration values for <code>TestEnvironment::private_context_opts</code>. Meant to be used by calling <code>new</code> and then
+chaining methods setting each value, e.g.:</p>
+<pre><code class="language-noir">env.private_context_opts(PrivateContextOptions::new().at_historical_block_number(5), ...);
+</code></pre></div></li>
+</ul></main>
+</body>
+</html>
