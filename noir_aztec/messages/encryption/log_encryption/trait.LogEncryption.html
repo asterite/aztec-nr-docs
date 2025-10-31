@@ -8,7 +8,7 @@
 <body>
 <nav class="sidebar">
 <h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
-<h2><a href="#trait">Trait LogEncryption</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#decrypt_log">decrypt_log</a></li>
+<h2><a href="#trait">Trait LogEncryption</a></h2><h3>Required methods</h3><ul class="sidebar-list"><li><a href="#decrypt_log">decrypt_log</a></li>
 <li><a href="#encrypt_log">encrypt_log</a></li>
 </ul><h3>Implementors</h3><ul class="sidebar-list"><li><a href="#impl-LogEncryption-for-AES128">LogEncryption</a></li>
 </ul><h2>In module log_encryption</h2><h3>Traits</h3><ul class="item-list"><li><a href="trait.LogEncryption.html" class="trait">LogEncryption</a></div></li>
@@ -35,7 +35,7 @@ emitted on-chain or delivered out-of-band, and decrypting those logs back into t
 <p>To preserve privacy, <code>encrypt_log</code> returns a fixed-length array ensuring all log types are indistinguishable
 on-chain. Implementations of this trait must handle padding the encrypted log to match this standardized length.</p>
 </div>
-<h2>Methods</h2><div class="padded-methods"><code id="encrypt_log" class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: u32&gt;(plaintext: [Field; PlaintextLen], recipient: AztecAddress) -> [Field; 17]</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="encrypt_log" class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: u32&gt;(plaintext: [Field; PlaintextLen], recipient: AztecAddress) -> [Field; 17]</code>
 
 <div class="padded-description"><div class="comments">
 <p>Encrypts a plaintext field array into a private log that can be emitted on-chain.</p>
