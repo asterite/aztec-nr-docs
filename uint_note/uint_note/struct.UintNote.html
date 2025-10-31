@@ -61,24 +61,6 @@ note. <code>recipient</code> will typically be the same as <code>owner</code>.</
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, _other: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> bool</code>
 
-</div><h3 id="impl-NoteType-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
-
-</div><h3 id="impl-NoteProperties&lt;UintNoteProperties&gt;-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a>&gt; for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></code>
-
-</div><h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
-
-</div><h3 id="impl-Packable-for-UintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
-
-<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
-
 </div><h3 id="impl-NoteHash-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, storage_slot: Field) -> Field</code>
@@ -90,6 +72,24 @@ note. <code>recipient</code> will typically be the same as <code>owner</code>.</
 ) -> Field</code>
 
 <code class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, note_hash_for_nullify: Field) -> Field</code>
+
+</div><h3 id="impl-NoteProperties&lt;UintNoteProperties&gt;-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a>&gt; for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></code>
+
+</div><h3 id="impl-NoteType-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
+
+</div><h3 id="impl-Packable-for-UintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
+
+<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
+
+</div><h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
 
 </div></main>
 </body>

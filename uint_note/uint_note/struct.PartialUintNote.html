@@ -63,17 +63,17 @@ this commitment from the nullifier tree and verify that both the partial note (e
 corresponds to the correct owner, and that we're using the correct state variable) and completer are
 legitimate.</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-PartialUintNote"><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-PartialUintNote"><code class="code-header">impl Deserialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
+
+</div><h3 id="impl-Eq-for-PartialUintNote"><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, _other: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> bool</code>
 
-</div><h3 id="impl-Serialize-for-PartialUintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+</div><h3 id="impl-FromField-for-PartialUintNote"><code class="code-header">impl FromField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> [Field; 1]</code>
-
-</div><h3 id="impl-Deserialize-for-PartialUintNote"><code class="code-header">impl Deserialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
 
 </div><h3 id="impl-Packable-for-PartialUintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
@@ -81,13 +81,13 @@ legitimate.</p>
 
 <code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
 
+</div><h3 id="impl-Serialize-for-PartialUintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> [Field; 1]</code>
+
 </div><h3 id="impl-ToField-for-PartialUintNote"><code class="code-header">impl ToField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">to_field</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> Field</code>
-
-</div><h3 id="impl-FromField-for-PartialUintNote"><code class="code-header">impl FromField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
 
 </div></main>
 </body>

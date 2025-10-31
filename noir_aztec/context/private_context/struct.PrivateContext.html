@@ -8,25 +8,25 @@
 <body>
 <nav class="sidebar">
 <h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PrivateContext</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#inputs">inputs</a></li>
-<li><a href="#side_effect_counter">side_effect_counter</a></li>
-<li><a href="#min_revertible_side_effect_counter">min_revertible_side_effect_counter</a></li>
-<li><a href="#is_fee_payer">is_fee_payer</a></li>
-<li><a href="#args_hash">args_hash</a></li>
-<li><a href="#return_hash">return_hash</a></li>
+<h2><a href="#struct">Struct PrivateContext</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#args_hash">args_hash</a></li>
+<li><a href="#contract_class_logs_hashes">contract_class_logs_hashes</a></li>
+<li><a href="#historical_header">historical_header</a></li>
 <li><a href="#include_by_timestamp">include_by_timestamp</a></li>
+<li><a href="#inputs">inputs</a></li>
+<li><a href="#is_fee_payer">is_fee_payer</a></li>
+<li><a href="#l2_to_l1_msgs">l2_to_l1_msgs</a></li>
+<li><a href="#last_key_validation_requests">last_key_validation_requests</a></li>
+<li><a href="#min_revertible_side_effect_counter">min_revertible_side_effect_counter</a></li>
 <li><a href="#note_hash_read_requests">note_hash_read_requests</a></li>
-<li><a href="#nullifier_read_requests">nullifier_read_requests</a></li>
 <li><a href="#note_hashes">note_hashes</a></li>
+<li><a href="#nullifier_read_requests">nullifier_read_requests</a></li>
 <li><a href="#nullifiers">nullifiers</a></li>
 <li><a href="#private_call_requests">private_call_requests</a></li>
+<li><a href="#private_logs">private_logs</a></li>
 <li><a href="#public_call_requests">public_call_requests</a></li>
 <li><a href="#public_teardown_call_request">public_teardown_call_request</a></li>
-<li><a href="#l2_to_l1_msgs">l2_to_l1_msgs</a></li>
-<li><a href="#historical_header">historical_header</a></li>
-<li><a href="#private_logs">private_logs</a></li>
-<li><a href="#contract_class_logs_hashes">contract_class_logs_hashes</a></li>
-<li><a href="#last_key_validation_requests">last_key_validation_requests</a></li>
+<li><a href="#return_hash">return_hash</a></li>
+<li><a href="#side_effect_counter">side_effect_counter</a></li>
 </ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call_private_function">call_private_function</a></li>
 <li><a href="#call_private_function_no_args">call_private_function_no_args</a></li>
 <li><a href="#call_private_function_with_args_hash">call_private_function_with_args_hash</a></li>
@@ -1275,17 +1275,17 @@ function</li>
 <li><code>is_static_call</code> - Whether this should be a read-only call</li>
 </ul>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-PrivateContext"><code class="code-header">impl Eq for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
-
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, _other: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> bool</code>
-
-</div><h3 id="impl-Empty-for-PrivateContext"><code class="code-header">impl Empty for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PrivateContext"><code class="code-header">impl Empty for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code>
 
 <code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> bool</code>
 
 <code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-PrivateContext"><code class="code-header">impl Eq for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, _other: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> bool</code>
 
 </div></main>
 </body>
