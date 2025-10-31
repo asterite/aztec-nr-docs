@@ -29,7 +29,7 @@
 <div class="padded-description"></div><div id="secret" class="struct-field"><code class="code-header">secret: Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">with_private_initializer</span>&lt;T, let P: u32&gt;(
+<div class="padded-methods"><code id="with_private_initializer" class="code-header">pub unconstrained fn <span class="fn">with_private_initializer</span>&lt;T, let P: u32&gt;(
     self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;,
     from: AztecAddress,
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;P, T&gt;,
@@ -57,7 +57,7 @@ unconstrained fn test_deployment() {
 }
 </code></pre>
 </div>
-</div><code class="code-header">pub unconstrained fn <span class="fn">with_public_initializer</span>&lt;let P: u32, T&gt;(
+</div><code id="with_public_initializer" class="code-header">pub unconstrained fn <span class="fn">with_public_initializer</span>&lt;let P: u32, T&gt;(
     self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;,
     from: AztecAddress,
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;P, T&gt;,
@@ -85,7 +85,7 @@ unconstrained fn test_deployment() {
 }
 </code></pre>
 </div>
-</div><code class="code-header">pub unconstrained fn <span class="fn">without_initializer</span>(self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;) -> AztecAddress</code>
+</div><code id="without_initializer" class="code-header">pub unconstrained fn <span class="fn">without_initializer</span>(self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;) -> AztecAddress</code>
 
 <div class="padded-description"><div class="comments">
 <p>Finalizes a contract deployment prepared via <code>TestEnvironment::deploy</code> without calling any initializer function.</p>

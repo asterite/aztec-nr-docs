@@ -33,7 +33,7 @@ of course that its value is known).</p>
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">complete</span>(
+<div class="padded-methods"><code id="complete" class="code-header">pub fn <span class="fn">complete</span>(
     self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>,
     context: &mut <a href="../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
     completer: AztecAddress,
@@ -43,7 +43,7 @@ of course that its value is known).</p>
 <div class="padded-description"><div class="comments">
 <p>Completes the partial note, creating a new note that can be used like any other UintNote.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">complete_from_private</span>(
+</div><code id="complete_from_private" class="code-header">pub fn <span class="fn">complete_from_private</span>(
     self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     completer: AztecAddress,
@@ -54,7 +54,7 @@ of course that its value is known).</p>
 <p>Completes the partial note, creating a new note that can be used like any other UintNote. Same as <code>complete</code>
 function but works from private context.</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">compute_validity_commitment</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, completer: AztecAddress) -> Field</code>
+</div><code id="compute_validity_commitment" class="code-header">pub fn <span class="fn">compute_validity_commitment</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, completer: AztecAddress) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Computes a validity commitment for this partial note. The commitment cryptographically binds the note's private
@@ -65,29 +65,29 @@ legitimate.</p>
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-PartialUintNote"><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, _other: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>, _other: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> bool</code>
 
 </div><h3 id="impl-Serialize-for-PartialUintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> [Field; 1]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> [Field; 1]</code>
 
 </div><h3 id="impl-Deserialize-for-PartialUintNote"><code class="code-header">impl Deserialize for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
 
 </div><h3 id="impl-Packable-for-PartialUintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> [Field; 1]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> [Field; 1]</code>
 
-<code id="unpack" class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
+<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 1]) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
 
 </div><h3 id="impl-ToField-for-PartialUintNote"><code class="code-header">impl ToField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code id="to_field" class="code-header">pub fn <span class="fn">to_field</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">to_field</span>(self: <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a>) -> Field</code>
 
 </div><h3 id="impl-FromField-for-PartialUintNote"><code class="code-header">impl FromField for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<div class="padded-methods"><code id="from_field" class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code>
 
 </div></main>
 </body>

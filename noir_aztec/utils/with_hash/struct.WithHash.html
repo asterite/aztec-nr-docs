@@ -34,37 +34,37 @@ of required tree inclusion proofs from <code>M</code> to 1.</p>
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(value: T) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(value: T) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 where
     T: Packable&lt;N = M&gt;,
     T: Eq
 </code>
 
-<code class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> T
+<code id="get_value" class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> T
 where
     T: Packable&lt;N = M&gt;,
     T: Eq
 </code>
 
-<code class="code-header">pub fn <span class="fn">get_hash</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> Field
+<code id="get_hash" class="code-header">pub fn <span class="fn">get_hash</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> Field
 where
     T: Packable&lt;N = M&gt;,
     T: Eq
 </code>
 
-<code class="code-header">pub fn <span class="fn">public_storage_read</span>(context: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field) -> T
+<code id="public_storage_read" class="code-header">pub fn <span class="fn">public_storage_read</span>(context: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field) -> T
 where
     T: Packable&lt;N = M&gt;,
     T: Eq
 </code>
 
-<code class="code-header">pub unconstrained fn <span class="fn">utility_public_storage_read</span>(context: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
+<code id="utility_public_storage_read" class="code-header">pub unconstrained fn <span class="fn">utility_public_storage_read</span>(context: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
 where
     T: Packable&lt;N = M&gt;,
     T: Eq
 </code>
 
-<code class="code-header">pub fn <span class="fn">historical_public_storage_read</span>(
+<code id="historical_public_storage_read" class="code-header">pub fn <span class="fn">historical_public_storage_read</span>(
     header: BlockHeader,
     address: AztecAddress,
     storage_slot: Field,
@@ -79,12 +79,12 @@ where
     T: Packable&lt;N = M&gt;
 </code></h3>
 
-<div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> [Field; M + 1]
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> [Field; M + 1]
 where
     T: Packable&lt;N = M&gt;
 </code>
 
-<code id="unpack" class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; M + 1]) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
+<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; M + 1]) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 where
     T: Packable&lt;N = M&gt;
 </code>

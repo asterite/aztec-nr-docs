@@ -24,39 +24,39 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(address: AztecAddress, owner: AztecAddress) -> <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(address: AztecAddress, owner: AztecAddress) -> <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code>
 
-<code class="code-header">pub fn <span class="fn">get_address</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>) -> AztecAddress</code>
+<code id="get_address" class="code-header">pub fn <span class="fn">get_address</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>) -> AztecAddress</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Eq-for-AddressNote"><code class="code-header">impl Eq for <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
-<div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>, _other: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>, _other: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>) -> bool</code>
 
 </div><h3 id="impl-NoteType-for-AddressNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
-<div class="padded-methods"><code id="get_id" class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
 
 </div><h3 id="impl-NoteHash-for-AddressNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
-<div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>, storage_slot: Field) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>, storage_slot: Field) -> Field</code>
 
-<code id="compute_nullifier" class="code-header">pub fn <span class="fn">compute_nullifier</span>(
+<code class="code-header">pub fn <span class="fn">compute_nullifier</span>(
     self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     note_hash_for_nullify: Field,
 ) -> Field</code>
 
-<code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>, note_hash_for_nullify: Field) -> Field</code>
+<code class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>, note_hash_for_nullify: Field) -> Field</code>
 
 </div><h3 id="impl-NoteProperties&lt;AddressNoteProperties&gt;-for-AddressNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../address_note/address_note/struct.AddressNoteProperties.html" class="struct">AddressNoteProperties</a>&gt; for <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
-<div class="padded-methods"><code id="properties" class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../address_note/address_note/struct.AddressNoteProperties.html" class="struct">AddressNoteProperties</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../address_note/address_note/struct.AddressNoteProperties.html" class="struct">AddressNoteProperties</a></code>
 
 </div><h3 id="impl-Packable-for-AddressNote"><code class="code-header">impl Packable for <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
-<div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>) -> [Field; 3]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a>) -> [Field; 3]</code>
 
-<code id="unpack" class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code>
+<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code>
 
 </div></main>
 </body>

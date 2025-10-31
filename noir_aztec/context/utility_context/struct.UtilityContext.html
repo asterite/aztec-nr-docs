@@ -26,25 +26,25 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
+<div class="padded-methods"><code id="new" class="code-header">pub unconstrained fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
 
-<code class="code-header">pub unconstrained fn <span class="fn">at</span>(contract_address: AztecAddress) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
+<code id="at" class="code-header">pub unconstrained fn <span class="fn">at</span>(contract_address: AztecAddress) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
 
-<code class="code-header">pub unconstrained fn <span class="fn">at_historical</span>(contract_address: AztecAddress, block_number: u32) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
+<code id="at_historical" class="code-header">pub unconstrained fn <span class="fn">at_historical</span>(contract_address: AztecAddress, block_number: u32) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
 
-<code class="code-header">pub fn <span class="fn">block_number</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> u32</code>
+<code id="block_number" class="code-header">pub fn <span class="fn">block_number</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> u32</code>
 
-<code class="code-header">pub fn <span class="fn">timestamp</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> u64</code>
+<code id="timestamp" class="code-header">pub fn <span class="fn">timestamp</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> u64</code>
 
-<code class="code-header">pub fn <span class="fn">this_address</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> AztecAddress</code>
+<code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> AztecAddress</code>
 
-<code class="code-header">pub fn <span class="fn">version</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> Field</code>
+<code id="version" class="code-header">pub fn <span class="fn">version</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> Field</code>
 
-<code class="code-header">pub fn <span class="fn">chain_id</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> Field</code>
+<code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> Field</code>
 
-<code class="code-header">pub unconstrained fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> [Field; N]</code>
+<code id="raw_storage_read" class="code-header">pub unconstrained fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> [Field; N]</code>
 
-<code class="code-header">pub unconstrained fn <span class="fn">storage_read</span>&lt;T&gt;(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
+<code id="storage_read" class="code-header">pub unconstrained fn <span class="fn">storage_read</span>&lt;T&gt;(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
 where
     T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;
 </code>

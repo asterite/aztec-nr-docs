@@ -31,13 +31,13 @@
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(value: u128, owner: AztecAddress) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(value: u128, owner: AztecAddress) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
 
-<code class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> u128</code>
+<code id="get_value" class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> u128</code>
 
-<code class="code-header">pub fn <span class="fn">get_owner</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> AztecAddress</code>
+<code id="get_owner" class="code-header">pub fn <span class="fn">get_owner</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> AztecAddress</code>
 
-<code class="code-header">pub fn <span class="fn">partial</span>(
+<code id="partial" class="code-header">pub fn <span class="fn">partial</span>(
     owner: AztecAddress,
     storage_slot: Field,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
@@ -59,37 +59,37 @@ note. <code>recipient</code> will typically be the same as <code>owner</code>.</
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-UintNote"><code class="code-header">impl Eq for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, _other: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, _other: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> bool</code>
 
 </div><h3 id="impl-NoteType-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="get_id" class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
 
 </div><h3 id="impl-NoteProperties&lt;UintNoteProperties&gt;-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a>&gt; for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="properties" class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></code>
 
 </div><h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl Serialize for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
 
 </div><h3 id="impl-Packable-for-UintNote"><code class="code-header">impl Packable for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>) -> [Field; 3]</code>
 
-<code id="unpack" class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
+<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code>
 
 </div><h3 id="impl-NoteHash-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, storage_slot: Field) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, storage_slot: Field) -> Field</code>
 
-<code id="compute_nullifier" class="code-header">pub fn <span class="fn">compute_nullifier</span>(
+<code class="code-header">pub fn <span class="fn">compute_nullifier</span>(
     self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     note_hash_for_nullify: Field,
 ) -> Field</code>
 
-<code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, note_hash_for_nullify: Field) -> Field</code>
+<code class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a>, note_hash_for_nullify: Field) -> Field</code>
 
 </div></main>
 </body>

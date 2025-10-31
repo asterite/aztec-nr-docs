@@ -88,7 +88,7 @@ ensuring cryptographically secure slot separation.</p>
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;Context, K, V&gt; <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, V, Context&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
     context: Context,
     storage_slot: Field,
     state_var_constructor: fn(Context, Field) -> V,
@@ -115,7 +115,7 @@ typically the constructor of the state
 variable type being stored in the Map.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">at</span>(self: <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, V, Context&gt;, key: K) -> V
+</div><code id="at" class="code-header">pub fn <span class="fn">at</span>(self: <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, V, Context&gt;, key: K) -> V
 where
     K: ToField
 </code>
@@ -150,7 +150,7 @@ user_balance.replace(new_note);
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-Map"><code class="code-header">impl&lt;Context, K, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;</code></h3>
 
-<div class="padded-methods"><code id="get_storage_slot" class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;) -> Field</code>
 
 </div></main>
 </body>

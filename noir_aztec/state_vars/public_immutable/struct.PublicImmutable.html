@@ -70,7 +70,7 @@ pub struct Config \{
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">initialize</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, value: T)
+<div class="padded-methods"><code id="initialize" class="code-header">pub fn <span class="fn">initialize</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, value: T)
 where
     T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
@@ -97,7 +97,7 @@ as initialized. This prevents double-initialization.</li>
 </ul>
 <p>docs:start:public_immutable_struct_write</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
+</div><code id="read" class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
     T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
@@ -122,7 +122,7 @@ initialization nullifier exists</li>
 <p>The function will panic if called on an uninitialized PublicImmutable.</p>
 <p>docs:start:public_immutable_struct_read</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">read_unsafe</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
+</div><code id="read_unsafe" class="code-header">pub fn <span class="fn">read_unsafe</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
     T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
@@ -145,7 +145,7 @@ uninitialized.</li>
 </div>
 </div></div><h3><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;</code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a new PublicImmutable state variable.</p>
@@ -164,11 +164,11 @@ behind the scenes.</li>
 </ul>
 <p>docs:start:public_immutable_struct_new</p>
 </div>
-</div><code class="code-header">pub fn <span class="fn">compute_initialization_nullifier</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;) -> Field</code>
+</div><code id="compute_initialization_nullifier" class="code-header">pub fn <span class="fn">compute_initialization_nullifier</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;) -> Field</code>
 
 </div><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> T
+<div class="padded-methods"><code id="read" class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> T
 where
     T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
@@ -203,7 +203,7 @@ historical block header that is being referenced by this private function.</li>
 </div>
 </div></div><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
+<div class="padded-methods"><code id="read" class="code-header">pub unconstrained fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
 where
     T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
@@ -223,7 +223,7 @@ where
     T: Packable&lt;N = M&gt;
 </code></h3>
 
-<div class="padded-methods"><code id="get_storage_slot" class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;) -> Field
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;) -> Field
 where
     T: Packable&lt;N = M&gt;
 </code>

@@ -29,7 +29,7 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
     target_contract: AztecAddress,
     selector: FunctionSelector,
     name: str&lt;M&gt;,
@@ -40,12 +40,12 @@ where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
-<code class="code-header">pub fn <span class="fn">with_gas</span>(&mut self: &mut <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, gas_opts: <a href="../../../noir_aztec/context/gas/struct.GasOpts.html" class="struct">GasOpts</a>) -> &mut <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;
+<code id="with_gas" class="code-header">pub fn <span class="fn">with_gas</span>(&mut self: &mut <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, gas_opts: <a href="../../../noir_aztec/context/gas/struct.GasOpts.html" class="struct">GasOpts</a>) -> &mut <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;
 where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
-<code class="code-header">pub unconstrained fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
+<code id="call" class="code-header">pub unconstrained fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
 where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
@@ -64,7 +64,7 @@ of every #[public] function as <code>context</code>, through the
 <li><code>T</code> - Whatever data the called function has returned.</li>
 </ul>
 </div>
-</div><code class="code-header">pub unconstrained fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
+</div><code id="view" class="code-header">pub unconstrained fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
 where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
@@ -86,7 +86,7 @@ of every #[public] function as <code>context</code>, through the
 <li><code>T</code> - Whatever data the called function has returned.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">enqueue</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
+</div><code id="enqueue" class="code-header">pub fn <span class="fn">enqueue</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
 where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
@@ -119,7 +119,7 @@ of every #[private] function as <code>context</code>, through the
 #[private] annotation's macro.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">enqueue_view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
+</div><code id="enqueue_view" class="code-header">pub fn <span class="fn">enqueue_view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
 where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
@@ -136,7 +136,7 @@ of every #[private] function as <code>context</code>, through the
 #[private] annotation's macro.</li>
 </ul>
 </div>
-</div><code class="code-header">pub fn <span class="fn">set_as_teardown</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
+</div><code id="set_as_teardown" class="code-header">pub fn <span class="fn">set_as_teardown</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
 where
     T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
@@ -172,15 +172,15 @@ of every #[private] function as <code>context</code>, through the
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-CallInterface&lt;M&gt;-for-PublicCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;</code></h3>
 
-<div class="padded-methods"><code id="get_args" class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
 
-<code id="get_selector" class="code-header">pub fn <span class="fn">get_selector</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> FunctionSelector</code>
+<code class="code-header">pub fn <span class="fn">get_selector</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> FunctionSelector</code>
 
-<code id="get_name" class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> str&lt;M&gt;</code>
+<code class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> str&lt;M&gt;</code>
 
-<code id="get_contract_address" class="code-header">pub fn <span class="fn">get_contract_address</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> AztecAddress</code>
+<code class="code-header">pub fn <span class="fn">get_contract_address</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> AztecAddress</code>
 
-<code id="get_is_static" class="code-header">pub fn <span class="fn">get_is_static</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> bool</code>
+<code class="code-header">pub fn <span class="fn">get_is_static</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;) -> bool</code>
 
 </div></main>
 </body>
