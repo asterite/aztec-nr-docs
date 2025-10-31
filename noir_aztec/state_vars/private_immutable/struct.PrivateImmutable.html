@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateImmutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateImmutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
 <li><a href="#get_note">get_note</a></li>
 <li><a href="#initialize">initialize</a></li>
 <li><a href="#is_initialized">is_initialized</a></li>
@@ -76,7 +77,7 @@ nullifier exists), <code>false</code> otherwise.</li>
 </div>
 </div><code class="code-header">pub unconstrained fn <span class="fn">view_note</span>(self: <a href="../../../noir_aztec/state_vars/private_immutable/struct.PrivateImmutable.html" class="struct">PrivateImmutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> Note
 where
-    Note: Packable&lt;N = <Note as Packable>::N&gt;,
+    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -148,7 +149,7 @@ the storage location.</p>
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: Packable&lt;N = <Note as Packable>::N&gt;
+    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -189,7 +190,7 @@ documentation).</p>
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: Packable&lt;N = <Note as Packable>::N&gt;
+    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">

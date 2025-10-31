@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2>In module capsules</h2><h3>Functions</h3><ul class="item-list"><li><a href="fn.store.html" class="fn">store</a></div></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2>In module capsules</h2><h3>Functions</h3><ul class="item-list"><li><a href="fn.store.html" class="fn">store</a></div></li>
 <li><a href="fn.load.html" class="fn">load</a></div></li>
 <li><a href="fn.delete.html" class="fn">delete</a></div></li>
 <li><a href="fn.copy.html" class="fn">copy</a></div></li>
@@ -15,7 +16,7 @@
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">capsules</a></div><h1>Function <span class="fn">load</span></h1><pre><code>pub unconstrained fn load&lt;T&gt;(contract_address: AztecAddress, slot: Field) -> Option&lt;T&gt;
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code></pre>
 
 <div class="comments">

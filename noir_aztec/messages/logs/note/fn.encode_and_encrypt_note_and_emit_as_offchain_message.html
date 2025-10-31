@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><h2>In module note</h2><h3>Functions</h3><ul class="item-list"><li><a href="fn.compute_note_log.html" class="fn">compute_note_log</a></div></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
+<h2>In module note</h2><h3>Functions</h3><ul class="item-list"><li><a href="fn.compute_note_log.html" class="fn">compute_note_log</a></div></li>
 <li><a href="fn.compute_partial_note_log.html" class="fn">compute_partial_note_log</a></div></li>
 <li><a href="fn.encode_and_encrypt_note.html" class="fn">encode_and_encrypt_note</a></div></li>
 <li><a href="fn.encode_and_encrypt_note_unconstrained.html" class="fn">encode_and_encrypt_note_unconstrained</a></div></li>
@@ -17,7 +18,7 @@
 <div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">note</a></div><h1>Function <span class="fn">encode_and_encrypt_note_and_emit_as_offchain_message</span></h1><pre><code>pub fn encode_and_encrypt_note_and_emit_as_offchain_message&lt;Note&gt;(context: &mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, recipient: AztecAddress) -> fn[(&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, AztecAddress)](<a href="../../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;)
 where
     Note: <a href="../../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: Packable&lt;N = <Note as Packable>::N&gt;
+    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;
 </code></pre>
 
 <div class="comments">

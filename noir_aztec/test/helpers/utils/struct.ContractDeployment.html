@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct ContractDeployment</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#env">env</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct ContractDeployment</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#env">env</a></li>
 <li><a href="#path">path</a></li>
 <li><a href="#secret">secret</a></li>
 </ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#with_private_initializer">with_private_initializer</a></li>
@@ -34,7 +35,7 @@
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;P, T&gt;,
 ) -> AztecAddress
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -62,7 +63,7 @@ unconstrained fn test_deployment() {
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;P, T&gt;,
 ) -> AztecAddress
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">

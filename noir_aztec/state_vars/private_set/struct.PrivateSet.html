@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateSet</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#context">context</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateSet</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#context">context</a></li>
 <li><a href="#storage_slot">storage_slot</a></li>
 </ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
 <li><a href="#insert">insert</a></li>
@@ -144,9 +145,9 @@ given storage_slot.</li>
 <div class="padded-description"></div><div id="storage_slot" class="struct-field"><code class="code-header">storage_slot: Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, <Note as Packable>::N&gt;) -> BoundedVec&lt;Note, 10&gt;
+<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, &lt;Note as Packable&gt;::N&gt;) -> BoundedVec&lt;Note, 10&gt;
 where
-    Note: Packable&lt;N = <Note as Packable>::N&gt;,
+    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -169,7 +170,7 @@ call to the PXE.</li>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">insert</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
 where
-    Note: Packable&lt;N = <Note as Packable>::N&gt;,
+    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq

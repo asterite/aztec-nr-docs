@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PublicImmutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PublicImmutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
 <li><a href="#initialize">initialize</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#read">read</a></li>
@@ -71,7 +72,7 @@ pub struct Config \{
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">initialize</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, value: T)
 where
-    T: Packable&lt;N = <T as Packable>::N&gt;,
+    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
 </code>
 
@@ -98,7 +99,7 @@ as initialized. This prevents double-initialization.</li>
 </div>
 </div><code class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = <T as Packable>::N&gt;,
+    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
 </code>
 
@@ -123,7 +124,7 @@ initialization nullifier exists</li>
 </div>
 </div><code class="code-header">pub fn <span class="fn">read_unsafe</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = <T as Packable>::N&gt;,
+    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
 </code>
 
@@ -169,7 +170,7 @@ behind the scenes.</li>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = <T as Packable>::N&gt;,
+    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
 </code>
 
@@ -204,7 +205,7 @@ historical block header that is being referenced by this private function.</li>
 
 <div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = <T as Packable>::N&gt;,
+    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
     T: Eq
 </code>
 

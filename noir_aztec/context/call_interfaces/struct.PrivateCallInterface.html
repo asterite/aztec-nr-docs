@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateCallInterface</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call">call</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateCallInterface</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call">call</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#view">view</a></li>
 </ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface&lt;M&gt;-for-PrivateCallInterface">CallInterface&lt;M&gt;</a></li>
@@ -32,12 +33,12 @@
     is_static: bool,
 ) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <code class="code-header">pub fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -117,7 +118,7 @@ of every #[private] function as <code>context</code>, through the
 </div>
 </div><code class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">

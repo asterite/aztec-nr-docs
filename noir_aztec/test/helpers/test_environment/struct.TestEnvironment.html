@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct TestEnvironment</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#advance_next_block_timestamp_by">advance_next_block_timestamp_by</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct TestEnvironment</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#advance_next_block_timestamp_by">advance_next_block_timestamp_by</a></li>
 <li><a href="#call_private">call_private</a></li>
 <li><a href="#call_public">call_public</a></li>
 <li><a href="#create_contract_account">create_contract_account</a></li>
@@ -296,7 +297,7 @@ relative to the current workspace:</p>
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;,
 ) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -317,7 +318,7 @@ let return_value = env.call_private(caller, SampleContract::at(contract_addr).sa
 </div>
 </div><code class="code-header">pub unconstrained fn <span class="fn">view_private</span>&lt;T, let M: u32&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -327,7 +328,7 @@ executable in a static context, and these produce no side effects).</p>
 </div>
 </div><code class="code-header">pub unconstrained fn <span class="fn">simulate_utility</span>&lt;T, let M: u32&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -344,7 +345,7 @@ let return_value = env.simulate_utility(SampleContract::at(contract_addr).sample
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;,
 ) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -364,7 +365,7 @@ let return_value = env.call_public(caller, SampleContract::at(contract_addr).sam
 </div>
 </div><code class="code-header">pub unconstrained fn <span class="fn">view_public</span>&lt;T, let M: u32&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicStaticCallInterface.html" class="struct">PublicStaticCallInterface</a>&lt;M, T&gt;) -> T
 where
-    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
+    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
