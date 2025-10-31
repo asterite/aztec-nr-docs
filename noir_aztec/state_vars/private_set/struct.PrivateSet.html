@@ -7,7 +7,9 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateSet</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateSet</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#context">context</a></li>
+<li><a href="#storage_slot">storage_slot</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
 <li><a href="#insert">insert</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#pop_notes">pop_notes</a></li>
@@ -138,8 +140,8 @@ given storage_slot.</li>
 </ul>
 <p>docs:start:struct</p>
 </div>
-<h2>Fields</h2><div class="struct-field"><code class="code-header">context: Context</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">storage_slot: Field</code></div>
+<h2>Fields</h2><div id="context" class="struct-field"><code class="code-header">context: Context</code></div>
+<div class="padded-description"></div><div id="storage_slot" class="struct-field"><code class="code-header">storage_slot: Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, <Note as Packable>::N&gt;) -> BoundedVec&lt;Note, 10&gt;

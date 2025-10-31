@@ -7,7 +7,12 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct FunctionCall</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#to_be_bytes">to_be_bytes</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct FunctionCall</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#args_hash">args_hash</a></li>
+<li><a href="#function_selector">function_selector</a></li>
+<li><a href="#target_address">target_address</a></li>
+<li><a href="#is_public">is_public</a></li>
+<li><a href="#is_static">is_static</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#to_be_bytes">to_be_bytes</a></li>
 </ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Serialize-for-FunctionCall">Serialize</a></li>
 </ul><h2>In module function_call</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.FunctionCall.html" class="struct">FunctionCall</a></div></li>
 </ul></nav>
@@ -20,11 +25,11 @@
     pub is_static: bool,
 }
 </code></pre>
-<h2>Fields</h2><div class="struct-field"><code class="code-header">args_hash: Field</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">function_selector: FunctionSelector</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">target_address: AztecAddress</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">is_public: bool</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">is_static: bool</code></div>
+<h2>Fields</h2><div id="args_hash" class="struct-field"><code class="code-header">args_hash: Field</code></div>
+<div class="padded-description"></div><div id="function_selector" class="struct-field"><code class="code-header">function_selector: FunctionSelector</code></div>
+<div class="padded-description"></div><div id="target_address" class="struct-field"><code class="code-header">target_address: AztecAddress</code></div>
+<div class="padded-description"></div><div id="is_public" class="struct-field"><code class="code-header">is_public: bool</code></div>
+<div class="padded-description"></div><div id="is_static" class="struct-field"><code class="code-header">is_static: bool</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../../noir_aztec/authwit/entrypoint/function_call/struct.FunctionCall.html" class="struct">FunctionCall</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">to_be_bytes</span>(self: <a href="../../../../noir_aztec/authwit/entrypoint/function_call/struct.FunctionCall.html" class="struct">FunctionCall</a>) -> [u8; 98]</code>

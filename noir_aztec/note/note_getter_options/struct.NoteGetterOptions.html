@@ -7,7 +7,16 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct NoteGetterOptions</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct NoteGetterOptions</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#selects">selects</a></li>
+<li><a href="#sorts">sorts</a></li>
+<li><a href="#limit">limit</a></li>
+<li><a href="#offset">offset</a></li>
+<li><a href="#preprocessor">preprocessor</a></li>
+<li><a href="#preprocessor_args">preprocessor_args</a></li>
+<li><a href="#filter">filter</a></li>
+<li><a href="#filter_args">filter_args</a></li>
+<li><a href="#status">status</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
 <li><a href="#select">select</a></li>
 <li><a href="#set_limit">set_limit</a></li>
 <li><a href="#set_offset">set_offset</a></li>
@@ -37,15 +46,15 @@
     pub status: u8,
 }
 </code></pre>
-<h2>Fields</h2><div class="struct-field"><code class="code-header">selects: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, N&gt;</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">sorts: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, N&gt;</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">limit: u32</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">offset: u32</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">preprocessor: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], PreprocessorArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16]</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">preprocessor_args: PreprocessorArgs</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">filter: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16]</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">filter_args: FilterArgs</code></div>
-<div class="padded-description"></div><div class="struct-field"><code class="code-header">status: u8</code></div>
+<h2>Fields</h2><div id="selects" class="struct-field"><code class="code-header">selects: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, N&gt;</code></div>
+<div class="padded-description"></div><div id="sorts" class="struct-field"><code class="code-header">sorts: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, N&gt;</code></div>
+<div class="padded-description"></div><div id="limit" class="struct-field"><code class="code-header">limit: u32</code></div>
+<div class="padded-description"></div><div id="offset" class="struct-field"><code class="code-header">offset: u32</code></div>
+<div class="padded-description"></div><div id="preprocessor" class="struct-field"><code class="code-header">preprocessor: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], PreprocessorArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16]</code></div>
+<div class="padded-description"></div><div id="preprocessor_args" class="struct-field"><code class="code-header">preprocessor_args: PreprocessorArgs</code></div>
+<div class="padded-description"></div><div id="filter" class="struct-field"><code class="code-header">filter: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16]</code></div>
+<div class="padded-description"></div><div id="filter_args" class="struct-field"><code class="code-header">filter_args: FilterArgs</code></div>
+<div class="padded-description"></div><div id="status" class="struct-field"><code class="code-header">status: u8</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;FilterArgs, let M: u32, Note&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">with_filter</span>(filter: fn([Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [Option&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], filter_args: FilterArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;
