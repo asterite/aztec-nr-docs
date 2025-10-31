@@ -19,16 +19,7 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">macros</a>::functions</div><h1>Module <span id="mod" class="module">functions</span></h1><h2 id="modules">Modules</h2><ul class="item-list"><li><div class="item-name"><a href="initialization_utils/index.html" class="module">initialization_utils</a></div><div class="item-description"></div></li>
-</ul><h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.initializer.html" class="fn">initializer</a></div><div class="item-description">An initializer function is similar to a constructor:</p>
-<ul>
-<li>it can only be called once</li>
-<li>if there are multiple initializer functions, only one of them can be called</li>
-<li>no non-initializer functions can be called until an initializer has ben called (except <code>noinitcheck</code> functions)</li>
-</ul></div></li>
-<li><div class="item-name"><a href="fn.noinitcheck.html" class="fn">noinitcheck</a></div><div class="item-description">Functions with noinitcheck can be called before contract initialization.</div></li>
-<li><div class="item-name"><a href="fn.internal.html" class="fn">internal</a></div><div class="item-description">Internal functions can only be called by the contract itself, typically from private into public.</div></li>
-<li><div class="item-name"><a href="fn.view.html" class="fn">view</a></div><div class="item-description">View functions can only be called in a static execution context.</div></li>
-<li><div class="item-name"><a href="fn.authorize_once.html" class="fn">authorize_once</a></div><div class="item-description">Private and public functions can require an authorization check to be performed before execution. This
+</ul><h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.authorize_once.html" class="fn">authorize_once</a></div><div class="item-description">Private and public functions can require an authorization check to be performed before execution. This
 is typically the case when the function allows performing an action on behalf of someone who is not
 the caller.
 This macro injects the necessary code to perform the check via the authwit mechanism and additionally
@@ -36,11 +27,20 @@ emit the authorization request as an offchain effect, so a user/wallet can verif
 being asked to sign.
 This check also emits a nullifier with the provided nonce argument, so authorizations are valid
 once and only once, preventing replay attacks.</div></li>
+<li><div class="item-name"><a href="fn.initializer.html" class="fn">initializer</a></div><div class="item-description">An initializer function is similar to a constructor:</p>
+<ul>
+<li>it can only be called once</li>
+<li>if there are multiple initializer functions, only one of them can be called</li>
+<li>no non-initializer functions can be called until an initializer has ben called (except <code>noinitcheck</code> functions)</li>
+</ul></div></li>
+<li><div class="item-name"><a href="fn.internal.html" class="fn">internal</a></div><div class="item-description">Internal functions can only be called by the contract itself, typically from private into public.</div></li>
+<li><div class="item-name"><a href="fn.noinitcheck.html" class="fn">noinitcheck</a></div><div class="item-description">Functions with noinitcheck can be called before contract initialization.</div></li>
 <li><div class="item-name"><a href="fn.private.html" class="fn">private</a></div><div class="item-description">Private functions are executed client-side and preserve privacy.</div></li>
 <li><div class="item-name"><a href="fn.public.html" class="fn">public</a></div><div class="item-description">Public functions are executed sequencer-side and do not preserve privacy, similar to the EVM.</div></li>
 <li><div class="item-name"><a href="fn.utility.html" class="fn">utility</a></div><div class="item-description">Utility functions are standalone unconstrained functions that cannot be called from another function in a contract.
 They are typically used either to obtain some information from the contract (e.g. token balance of a user) or to
 modify internal contract-related state of PXE (e.g. processing logs in Aztec.nr during sync).</div></li>
+<li><div class="item-name"><a href="fn.view.html" class="fn">view</a></div><div class="item-description">View functions can only be called in a static execution context.</div></li>
 </ul></main>
 </body>
 </html>
