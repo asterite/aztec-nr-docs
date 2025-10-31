@@ -7,7 +7,7 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct PrivateMutable</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateMutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
 <li><a href="#get_note">get_note</a></li>
 <li><a href="#initialize">initialize</a></li>
 <li><a href="#initialize_or_replace">initialize_or_replace</a></li>
@@ -15,7 +15,7 @@
 <li><a href="#new">new</a></li>
 <li><a href="#replace">replace</a></li>
 <li><a href="#view_note">view_note</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot<1>-for-PrivateMutable">HasStorageSlot<1></a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-PrivateMutable">HasStorageSlot&lt;1&gt;</a></li>
 </ul><h2>In module private_mutable</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateMutable.html" class="struct">PrivateMutable</a></div></li>
 </ul></nav>
 <main>
@@ -99,9 +99,9 @@ current value at the given storage_slot.</li>
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
-<code id="initialize" class="code-header">pub fn <span class="fn">initialize</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">initialize</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>
 </code>
@@ -159,9 +159,9 @@ and deliver the note to its intended recipient.</li>
 slot and can leak privacy information (see <code>compute_initialization_nullifier</code>
 documentation).</p>
 </div>
-</div><code id="replace" class="code-header">pub fn <span class="fn">replace</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, new_note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
+</div><code class="code-header">pub fn <span class="fn">replace</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, new_note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>
 </code>
@@ -203,9 +203,9 @@ decide how to encrypt and deliver this note to its intended recipient.</li>
 <p>The nullification of the previous note ensures that it cannot be used again,
 maintaining the invariant that a PrivateMutable has exactly one current note.</p>
 </div>
-</div><code id="initialize_or_replace" class="code-header">pub fn <span class="fn">initialize_or_replace</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
+</div><code class="code-header">pub fn <span class="fn">initialize_or_replace</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>
 </code>
@@ -231,9 +231,9 @@ the note, or <code>.discard()</code> to skip emission.
 See NoteEmission documentation for more details.</li>
 </ul>
 </div>
-</div><code id="get_note" class="code-header">pub fn <span class="fn">get_note</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
+</div><code class="code-header">pub fn <span class="fn">get_note</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>
 </code>
@@ -281,9 +281,9 @@ the new note will have a different nullifier, allowing it to be consumed in
 the future.</p>
 <p>docs:start:get_note</p>
 </div>
-</div><h3><code class="code-header">impl&lt;Context, Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, Context&gt;</code></h3>
+</div></div><h3><code class="code-header">impl&lt;Context, Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, Context&gt;</code></h3>
 
-<code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, Context&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, Context&gt;</code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a new PrivateMutable state variable.</p>
@@ -304,7 +304,7 @@ behind the scenes.</li>
 </ul>
 <p>docs:start:new</p>
 </div>
-</div><code id="compute_initialization_nullifier" class="code-header">pub fn <span class="fn">compute_initialization_nullifier</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, Context&gt;) -> Field</code>
+</div><code class="code-header">pub fn <span class="fn">compute_initialization_nullifier</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, Context&gt;) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Computes the nullifier that will be created when this PrivateMutable is first
@@ -325,9 +325,9 @@ the storage location.</p>
 if the underlying note's <code>compute_nullifier()</code> method is designed to ensure privacy
 (e.g., by incorporating the note owner's nullifier secret key into the nullifier preimage).</p>
 </div>
-</div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
+</div></div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
-<code id="is_initialized" class="code-header">pub unconstrained fn <span class="fn">is_initialized</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> bool
+<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">is_initialized</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> bool
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
@@ -344,9 +344,9 @@ is an unconstrained environment on the user's local device.</p>
 nullifier exists), <code>false</code> otherwise.</li>
 </ul>
 </div>
-</div><code id="view_note" class="code-header">pub unconstrained fn <span class="fn">view_note</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> Note
+</div><code class="code-header">pub unconstrained fn <span class="fn">view_note</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> Note
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -367,8 +367,10 @@ state.</p>
 </ul>
 <p>docs:start:view_note</p>
 </div>
-</div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot<1>-for-PrivateMutable"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;T, Context&gt;</code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-PrivateMutable"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;T, Context&gt;</code></h3>
 
-</main>
+<div class="padded-methods"><code id="get_storage_slot" class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;T, Context&gt;) -> Field</code>
+
+</div></main>
 </body>
 </html>

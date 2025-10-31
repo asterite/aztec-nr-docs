@@ -7,7 +7,7 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct MessageDeliveryEnum</h2><h2>In module event_interface</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.MessageDeliveryEnum.html" class="struct">MessageDeliveryEnum</a></div></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct MessageDeliveryEnum</a></h2><h2>In module event_interface</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.MessageDeliveryEnum.html" class="struct">MessageDeliveryEnum</a></div></li>
 </ul><h3>Traits</h3><ul class="item-list"><li><a href="trait.EventInterface.html" class="trait">EventInterface</a></div></li>
 </ul><h3>Globals</h3><ul class="item-list"><li><a href="global.MessageDelivery.html" class="global">MessageDelivery</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.emit_event_in_private.html" class="fn">emit_event_in_private</a></div></li>
@@ -43,7 +43,7 @@
 over unconstrained encryption and is slower to prove (requiring more constraints).</p>
 <p>There are three available delivery modes described below.</p>
 </div>
-<h2>Fields</h2><h3><code class="code-header">CONSTRAINED_ONCHAIN: u8</code></h3>
+<h2>Fields</h2><div class="struct-field"><code class="code-header">CONSTRAINED_ONCHAIN: u8</code></div>
 <div class="padded-description"><div class="comments">
 <ol>
 <li>Constrained On-chain</li>
@@ -65,7 +65,7 @@ functions. This pattern applies to all critical events that require universal br
 The tag prefixing is unconstrained, meaning a malicious sender could manipulate the tag to prevent
 recipient decryption. TODO(#14565): Implement proper constrained tag prefixing.</p>
 </div>
-</div><h3><code class="code-header">UNCONSTRAINED_ONCHAIN: u8</code></h3>
+</div><div class="struct-field"><code class="code-header">UNCONSTRAINED_ONCHAIN: u8</code></div>
 <div class="padded-description"><div class="comments">
 <ol start="2">
 <li>Unconstrained On-chain</li>
@@ -82,7 +82,7 @@ contract's decryption keys, they receive the message on-chain and are willing to
 contained in the message is legitimate.</li>
 </ul>
 </div>
-</div><h3><code class="code-header">UNCONSTRAINED_OFFCHAIN: u8</code></h3>
+</div><div class="struct-field"><code class="code-header">UNCONSTRAINED_OFFCHAIN: u8</code></div>
 <div class="padded-description"><div class="comments">
 <ol start="3">
 <li>Out-of-band</li>

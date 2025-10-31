@@ -7,12 +7,12 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct UtilityCallInterface</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_args">get_args</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct UtilityCallInterface</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_args">get_args</a></li>
 <li><a href="#get_contract_address">get_contract_address</a></li>
 <li><a href="#get_name">get_name</a></li>
 <li><a href="#get_selector">get_selector</a></li>
 <li><a href="#new">new</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface<M>-for-UtilityCallInterface">CallInterface<M></a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface&lt;M&gt;-for-UtilityCallInterface">CallInterface&lt;M&gt;</a></li>
 </ul><h2>In module call_interfaces</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a></div></li>
 <li><a href="struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a></div></li>
 <li><a href="struct.PublicCallInterface.html" class="struct">PublicCallInterface</a></div></li>
@@ -26,23 +26,33 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;</code></h3>
 
-<code id="new" class="code-header">pub fn <span class="fn">new</span>(
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(
     target_contract: AztecAddress,
     selector: FunctionSelector,
-    name: str<M>,
+    name: str&lt;M&gt;,
     args: [Field],
 ) -> <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;</code>
 
-<code id="get_args" class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
+<code class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
+
+<code class="code-header">pub fn <span class="fn">get_selector</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> FunctionSelector</code>
+
+<code class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> str&lt;M&gt;</code>
+
+<code class="code-header">pub fn <span class="fn">get_contract_address</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> AztecAddress</code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-CallInterface&lt;M&gt;-for-UtilityCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;</code></h3>
+
+<div class="padded-methods"><code id="get_args" class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
 
 <code id="get_selector" class="code-header">pub fn <span class="fn">get_selector</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> FunctionSelector</code>
 
-<code id="get_name" class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> str<M></code>
+<code id="get_name" class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> str&lt;M&gt;</code>
 
 <code id="get_contract_address" class="code-header">pub fn <span class="fn">get_contract_address</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> AztecAddress</code>
 
-<h2>Trait implementations</h2><h3 id="impl-CallInterface<M>-for-UtilityCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;</code></h3>
+<code id="get_is_static" class="code-header">pub fn <span class="fn">get_is_static</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> bool</code>
 
-</main>
+</div></main>
 </body>
 </html>

@@ -7,7 +7,7 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct EventSelector</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#from_signature">from_signature</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct EventSelector</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#from_signature">from_signature</a></li>
 <li><a href="#from_u32">from_u32</a></li>
 <li><a href="#zero">zero</a></li>
 </ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-EventSelector">Eq</a></li>
@@ -24,24 +24,40 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
 
-<code id="from_u32" class="code-header">pub fn <span class="fn">from_u32</span>(value: u32) -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">from_u32</span>(value: u32) -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
 
-<code id="from_signature" class="code-header">pub fn <span class="fn">from_signature</span>&lt;let N: u32&gt;(signature: str<N>) -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
+<code class="code-header">pub fn <span class="fn">from_signature</span>&lt;let N: u32&gt;(signature: str&lt;N&gt;) -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
 
-<code id="zero" class="code-header">pub fn <span class="fn">zero</span>() -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
+<code class="code-header">pub fn <span class="fn">zero</span>() -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
 
-<h2>Trait implementations</h2><h3 id="impl-Eq-for-EventSelector"><code class="code-header">impl Eq for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-EventSelector"><code class="code-header">impl Eq for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
 
-<h3 id="impl-FromField-for-EventSelector"><code class="code-header">impl FromField for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+<div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a>, _other: <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a>) -> bool</code>
 
-<h3 id="impl-ToField-for-EventSelector"><code class="code-header">impl ToField for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+</div><h3 id="impl-FromField-for-EventSelector"><code class="code-header">impl FromField for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
 
-<h3 id="impl-Empty-for-EventSelector"><code class="code-header">impl Empty for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+<div class="padded-methods"><code id="from_field" class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
 
-<h3 id="impl-Serialize-for-EventSelector"><code class="code-header">impl Serialize for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+</div><h3 id="impl-ToField-for-EventSelector"><code class="code-header">impl ToField for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
 
-<h3 id="impl-Deserialize-for-EventSelector"><code class="code-header">impl Deserialize for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+<div class="padded-methods"><code id="to_field" class="code-header">pub fn <span class="fn">to_field</span>(self: <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a>) -> Field</code>
 
-</main>
+</div><h3 id="impl-Empty-for-EventSelector"><code class="code-header">impl Empty for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+
+<div class="padded-methods"><code id="empty" class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
+
+<code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a>) -> bool</code>
+
+<code id="assert_empty" class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Serialize-for-EventSelector"><code class="code-header">impl Serialize for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+
+<div class="padded-methods"><code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a>) -> [Field; 1]</code>
+
+</div><h3 id="impl-Deserialize-for-EventSelector"><code class="code-header">impl Deserialize for <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
+
+<div class="padded-methods"><code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1]) -> <a href="../../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code>
+
+</div></main>
 </body>
 </html>

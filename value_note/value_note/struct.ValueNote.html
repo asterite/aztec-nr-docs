@@ -7,12 +7,12 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct ValueNote</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<h1><a href="../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct ValueNote</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
 <li><a href="#value">value</a></li>
 </ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-ValueNote">Eq</a></li>
 <li><a href="#impl-NoteType-for-ValueNote">NoteType</a></li>
 <li><a href="#impl-NoteHash-for-ValueNote">NoteHash</a></li>
-<li><a href="#impl-NoteProperties-for-ValueNote">NoteProperties</a></li>
+<li><a href="#impl-NoteProperties&lt;ValueNoteProperties&gt;-for-ValueNote">NoteProperties&lt;ValueNoteProperties&gt;</a></li>
 <li><a href="#impl-Packable-for-ValueNote">Packable</a></li>
 </ul><h2>In module value_note</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.ValueNoteProperties.html" class="struct">ValueNoteProperties</a></div></li>
 <li><a href="struct.ValueNote.html" class="struct">ValueNote</a></div></li>
@@ -23,20 +23,40 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
-<code id="new" class="code-header">pub fn <span class="fn">new</span>(value: Field, owner: AztecAddress) -> <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(value: Field, owner: AztecAddress) -> <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code>
 
-<code id="value" class="code-header">pub fn <span class="fn">value</span>(self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>) -> Field</code>
+<code class="code-header">pub fn <span class="fn">value</span>(self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>) -> Field</code>
 
-<h2>Trait implementations</h2><h3 id="impl-Eq-for-ValueNote"><code class="code-header">impl Eq for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-ValueNote"><code class="code-header">impl Eq for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
-<h3 id="impl-NoteType-for-ValueNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+<div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>, _other: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>) -> bool</code>
 
-<h3 id="impl-NoteHash-for-ValueNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+</div><h3 id="impl-NoteType-for-ValueNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
-<h3 id="impl-NoteProperties-for-ValueNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../value_note/value_note/struct.ValueNoteProperties.html" class="struct">ValueNoteProperties</a>&gt; for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+<div class="padded-methods"><code id="get_id" class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
 
-<h3 id="impl-Packable-for-ValueNote"><code class="code-header">impl Packable for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+</div><h3 id="impl-NoteHash-for-ValueNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
-</main>
+<div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>, storage_slot: Field) -> Field</code>
+
+<code id="compute_nullifier" class="code-header">pub fn <span class="fn">compute_nullifier</span>(
+    self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>,
+    context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
+    note_hash_for_nullify: Field,
+) -> Field</code>
+
+<code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>, note_hash_for_nullify: Field) -> Field</code>
+
+</div><h3 id="impl-NoteProperties&lt;ValueNoteProperties&gt;-for-ValueNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../value_note/value_note/struct.ValueNoteProperties.html" class="struct">ValueNoteProperties</a>&gt; for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+
+<div class="padded-methods"><code id="properties" class="code-header">pub fn <span class="fn">properties</span>() -> <a href="../../value_note/value_note/struct.ValueNoteProperties.html" class="struct">ValueNoteProperties</a></code>
+
+</div><h3 id="impl-Packable-for-ValueNote"><code class="code-header">impl Packable for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
+
+<div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a>) -> [Field; 3]</code>
+
+<code id="unpack" class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code>
+
+</div></main>
 </body>
 </html>

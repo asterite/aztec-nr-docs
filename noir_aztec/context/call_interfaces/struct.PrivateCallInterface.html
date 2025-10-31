@@ -7,10 +7,10 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct PrivateCallInterface</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call">call</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateCallInterface</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call">call</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#view">view</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface<M>-for-PrivateCallInterface">CallInterface<M></a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface&lt;M&gt;-for-PrivateCallInterface">CallInterface&lt;M&gt;</a></li>
 </ul><h2>In module call_interfaces</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a></div></li>
 <li><a href="struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a></div></li>
 <li><a href="struct.PublicCallInterface.html" class="struct">PublicCallInterface</a></div></li>
@@ -24,20 +24,20 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
 
-<code id="new" class="code-header">pub fn <span class="fn">new</span>(
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(
     target_contract: AztecAddress,
     selector: FunctionSelector,
-    name: str<M>,
+    name: str&lt;M&gt;,
     args: [Field],
     is_static: bool,
 ) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;
 where
-    T: Deserialize<N = <T as Deserialize>::N>
+    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
 </code>
 
-<code id="call" class="code-header">pub fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+<code class="code-header">pub fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
-    T: Deserialize<N = <T as Deserialize>::N>
+    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -115,9 +115,9 @@ of every #[private] function as <code>context</code>, through the
 <li><code>T</code> - Whatever data the called function has returned.</li>
 </ul>
 </div>
-</div><code id="view" class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+</div><code class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
-    T: Deserialize<N = <T as Deserialize>::N>
+    T: Deserialize&lt;N = <T as Deserialize>::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -137,8 +137,18 @@ of every #[private] function as <code>context</code>, through the
 <li><code>T</code> - Whatever data the called function has returned.</li>
 </ul>
 </div>
-</div><h2>Trait implementations</h2><h3 id="impl-CallInterface<M>-for-PrivateCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-CallInterface&lt;M&gt;-for-PrivateCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
 
-</main>
+<div class="padded-methods"><code id="get_args" class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
+
+<code id="get_selector" class="code-header">pub fn <span class="fn">get_selector</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> FunctionSelector</code>
+
+<code id="get_name" class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> str&lt;M&gt;</code>
+
+<code id="get_contract_address" class="code-header">pub fn <span class="fn">get_contract_address</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> AztecAddress</code>
+
+<code id="get_is_static" class="code-header">pub fn <span class="fn">get_is_static</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> bool</code>
+
+</div></main>
 </body>
 </html>

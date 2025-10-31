@@ -7,7 +7,7 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct MessageContext</h2><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-MessageContext">Eq</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct MessageContext</a></h2><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-MessageContext">Eq</a></li>
 <li><a href="#impl-Deserialize-for-MessageContext">Deserialize</a></li>
 </ul><h2>In module message_context</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.MessageContext.html" class="struct">MessageContext</a></div></li>
 </ul></nav>
@@ -25,14 +25,18 @@
 in order to perform validation, store results, etc. For example, messages containing notes require knowledge of note
 hashes and the first nullifier in order to find the note's nonce.</p>
 </div>
-<h2>Fields</h2><h3><code class="code-header">tx_hash: Field</code></h3>
-<div class="padded-description"></div><h3><code class="code-header">unique_note_hashes_in_tx: BoundedVec&lt;Field, 64&gt;</code></h3>
-<div class="padded-description"></div><h3><code class="code-header">first_nullifier_in_tx: Field</code></h3>
-<div class="padded-description"></div><h3><code class="code-header">recipient: AztecAddress</code></h3>
+<h2>Fields</h2><div class="struct-field"><code class="code-header">tx_hash: Field</code></div>
+<div class="padded-description"></div><div class="struct-field"><code class="code-header">unique_note_hashes_in_tx: BoundedVec&lt;Field, 64&gt;</code></div>
+<div class="padded-description"></div><div class="struct-field"><code class="code-header">first_nullifier_in_tx: Field</code></div>
+<div class="padded-description"></div><div class="struct-field"><code class="code-header">recipient: AztecAddress</code></div>
 <div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-MessageContext"><code class="code-header">impl Eq for <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a></code></h3>
 
-<h3 id="impl-Deserialize-for-MessageContext"><code class="code-header">impl Deserialize for <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a></code></h3>
+<div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a>, _other: <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a>) -> bool</code>
 
-</main>
+</div><h3 id="impl-Deserialize-for-MessageContext"><code class="code-header">impl Deserialize for <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a></code></h3>
+
+<div class="padded-methods"><code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 68]) -> <a href="../../../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a></code>
+
+</div></main>
 </body>
 </html>

@@ -7,7 +7,7 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct AccountActions</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#entrypoint">entrypoint</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct AccountActions</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#entrypoint">entrypoint</a></li>
 <li><a href="#init">init</a></li>
 <li><a href="#verify_private_authwit">verify_private_authwit</a></li>
 </ul><h2>In module account</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.AccountActions.html" class="struct">AccountActions</a></div></li>
@@ -18,11 +18,11 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;Context&gt; <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;Context&gt;</code></h3>
 
-<code id="init" class="code-header">pub fn <span class="fn">init</span>(context: Context, is_valid_impl: fn(&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, Field) -> bool) -> <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;Context&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">init</span>(context: Context, is_valid_impl: fn(&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, Field) -> bool) -> <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;Context&gt;</code>
 
-<h3><code class="code-header">impl <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
+</div><h3><code class="code-header">impl <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
-<code id="entrypoint" class="code-header">pub fn <span class="fn">entrypoint</span>(
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">entrypoint</span>(
     self: <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;,
     app_payload: <a href="../../../noir_aztec/authwit/entrypoint/app/struct.AppPayload.html" class="struct">AppPayload</a>,
     fee_payload: <a href="../../../noir_aztec/authwit/entrypoint/fee/struct.FeePayload.html" class="struct">FeePayload</a>,
@@ -36,7 +36,7 @@ Will execute the <code>fee_payload</code> as part of the setup, and then enter t
 <p>@param app_payload The payload that contains the calls to be executed in the app phase.
 @param fee_payload The payload that contains the calls to be executed in the setup phase.</p>
 </div>
-</div><code id="verify_private_authwit" class="code-header">pub fn <span class="fn">verify_private_authwit</span>(self: <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, inner_hash: Field) -> Field</code>
+</div><code class="code-header">pub fn <span class="fn">verify_private_authwit</span>(self: <a href="../../../noir_aztec/authwit/account/struct.AccountActions.html" class="struct">AccountActions</a>&lt;&mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, inner_hash: Field) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Verifies that the <code>msg_sender</code> is authorized to consume <code>inner_hash</code> by the account.</p>
@@ -45,6 +45,6 @@ Then executes the <code>is_valid_impl</code> function to verify that the message
 <p>Will revert if the message is not authorized.</p>
 <p>@param inner_hash The hash of the message that the <code>msg_sender</code> is trying to consume.</p>
 </div>
-</div></main>
+</div></div></main>
 </body>
 </html>

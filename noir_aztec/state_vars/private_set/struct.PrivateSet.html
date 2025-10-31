@@ -7,13 +7,13 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1>aztec-nr</h1><h2>Struct PrivateSet</h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1><h2><a href="#struct">Struct PrivateSet</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
 <li><a href="#insert">insert</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#pop_notes">pop_notes</a></li>
 <li><a href="#remove">remove</a></li>
 <li><a href="#view_notes">view_notes</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot<1>-for-PrivateSet">HasStorageSlot<1></a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-PrivateSet">HasStorageSlot&lt;1&gt;</a></li>
 </ul><h2>In module private_set</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateSet.html" class="struct">PrivateSet</a></div></li>
 </ul></nav>
 <main>
@@ -138,13 +138,13 @@ given storage_slot.</li>
 </ul>
 <p>docs:start:struct</p>
 </div>
-<h2>Fields</h2><h3><code class="code-header">context: Context</code></h3>
-<div class="padded-description"></div><h3><code class="code-header">storage_slot: Field</code></h3>
+<h2>Fields</h2><div class="struct-field"><code class="code-header">context: Context</code></div>
+<div class="padded-description"></div><div class="struct-field"><code class="code-header">storage_slot: Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
-<code id="view_notes" class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, <Note as Packable>::N&gt;) -> BoundedVec&lt;Note, 10&gt;
+<div class="padded-methods"><code class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, <Note as Packable>::N&gt;) -> BoundedVec&lt;Note, 10&gt;
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -163,11 +163,11 @@ call to the PXE.</li>
 </ul>
 <p>docs:start:view_notes</p>
 </div>
-</div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
+</div></div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
-<code id="insert" class="code-header">pub fn <span class="fn">insert</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">insert</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
 where
-    Note: Packable<N = <Note as Packable>::N>,
+    Note: Packable&lt;N = <Note as Packable>::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -246,9 +246,9 @@ yield a <code>unique_siloed_note_hash</code> (see the protocol spec for more).</
 </ul>
 <p>docs:start:insert</p>
 </div>
-</div><code id="pop_notes" class="code-header">pub fn <span class="fn">pop_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: u32&gt;(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;) -> BoundedVec&lt;Note, 16&gt;
+</div><code class="code-header">pub fn <span class="fn">pop_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: u32&gt;(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;) -> BoundedVec&lt;Note, 16&gt;
 where
-    Note: Packable<N = M>,
+    Note: Packable&lt;N = M&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -341,7 +341,7 @@ supports efficient non-membership proofs.</li>
 </li>
 </ul>
 </div>
-</div><code id="remove" class="code-header">pub fn <span class="fn">remove</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, retrieved_note: <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;)
+</div><code class="code-header">pub fn <span class="fn">remove</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, retrieved_note: <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;)
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
@@ -384,9 +384,9 @@ easier ways to customize your own note encryption options.</p>
 </li>
 </ul>
 </div>
-</div><code id="get_notes" class="code-header">pub fn <span class="fn">get_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: u32&gt;(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;) -> BoundedVec&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, 16&gt;
+</div><code class="code-header">pub fn <span class="fn">get_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: u32&gt;(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;, options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;) -> BoundedVec&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, 16&gt;
 where
-    Note: Packable<N = M>,
+    Note: Packable&lt;N = M&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: Eq
@@ -455,9 +455,9 @@ note was indeed emitted by some earlier execution frame of this tx.</li>
 </li>
 </ul>
 </div>
-</div><h3><code class="code-header">impl&lt;Context, Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, Context&gt;</code></h3>
+</div></div><h3><code class="code-header">impl&lt;Context, Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, Context&gt;</code></h3>
 
-<code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, Context&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, Context&gt;</code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a new PrivateSet state variable.</p>
@@ -478,8 +478,10 @@ have to worry about this, as it's managed behind the scenes.</li>
 </ul>
 <p>docs:start:new</p>
 </div>
-</div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot<1>-for-PrivateSet"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;T, Context&gt;</code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-PrivateSet"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;T, Context&gt;</code></h3>
 
-</main>
+<div class="padded-methods"><code id="get_storage_slot" class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;T, Context&gt;) -> Field</code>
+
+</div></main>
 </body>
 </html>

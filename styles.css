@@ -32,7 +32,6 @@ code {
 
 .code-header {
     display: block;
-    font-weight: 600;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -112,6 +111,10 @@ ul {
     color: #ad7c37;
 }
 
+.padded-methods {
+    padding-left: 2em;
+}
+
 .padded-description {
     padding-left: 2em;
 }
@@ -139,6 +142,10 @@ ul {
     border-bottom: 0;
     margin: 0;
     margin-top: 30px;
+}
+
+.sidebar h1 a, .sidebar h2 a {
+    color: black;
 }
 
 .sidebar h3 {
