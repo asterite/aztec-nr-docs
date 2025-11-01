@@ -22,6 +22,14 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_interface</a></div><h1>Trait <span id="trait" class="trait">NoteHash</span></h1><pre><code>pub trait NoteHash {
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#compute_note_hash"><span class="fn">compute_note_hash</span></a>(self: Self, storage_slot: Field) -> Field;
+    pub fn <a href="#compute_nullifier"><span class="fn">compute_nullifier</span></a>(
+        self: Self,
+        context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
+        note_hash_for_nullify: Field,
+    ) -> Field;
+    pub unconstrained fn <a href="#compute_nullifier_unconstrained"><span class="fn">compute_nullifier_unconstrained</span></a>(self: Self, note_hash_for_nullify: Field) -> Field;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: Self, storage_slot: Field) -> Field</code>

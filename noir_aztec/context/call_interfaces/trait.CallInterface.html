@@ -27,6 +27,12 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">call_interfaces</a></div><h1>Trait <span id="trait" class="trait">CallInterface</span></h1><pre><code>pub trait CallInterface&lt;let N: u32&gt; {
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#get_args"><span class="fn">get_args</span></a>(self: Self) -> [Field];
+    pub fn <a href="#get_selector"><span class="fn">get_selector</span></a>(self: Self) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>;
+    pub fn <a href="#get_name"><span class="fn">get_name</span></a>(self: Self) -> str&lt;N&gt;;
+    pub fn <a href="#get_contract_address"><span class="fn">get_contract_address</span></a>(self: Self) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>;
+    pub fn <a href="#get_is_static"><span class="fn">get_is_static</span></a>(self: Self) -> bool;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="get_args" class="code-header">pub fn <span class="fn">get_args</span>(self: Self) -> [Field]</code>

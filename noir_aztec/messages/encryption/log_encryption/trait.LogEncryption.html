@@ -19,6 +19,9 @@
 </ul></nav>
 <main>
 <div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">encryption</a>::<a href="index.html">log_encryption</a></div><h1>Trait <span id="trait" class="trait">LogEncryption</span></h1><pre><code>pub trait LogEncryption {
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#encrypt_log"><span class="fn">encrypt_log</span></a>&lt;let PlaintextLen: u32&gt;(plaintext: [Field; PlaintextLen], recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> [Field; 17];
+    pub unconstrained fn <a href="#decrypt_log"><span class="fn">decrypt_log</span></a>(ciphertext: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 17&gt;, recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 14&gt;;
 }</code></pre>
 
 <div class="comments">

@@ -123,6 +123,10 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">protocol_types</a>::<a href="index.html">traits</a></div><h1>Trait <span id="trait" class="trait">Deserialize</span></h1><pre><code>pub trait Deserialize {
+    let N: u32;
+
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#deserialize"><span class="fn">deserialize</span></a>(fields: [Field; N]) -> Self;
 }</code></pre>
 
 <div class="comments">
@@ -285,9 +289,9 @@ where
 
 <h3 id="impl-Deserialize-for-MockStruct"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../noir_aztec/test/mocks/mock_struct/struct.MockStruct.html" class="struct">MockStruct</a></code></h3>
 
-<h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
 <h3 id="impl-Deserialize-for-NoteHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></h3>
 
@@ -344,9 +348,9 @@ where
 
 <h3 id="impl-Deserialize-for-ReadRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
+<h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
 <h3 id="impl-Deserialize-for-Scoped"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
 where

@@ -14,6 +14,12 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">history</a>::<a href="index.html">public_storage</a></div><h1>Trait <span id="trait" class="trait">PublicStorageHistoricalRead</span></h1><pre><code>pub trait PublicStorageHistoricalRead {
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#public_storage_historical_read"><span class="fn">public_storage_historical_read</span></a>(
+        header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a>,
+        storage_slot: Field,
+        contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    ) -> Field;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="public_storage_historical_read" class="code-header">pub fn <span class="fn">public_storage_historical_read</span>(

@@ -14,6 +14,15 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">history</a>::<a href="index.html">note_inclusion</a></div><h1>Trait <span id="trait" class="trait">ProveNoteInclusion</span></h1><pre><code>pub trait ProveNoteInclusion {
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#prove_note_inclusion"><span class="fn">prove_note_inclusion</span></a>&lt;Note&gt;(
+        header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a>,
+        retrieved_note: <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;,
+        storage_slot: Field,
+    )
+where
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>
+;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="prove_note_inclusion" class="code-header">pub fn <span class="fn">prove_note_inclusion</span>&lt;Note&gt;(

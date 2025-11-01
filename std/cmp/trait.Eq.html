@@ -163,6 +163,8 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">std</a>::<a href="index.html">cmp</a></div><h1>Trait <span id="trait" class="trait">Eq</span></h1><pre><code>pub trait Eq {
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#eq"><span class="fn">eq</span></a>(self: Self, other: Self) -> bool;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="eq" class="code-header">pub fn <span class="fn">eq</span>(self: Self, other: Self) -> bool</code>
@@ -313,9 +315,9 @@ where
 
 <h3 id="impl-Eq-for-Module"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for Module</code></h3>
 
-<h3 id="impl-Eq-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Eq-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Eq-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
 <h3 id="impl-Eq-for-NonEmptyMerkleTree"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 

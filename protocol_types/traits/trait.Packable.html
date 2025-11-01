@@ -48,6 +48,11 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">protocol_types</a>::<a href="index.html">traits</a></div><h1>Trait <span id="trait" class="trait">Packable</span></h1><pre><code>pub trait Packable {
+    let N: u32;
+
+    <span class="comment">// Required methods</span>
+    pub fn <a href="#pack"><span class="fn">pack</span></a>(self: Self) -> [Field; N];
+    pub fn <a href="#unpack"><span class="fn">unpack</span></a>(fields: [Field; N]) -> Self;
 }</code></pre>
 
 <div class="comments">
