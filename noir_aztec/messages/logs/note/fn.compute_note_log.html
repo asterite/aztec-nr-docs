@@ -18,11 +18,11 @@
 <div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">note</a></div><h1>Function <span class="fn">compute_note_log</span></h1><pre><code>pub fn compute_note_log&lt;Note&gt;(
     note: Note,
     storage_slot: Field,
-    recipient: AztecAddress,
+    recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
 ) -> [Field; 18]
 where
     Note: <a href="../../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;
+    Note: <a href="../../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;
 </code></pre>
 
 </main>

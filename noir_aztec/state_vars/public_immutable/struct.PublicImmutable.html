@@ -72,8 +72,8 @@ pub struct Config \{
 
 <div class="padded-methods"><code id="initialize" class="code-header">pub fn <span class="fn">initialize</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;, value: T)
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
-    T: Eq
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;,
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -99,8 +99,8 @@ as initialized. This prevents double-initialization.</li>
 </div>
 </div><code id="read" class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
-    T: Eq
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;,
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -124,8 +124,8 @@ initialization nullifier exists</li>
 </div>
 </div><code id="read_unsafe" class="code-header">pub fn <span class="fn">read_unsafe</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
-    T: Eq
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;,
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -170,8 +170,8 @@ behind the scenes.</li>
 
 <div class="padded-methods"><code id="read" class="code-header">pub fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
-    T: Eq
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;,
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -205,8 +205,8 @@ historical block header that is being referenced by this private function.</li>
 
 <div class="padded-methods"><code id="read" class="code-header">pub unconstrained fn <span class="fn">read</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;) -> T
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;,
-    T: Eq
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;,
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -220,12 +220,12 @@ is an unconstrained environment on the user's local device.</p>
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;M+1&gt;-for-PublicImmutable"><code class="code-header">impl&lt;Context, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;
 where
-    T: Packable&lt;N = M&gt;
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
 </code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;) -> Field
 where
-    T: Packable&lt;N = M&gt;
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
 </code>
 
 </div></main>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function insert documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2>In module indexed_tree</h2><h3>Modules</h3><ul class="item-list"><li><a href="check_valid_low_leaf/index.html" class="module">check_valid_low_leaf</a></div></li>
+</ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.batch_insert.html" class="fn">batch_insert</a></div></li>
+<li><a href="fn.insert.html" class="fn">insert</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">insert</span></h1><pre><code>pub fn insert&lt;Value, Leaf, let TreeHeight: u32&gt;(
+    snapshot: <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>,
+    value: Value,
+    low_leaf_preimage: Leaf,
+    low_leaf_membership_witness: <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;TreeHeight&gt;,
+    insertion_sibling_path: [Field; TreeHeight],
+) -> <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>
+where
+    Value: <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafValue.html" class="trait">IndexedTreeLeafValue</a>,
+    Leaf: <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafPreimage.html" class="trait">IndexedTreeLeafPreimage</a>&lt;Value&gt;
+</code></pre>
+
+</main>
+</body>
+</html>

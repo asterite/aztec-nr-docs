@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct ScopedNoteHash documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct ScopedNoteHash</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
+<li><a href="#note_hash">note_hash</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#expose_to_public">expose_to_public</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ScopedNoteHash">Deserialize</a></li>
+<li><a href="#impl-Empty-for-ScopedNoteHash">Empty</a></li>
+<li><a href="#impl-Eq-for-ScopedNoteHash">Eq</a></li>
+<li><a href="#impl-Ordered-for-ScopedNoteHash">Ordered</a></li>
+<li><a href="#impl-OrderedValue&lt;Field&gt;-for-ScopedNoteHash">OrderedValue&lt;Field&gt;</a></li>
+<li><a href="#impl-Readable&lt;ScopedReadRequest&gt;-for-ScopedNoteHash">Readable&lt;ScopedReadRequest&gt;</a></li>
+<li><a href="#impl-Scoped&lt;NoteHash&gt;-for-ScopedNoteHash">Scoped&lt;NoteHash&gt;</a></li>
+<li><a href="#impl-Serialize-for-ScopedNoteHash">Serialize</a></li>
+</ul><h2>In module note_hash</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.NoteHash.html" class="struct">NoteHash</a></div></li>
+<li><a href="struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">note_hash</a></div><h1>Struct <span id="struct" class="struct">ScopedNoteHash</span></h1><pre><code>pub struct ScopedNoteHash {
+    pub note_hash: <a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>,
+    pub contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+}
+</code></pre>
+<h2>Fields</h2><div id="note_hash" class="struct-field"><code class="code-header">note_hash: <a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></div>
+<div class="padded-description"></div><div id="contract_address" class="struct-field"><code class="code-header">contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code id="expose_to_public" class="code-header">pub fn <span class="fn">expose_to_public</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 3]) -> <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code>
+
+</div><h3 id="impl-Empty-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>, _other: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> bool</code>
+
+</div><h3 id="impl-Ordered-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">counter</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> u32</code>
+
+</div><h3 id="impl-OrderedValue&lt;Field&gt;-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.OrderedValue.html" class="trait">OrderedValue</a>&lt;Field&gt; for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">value</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> Field</code>
+
+</div><h3 id="impl-Readable&lt;ScopedReadRequest&gt;-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Readable.html" class="trait">Readable</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>&gt; for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">assert_match_read_request</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>, read_request: <a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>)</code>
+
+</div><h3 id="impl-Scoped&lt;NoteHash&gt;-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Scoped.html" class="trait">Scoped</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>&gt; for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">contract_address</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+
+<code class="code-header">pub fn <span class="fn">inner</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> <a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code>
+
+</div><h3 id="impl-Serialize-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>) -> [Field; 3]</code>
+
+</div></main>
+</body>
+</html>

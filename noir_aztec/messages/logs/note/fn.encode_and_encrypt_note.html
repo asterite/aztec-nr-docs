@@ -15,10 +15,10 @@
 <li><a href="fn.encode_and_encrypt_note_unconstrained.html" class="fn">encode_and_encrypt_note_unconstrained</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">note</a></div><h1>Function <span class="fn">encode_and_encrypt_note</span></h1><pre><code>pub fn encode_and_encrypt_note&lt;Note&gt;(context: &mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, recipient: AztecAddress) -> fn[(&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, AztecAddress)](<a href="../../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;)
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">logs</a>::<a href="index.html">note</a></div><h1>Function <span class="fn">encode_and_encrypt_note</span></h1><pre><code>pub fn encode_and_encrypt_note&lt;Note&gt;(context: &mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> fn[(&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>)](<a href="../../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;)
 where
     Note: <a href="../../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: Packable&lt;N = &lt;Note as Packable&gt;::N&gt;
+    Note: <a href="../../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;
 </code></pre>
 
 <div class="comments">

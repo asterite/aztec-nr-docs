@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../../styles.css">
+<title>Struct SplitOrderHints documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../../../index.html">aztec-nr</a></h1><div><a href="../../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct SplitOrderHints</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#sorted_counters_gte">sorted_counters_gte</a></li>
+<li><a href="#sorted_counters_lt">sorted_counters_lt</a></li>
+<li><a href="#sorted_indexes">sorted_indexes</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#empty">empty</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-SplitOrderHints">Eq</a></li>
+</ul><h2>In module get_split_order_hints</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.SplitOrderHints.html" class="struct">SplitOrderHints</a></div></li>
+</ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.get_split_order_hints_asc.html" class="fn">get_split_order_hints_asc</a></div></li>
+<li><a href="fn.get_split_order_hints_desc.html" class="fn">get_split_order_hints_desc</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../../../index.html">aztec-nr</a> - <a href="../../../../index.html">protocol_types</a>::<a href="../../../index.html">utils</a>::<a href="../../index.html">arrays</a>::<a href="../index.html">assert_split_sorted_transformed_value_arrays</a>::<a href="index.html">get_split_order_hints</a></div><h1>Struct <span id="struct" class="struct">SplitOrderHints</span></h1><pre><code>pub struct SplitOrderHints&lt;let N: u32&gt; {
+    pub sorted_counters_lt: [u32; N],
+    pub sorted_counters_gte: [u32; N],
+    pub sorted_indexes: [u32; N],
+}
+</code></pre>
+<h2>Fields</h2><div id="sorted_counters_lt" class="struct-field"><code class="code-header">sorted_counters_lt: [u32; N]</code></div>
+<div class="padded-description"></div><div id="sorted_counters_gte" class="struct-field"><code class="code-header">sorted_counters_gte: [u32; N]</code></div>
+<div class="padded-description"></div><div id="sorted_indexes" class="struct-field"><code class="code-header">sorted_indexes: [u32; N]</code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;</code></h3>
+
+<div class="padded-methods"><code id="empty" class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;</code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-SplitOrderHints"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;</code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self: <a href="../../../../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;, other: <a href="../../../../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;) -> bool</code>
+
+</div></main>
+</body>
+</html>

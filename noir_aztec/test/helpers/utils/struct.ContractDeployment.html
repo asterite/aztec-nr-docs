@@ -31,11 +31,11 @@
 
 <div class="padded-methods"><code id="with_private_initializer" class="code-header">pub unconstrained fn <span class="fn">with_private_initializer</span>&lt;T, let P: u32&gt;(
     self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;,
-    from: AztecAddress,
+    from: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;P, T&gt;,
-) -> AztecAddress
+) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>
 where
-    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -59,11 +59,11 @@ unconstrained fn test_deployment() {
 </div>
 </div><code id="with_public_initializer" class="code-header">pub unconstrained fn <span class="fn">with_public_initializer</span>&lt;let P: u32, T&gt;(
     self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;,
-    from: AztecAddress,
+    from: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     initializer_call: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;P, T&gt;,
-) -> AztecAddress
+) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>
 where
-    T: Deserialize&lt;N = &lt;T as Deserialize&gt;::N&gt;
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -85,7 +85,7 @@ unconstrained fn test_deployment() {
 }
 </code></pre>
 </div>
-</div><code id="without_initializer" class="code-header">pub unconstrained fn <span class="fn">without_initializer</span>(self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;) -> AztecAddress</code>
+</div><code id="without_initializer" class="code-header">pub unconstrained fn <span class="fn">without_initializer</span>(self: <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Finalizes a contract deployment prepared via <code>TestEnvironment::deploy</code> without calling any initializer function.</p>

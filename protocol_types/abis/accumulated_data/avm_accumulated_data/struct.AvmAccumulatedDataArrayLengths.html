@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Struct AvmAccumulatedDataArrayLengths documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct AvmAccumulatedDataArrayLengths</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#l2_to_l1_msgs">l2_to_l1_msgs</a></li>
+<li><a href="#note_hashes">note_hashes</a></li>
+<li><a href="#nullifiers">nullifiers</a></li>
+<li><a href="#public_data_writes">public_data_writes</a></li>
+<li><a href="#public_logs">public_logs</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-AvmAccumulatedDataArrayLengths">Deserialize</a></li>
+<li><a href="#impl-Empty-for-AvmAccumulatedDataArrayLengths">Empty</a></li>
+<li><a href="#impl-Eq-for-AvmAccumulatedDataArrayLengths">Eq</a></li>
+<li><a href="#impl-Serialize-for-AvmAccumulatedDataArrayLengths">Serialize</a></li>
+</ul><h2>In module avm_accumulated_data</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a></div></li>
+<li><a href="struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">abis</a>::<a href="../index.html">accumulated_data</a>::<a href="index.html">avm_accumulated_data</a></div><h1>Struct <span id="struct" class="struct">AvmAccumulatedDataArrayLengths</span></h1><pre><code>pub struct AvmAccumulatedDataArrayLengths {
+    pub note_hashes: u32,
+    pub nullifiers: u32,
+    pub l2_to_l1_msgs: u32,
+    pub public_logs: u32,
+    pub public_data_writes: u32,
+}
+</code></pre>
+<h2>Fields</h2><div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: u32</code></div>
+<div class="padded-description"></div><div id="nullifiers" class="struct-field"><code class="code-header">nullifiers: u32</code></div>
+<div class="padded-description"></div><div id="l2_to_l1_msgs" class="struct-field"><code class="code-header">l2_to_l1_msgs: u32</code></div>
+<div class="padded-description"></div><div id="public_logs" class="struct-field"><code class="code-header">public_logs: u32</code></div>
+<div class="padded-description"></div><div id="public_data_writes" class="struct-field"><code class="code-header">public_data_writes: u32</code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code></h3>
+
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(data: <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a>) -> <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-AvmAccumulatedDataArrayLengths"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 5]) -> <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code>
+
+</div><h3 id="impl-Empty-for-AvmAccumulatedDataArrayLengths"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-AvmAccumulatedDataArrayLengths"><code class="code-header">impl <a href="../../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a>, _other: <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a>) -> bool</code>
+
+</div><h3 id="impl-Serialize-for-AvmAccumulatedDataArrayLengths"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a>) -> [Field; 5]</code>
+
+</div></main>
+</body>
+</html>

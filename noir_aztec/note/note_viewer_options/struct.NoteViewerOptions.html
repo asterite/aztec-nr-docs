@@ -23,15 +23,15 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_viewer_options</a></div><h1>Struct <span id="struct" class="struct">NoteViewerOptions</span></h1><pre><code>pub struct NoteViewerOptions&lt;Note, let M: u32&gt; {
-    pub selects: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, M&gt;,
-    pub sorts: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, M&gt;,
+    pub selects: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, M&gt;,
+    pub sorts: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, M&gt;,
     pub limit: u32,
     pub offset: u32,
     pub status: u8,
 }
 </code></pre>
-<h2>Fields</h2><div id="selects" class="struct-field"><code class="code-header">selects: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, M&gt;</code></div>
-<div class="padded-description"></div><div id="sorts" class="struct-field"><code class="code-header">sorts: BoundedVec&lt;Option&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, M&gt;</code></div>
+<h2>Fields</h2><div id="selects" class="struct-field"><code class="code-header">selects: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Select.html" class="struct">Select</a>&gt;, M&gt;</code></div>
+<div class="padded-description"></div><div id="sorts" class="struct-field"><code class="code-header">sorts: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_getter_options/struct.Sort.html" class="struct">Sort</a>&gt;, M&gt;</code></div>
 <div class="padded-description"></div><div id="limit" class="struct-field"><code class="code-header">limit: u32</code></div>
 <div class="padded-description"></div><div id="offset" class="struct-field"><code class="code-header">offset: u32</code></div>
 <div class="padded-description"></div><div id="status" class="struct-field"><code class="code-header">status: u8</code></div>
@@ -40,7 +40,7 @@
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: Packable&lt;N = M&gt;
+    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
 </code>
 
 <code id="select" class="code-header">pub fn <span class="fn">select</span>&lt;T&gt;(
@@ -50,7 +50,7 @@ where
     value: T,
 ) -> <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;
 where
-    T: ToField
+    T: <a href="../../../protocol_types/traits/trait.ToField.html" class="trait">ToField</a>
 </code>
 
 <code id="sort" class="code-header">pub fn <span class="fn">sort</span>(

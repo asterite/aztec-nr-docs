@@ -15,12 +15,12 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">capsules</a></div><h1>Function <span class="fn">store</span></h1><pre><code>pub unconstrained fn store&lt;T&gt;(
-    contract_address: AztecAddress,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     slot: Field,
     value: T,
 )
 where
-    T: Serialize&lt;N = &lt;T as Serialize&gt;::N&gt;
+    T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;
 </code></pre>
 
 <div class="comments">

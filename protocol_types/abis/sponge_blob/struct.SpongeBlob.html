@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct SpongeBlob documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct SpongeBlob</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#expected_fields">expected_fields</a></li>
+<li><a href="#fields">fields</a></li>
+<li><a href="#sponge">sponge</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#absorb">absorb</a></li>
+<li><a href="#new">new</a></li>
+<li><a href="#new_full_blobs">new_full_blobs</a></li>
+<li><a href="#squeeze">squeeze</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-SpongeBlob">Deserialize</a></li>
+<li><a href="#impl-Empty-for-SpongeBlob">Empty</a></li>
+<li><a href="#impl-Eq-for-SpongeBlob">Eq</a></li>
+<li><a href="#impl-Serialize-for-SpongeBlob">Serialize</a></li>
+</ul><h2>In module sponge_blob</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.SpongeBlob.html" class="struct">SpongeBlob</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">sponge_blob</a></div><h1>Struct <span id="struct" class="struct">SpongeBlob</span></h1><pre><code>pub struct SpongeBlob {
+    pub sponge: <a href="../../../protocol_types/poseidon2/struct.Poseidon2Sponge.html" class="struct">Poseidon2Sponge</a>,
+    pub fields: u32,
+    pub expected_fields: u32,
+}
+</code></pre>
+<h2>Fields</h2><div id="sponge" class="struct-field"><code class="code-header">sponge: <a href="../../../protocol_types/poseidon2/struct.Poseidon2Sponge.html" class="struct">Poseidon2Sponge</a></code></div>
+<div class="padded-description"></div><div id="fields" class="struct-field"><code class="code-header">fields: u32</code></div>
+<div class="padded-description"></div><div id="expected_fields" class="struct-field"><code class="code-header">expected_fields: u32</code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code></h3>
+
+<div class="padded-methods"><code id="new_full_blobs" class="code-header">pub fn <span class="fn">new_full_blobs</span>() -> <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code>
+
+<code id="new" class="code-header">pub fn <span class="fn">new</span>(expected_fields_hint: u32) -> <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code>
+
+<code id="absorb" class="code-header">pub fn <span class="fn">absorb</span>&lt;let N: u32&gt;(
+    &mut self: &mut <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>,
+    input: [Field; N],
+    in_len: u32,
+)</code>
+
+<code id="squeeze" class="code-header">pub fn <span class="fn">squeeze</span>(&mut self: &mut <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>) -> Field</code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-SpongeBlob"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 11]) -> <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code>
+
+</div><h3 id="impl-Empty-for-SpongeBlob"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-SpongeBlob"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>, _other: <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>) -> bool</code>
+
+</div><h3 id="impl-Serialize-for-SpongeBlob"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a>) -> [Field; 11]</code>
+
+</div></main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct Nullifier documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct Nullifier</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#counter">counter</a></li>
+<li><a href="#note_hash">note_hash</a></li>
+<li><a href="#value">value</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#scope">scope</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-Nullifier">Deserialize</a></li>
+<li><a href="#impl-Empty-for-Nullifier">Empty</a></li>
+<li><a href="#impl-Eq-for-Nullifier">Eq</a></li>
+<li><a href="#impl-Ordered-for-Nullifier">Ordered</a></li>
+<li><a href="#impl-OrderedValue&lt;Field&gt;-for-Nullifier">OrderedValue&lt;Field&gt;</a></li>
+<li><a href="#impl-Readable&lt;ScopedReadRequest&gt;-for-Nullifier">Readable&lt;ScopedReadRequest&gt;</a></li>
+<li><a href="#impl-Serialize-for-Nullifier">Serialize</a></li>
+</ul><h2>In module nullifier</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.Nullifier.html" class="struct">Nullifier</a></div></li>
+<li><a href="struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">nullifier</a></div><h1>Struct <span id="struct" class="struct">Nullifier</span></h1><pre><code>pub struct Nullifier {
+    pub value: Field,
+    pub counter: u32,
+    pub note_hash: Field,
+}
+</code></pre>
+<h2>Fields</h2><div id="value" class="struct-field"><code class="code-header">value: Field</code></div>
+<div class="padded-description"></div><div id="counter" class="struct-field"><code class="code-header">counter: u32</code></div>
+<div class="padded-description"></div><div id="note_hash" class="struct-field"><code class="code-header">note_hash: Field</code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code id="scope" class="code-header">pub fn <span class="fn">scope</span>(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-Nullifier"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 3]) -> <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code>
+
+</div><h3 id="impl-Empty-for-Nullifier"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-Nullifier"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, _other: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>) -> bool</code>
+
+</div><h3 id="impl-Ordered-for-Nullifier"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">counter</span>(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>) -> u32</code>
+
+</div><h3 id="impl-OrderedValue&lt;Field&gt;-for-Nullifier"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.OrderedValue.html" class="trait">OrderedValue</a>&lt;Field&gt; for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">value</span>(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>) -> Field</code>
+
+</div><h3 id="impl-Readable&lt;ScopedReadRequest&gt;-for-Nullifier"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Readable.html" class="trait">Readable</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>&gt; for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">assert_match_read_request</span>(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, read_request: <a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>)</code>
+
+</div><h3 id="impl-Serialize-for-Nullifier"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>) -> [Field; 3]</code>
+
+</div></main>
+</body>
+</html>

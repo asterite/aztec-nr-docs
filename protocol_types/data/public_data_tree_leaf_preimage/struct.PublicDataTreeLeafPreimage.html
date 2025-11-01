@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct PublicDataTreeLeafPreimage documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PublicDataTreeLeafPreimage</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#next_index">next_index</a></li>
+<li><a href="#next_slot">next_slot</a></li>
+<li><a href="#slot">slot</a></li>
+<li><a href="#value">value</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#is_empty">is_empty</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-PublicDataTreeLeafPreimage">Empty</a></li>
+<li><a href="#impl-Eq-for-PublicDataTreeLeafPreimage">Eq</a></li>
+<li><a href="#impl-Hash-for-PublicDataTreeLeafPreimage">Hash</a></li>
+<li><a href="#impl-IndexedTreeLeafPreimage&lt;PublicDataTreeLeaf&gt;-for-PublicDataTreeLeafPreimage">IndexedTreeLeafPreimage&lt;PublicDataTreeLeaf&gt;</a></li>
+<li><a href="#impl-LeafPreimage-for-PublicDataTreeLeafPreimage">LeafPreimage</a></li>
+</ul><h2>In module public_data_tree_leaf_preimage</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">data</a>::<a href="index.html">public_data_tree_leaf_preimage</a></div><h1>Struct <span id="struct" class="struct">PublicDataTreeLeafPreimage</span></h1><pre><code>pub struct PublicDataTreeLeafPreimage {
+    pub slot: Field,
+    pub value: Field,
+    pub next_slot: Field,
+    pub next_index: u32,
+}
+</code></pre>
+<h2>Fields</h2><div id="slot" class="struct-field"><code class="code-header">slot: Field</code></div>
+<div class="padded-description"></div><div id="value" class="struct-field"><code class="code-header">value: Field</code></div>
+<div class="padded-description"></div><div id="next_slot" class="struct-field"><code class="code-header">next_slot: Field</code></div>
+<div class="padded-description"></div><div id="next_index" class="struct-field"><code class="code-header">next_index: u32</code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code></h3>
+
+<div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> bool</code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PublicDataTreeLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-PublicDataTreeLeafPreimage"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>, other: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> bool</code>
+
+</div><h3 id="impl-Hash-for-PublicDataTreeLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> Field</code>
+
+</div><h3 id="impl-IndexedTreeLeafPreimage&lt;PublicDataTreeLeaf&gt;-for-PublicDataTreeLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafPreimage.html" class="trait">IndexedTreeLeafPreimage</a>&lt;<a href="../../../protocol_types/data/public_data_tree_leaf/struct.PublicDataTreeLeaf.html" class="struct">PublicDataTreeLeaf</a>&gt; for <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_next_key</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> Field</code>
+
+<code class="code-header">pub fn <span class="fn">points_to_infinity</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">update_pointers</span>(
+    self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>,
+    next_slot: Field,
+    next_index: u32,
+) -> <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code>
+
+<code class="code-header">pub fn <span class="fn">update_value</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>, write: <a href="../../../protocol_types/data/public_data_tree_leaf/struct.PublicDataTreeLeaf.html" class="struct">PublicDataTreeLeaf</a>) -> <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code>
+
+<code class="code-header">pub fn <span class="fn">build_insertion_leaf</span>(write: <a href="../../../protocol_types/data/public_data_tree_leaf/struct.PublicDataTreeLeaf.html" class="struct">PublicDataTreeLeaf</a>, low_leaf: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code>
+
+</div><h3 id="impl-LeafPreimage-for-PublicDataTreeLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.LeafPreimage.html" class="trait">LeafPreimage</a> for <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_key</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> Field</code>
+
+<code class="code-header">pub fn <span class="fn">as_leaf</span>(self: <a href="../../../protocol_types/data/public_data_tree_leaf_preimage/struct.PublicDataTreeLeafPreimage.html" class="struct">PublicDataTreeLeafPreimage</a>) -> Field</code>
+
+</div></main>
+</body>
+</html>

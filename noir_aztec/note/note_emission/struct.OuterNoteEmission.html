@@ -17,7 +17,7 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_emission</a></div><h1>Struct <span id="struct" class="struct">OuterNoteEmission</span></h1><pre><code>pub struct OuterNoteEmission&lt;Note&gt; {
-    pub emission: Option&lt;<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;&gt;,
+    pub emission: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;&gt;,
 }
 </code></pre>
 <div class="comments">
@@ -28,10 +28,10 @@ It is fairly common to have cases where a function conditionally inserts,
 and this allows us to keep the same API for emission in both cases (e.g. inserting
 a change note in a token's transfer function only when there is &quot;change&quot; left).</p>
 </div>
-<h2>Fields</h2><div id="emission" class="struct-field"><code class="code-header">emission: Option&lt;<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;&gt;</code></div>
+<h2>Fields</h2><div id="emission" class="struct-field"><code class="code-header">emission: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;&gt;</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/note/note_emission/struct.OuterNoteEmission.html" class="struct">OuterNoteEmission</a>&lt;Note&gt;</code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(emission: Option&lt;<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;&gt;) -> <a href="../../../noir_aztec/note/note_emission/struct.OuterNoteEmission.html" class="struct">OuterNoteEmission</a>&lt;Note&gt;</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(emission: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;&gt;) -> <a href="../../../noir_aztec/note/note_emission/struct.OuterNoteEmission.html" class="struct">OuterNoteEmission</a>&lt;Note&gt;</code>
 
 <code id="emit" class="code-header">pub fn <span class="fn">emit</span>&lt;Env&gt;(self: <a href="../../../noir_aztec/note/note_emission/struct.OuterNoteEmission.html" class="struct">OuterNoteEmission</a>&lt;Note&gt;, _emit: fn[Env](<a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;))</code>
 

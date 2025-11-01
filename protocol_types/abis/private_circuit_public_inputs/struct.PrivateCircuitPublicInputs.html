@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct PrivateCircuitPublicInputs documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateCircuitPublicInputs</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#args_hash">args_hash</a></li>
+<li><a href="#call_context">call_context</a></li>
+<li><a href="#contract_class_logs_hashes">contract_class_logs_hashes</a></li>
+<li><a href="#end_side_effect_counter">end_side_effect_counter</a></li>
+<li><a href="#historical_header">historical_header</a></li>
+<li><a href="#include_by_timestamp">include_by_timestamp</a></li>
+<li><a href="#is_fee_payer">is_fee_payer</a></li>
+<li><a href="#key_validation_requests_and_generators">key_validation_requests_and_generators</a></li>
+<li><a href="#l2_to_l1_msgs">l2_to_l1_msgs</a></li>
+<li><a href="#min_revertible_side_effect_counter">min_revertible_side_effect_counter</a></li>
+<li><a href="#note_hash_read_requests">note_hash_read_requests</a></li>
+<li><a href="#note_hashes">note_hashes</a></li>
+<li><a href="#nullifier_read_requests">nullifier_read_requests</a></li>
+<li><a href="#nullifiers">nullifiers</a></li>
+<li><a href="#private_call_requests">private_call_requests</a></li>
+<li><a href="#private_logs">private_logs</a></li>
+<li><a href="#public_call_requests">public_call_requests</a></li>
+<li><a href="#public_teardown_call_request">public_teardown_call_request</a></li>
+<li><a href="#returns_hash">returns_hash</a></li>
+<li><a href="#start_side_effect_counter">start_side_effect_counter</a></li>
+<li><a href="#tx_context">tx_context</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-PrivateCircuitPublicInputs">Deserialize</a></li>
+<li><a href="#impl-Empty-for-PrivateCircuitPublicInputs">Empty</a></li>
+<li><a href="#impl-Eq-for-PrivateCircuitPublicInputs">Eq</a></li>
+<li><a href="#impl-Serialize-for-PrivateCircuitPublicInputs">Serialize</a></li>
+</ul><h2>In module private_circuit_public_inputs</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">private_circuit_public_inputs</a></div><h1>Struct <span id="struct" class="struct">PrivateCircuitPublicInputs</span></h1><pre><code>pub struct PrivateCircuitPublicInputs {
+    pub call_context: <a href="../../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a>,
+    pub args_hash: Field,
+    pub returns_hash: Field,
+    pub min_revertible_side_effect_counter: u32,
+    pub is_fee_payer: bool,
+    pub include_by_timestamp: u64,
+    pub note_hash_read_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;,
+    pub nullifier_read_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;,
+    pub key_validation_requests_and_generators: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/validation_requests/key_validation_request_and_generator/struct.KeyValidationRequestAndGenerator.html" class="struct">KeyValidationRequestAndGenerator</a>, 16&gt;,
+    pub note_hashes: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>, 16&gt;,
+    pub nullifiers: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, 16&gt;,
+    pub private_call_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a>, 5&gt;,
+    pub public_call_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>&gt;, 16&gt;,
+    pub public_teardown_call_request: <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>,
+    pub l2_to_l1_msgs: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a>&gt;, 2&gt;,
+    pub private_logs: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, 16&gt;,
+    pub contract_class_logs_hashes: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a>&gt;, 1&gt;,
+    pub start_side_effect_counter: u32,
+    pub end_side_effect_counter: u32,
+    pub historical_header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a>,
+    pub tx_context: <a href="../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a>,
+}
+</code></pre>
+<h2>Fields</h2><div id="call_context" class="struct-field"><code class="code-header">call_context: <a href="../../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></div>
+<div class="padded-description"></div><div id="args_hash" class="struct-field"><code class="code-header">args_hash: Field</code></div>
+<div class="padded-description"></div><div id="returns_hash" class="struct-field"><code class="code-header">returns_hash: Field</code></div>
+<div class="padded-description"></div><div id="min_revertible_side_effect_counter" class="struct-field"><code class="code-header">min_revertible_side_effect_counter: u32</code></div>
+<div class="padded-description"></div><div id="is_fee_payer" class="struct-field"><code class="code-header">is_fee_payer: bool</code></div>
+<div class="padded-description"></div><div id="include_by_timestamp" class="struct-field"><code class="code-header">include_by_timestamp: u64</code></div>
+<div class="padded-description"></div><div id="note_hash_read_requests" class="struct-field"><code class="code-header">note_hash_read_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="nullifier_read_requests" class="struct-field"><code class="code-header">nullifier_read_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="key_validation_requests_and_generators" class="struct-field"><code class="code-header">key_validation_requests_and_generators: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/validation_requests/key_validation_request_and_generator/struct.KeyValidationRequestAndGenerator.html" class="struct">KeyValidationRequestAndGenerator</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="nullifiers" class="struct-field"><code class="code-header">nullifiers: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="private_call_requests" class="struct-field"><code class="code-header">private_call_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a>, 5&gt;</code></div>
+<div class="padded-description"></div><div id="public_call_requests" class="struct-field"><code class="code-header">public_call_requests: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>&gt;, 16&gt;</code></div>
+<div class="padded-description"></div><div id="public_teardown_call_request" class="struct-field"><code class="code-header">public_teardown_call_request: <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a></code></div>
+<div class="padded-description"></div><div id="l2_to_l1_msgs" class="struct-field"><code class="code-header">l2_to_l1_msgs: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a>&gt;, 2&gt;</code></div>
+<div class="padded-description"></div><div id="private_logs" class="struct-field"><code class="code-header">private_logs: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="contract_class_logs_hashes" class="struct-field"><code class="code-header">contract_class_logs_hashes: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a>&gt;, 1&gt;</code></div>
+<div class="padded-description"></div><div id="start_side_effect_counter" class="struct-field"><code class="code-header">start_side_effect_counter: u32</code></div>
+<div class="padded-description"></div><div id="end_side_effect_counter" class="struct-field"><code class="code-header">end_side_effect_counter: u32</code></div>
+<div class="padded-description"></div><div id="historical_header" class="struct-field"><code class="code-header">historical_header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></div>
+<div class="padded-description"></div><div id="tx_context" class="struct-field"><code class="code-header">tx_context: <a href="../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code></div>
+<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-PrivateCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 748]) -> <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code>
+
+</div><h3 id="impl-Empty-for-PrivateCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-PrivateCircuitPublicInputs"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a>, _other: <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a>) -> bool</code>
+
+</div><h3 id="impl-Serialize-for-PrivateCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a>) -> [Field; 748]</code>
+
+</div></main>
+</body>
+</html>

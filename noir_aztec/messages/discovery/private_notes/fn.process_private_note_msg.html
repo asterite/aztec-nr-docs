@@ -14,14 +14,14 @@
 </ul></nav>
 <main>
 <div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::<a href="index.html">private_notes</a></div><h1>Function <span class="fn">process_private_note_msg</span></h1><pre><code>pub unconstrained fn process_private_note_msg&lt;Env&gt;(
-    contract_address: AztecAddress,
+    contract_address: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     tx_hash: Field,
-    unique_note_hashes_in_tx: BoundedVec&lt;Field, 64&gt;,
+    unique_note_hashes_in_tx: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 64&gt;,
     first_nullifier_in_tx: Field,
-    recipient: AztecAddress,
+    recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     compute_note_hash_and_nullifier: ComputeNoteHashAndNullifier&lt;Env&gt;,
     msg_metadata: u64,
-    msg_content: BoundedVec&lt;Field, 13&gt;,
+    msg_content: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 13&gt;,
 )</code></pre>
 
 </main>

@@ -47,7 +47,7 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">public_context</a></div><h1>Struct <span id="struct" class="struct">PublicContext</span></h1><pre><code>pub struct PublicContext {
-    pub args_hash: Option&lt;Field&gt;,
+    pub args_hash: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;Field&gt;,
     pub compute_args_hash: fn() -> Field,
 }
 </code></pre>
@@ -121,7 +121,7 @@ bytecode&quot; instead of the ACIR that private functions (standalone circuits)
 compile to. Therefore the approach to optimising a public function is
 fundamentally different from optimising a public function.</p>
 </div>
-<h2>Fields</h2><div id="args_hash" class="struct-field"><code class="code-header">args_hash: Option&lt;Field&gt;</code></div>
+<h2>Fields</h2><div id="args_hash" class="struct-field"><code class="code-header">args_hash: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;Field&gt;</code></div>
 <div class="padded-description"></div><div id="compute_args_hash" class="struct-field"><code class="code-header">compute_args_hash: fn() -> Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
 
@@ -143,7 +143,7 @@ developers.</p>
 </div>
 </div><code id="emit_public_log" class="code-header">pub fn <span class="fn">emit_public_log</span>&lt;T&gt;(_self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, log: T)
 where
-    T: Serialize&lt;N = &lt;T as Serialize&gt;::N&gt;
+    T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -203,7 +203,7 @@ message.</p>
 </div><code id="nullifier_exists" class="code-header">pub fn <span class="fn">nullifier_exists</span>(
     _self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
     unsiloed_nullifier: Field,
-    address: AztecAddress,
+    address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
 ) -> bool</code>
 
 <div class="padded-description"><div class="comments">
@@ -239,7 +239,7 @@ the contract address that emitted it).</li>
     &mut self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
     content: Field,
     secret: Field,
-    sender: EthAddress,
+    sender: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
     leaf_index: Field,
 )</code>
 
@@ -275,7 +275,7 @@ consume them.</p>
 </div>
 </div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(
     _self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
-    recipient: EthAddress,
+    recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
     content: Field,
 )</code>
 
@@ -305,8 +305,8 @@ submitted -- especially if the block was near the start of an epoch.</p>
 </div>
 </div><code id="call_public_function" class="code-header">pub unconstrained fn <span class="fn">call_public_function</span>(
     _self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field],
     gas_opts: <a href="../../../noir_aztec/context/gas/struct.GasOpts.html" class="struct">GasOpts</a>,
 ) -> [Field]</code>
@@ -328,8 +328,8 @@ submitted -- especially if the block was near the start of an epoch.</p>
 </div>
 </div><code id="static_call_public_function" class="code-header">pub unconstrained fn <span class="fn">static_call_public_function</span>(
     _self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field],
     gas_opts: <a href="../../../noir_aztec/context/gas/struct.GasOpts.html" class="struct">GasOpts</a>,
 ) -> [Field]</code>
@@ -402,7 +402,7 @@ subsequent transactions in the same block</li>
 <li>Used for preventing double-spending and ensuring one-time actions</li>
 </ul>
 </div>
-</div><code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> AztecAddress</code>
+</div><code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the address of the current contract being executed.</p>
@@ -415,7 +415,7 @@ access control or when interacting with other contracts.</p>
 executed.</li>
 </ul>
 </div>
-</div><code id="msg_sender" class="code-header">pub fn <span class="fn">msg_sender</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> AztecAddress</code>
+</div><code id="msg_sender" class="code-header">pub fn <span class="fn">msg_sender</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the contract address that initiated this function call.</p>
@@ -448,7 +448,7 @@ transaction sender</li>
 <li>Globally visible unlike private execution where it's contract-local</li>
 </ul>
 </div>
-</div><code id="selector" class="code-header">pub fn <span class="fn">selector</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> FunctionSelector</code>
+</div><code id="selector" class="code-header">pub fn <span class="fn">selector</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the function selector of the currently-executing function.</p>
@@ -668,7 +668,7 @@ variable abstractions to perform reads: PublicMutable &amp; PublicImmutable.</p>
 </div>
 </div><code id="storage_read" class="code-header">pub fn <span class="fn">storage_read</span>&lt;T&gt;(self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field) -> T
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -712,7 +712,7 @@ variable abstractions to perform writes: PublicMutable &amp; PublicImmutable.</p
     value: T,
 )
 where
-    T: Packable&lt;N = &lt;T as Packable&gt;::N&gt;
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
 </code>
 
 <div class="padded-description"><div class="comments">
@@ -729,7 +729,7 @@ variable abstractions to perform writes: PublicMutable &amp; PublicImmutable.</p
 <li><code>T</code> - The type to write to storage.</li>
 </ul>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PublicContext"><code class="code-header">impl Empty for <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PublicContext"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code>
 
@@ -737,7 +737,7 @@ variable abstractions to perform writes: PublicMutable &amp; PublicImmutable.</p
 
 <code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-PublicContext"><code class="code-header">impl Eq for <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
+</div><h3 id="impl-Eq-for-PublicContext"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, other: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> bool</code>
 

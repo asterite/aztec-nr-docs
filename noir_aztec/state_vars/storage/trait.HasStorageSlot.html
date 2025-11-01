@@ -31,7 +31,7 @@
 
 </div><h2>Implementors</h2><h3 id="impl-HasStorageSlot&lt;M+1&gt;-for-DelayedPublicMutable"><code class="code-header">impl&lt;Context, let InitialDelay: u64, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/delayed_public_mutable/struct.DelayedPublicMutable.html" class="struct">DelayedPublicMutable</a>&lt;T, InitialDelay, Context&gt;
 where
-    DelayedPublicMutableValues&lt;T, InitialDelay&gt;: Packable&lt;N = M&gt;
+    <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, InitialDelay&gt;: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
 </code></h3>
 
 <h3 id="impl-HasStorageSlot&lt;1&gt;-for-Map"><code class="code-header">impl&lt;Context, K, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;</code></h3>
@@ -44,12 +44,12 @@ where
 
 <h3 id="impl-HasStorageSlot&lt;M+1&gt;-for-PublicImmutable"><code class="code-header">impl&lt;Context, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;
 where
-    T: Packable&lt;N = M&gt;
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
 </code></h3>
 
 <h3 id="impl-HasStorageSlot&lt;M&gt;-for-PublicMutable"><code class="code-header">impl&lt;Context, let M: u32, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M&gt; for <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;
 where
-    T: Packable&lt;N = M&gt;
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
 </code></h3>
 
 </main>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Function array_merge documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2>In module arrays</h2><h3>Modules</h3><ul class="item-list"><li><a href="assert_array_appended/index.html" class="module">assert_array_appended</a></div></li>
+<li><a href="assert_array_prepended/index.html" class="module">assert_array_prepended</a></div></li>
+<li><a href="assert_exposed_sorted_transformed_value_array/index.html" class="module">assert_exposed_sorted_transformed_value_array</a></div></li>
+<li><a href="assert_sorted_array/index.html" class="module">assert_sorted_array</a></div></li>
+<li><a href="assert_sorted_transformed_padded_array/index.html" class="module">assert_sorted_transformed_padded_array</a></div></li>
+<li><a href="assert_split_sorted_transformed_value_arrays/index.html" class="module">assert_split_sorted_transformed_value_arrays</a></div></li>
+<li><a href="assert_split_transformed_padded_arrays/index.html" class="module">assert_split_transformed_padded_arrays</a></div></li>
+<li><a href="assert_split_transformed_value_arrays/index.html" class="module">assert_split_transformed_value_arrays</a></div></li>
+<li><a href="find_index/index.html" class="module">find_index</a></div></li>
+<li><a href="get_sorted_result/index.html" class="module">get_sorted_result</a></div></li>
+<li><a href="get_sorted_tuple/index.html" class="module">get_sorted_tuple</a></div></li>
+<li><a href="sort_by/index.html" class="module">sort_by</a></div></li>
+<li><a href="sort_by_counter/index.html" class="module">sort_by_counter</a></div></li>
+</ul><h3>Structs</h3><ul class="item-list"><li><a href="struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a></div></li>
+</ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.array_length.html" class="fn">array_length</a></div></li>
+<li><a href="fn.array_length_until.html" class="fn">array_length_until</a></div></li>
+<li><a href="fn.array_merge.html" class="fn">array_merge</a></div></li>
+<li><a href="fn.array_padded_with.html" class="fn">array_padded_with</a></div></li>
+<li><a href="fn.array_splice.html" class="fn">array_splice</a></div></li>
+<li><a href="fn.array_to_bounded_vec.html" class="fn">array_to_bounded_vec</a></div></li>
+<li><a href="fn.check_permutation.html" class="fn">check_permutation</a></div></li>
+<li><a href="fn.find_index_hint.html" class="fn">find_index_hint</a></div></li>
+<li><a href="fn.find_index_hint_in_reverse.html" class="fn">find_index_hint_in_reverse</a></div></li>
+<li><a href="fn.subarray.html" class="fn">subarray</a></div></li>
+<li><a href="fn.trimmed_array_length_hint.html" class="fn">trimmed_array_length_hint</a></div></li>
+<li><a href="fn.validate_array.html" class="fn">validate_array</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">utils</a>::<a href="index.html">arrays</a></div><h1>Function <span class="fn">array_merge</span></h1><pre><code>pub fn array_merge&lt;T, let N: u32&gt;(array1: [T; N], array2: [T; N]) -> [T; N]
+where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a>
+</code></pre>
+
+<div class="comments">
+<p>This function assumes that <code>array1</code> and <code>array2</code> contain no more than N non-empty elements between them,
+if this is not the case then elements from the end of <code>array2</code> will be dropped.</p>
+</div>
+</main>
+</body>
+</html>

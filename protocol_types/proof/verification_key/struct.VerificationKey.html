@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct VerificationKey documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct VerificationKey</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#hash">hash</a></li>
+<li><a href="#key">key</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-VerificationKey">Empty</a></li>
+<li><a href="#impl-Eq-for-VerificationKey">Eq</a></li>
+</ul><h2>In module verification_key</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.VerificationKey.html" class="struct">VerificationKey</a></div></li>
+</ul><h3>Type aliases</h3><ul class="item-list"><li><a href="type.AvmVerificationKey.html" class="type">AvmVerificationKey</a></div></li>
+<li><a href="type.ClientIVCVerificationKey.html" class="type">ClientIVCVerificationKey</a></div></li>
+<li><a href="type.HonkVerificationKey.html" class="type">HonkVerificationKey</a></div></li>
+<li><a href="type.RollupHonkVerificationKey.html" class="type">RollupHonkVerificationKey</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">proof</a>::<a href="index.html">verification_key</a></div><h1>Struct <span id="struct" class="struct">VerificationKey</span></h1><pre><code>pub struct VerificationKey&lt;let N: u32&gt; {
+    pub key: [Field; N],
+    pub hash: Field,
+}
+</code></pre>
+<h2>Fields</h2><div id="key" class="struct-field"><code class="code-header">key: [Field; N]</code></div>
+<div class="padded-description"></div><div id="hash" class="struct-field"><code class="code-header">hash: Field</code></div>
+<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-VerificationKey"><code class="code-header">impl&lt;let M: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;M&gt;</code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;M&gt;</code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;M&gt;) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;M&gt;, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-VerificationKey"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;N&gt;</code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;N&gt;, _other: <a href="../../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;N&gt;) -> bool</code>
+
+</div></main>
+</body>
+</html>

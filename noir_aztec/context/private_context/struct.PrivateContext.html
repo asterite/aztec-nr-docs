@@ -79,18 +79,18 @@
     pub args_hash: Field,
     pub return_hash: Field,
     pub include_by_timestamp: u64,
-    pub note_hash_read_requests: BoundedVec&lt;ReadRequest, 16&gt;,
-    pub nullifier_read_requests: BoundedVec&lt;ReadRequest, 16&gt;,
-    pub note_hashes: BoundedVec&lt;NoteHash, 16&gt;,
-    pub nullifiers: BoundedVec&lt;Nullifier, 16&gt;,
-    pub private_call_requests: BoundedVec&lt;PrivateCallRequest, 5&gt;,
-    pub public_call_requests: BoundedVec&lt;Counted&lt;PublicCallRequest&gt;, 16&gt;,
-    pub public_teardown_call_request: PublicCallRequest,
-    pub l2_to_l1_msgs: BoundedVec&lt;Counted&lt;L2ToL1Message&gt;, 2&gt;,
-    pub historical_header: BlockHeader,
-    pub private_logs: BoundedVec&lt;PrivateLogData, 16&gt;,
-    pub contract_class_logs_hashes: BoundedVec&lt;Counted&lt;LogHash&gt;, 1&gt;,
-    pub last_key_validation_requests: [Option&lt;KeyValidationRequest&gt;; 4],
+    pub note_hash_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;,
+    pub nullifier_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;,
+    pub note_hashes: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>, 16&gt;,
+    pub nullifiers: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, 16&gt;,
+    pub private_call_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a>, 5&gt;,
+    pub public_call_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>&gt;, 16&gt;,
+    pub public_teardown_call_request: <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>,
+    pub l2_to_l1_msgs: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a>&gt;, 2&gt;,
+    pub historical_header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a>,
+    pub private_logs: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, 16&gt;,
+    pub contract_class_logs_hashes: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a>&gt;, 1&gt;,
+    pub last_key_validation_requests: [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../protocol_types/abis/validation_requests/key_validation_request/struct.KeyValidationRequest.html" class="struct">KeyValidationRequest</a>&gt;; 4],
     <span class="comment">/* private fields */</span>
 }
 </code></pre>
@@ -244,23 +244,23 @@ error will be thrown by the LSP or when they compile their contract.</p>
 <div class="padded-description"></div><div id="args_hash" class="struct-field"><code class="code-header">args_hash: Field</code></div>
 <div class="padded-description"></div><div id="return_hash" class="struct-field"><code class="code-header">return_hash: Field</code></div>
 <div class="padded-description"></div><div id="include_by_timestamp" class="struct-field"><code class="code-header">include_by_timestamp: u64</code></div>
-<div class="padded-description"></div><div id="note_hash_read_requests" class="struct-field"><code class="code-header">note_hash_read_requests: BoundedVec&lt;ReadRequest, 16&gt;</code></div>
-<div class="padded-description"></div><div id="nullifier_read_requests" class="struct-field"><code class="code-header">nullifier_read_requests: BoundedVec&lt;ReadRequest, 16&gt;</code></div>
-<div class="padded-description"></div><div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: BoundedVec&lt;NoteHash, 16&gt;</code></div>
-<div class="padded-description"></div><div id="nullifiers" class="struct-field"><code class="code-header">nullifiers: BoundedVec&lt;Nullifier, 16&gt;</code></div>
-<div class="padded-description"></div><div id="private_call_requests" class="struct-field"><code class="code-header">private_call_requests: BoundedVec&lt;PrivateCallRequest, 5&gt;</code></div>
-<div class="padded-description"></div><div id="public_call_requests" class="struct-field"><code class="code-header">public_call_requests: BoundedVec&lt;Counted&lt;PublicCallRequest&gt;, 16&gt;</code></div>
-<div class="padded-description"></div><div id="public_teardown_call_request" class="struct-field"><code class="code-header">public_teardown_call_request: PublicCallRequest</code></div>
-<div class="padded-description"></div><div id="l2_to_l1_msgs" class="struct-field"><code class="code-header">l2_to_l1_msgs: BoundedVec&lt;Counted&lt;L2ToL1Message&gt;, 2&gt;</code></div>
-<div class="padded-description"></div><div id="historical_header" class="struct-field"><code class="code-header">historical_header: BlockHeader</code></div>
-<div class="padded-description"></div><div id="private_logs" class="struct-field"><code class="code-header">private_logs: BoundedVec&lt;PrivateLogData, 16&gt;</code></div>
-<div class="padded-description"></div><div id="contract_class_logs_hashes" class="struct-field"><code class="code-header">contract_class_logs_hashes: BoundedVec&lt;Counted&lt;LogHash&gt;, 1&gt;</code></div>
-<div class="padded-description"></div><div id="last_key_validation_requests" class="struct-field"><code class="code-header">last_key_validation_requests: [Option&lt;KeyValidationRequest&gt;; 4]</code></div>
+<div class="padded-description"></div><div id="note_hash_read_requests" class="struct-field"><code class="code-header">note_hash_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="nullifier_read_requests" class="struct-field"><code class="code-header">nullifier_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="nullifiers" class="struct-field"><code class="code-header">nullifiers: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="private_call_requests" class="struct-field"><code class="code-header">private_call_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a>, 5&gt;</code></div>
+<div class="padded-description"></div><div id="public_call_requests" class="struct-field"><code class="code-header">public_call_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>&gt;, 16&gt;</code></div>
+<div class="padded-description"></div><div id="public_teardown_call_request" class="struct-field"><code class="code-header">public_teardown_call_request: <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a></code></div>
+<div class="padded-description"></div><div id="l2_to_l1_msgs" class="struct-field"><code class="code-header">l2_to_l1_msgs: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a>&gt;, 2&gt;</code></div>
+<div class="padded-description"></div><div id="historical_header" class="struct-field"><code class="code-header">historical_header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></div>
+<div class="padded-description"></div><div id="private_logs" class="struct-field"><code class="code-header">private_logs: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, 16&gt;</code></div>
+<div class="padded-description"></div><div id="contract_class_logs_hashes" class="struct-field"><code class="code-header">contract_class_logs_hashes: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a>&gt;, 1&gt;</code></div>
+<div class="padded-description"></div><div id="last_key_validation_requests" class="struct-field"><code class="code-header">last_key_validation_requests: [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../protocol_types/abis/validation_requests/key_validation_request/struct.KeyValidationRequest.html" class="struct">KeyValidationRequest</a>&gt;; 4]</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>, args_hash: Field) -> <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code>
 
-<code id="msg_sender" class="code-header">pub fn <span class="fn">msg_sender</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> AztecAddress</code>
+<code id="msg_sender" class="code-header">pub fn <span class="fn">msg_sender</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the contract address that initiated this function call.</p>
@@ -282,7 +282,7 @@ this function (be it an app contract or a user's account contract).
 Returns <code>-1</code> for the first function call of the tx.</li>
 </ul>
 </div>
-</div><code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> AztecAddress</code>
+</div><code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the contract address of the current function being executed.</p>
@@ -322,7 +322,7 @@ cryptographic primitives.</p>
 <li><code>Field</code> - The protocol version as a field element</li>
 </ul>
 </div>
-</div><code id="gas_settings" class="code-header">pub fn <span class="fn">gas_settings</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> GasSettings</code>
+</div><code id="gas_settings" class="code-header">pub fn <span class="fn">gas_settings</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> <a href="../../../protocol_types/abis/gas_settings/struct.GasSettings.html" class="struct">GasSettings</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the gas settings for the current transaction.</p>
@@ -335,7 +335,7 @@ accounting for L2 computation and data availability (DA) costs.</p>
 <li><code>GasSettings</code> - Struct containing gas limits and fee information</li>
 </ul>
 </div>
-</div><code id="selector" class="code-header">pub fn <span class="fn">selector</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> FunctionSelector</code>
+</div><code id="selector" class="code-header">pub fn <span class="fn">selector</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the function selector of the currently executing function.</p>
@@ -481,7 +481,7 @@ use this information to feed hints to the kernel circuits for
 created it, we can &quot;squash&quot; (delete) the note and nullifier (and any
 private logs associated with the note), to save on data emission costs.</p>
 </div>
-</div><code id="get_block_header" class="code-header">pub fn <span class="fn">get_block_header</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> BlockHeader</code>
+</div><code id="get_block_header" class="code-header">pub fn <span class="fn">get_block_header</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the anchor block header - the historical block header that this
@@ -505,7 +505,7 @@ from the mempool. Therefore, the chosen block header <em>must</em> be one
 from within the last 24 hours.</li>
 </ul>
 </div>
-</div><code id="get_block_header_at" class="code-header">pub fn <span class="fn">get_block_header_at</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, block_number: u32) -> BlockHeader</code>
+</div><code id="get_block_header_at" class="code-header">pub fn <span class="fn">get_block_header_at</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, block_number: u32) -> <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the header of any historical block at or before the anchor
@@ -557,7 +557,7 @@ free.</p>
 <li><code>returns_hasher</code> - A hasher containing the return values to hash</li>
 </ul>
 </div>
-</div><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> PrivateCircuitPublicInputs</code>
+</div><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Builds the PrivateCircuitPublicInputs for this private function, to
@@ -786,7 +786,7 @@ logs to a user's address public key.</p>
 </div>
 </div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    recipient: EthAddress,
+    recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
     content: Field,
 )</code>
 
@@ -820,7 +820,7 @@ docs:start:context_message_portal</li>
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     content: Field,
     secret: Field,
-    sender: EthAddress,
+    sender: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
     leaf_index: Field,
 )</code>
 
@@ -947,8 +947,8 @@ instead, or emitting additional events.</p>
 
 <code id="call_private_function" class="code-header">pub fn <span class="fn">call_private_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field; ArgsCount],
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
@@ -1021,8 +1021,8 @@ circuits after this function completes</li>
 </div>
 </div><code id="static_call_private_function" class="code-header">pub fn <span class="fn">static_call_private_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field; ArgsCount],
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
@@ -1047,8 +1047,8 @@ calls.</p>
 </div>
 </div><code id="call_private_function_no_args" class="code-header">pub fn <span class="fn">call_private_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
 <div class="padded-description"><div class="comments">
@@ -1069,8 +1069,8 @@ but slightly more efficient to use when no arguments are needed.</p>
 </div>
 </div><code id="static_call_private_function_no_args" class="code-header">pub fn <span class="fn">static_call_private_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
 <div class="padded-description"><div class="comments">
@@ -1090,8 +1090,8 @@ the safety of <code>static_call_private_function</code>.</p>
 </div>
 </div><code id="call_private_function_with_args_hash" class="code-header">pub fn <span class="fn">call_private_function_with_args_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args_hash: Field,
     is_static_call: bool,
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
@@ -1115,8 +1115,8 @@ hash of the arguments.</p>
 </div>
 </div><code id="call_public_function" class="code-header">pub fn <span class="fn">call_public_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field; ArgsCount],
 )</code>
 
@@ -1150,8 +1150,8 @@ See also: https://docs.aztec.network/developers/reference/considerations/privacy
 </div>
 </div><code id="static_call_public_function" class="code-header">pub fn <span class="fn">static_call_public_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field; ArgsCount],
 )</code>
 
@@ -1171,8 +1171,8 @@ making private -&gt; public function calls.</p>
 </div>
 </div><code id="call_public_function_no_args" class="code-header">pub fn <span class="fn">call_public_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1188,8 +1188,8 @@ take any input parameters. It's otherwise equivalent to
 </div>
 </div><code id="static_call_public_function_no_args" class="code-header">pub fn <span class="fn">static_call_public_function_no_args</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1204,7 +1204,7 @@ the safety of <code>static_call_public_function</code>.</p>
 </div>
 </div><code id="call_public_function_with_calldata_hash" class="code-header">pub fn <span class="fn">call_public_function_with_calldata_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     calldata_hash: Field,
     is_static_call: bool,
 )</code>
@@ -1226,8 +1226,8 @@ performance optimization and advanced use cases.</p>
 </div>
 </div><code id="set_public_teardown_function" class="code-header">pub fn <span class="fn">set_public_teardown_function</span>&lt;let ArgsCount: u32&gt;(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
-    function_selector: FunctionSelector,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
     args: [Field; ArgsCount],
 )</code>
 
@@ -1255,7 +1255,7 @@ very early). Wallet/FPC/Paymaster developers should be mindful of this.</p>
 </div>
 </div><code id="set_public_teardown_function_with_calldata_hash" class="code-header">pub fn <span class="fn">set_public_teardown_function_with_calldata_hash</span>(
     &mut self: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    contract_address: AztecAddress,
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     calldata_hash: Field,
     is_static_call: bool,
 )</code>
@@ -1275,7 +1275,7 @@ function</li>
 <li><code>is_static_call</code> - Whether this should be a read-only call</li>
 </ul>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PrivateContext"><code class="code-header">impl Empty for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PrivateContext"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code>
 
@@ -1283,7 +1283,7 @@ function</li>
 
 <code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-PrivateContext"><code class="code-header">impl Eq for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
+</div><h3 id="impl-Eq-for-PrivateContext"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, _other: <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> bool</code>
 

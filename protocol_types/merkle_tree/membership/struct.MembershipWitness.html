@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct MembershipWitness documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct MembershipWitness</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#leaf_index">leaf_index</a></li>
+<li><a href="#sibling_path">sibling_path</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-MembershipWitness">Empty</a></li>
+<li><a href="#impl-Eq-for-MembershipWitness">Eq</a></li>
+</ul><h2>In module membership</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.MembershipWitness.html" class="struct">MembershipWitness</a></div></li>
+</ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.assert_check_membership.html" class="fn">assert_check_membership</a></div></li>
+<li><a href="fn.assert_check_non_membership.html" class="fn">assert_check_non_membership</a></div></li>
+<li><a href="fn.check_membership.html" class="fn">check_membership</a></div></li>
+<li><a href="fn.conditionally_assert_check_membership.html" class="fn">conditionally_assert_check_membership</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">membership</a></div><h1>Struct <span id="struct" class="struct">MembershipWitness</span></h1><pre><code>pub struct MembershipWitness&lt;let N: u32&gt; {
+    pub leaf_index: Field,
+    pub sibling_path: [Field; N],
+}
+</code></pre>
+<h2>Fields</h2><div id="leaf_index" class="struct-field"><code class="code-header">leaf_index: Field</code></div>
+<div class="padded-description"></div><div id="sibling_path" class="struct-field"><code class="code-header">sibling_path: [Field; N]</code></div>
+<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-MembershipWitness"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-MembershipWitness"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;, _other: <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;) -> bool</code>
+
+</div></main>
+</body>
+</html>

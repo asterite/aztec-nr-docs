@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<title>Struct FunctionSelector documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct FunctionSelector</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#inner">inner</a></li>
+</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#from_signature">from_signature</a></li>
+<li><a href="#from_u32">from_u32</a></li>
+<li><a href="#zero">zero</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-FunctionSelector">Deserialize</a></li>
+<li><a href="#impl-Empty-for-FunctionSelector">Empty</a></li>
+<li><a href="#impl-Eq-for-FunctionSelector">Eq</a></li>
+<li><a href="#impl-FromField-for-FunctionSelector">FromField</a></li>
+<li><a href="#impl-Serialize-for-FunctionSelector">Serialize</a></li>
+<li><a href="#impl-ToField-for-FunctionSelector">ToField</a></li>
+</ul><h2>In module function_selector</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.FunctionSelector.html" class="struct">FunctionSelector</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">function_selector</a></div><h1>Struct <span id="struct" class="struct">FunctionSelector</span></h1><pre><code>pub struct FunctionSelector {
+    pub inner: u32,
+}
+</code></pre>
+<h2>Fields</h2><div id="inner" class="struct-field"><code class="code-header">inner: u32</code></div>
+<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code id="from_u32" class="code-header">pub fn <span class="fn">from_u32</span>(value: u32) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+
+<code id="from_signature" class="code-header">pub fn <span class="fn">from_signature</span>&lt;let N: u32&gt;(signature: str&lt;N&gt;) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+
+<code id="zero" class="code-header">pub fn <span class="fn">zero</span>() -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+
+</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-FunctionSelector"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1]) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+
+</div><h3 id="impl-Empty-for-FunctionSelector"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-FunctionSelector"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>, _other: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>) -> bool</code>
+
+</div><h3 id="impl-FromField-for-FunctionSelector"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.FromField.html" class="trait">FromField</a> for <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+
+</div><h3 id="impl-Serialize-for-FunctionSelector"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>) -> [Field; 1]</code>
+
+</div><h3 id="impl-ToField-for-FunctionSelector"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.ToField.html" class="trait">ToField</a> for <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">to_field</span>(self: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>) -> Field</code>
+
+</div></main>
+</body>
+</html>

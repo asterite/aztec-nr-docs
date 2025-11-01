@@ -13,14 +13,14 @@
 </ul></nav>
 <main>
 <div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::<a href="index.html">nonce_discovery</a></div><h1>Function <span class="fn">attempt_note_nonce_discovery</span></h1><pre><code>pub unconstrained fn attempt_note_nonce_discovery&lt;Env&gt;(
-    unique_note_hashes_in_tx: BoundedVec&lt;Field, 64&gt;,
+    unique_note_hashes_in_tx: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 64&gt;,
     first_nullifier_in_tx: Field,
     compute_note_hash_and_nullifier: ComputeNoteHashAndNullifier&lt;Env&gt;,
-    contract_address: AztecAddress,
+    contract_address: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     storage_slot: Field,
     note_type_id: Field,
-    packed_note: BoundedVec&lt;Field, 12&gt;,
-) -> BoundedVec&lt;<a href="../../../../noir_aztec/messages/discovery/nonce_discovery/struct.DiscoveredNoteInfo.html" class="struct">DiscoveredNoteInfo</a>, 64&gt;</code></pre>
+    packed_note: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 12&gt;,
+) -> <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../../noir_aztec/messages/discovery/nonce_discovery/struct.DiscoveredNoteInfo.html" class="struct">DiscoveredNoteInfo</a>, 64&gt;</code></pre>
 
 <div class="comments">
 <p>Searches for note nonces that will result in a note that was emitted in a transaction. While rare, it is possible

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../styles.css">
+<title>Struct PrivateKernelCircuitPublicInputs documentation</title>
+</head>
+<body>
+<nav class="sidebar">
+<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateKernelCircuitPublicInputs</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#claimed_first_nullifier">claimed_first_nullifier</a></li>
+<li><a href="#constants">constants</a></li>
+<li><a href="#end">end</a></li>
+<li><a href="#fee_payer">fee_payer</a></li>
+<li><a href="#include_by_timestamp">include_by_timestamp</a></li>
+<li><a href="#is_private_only">is_private_only</a></li>
+<li><a href="#min_revertible_side_effect_counter">min_revertible_side_effect_counter</a></li>
+<li><a href="#public_teardown_call_request">public_teardown_call_request</a></li>
+<li><a href="#validation_requests">validation_requests</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-PrivateKernelCircuitPublicInputs">Empty</a></li>
+<li><a href="#impl-Eq-for-PrivateKernelCircuitPublicInputs">Eq</a></li>
+</ul><h2>In module private_kernel_circuit_public_inputs</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></div></li>
+</ul></nav>
+<main>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">abis</a>::<a href="../index.html">kernel_circuit_public_inputs</a>::<a href="index.html">private_kernel_circuit_public_inputs</a></div><h1>Struct <span id="struct" class="struct">PrivateKernelCircuitPublicInputs</span></h1><pre><code>pub struct PrivateKernelCircuitPublicInputs {
+    pub constants: <a href="../../../../protocol_types/abis/tx_constant_data/struct.TxConstantData.html" class="struct">TxConstantData</a>,
+    pub min_revertible_side_effect_counter: u32,
+    pub validation_requests: <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests/struct.PrivateValidationRequests.html" class="struct">PrivateValidationRequests</a>,
+    pub end: <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data/struct.PrivateAccumulatedData.html" class="struct">PrivateAccumulatedData</a>,
+    pub public_teardown_call_request: <a href="../../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>,
+    pub fee_payer: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    pub include_by_timestamp: u64,
+    pub is_private_only: bool,
+    pub claimed_first_nullifier: Field,
+}
+</code></pre>
+<h2>Fields</h2><div id="constants" class="struct-field"><code class="code-header">constants: <a href="../../../../protocol_types/abis/tx_constant_data/struct.TxConstantData.html" class="struct">TxConstantData</a></code></div>
+<div class="padded-description"></div><div id="min_revertible_side_effect_counter" class="struct-field"><code class="code-header">min_revertible_side_effect_counter: u32</code></div>
+<div class="padded-description"></div><div id="validation_requests" class="struct-field"><code class="code-header">validation_requests: <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests/struct.PrivateValidationRequests.html" class="struct">PrivateValidationRequests</a></code></div>
+<div class="padded-description"></div><div id="end" class="struct-field"><code class="code-header">end: <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data/struct.PrivateAccumulatedData.html" class="struct">PrivateAccumulatedData</a></code></div>
+<div class="padded-description"></div><div id="public_teardown_call_request" class="struct-field"><code class="code-header">public_teardown_call_request: <a href="../../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a></code></div>
+<div class="padded-description"></div><div id="fee_payer" class="struct-field"><code class="code-header">fee_payer: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
+<div class="padded-description"></div><div id="include_by_timestamp" class="struct-field"><code class="code-header">include_by_timestamp: u64</code></div>
+<div class="padded-description"></div><div id="is_private_only" class="struct-field"><code class="code-header">is_private_only: bool</code></div>
+<div class="padded-description"></div><div id="claimed_first_nullifier" class="struct-field"><code class="code-header">claimed_first_nullifier: Field</code></div>
+<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PrivateKernelCircuitPublicInputs"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code>
+
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a>) -> bool</code>
+
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a>, msg: str&lt;S&gt;)</code>
+
+</div><h3 id="impl-Eq-for-PrivateKernelCircuitPublicInputs"><code class="code-header">impl <a href="../../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code></h3>
+
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self: <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a>, other: <a href="../../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a>) -> bool</code>
+
+</div></main>
+</body>
+</html>
