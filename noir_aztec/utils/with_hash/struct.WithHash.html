@@ -37,32 +37,27 @@ of required tree inclusion proofs from <code>M</code> to 1.</p>
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(value: T) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 <code id="get_value" class="code-header">pub fn <span class="fn">get_value</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 <code id="get_hash" class="code-header">pub fn <span class="fn">get_hash</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> Field
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 <code id="public_storage_read" class="code-header">pub fn <span class="fn">public_storage_read</span>(context: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 <code id="utility_public_storage_read" class="code-header">pub unconstrained fn <span class="fn">utility_public_storage_read</span>(context: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 <code id="historical_public_storage_read" class="code-header">pub fn <span class="fn">historical_public_storage_read</span>(
     header: <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a>,
@@ -71,23 +66,19 @@ where
 ) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Packable-for-WithHash"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
-</code></h3>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;) -> [Field; M + 1]
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
-</code>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code>
 
 <code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; M + 1]) -> <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;
-</code>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code>
 
 </div></main>
 </body>

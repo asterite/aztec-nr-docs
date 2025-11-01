@@ -42,38 +42,31 @@ is &quot;hacky&quot; but there is no way around it.</p>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Eq-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code></h3>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;, _other: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;) -> bool
 where
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>
-</code>
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
 
 </div><h3 id="impl-Hash-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
-</code></h3>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;) -> Field
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
-</code>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code>
 
 </div><h3 id="impl-Packable-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
-</code></h3>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;) -> [Field; &lt;T as Packable&gt;::N * 2 + 1]
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
-</code>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code>
 
 <code class="code-header">pub fn <span class="fn">unpack</span>(fields: [Field; &lt;T as Packable&gt;::N * 2 + 1]) -> <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
-    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;
-</code>
+    T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code>
 
 </div></main>
 </body>
