@@ -133,15 +133,15 @@
     pub fn <a href="#empty"><span class="fn">empty</span></a>() -> Self;
 
     <span class="comment">// Provided methods</span>
-    pub fn <a href="#is_empty"><span class="fn">is_empty</span></a>(self: Self) -> bool { ... }
-    pub fn <a href="#assert_empty"><span class="fn">assert_empty</span></a>&lt;let S: u32&gt;(self: Self, msg: str&lt;S&gt;) { ... }
+    pub fn <a href="#is_empty"><span class="fn">is_empty</span></a>(self) -> bool { ... }
+    pub fn <a href="#assert_empty"><span class="fn">assert_empty</span></a>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;) { ... }
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="empty" class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-</div><h2>Provided methods</h2><div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self: Self) -> bool</code>
+</div><h2>Provided methods</h2><div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code id="assert_empty" class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: Self, msg: str&lt;S&gt;)</code>
+<code id="assert_empty" class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h2>Implementors</h2><h3 id="impl-Empty-for-(A, B)"><code class="code-header">impl&lt;A, B&gt; <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for (A, B)
 where
@@ -224,9 +224,9 @@ where
 
 <h3 id="impl-Empty-for-MockStruct"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../noir_aztec/test/mocks/mock_struct/struct.MockStruct.html" class="struct">MockStruct</a></code></h3>
 
-<h3 id="impl-Empty-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Empty-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Empty-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
 <h3 id="impl-Empty-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
@@ -306,9 +306,9 @@ where
 
 <h3 id="impl-Empty-for-ReadRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Empty-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Empty-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
+<h3 id="impl-Empty-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
 <h3 id="impl-Empty-for-ScheduledDelayChange<INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64&gt; <a href="../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
 

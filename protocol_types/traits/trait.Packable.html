@@ -51,7 +51,7 @@
     let N: u32;
 
     <span class="comment">// Required methods</span>
-    pub fn <a href="#pack"><span class="fn">pack</span></a>(self: Self) -> [Field; N];
+    pub fn <a href="#pack"><span class="fn">pack</span></a>(self) -> [Field; N];
     pub fn <a href="#unpack"><span class="fn">unpack</span></a>(fields: [Field; N]) -> Self;
 }</code></pre>
 
@@ -65,7 +65,7 @@ in the contract's public storage).</p>
 <li><code>N</code> - The length of the Field array, known at compile time</li>
 </ul>
 </div>
-<h2>Required methods</h2><div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self: Self) -> [Field; N]</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="pack" class="code-header">pub fn <span class="fn">pack</span>(self) -> [Field; N]</code>
 
 <div class="padded-description"><div class="comments">
 <p>Packs the current value into a compact array of <code>Field</code> elements.</p>
