@@ -123,10 +123,10 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">protocol_types</a>::<a href="index.html">traits</a></div><h1>Trait <span id="trait" class="trait">Deserialize</span></h1><pre><code>pub trait Deserialize {
-    let N: u32;
+    let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>;
 
     <span class="comment">// Required methods</span>
-    pub fn <a href="#deserialize"><span class="fn">deserialize</span></a>(fields: [Field; N]) -> Self;
+    pub fn <a href="#deserialize"><span class="fn">deserialize</span></a>(fields: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; N]) -> Self;
 }</code></pre>
 
 <div class="comments">
@@ -150,7 +150,7 @@ deserializing return values from function calls in Noir. Since the same function
 }
 </code></pre>
 </div>
-<h2>Required methods</h2><div class="padded-methods"><code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(fields: [Field; N]) -> Self</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(fields: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; N]) -> Self</code>
 
 </div><h2>Implementors</h2><h3 id="impl-Deserialize-for-()"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for ()</code></h3>
 
@@ -211,13 +211,13 @@ where
 
 <h3 id="impl-Deserialize-for-BlockHeader"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
-<h3 id="impl-Deserialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
+<h3 id="impl-Deserialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
 
 <h3 id="impl-Deserialize-for-CallContext"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
-<h3 id="impl-Deserialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+<h3 id="impl-Deserialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
 
@@ -241,7 +241,7 @@ where
 
 <h3 id="impl-Deserialize-for-Fancier"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for Fancier</code></h3>
 
-<h3 id="impl-Deserialize-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for Field</code></h3>
+<h3 id="impl-Deserialize-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></h3>
 
 <h3 id="impl-Deserialize-for-FunctionData"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/function_data/struct.FunctionData.html" class="struct">FunctionData</a></code></h3>
 
@@ -257,7 +257,7 @@ where
 
 <h3 id="impl-Deserialize-for-HasArray"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArray</code></h3>
 
-<h3 id="impl-Deserialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArrayWithGenerics&lt;T, N&gt;
+<h3 id="impl-Deserialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArrayWithGenerics&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
 
@@ -271,7 +271,7 @@ where
 
 <h3 id="impl-Deserialize-for-L2ToL1Message"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a></code></h3>
 
-<h3 id="impl-Deserialize-for-Log<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Deserialize-for-Log<N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Deserialize-for-LogHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a></code></h3>
 
@@ -279,9 +279,9 @@ where
 
 <h3 id="impl-Deserialize-for-MockStruct"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../noir_aztec/test/mocks/mock_struct/struct.MockStruct.html" class="struct">MockStruct</a></code></h3>
 
-<h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
 <h3 id="impl-Deserialize-for-NoteHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></h3>
 
@@ -337,9 +337,9 @@ where
 
 <h3 id="impl-Deserialize-for-ReadRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
+<h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
 <h3 id="impl-Deserialize-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
 where
@@ -375,31 +375,31 @@ where
 
 <h3 id="impl-Deserialize-for-TxRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/transaction/tx_request/struct.TxRequest.html" class="struct">TxRequest</a></code></h3>
 
-<h3 id="impl-Deserialize-for-[T; M]"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for [T; M]
+<h3 id="impl-Deserialize-for-[T; M]"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for [T; M]
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
 
-<h3 id="impl-Deserialize-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for bool</code></h3>
+<h3 id="impl-Deserialize-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 
-<h3 id="impl-Deserialize-for-i16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for i16</code></h3>
+<h3 id="impl-Deserialize-for-i16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.i16.html" class="primitive">i16</a></code></h3>
 
-<h3 id="impl-Deserialize-for-i32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for i32</code></h3>
+<h3 id="impl-Deserialize-for-i32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.i32.html" class="primitive">i32</a></code></h3>
 
-<h3 id="impl-Deserialize-for-i64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for i64</code></h3>
+<h3 id="impl-Deserialize-for-i64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.i64.html" class="primitive">i64</a></code></h3>
 
-<h3 id="impl-Deserialize-for-i8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for i8</code></h3>
+<h3 id="impl-Deserialize-for-i8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.i8.html" class="primitive">i8</a></code></h3>
 
-<h3 id="impl-Deserialize-for-str&lt;M&gt;"><code class="code-header">impl&lt;let M: u32&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for str&lt;M&gt;</code></h3>
+<h3 id="impl-Deserialize-for-str&lt;M&gt;"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for str&lt;M&gt;</code></h3>
 
-<h3 id="impl-Deserialize-for-u128"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for u128</code></h3>
+<h3 id="impl-Deserialize-for-u128"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.u128.html" class="primitive">u128</a></code></h3>
 
-<h3 id="impl-Deserialize-for-u16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for u16</code></h3>
+<h3 id="impl-Deserialize-for-u16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.u16.html" class="primitive">u16</a></code></h3>
 
-<h3 id="impl-Deserialize-for-u32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for u32</code></h3>
+<h3 id="impl-Deserialize-for-u32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.u32.html" class="primitive">u32</a></code></h3>
 
-<h3 id="impl-Deserialize-for-u64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for u64</code></h3>
+<h3 id="impl-Deserialize-for-u64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.u64.html" class="primitive">u64</a></code></h3>
 
-<h3 id="impl-Deserialize-for-u8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for u8</code></h3>
+<h3 id="impl-Deserialize-for-u8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.u8.html" class="primitive">u8</a></code></h3>
 
 </main>
 </body>

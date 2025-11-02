@@ -19,37 +19,37 @@
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.compute_zero_hashes.html" class="fn">compute_zero_hashes</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">tests</a>::<a href="index.html">merkle_tree_utils</a></div><h1>Struct <span id="struct" class="struct">NonEmptyMerkleTree</span></h1><pre><code>pub struct NonEmptyMerkleTree&lt;let SUBTREE_ITEMS: u32, let TREE_HEIGHT: u32, let SUPERTREE_HEIGHT: u32, let SUBTREE_HEIGHT: u32&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">tests</a>::<a href="index.html">merkle_tree_utils</a></div><h1>Struct <span id="struct" class="struct">NonEmptyMerkleTree</span></h1><pre><code>pub struct NonEmptyMerkleTree&lt;let SUBTREE_ITEMS: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUPERTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUBTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
-<h2>Implementations</h2><h3><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
+<h2>Implementations</h2><h3><code class="code-header">impl&lt;let SUBTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUBTREE_ITEMS: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUPERTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
-    non_zero_leaves: [Field; SUBTREE_ITEMS],
-    _tree_height: [Field; TREE_HEIGHT],
-    _supertree_height: [Field; SUPERTREE_HEIGHT],
-    _subtree_height: [Field; SUBTREE_HEIGHT],
+    non_zero_leaves: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; SUBTREE_ITEMS],
+    _tree_height: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; TREE_HEIGHT],
+    _supertree_height: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; SUPERTREE_HEIGHT],
+    _subtree_height: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; SUBTREE_HEIGHT],
 ) -> Self</code>
 
-<code id="get_sibling_path" class="code-header">pub fn <span class="fn">get_sibling_path</span>(self, leaf_index: u32) -> [Field; TREE_HEIGHT]</code>
+<code id="get_sibling_path" class="code-header">pub fn <span class="fn">get_sibling_path</span>(self, leaf_index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; TREE_HEIGHT]</code>
 
-<code id="update_leaf" class="code-header">pub fn <span class="fn">update_leaf</span>(&mut self, index: u32, value: Field)</code>
+<code id="update_leaf" class="code-header">pub fn <span class="fn">update_leaf</span>(&mut self, index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, value: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
-<code id="get_root" class="code-header">pub fn <span class="fn">get_root</span>(self) -> Field</code>
+<code id="get_root" class="code-header">pub fn <span class="fn">get_root</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-<code id="get_next_available_index" class="code-header">pub fn <span class="fn">get_next_available_index</span>(_self: Self) -> u32</code>
+<code id="get_next_available_index" class="code-header">pub fn <span class="fn">get_next_available_index</span>(_self: Self) -> <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUBTREE_ITEMS: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUPERTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
+</div><h3 id="impl-Eq-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUBTREE_ITEMS: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SUPERTREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TREE_HEIGHT: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div></main>
 </body>

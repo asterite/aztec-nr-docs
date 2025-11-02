@@ -8,16 +8,15 @@
 <body>
 <nav class="sidebar">
 <h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2>In module unbalanced_merkle_tree</h2><h3>Modules</h3><ul class="item-list"><li><a href="tests/index.html" class="module">tests</a></div></li>
-</ul><h3>Structs</h3><ul class="item-list"><li><a href="struct.UnbalancedMerkleTree.html" class="struct">UnbalancedMerkleTree</a></div></li>
+<h2>In module unbalanced_merkle_tree</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.UnbalancedMerkleTree.html" class="struct">UnbalancedMerkleTree</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.compute_unbalanced_merkle_root.html" class="fn">compute_unbalanced_merkle_root</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">unbalanced_merkle_tree</a></div><h1>Function <span class="fn">compute_unbalanced_merkle_root</span></h1><pre><code>pub fn compute_unbalanced_merkle_root&lt;let N: u32, let MAX_SUBTREES: u32&gt;(
-    leaves: [Field; N],
-    num_non_empty_leaves: u32,
-    hasher: fn(Field, Field) -> Field,
-) -> Field</code></pre>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">unbalanced_merkle_tree</a></div><h1>Function <span class="fn">compute_unbalanced_merkle_root</span></h1><pre><code>pub fn compute_unbalanced_merkle_root&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let MAX_SUBTREES: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
+    leaves: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N],
+    num_non_empty_leaves: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    hasher: fn(<a href="../../../std/primitive.Field.html" class="primitive">Field</a>, <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></pre>
 
 <div class="comments">
 <p>Computes the Merkle root of an unbalanced tree.</p>

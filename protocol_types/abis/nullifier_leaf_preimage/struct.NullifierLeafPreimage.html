@@ -25,55 +25,55 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">nullifier_leaf_preimage</a></div><h1>Struct <span id="struct" class="struct">NullifierLeafPreimage</span></h1><pre><code>pub struct NullifierLeafPreimage {
-    pub nullifier: Field,
-    pub next_nullifier: Field,
-    pub next_index: u32,
+    pub nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub next_nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub next_index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="nullifier" class="struct-field"><code class="code-header">nullifier: Field</code></div>
-<div class="padded-description"></div><div id="next_nullifier" class="struct-field"><code class="code-header">next_nullifier: Field</code></div>
-<div class="padded-description"></div><div id="next_index" class="struct-field"><code class="code-header">next_index: u32</code></div>
+<h2>Fields</h2><div id="nullifier" class="struct-field"><code class="code-header">nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="next_nullifier" class="struct-field"><code class="code-header">next_nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="next_index" class="struct-field"><code class="code-header">next_index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 3]</code>
+<code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 3]</code>
 
-<code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(fields: [Field; 3]) -> Self</code>
+<code id="deserialize" class="code-header">pub fn <span class="fn">deserialize</span>(fields: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 3]) -> Self</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Empty-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Hash-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-</div><h3 id="impl-IndexedTreeLeafPreimage&lt;Field&gt;-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafPreimage.html" class="trait">IndexedTreeLeafPreimage</a>&lt;Field&gt; for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
+</div><h3 id="impl-IndexedTreeLeafPreimage&lt;Field&gt;-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafPreimage.html" class="trait">IndexedTreeLeafPreimage</a>&lt;<a href="../../../std/primitive.Field.html" class="primitive">Field</a>&gt; for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_next_key</span>(self) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_next_key</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-<code class="code-header">pub fn <span class="fn">points_to_infinity</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">points_to_infinity</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">update_pointers</span>(self, next_key: Field, next_index: u32) -> Self</code>
+<code class="code-header">pub fn <span class="fn">update_pointers</span>(self, next_key: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>, next_index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>) -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">update_value</span>(self, _nullifier: Field) -> Self</code>
+<code class="code-header">pub fn <span class="fn">update_value</span>(self, _nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">build_insertion_leaf</span>(nullifier: Field, low_leaf: Self) -> Self</code>
+<code class="code-header">pub fn <span class="fn">build_insertion_leaf</span>(nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>, low_leaf: Self) -> Self</code>
 
 </div><h3 id="impl-LeafPreimage-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.LeafPreimage.html" class="trait">LeafPreimage</a> for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_key</span>(self) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_key</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-<code class="code-header">pub fn <span class="fn">as_leaf</span>(self) -> Field</code>
+<code class="code-header">pub fn <span class="fn">as_leaf</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div><h3 id="impl-Readable&lt;ScopedReadRequest&gt;-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Readable.html" class="trait">Readable</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>&gt; for <a href="../../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 

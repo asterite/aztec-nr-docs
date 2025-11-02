@@ -19,21 +19,21 @@
 <li><a href="fn.set_sender_for_tags.html" class="fn">set_sender_for_tags</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">notes</a></div><h1>Function <span class="fn">get_notes</span></h1><pre><code>pub unconstrained fn get_notes&lt;Note, let M: u32, let MaxNotes: u32&gt;(
-    storage_slot: Field,
-    num_selects: u8,
-    select_by_indexes: [u8; M],
-    select_by_offsets: [u8; M],
-    select_by_lengths: [u8; M],
-    select_values: [Field; M],
-    select_comparators: [u8; M],
-    sort_by_indexes: [u8; M],
-    sort_by_offsets: [u8; M],
-    sort_by_lengths: [u8; M],
-    sort_order: [u8; M],
-    limit: u32,
-    offset: u32,
-    status: u8,
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">notes</a></div><h1>Function <span class="fn">get_notes</span></h1><pre><code>pub unconstrained fn get_notes&lt;Note, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let MaxNotes: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
+    storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    num_selects: <a href="../../../std/primitive.u8.html" class="primitive">u8</a>,
+    select_by_indexes: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    select_by_offsets: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    select_by_lengths: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    select_values: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; M],
+    select_comparators: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    sort_by_indexes: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    sort_by_offsets: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    sort_by_lengths: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    sort_order: [<a href="../../../std/primitive.u8.html" class="primitive">u8</a>; M],
+    limit: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    offset: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    status: <a href="../../../std/primitive.u8.html" class="primitive">u8</a>,
 ) -> [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; MaxNotes]
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,

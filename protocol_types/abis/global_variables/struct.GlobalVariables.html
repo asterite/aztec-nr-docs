@@ -25,47 +25,47 @@
 </ul></nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">global_variables</a></div><h1>Struct <span id="struct" class="struct">GlobalVariables</span></h1><pre><code>pub struct GlobalVariables {
-    pub chain_id: Field,
-    pub version: Field,
-    pub block_number: u32,
-    pub slot_number: Field,
-    pub timestamp: u64,
+    pub chain_id: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub version: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub block_number: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    pub slot_number: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub timestamp: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>,
     pub coinbase: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
     pub fee_recipient: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     pub gas_fees: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="chain_id" class="struct-field"><code class="code-header">chain_id: Field</code></div>
-<div class="padded-description"></div><div id="version" class="struct-field"><code class="code-header">version: Field</code></div>
-<div class="padded-description"></div><div id="block_number" class="struct-field"><code class="code-header">block_number: u32</code></div>
-<div class="padded-description"></div><div id="slot_number" class="struct-field"><code class="code-header">slot_number: Field</code></div>
-<div class="padded-description"></div><div id="timestamp" class="struct-field"><code class="code-header">timestamp: u64</code></div>
+<h2>Fields</h2><div id="chain_id" class="struct-field"><code class="code-header">chain_id: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="version" class="struct-field"><code class="code-header">version: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="block_number" class="struct-field"><code class="code-header">block_number: <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code></div>
+<div class="padded-description"></div><div id="slot_number" class="struct-field"><code class="code-header">slot_number: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="timestamp" class="struct-field"><code class="code-header">timestamp: <a href="../../../std/primitive.u64.html" class="primitive">u64</a></code></div>
 <div class="padded-description"></div><div id="coinbase" class="struct-field"><code class="code-header">coinbase: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a></code></div>
 <div class="padded-description"></div><div id="fee_recipient" class="struct-field"><code class="code-header">fee_recipient: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
 <div class="padded-description"></div><div id="gas_fees" class="struct-field"><code class="code-header">gas_fees: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
-<div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<div class="padded-methods"><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-GlobalVariables"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 9]) -> Self</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 9]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-GlobalVariables"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-GlobalVariables"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Serialize-for-GlobalVariables"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 9]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 9]</code>
 
 </div></main>
 </body>

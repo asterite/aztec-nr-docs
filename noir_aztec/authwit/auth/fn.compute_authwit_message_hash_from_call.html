@@ -21,14 +21,14 @@
 </ul><h3>Globals</h3><ul class="item-list"><li><a href="global.IS_VALID_SELECTOR.html" class="global">IS_VALID_SELECTOR</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">authwit</a>::<a href="index.html">auth</a></div><h1>Function <span class="fn">compute_authwit_message_hash_from_call</span></h1><pre><code>pub fn compute_authwit_message_hash_from_call&lt;let N: u32&gt;(
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">authwit</a>::<a href="index.html">auth</a></div><h1>Function <span class="fn">compute_authwit_message_hash_from_call</span></h1><pre><code>pub fn compute_authwit_message_hash_from_call&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     caller: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     consumer: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-    chain_id: Field,
-    version: Field,
+    chain_id: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    version: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
     selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args: [Field; N],
-) -> Field</code></pre>
+    args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N],
+) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></pre>
 
 <div class="comments">
 <p>Compute the <code>message_hash</code> from a function call to be used by an authentication witness</p>

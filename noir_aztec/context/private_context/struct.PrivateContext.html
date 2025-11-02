@@ -73,12 +73,12 @@
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">private_context</a></div><h1>Struct <span id="struct" class="struct">PrivateContext</span></h1><pre><code>pub struct PrivateContext {
     pub inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>,
-    pub side_effect_counter: u32,
-    pub min_revertible_side_effect_counter: u32,
-    pub is_fee_payer: bool,
-    pub args_hash: Field,
-    pub return_hash: Field,
-    pub include_by_timestamp: u64,
+    pub side_effect_counter: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    pub min_revertible_side_effect_counter: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    pub is_fee_payer: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
+    pub args_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub return_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub include_by_timestamp: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>,
     pub note_hash_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;,
     pub nullifier_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;,
     pub note_hashes: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>, 16&gt;,
@@ -238,12 +238,12 @@ developers a much faster feedback loop if they're making a mistake, as an
 error will be thrown by the LSP or when they compile their contract.</p>
 </div>
 <h2>Fields</h2><div id="inputs" class="struct-field"><code class="code-header">inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a></code></div>
-<div class="padded-description"></div><div id="side_effect_counter" class="struct-field"><code class="code-header">side_effect_counter: u32</code></div>
-<div class="padded-description"></div><div id="min_revertible_side_effect_counter" class="struct-field"><code class="code-header">min_revertible_side_effect_counter: u32</code></div>
-<div class="padded-description"></div><div id="is_fee_payer" class="struct-field"><code class="code-header">is_fee_payer: bool</code></div>
-<div class="padded-description"></div><div id="args_hash" class="struct-field"><code class="code-header">args_hash: Field</code></div>
-<div class="padded-description"></div><div id="return_hash" class="struct-field"><code class="code-header">return_hash: Field</code></div>
-<div class="padded-description"></div><div id="include_by_timestamp" class="struct-field"><code class="code-header">include_by_timestamp: u64</code></div>
+<div class="padded-description"></div><div id="side_effect_counter" class="struct-field"><code class="code-header">side_effect_counter: <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code></div>
+<div class="padded-description"></div><div id="min_revertible_side_effect_counter" class="struct-field"><code class="code-header">min_revertible_side_effect_counter: <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code></div>
+<div class="padded-description"></div><div id="is_fee_payer" class="struct-field"><code class="code-header">is_fee_payer: <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code></div>
+<div class="padded-description"></div><div id="args_hash" class="struct-field"><code class="code-header">args_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="return_hash" class="struct-field"><code class="code-header">return_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="include_by_timestamp" class="struct-field"><code class="code-header">include_by_timestamp: <a href="../../../std/primitive.u64.html" class="primitive">u64</a></code></div>
 <div class="padded-description"></div><div id="note_hash_read_requests" class="struct-field"><code class="code-header">note_hash_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;</code></div>
 <div class="padded-description"></div><div id="nullifier_read_requests" class="struct-field"><code class="code-header">nullifier_read_requests: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>, 16&gt;</code></div>
 <div class="padded-description"></div><div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a>, 16&gt;</code></div>
@@ -258,7 +258,7 @@ error will be thrown by the LSP or when they compile their contract.</p>
 <div class="padded-description"></div><div id="last_key_validation_requests" class="struct-field"><code class="code-header">last_key_validation_requests: [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../protocol_types/abis/validation_requests/key_validation_request/struct.KeyValidationRequest.html" class="struct">KeyValidationRequest</a>&gt;; 4]</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>, args_hash: Field) -> Self</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(inputs: <a href="../../../noir_aztec/context/inputs/private_context_inputs/struct.PrivateContextInputs.html" class="struct">PrivateContextInputs</a>, args_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> Self</code>
 
 <code id="msg_sender" class="code-header">pub fn <span class="fn">msg_sender</span>(self) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
@@ -295,7 +295,7 @@ access control or when interacting with other contracts.</p>
 executed.</li>
 </ul>
 </div>
-</div><code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self) -> Field</code>
+</div><code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the chain ID of the current network.</p>
@@ -308,7 +308,7 @@ multi-chain contract logic.</p>
 <li><code>Field</code> - The chain ID as a field element</li>
 </ul>
 </div>
-</div><code id="version" class="code-header">pub fn <span class="fn">version</span>(self) -> Field</code>
+</div><code id="version" class="code-header">pub fn <span class="fn">version</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the Aztec protocol version that this transaction is executing
@@ -356,7 +356,7 @@ protocol's kernel circuits to identify each private function and ensure
 the correct one is being executed.</p>
 <p>Used internally for function dispatch and call verification.</p>
 </div>
-</div><code id="get_args_hash" class="code-header">pub fn <span class="fn">get_args_hash</span>(self) -> Field</code>
+</div><code id="get_args_hash" class="code-header">pub fn <span class="fn">get_args_hash</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the hash of the arguments passed to the current function.</p>
@@ -374,7 +374,7 @@ body of your private function.</p>
 <li>The hash can be used to retrieve the original arguments from the PXE.</li>
 </ul>
 </div>
-</div><code id="push_note_hash" class="code-header">pub fn <span class="fn">push_note_hash</span>(&mut self, note_hash: Field)</code>
+</div><code id="push_note_hash" class="code-header">pub fn <span class="fn">push_note_hash</span>(&mut self, note_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Pushes a new note_hash to the Aztec blockchain's global Note Hash Tree
@@ -410,7 +410,7 @@ please open an issue on GitHub to describe your use case: it might be
 that new functionality should be added to aztec-nr.</p>
 </blockquote>
 </div>
-</div><code id="push_nullifier" class="code-header">pub fn <span class="fn">push_nullifier</span>(&mut self, nullifier: Field)</code>
+</div><code id="push_nullifier" class="code-header">pub fn <span class="fn">push_nullifier</span>(&mut self, nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Pushes a new nullifier to the Aztec blockchain's global Nullifier Tree
@@ -453,8 +453,8 @@ indexed merkle tree which supports efficient non-membership proofs).</li>
 </div>
 </div><code id="push_nullifier_for_note_hash" class="code-header">pub fn <span class="fn">push_nullifier_for_note_hash</span>(
     &mut self,
-    nullifier: Field,
-    nullified_note_hash: Field,
+    nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    nullified_note_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -505,7 +505,7 @@ from the mempool. Therefore, the chosen block header <em>must</em> be one
 from within the last 24 hours.</li>
 </ul>
 </div>
-</div><code id="get_block_header_at" class="code-header">pub fn <span class="fn">get_block_header_at</span>(self, block_number: u32) -> <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code>
+</div><code id="get_block_header_at" class="code-header">pub fn <span class="fn">get_block_header_at</span>(self, block_number: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>) -> <a href="../../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the header of any historical block at or before the anchor
@@ -607,7 +607,7 @@ function are considered part of the setup phase.</p>
 PrivateContext's <em>current</em> side effect counter.</li>
 </ul>
 </div>
-</div><code id="set_include_by_timestamp" class="code-header">pub fn <span class="fn">set_include_by_timestamp</span>(&mut self, include_by_timestamp: u64)</code>
+</div><code id="set_include_by_timestamp" class="code-header">pub fn <span class="fn">set_include_by_timestamp</span>(&mut self, include_by_timestamp: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sets a deadline (an &quot;include-by timestamp&quot;) for when this transaction
@@ -649,7 +649,7 @@ will need to be discussed. Wallets that deviate from a standard might
 accidentally reveal which wallet each transaction originates from.</li>
 </ul>
 </div>
-</div><code id="push_note_hash_read_request" class="code-header">pub fn <span class="fn">push_note_hash_read_request</span>(&mut self, note_hash: Field)</code>
+</div><code id="push_note_hash_read_request" class="code-header">pub fn <span class="fn">push_note_hash_read_request</span>(&mut self, note_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Makes a request to the protocol's kernel circuit to ensure a note_hash
@@ -695,7 +695,7 @@ a function can read a note which was created earlier in the tx (rather
 than performing the read in a later tx, after waiting for the earlier tx
 to be included, to ensure the note is included in the tree).</p>
 </div>
-</div><code id="push_nullifier_read_request" class="code-header">pub fn <span class="fn">push_nullifier_read_request</span>(&mut self, nullifier: Field)</code>
+</div><code id="push_nullifier_read_request" class="code-header">pub fn <span class="fn">push_nullifier_read_request</span>(&mut self, nullifier: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Requests to read a specific nullifier from the nullifier tree.</p>
@@ -720,7 +720,7 @@ a function can read a nullifier which was created earlier in the tx
 (rather than performing the read in a later tx, after waiting for the
 earlier tx to be included, to ensure the note is included in the tree).</p>
 </div>
-</div><code id="request_nsk_app" class="code-header">pub fn <span class="fn">request_nsk_app</span>(&mut self, npk_m_hash: Field) -> Field</code>
+</div><code id="request_nsk_app" class="code-header">pub fn <span class="fn">request_nsk_app</span>(&mut self, npk_m_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Requests the app-siloed nullifier secret key (nsk_app) for the given
@@ -754,7 +754,7 @@ whose PXE is executing this function.</li>
 <code>npk_m_hash</code>.</li>
 </ul>
 </div>
-</div><code id="request_ovsk_app" class="code-header">pub fn <span class="fn">request_ovsk_app</span>(&mut self, ovpk_m_hash: Field) -> Field</code>
+</div><code id="request_ovsk_app" class="code-header">pub fn <span class="fn">request_ovsk_app</span>(&mut self, ovpk_m_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Requests the app-siloed nullifier secret key (nsk_app) for the given
@@ -784,7 +784,7 @@ logs to a user's address public key.</p>
 <li>The application-specific outgoing viewing secret key</li>
 </ul>
 </div>
-</div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(&mut self, recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>, content: Field)</code>
+</div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(&mut self, recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>, content: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sends an &quot;L2 -&gt; L1 message&quot; from this function (Aztec, L2) to a smart
@@ -814,10 +814,10 @@ docs:start:context_message_portal</li>
 </div>
 </div><code id="consume_l1_to_l2_message" class="code-header">pub fn <span class="fn">consume_l1_to_l2_message</span>(
     &mut self,
-    content: Field,
-    secret: Field,
+    content: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    secret: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
     sender: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
-    leaf_index: Field,
+    leaf_index: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -850,7 +850,7 @@ consume them.</p>
 <p>Validates message existence in the L1-to-L2 message tree and nullifies
 the message to prevent double-consumption.</p>
 </div>
-</div><code id="emit_private_log" class="code-header">pub fn <span class="fn">emit_private_log</span>(&mut self, log: [Field; 18], length: u32)</code>
+</div><code id="emit_private_log" class="code-header">pub fn <span class="fn">emit_private_log</span>(&mut self, log: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 18], length: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Emits a private log (an array of Fields) that will be published to an
@@ -912,9 +912,9 @@ to apply, so ideally all wallets should agree on standards for this.</li>
 </div>
 </div><code id="emit_raw_note_log" class="code-header">pub fn <span class="fn">emit_raw_note_log</span>(
     &mut self,
-    log: [Field; 18],
-    length: u32,
-    note_hash_counter: u32,
+    log: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 18],
+    length: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
+    note_hash_counter: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -935,13 +935,13 @@ new note_hash when it was pushed to this</li>
 emitted regardless of note squashing, consider using <code>emit_private_log</code>
 instead, or emitting additional events.</p>
 </div>
-</div><code id="emit_contract_class_log" class="code-header">pub fn <span class="fn">emit_contract_class_log</span>&lt;let N: u32&gt;(&mut self, log: [Field; N])</code>
+</div><code id="emit_contract_class_log" class="code-header">pub fn <span class="fn">emit_contract_class_log</span>&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(&mut self, log: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N])</code>
 
-<code id="call_private_function" class="code-header">pub fn <span class="fn">call_private_function</span>&lt;let ArgsCount: u32&gt;(
+<code id="call_private_function" class="code-header">pub fn <span class="fn">call_private_function</span>&lt;let ArgsCount: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args: [Field; ArgsCount],
+    args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; ArgsCount],
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
 <div class="padded-description"><div class="comments">
@@ -1011,11 +1011,11 @@ circuits after this function completes</li>
 <li>The call inherits the current transaction's context and gas limits</li>
 </ul>
 </div>
-</div><code id="static_call_private_function" class="code-header">pub fn <span class="fn">static_call_private_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="static_call_private_function" class="code-header">pub fn <span class="fn">static_call_private_function</span>&lt;let ArgsCount: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args: [Field; ArgsCount],
+    args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; ArgsCount],
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
 <div class="padded-description"><div class="comments">
@@ -1084,8 +1084,8 @@ the safety of <code>static_call_private_function</code>.</p>
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args_hash: Field,
-    is_static_call: bool,
+    args_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    is_static_call: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
 ) -> <a href="../../../noir_aztec/context/returns_hash/struct.ReturnsHash.html" class="struct">ReturnsHash</a></code>
 
 <div class="padded-description"><div class="comments">
@@ -1105,11 +1105,11 @@ hash of the arguments.</p>
 <li><code>ReturnsHash</code> - Hash of the called function's return values</li>
 </ul>
 </div>
-</div><code id="call_public_function" class="code-header">pub fn <span class="fn">call_public_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="call_public_function" class="code-header">pub fn <span class="fn">call_public_function</span>&lt;let ArgsCount: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args: [Field; ArgsCount],
+    args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; ArgsCount],
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1140,11 +1140,11 @@ See also: https://docs.aztec.network/developers/reference/considerations/privacy
 <li><code>args</code> - Array of arguments to pass to the public function</li>
 </ul>
 </div>
-</div><code id="static_call_public_function" class="code-header">pub fn <span class="fn">static_call_public_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="static_call_public_function" class="code-header">pub fn <span class="fn">static_call_public_function</span>&lt;let ArgsCount: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args: [Field; ArgsCount],
+    args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; ArgsCount],
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1197,8 +1197,8 @@ the safety of <code>static_call_public_function</code>.</p>
 </div><code id="call_public_function_with_calldata_hash" class="code-header">pub fn <span class="fn">call_public_function_with_calldata_hash</span>(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-    calldata_hash: Field,
-    is_static_call: bool,
+    calldata_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    is_static_call: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1216,11 +1216,11 @@ performance optimization and advanced use cases.</p>
 <li><code>is_static_call</code> - Whether this should be a read-only call</li>
 </ul>
 </div>
-</div><code id="set_public_teardown_function" class="code-header">pub fn <span class="fn">set_public_teardown_function</span>&lt;let ArgsCount: u32&gt;(
+</div><code id="set_public_teardown_function" class="code-header">pub fn <span class="fn">set_public_teardown_function</span>&lt;let ArgsCount: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     function_selector: <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a>,
-    args: [Field; ArgsCount],
+    args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; ArgsCount],
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1248,8 +1248,8 @@ very early). Wallet/FPC/Paymaster developers should be mindful of this.</p>
 </div><code id="set_public_teardown_function_with_calldata_hash" class="code-header">pub fn <span class="fn">set_public_teardown_function_with_calldata_hash</span>(
     &mut self,
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-    calldata_hash: Field,
-    is_static_call: bool,
+    calldata_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    is_static_call: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
 )</code>
 
 <div class="padded-description"><div class="comments">
@@ -1271,13 +1271,13 @@ function</li>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-PrivateContext"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div></main>
 </body>

@@ -57,8 +57,8 @@
     pub end_gas_used: <a href="../../../protocol_types/abis/gas/struct.Gas.html" class="struct">Gas</a>,
     pub accumulated_data_array_lengths: <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a>,
     pub accumulated_data: <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a>,
-    pub transaction_fee: Field,
-    pub reverted: bool,
+    pub transaction_fee: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub reverted: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
 }
 </code></pre>
 <h2>Fields</h2><div id="global_variables" class="struct-field"><code class="code-header">global_variables: <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></div>
@@ -79,33 +79,33 @@
 <div class="padded-description"></div><div id="end_gas_used" class="struct-field"><code class="code-header">end_gas_used: <a href="../../../protocol_types/abis/gas/struct.Gas.html" class="struct">Gas</a></code></div>
 <div class="padded-description"></div><div id="accumulated_data_array_lengths" class="struct-field"><code class="code-header">accumulated_data_array_lengths: <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedDataArrayLengths.html" class="struct">AvmAccumulatedDataArrayLengths</a></code></div>
 <div class="padded-description"></div><div id="accumulated_data" class="struct-field"><code class="code-header">accumulated_data: <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a></code></div>
-<div class="padded-description"></div><div id="transaction_fee" class="struct-field"><code class="code-header">transaction_fee: Field</code></div>
-<div class="padded-description"></div><div id="reverted" class="struct-field"><code class="code-header">reverted: bool</code></div>
+<div class="padded-description"></div><div id="transaction_fee" class="struct-field"><code class="code-header">transaction_fee: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="reverted" class="struct-field"><code class="code-header">reverted: <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
-<div class="padded-methods"><code id="to_columns" class="code-header">pub fn <span class="fn">to_columns</span>(self) -> [[Field; 681]; 4]</code>
+<div class="padded-methods"><code id="to_columns" class="code-header">pub fn <span class="fn">to_columns</span>(self) -> [[<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 681]; 4]</code>
 
-<code id="to_columns_flat" class="code-header">pub fn <span class="fn">to_columns_flat</span>(self) -> [Field; 2724]</code>
+<code id="to_columns_flat" class="code-header">pub fn <span class="fn">to_columns_flat</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 2724]</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-AvmCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 1020]) -> Self</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 1020]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-AvmCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-AvmCircuitPublicInputs"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Serialize-for-AvmCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 1020]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 1020]</code>
 
 </div></main>
 </body>

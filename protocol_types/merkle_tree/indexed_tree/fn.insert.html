@@ -13,12 +13,12 @@
 <li><a href="fn.insert.html" class="fn">insert</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">insert</span></h1><pre><code>pub fn insert&lt;Value, Leaf, let TreeHeight: u32&gt;(
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">insert</span></h1><pre><code>pub fn insert&lt;Value, Leaf, let TreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     snapshot: <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>,
     value: Value,
     low_leaf_preimage: Leaf,
     low_leaf_membership_witness: <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;TreeHeight&gt;,
-    insertion_sibling_path: [Field; TreeHeight],
+    insertion_sibling_path: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; TreeHeight],
 ) -> <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>
 where
     Value: <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafValue.html" class="trait">IndexedTreeLeafValue</a>,

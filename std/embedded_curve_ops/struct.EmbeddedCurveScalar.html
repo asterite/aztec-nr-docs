@@ -24,8 +24,8 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">std</a>::<a href="index.html">embedded_curve_ops</a></div><h1>Struct <span id="struct" class="struct">EmbeddedCurveScalar</span></h1><pre><code>pub struct EmbeddedCurveScalar {
-    pub lo: Field,
-    pub hi: Field,
+    pub lo: <a href="../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub hi: <a href="../../std/primitive.Field.html" class="primitive">Field</a>,
 }
 </code></pre>
 <div class="comments">
@@ -33,17 +33,17 @@
 By definition, the scalar field of the embedded curve is base field of the proving system curve.
 It may not fit into a Field element, so it is represented with two Field elements; its low and high limbs.</p>
 </div>
-<h2>Fields</h2><div id="lo" class="struct-field"><code class="code-header">lo: Field</code></div>
-<div class="padded-description"></div><div id="hi" class="struct-field"><code class="code-header">hi: Field</code></div>
+<h2>Fields</h2><div id="lo" class="struct-field"><code class="code-header">lo: <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="hi" class="struct-field"><code class="code-header">hi: <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../std/embedded_curve_ops/struct.EmbeddedCurveScalar.html" class="struct">EmbeddedCurveScalar</a></code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(lo: Field, hi: Field) -> Self</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(lo: <a href="../../std/primitive.Field.html" class="primitive">Field</a>, hi: <a href="../../std/primitive.Field.html" class="primitive">Field</a>) -> Self</code>
 
-<code id="from_field" class="code-header">pub fn <span class="fn">from_field</span>(scalar: Field) -> Self</code>
+<code id="from_field" class="code-header">pub fn <span class="fn">from_field</span>(scalar: <a href="../../std/primitive.Field.html" class="primitive">Field</a>) -> Self</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Eq-for-EmbeddedCurveScalar"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/embedded_curve_ops/struct.EmbeddedCurveScalar.html" class="struct">EmbeddedCurveScalar</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> <a href="../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Hash-for-EmbeddedCurveScalar"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/embedded_curve_ops/struct.EmbeddedCurveScalar.html" class="struct">EmbeddedCurveScalar</a></code></h3>
 

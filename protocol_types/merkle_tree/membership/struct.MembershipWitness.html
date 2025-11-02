@@ -19,24 +19,24 @@
 <li><a href="fn.conditionally_assert_check_membership.html" class="fn">conditionally_assert_check_membership</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">membership</a></div><h1>Struct <span id="struct" class="struct">MembershipWitness</span></h1><pre><code>pub struct MembershipWitness&lt;let N: u32&gt; {
-    pub leaf_index: Field,
-    pub sibling_path: [Field; N],
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">membership</a></div><h1>Struct <span id="struct" class="struct">MembershipWitness</span></h1><pre><code>pub struct MembershipWitness&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; {
+    pub leaf_index: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    pub sibling_path: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N],
 }
 </code></pre>
-<h2>Fields</h2><div id="leaf_index" class="struct-field"><code class="code-header">leaf_index: Field</code></div>
-<div class="padded-description"></div><div id="sibling_path" class="struct-field"><code class="code-header">sibling_path: [Field; N]</code></div>
-<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-MembershipWitness<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
+<h2>Fields</h2><div id="leaf_index" class="struct-field"><code class="code-header">leaf_index: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<div class="padded-description"></div><div id="sibling_path" class="struct-field"><code class="code-header">sibling_path: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N]</code></div>
+<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-MembershipWitness<N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-MembershipWitness<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
+</div><h3 id="impl-Eq-for-MembershipWitness<N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div></main>
 </body>

@@ -13,12 +13,12 @@
 <li><a href="fn.insert.html" class="fn">insert</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">batch_insert</span></h1><pre><code>pub fn batch_insert&lt;Value, Leaf, let SubtreeWidth: u32, let SiblingPathLength: u32, let SubtreeHeight: u32, let TreeHeight: u32&gt;(
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">batch_insert</span></h1><pre><code>pub fn batch_insert&lt;Value, Leaf, let SubtreeWidth: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SiblingPathLength: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SubtreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     start_snapshot: <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>,
     values_to_insert: [Value; SubtreeWidth],
     sorted_values: [Value; SubtreeWidth],
-    sorted_values_indexes: [u32; SubtreeWidth],
-    new_subtree_sibling_path: [Field; SiblingPathLength],
+    sorted_values_indexes: [<a href="../../../std/primitive.u32.html" class="primitive">u32</a>; SubtreeWidth],
+    new_subtree_sibling_path: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; SiblingPathLength],
     low_leaf_preimages: [Leaf; SubtreeWidth],
     low_leaf_membership_witnesses: [<a href="../../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;TreeHeight&gt;; SubtreeWidth],
 ) -> <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>

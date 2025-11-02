@@ -90,8 +90,8 @@ ensuring cryptographically secure slot separation.</p>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
     context: Context,
-    storage_slot: Field,
-    state_var_constructor: fn(Context, Field) -> V,
+    storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    state_var_constructor: fn(Context, <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> V,
 ) -> Self</code>
 
 <div class="padded-description"><div class="comments">
@@ -149,7 +149,7 @@ user_balance.replace(new_note);
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-Map<K, T, Context>"><code class="code-header">impl&lt;Context, K, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div></main>
 </body>

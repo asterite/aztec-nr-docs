@@ -13,9 +13,9 @@
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">get_l1_to_l2_membership_witness</a></div><h1>Function <span class="fn">get_l1_to_l2_membership_witness</span></h1><pre><code>pub unconstrained fn get_l1_to_l2_membership_witness(
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-    message_hash: Field,
-    secret: Field,
-) -> (Field, [Field; 39])</code></pre>
+    message_hash: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    secret: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> (<a href="../../../std/primitive.Field.html" class="primitive">Field</a>, [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 39])</code></pre>
 
 <div class="comments">
 <p>Returns the leaf index and sibling path of an entry in the L1 to L2 messaging tree, which can then be used to prove

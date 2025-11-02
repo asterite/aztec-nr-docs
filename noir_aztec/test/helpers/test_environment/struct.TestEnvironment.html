@@ -196,31 +196,31 @@ it - it becomes invalid once <code>utility_context</code> returns.</p>
 <p>Variant of <code>utility_context</code> which allows specifying the contract address in which the utility context will
 execute, which will affect note and storage access.</p>
 </div>
-</div><code id="next_block_number" class="code-header">pub unconstrained fn <span class="fn">next_block_number</span>(_self: Self) -> u32</code>
+</div><code id="next_block_number" class="code-header">pub unconstrained fn <span class="fn">next_block_number</span>(_self: Self) -> <a href="../../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the number of the next block to be mined.</p>
 </div>
-</div><code id="last_block_number" class="code-header">pub unconstrained fn <span class="fn">last_block_number</span>(_self: Self) -> u32</code>
+</div><code id="last_block_number" class="code-header">pub unconstrained fn <span class="fn">last_block_number</span>(_self: Self) -> <a href="../../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the number of the last mined block. This is the default historical block for <code>private_context</code> and
 <code>private_call</code>.</p>
 </div>
-</div><code id="last_block_timestamp" class="code-header">pub unconstrained fn <span class="fn">last_block_timestamp</span>(_self: Self) -> u64</code>
+</div><code id="last_block_timestamp" class="code-header">pub unconstrained fn <span class="fn">last_block_timestamp</span>(_self: Self) -> <a href="../../../../std/primitive.u64.html" class="primitive">u64</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the timestamp of the last mined block. Note that block timestamps do not automatically advance - this
 must be done by calling <code>mine_block_at</code> or <code>set_next_block_timestamp</code>.</p>
 </div>
-</div><code id="mine_block_at" class="code-header">pub unconstrained fn <span class="fn">mine_block_at</span>(self, timestamp: u64)</code>
+</div><code id="mine_block_at" class="code-header">pub unconstrained fn <span class="fn">mine_block_at</span>(self, timestamp: <a href="../../../../std/primitive.u64.html" class="primitive">u64</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Mines an empty block (i.e. with no transactions) at <code>timestamp</code>, causing followup public executions to occur at
 that timestamp (e.g. via <code>call_public</code> or <code>public_context</code>), and making it possible to create private executions
 at the specified timestamp (e.g. via <code>call_private</code> or <code>private_context</code>).</p>
 </div>
-</div><code id="set_next_block_timestamp" class="code-header">pub unconstrained fn <span class="fn">set_next_block_timestamp</span>(self, timestamp: u64)</code>
+</div><code id="set_next_block_timestamp" class="code-header">pub unconstrained fn <span class="fn">set_next_block_timestamp</span>(self, timestamp: <a href="../../../../std/primitive.u64.html" class="primitive">u64</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sets the timestamp of the next block to be mined, causing followup public executions to occur at that timestamp
@@ -232,7 +232,7 @@ at the specified timestamp (e.g. via <code>call_private</code> or <code>private_
 <p>Mines an empty block (i.e. with no transactions). Note that block timestamps do not automatically advance - this
 must be done by calling <code>mine_block_at</code> or <code>set_next_block_timestamp</code>.</p>
 </div>
-</div><code id="advance_next_block_timestamp_by" class="code-header">pub unconstrained fn <span class="fn">advance_next_block_timestamp_by</span>(_self: Self, duration: u64)</code>
+</div><code id="advance_next_block_timestamp_by" class="code-header">pub unconstrained fn <span class="fn">advance_next_block_timestamp_by</span>(_self: Self, duration: <a href="../../../../std/primitive.u64.html" class="primitive">u64</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sets the timestamp of the next block to be mined to be ahead of the last one by <code>duration</code>.</p>
@@ -264,7 +264,7 @@ that rely on private authwits, use <code>create_contract_account</code> instead.
 generate multiple addresses. These addresses are also different from the ones that <code>create_contract_account</code>
 returns, and so these two functions can be mixed and match to create a set of unique accounts.</p>
 </div>
-</div><code id="deploy" class="code-header">pub unconstrained fn <span class="fn">deploy</span>&lt;let N: u32&gt;(
+</div><code id="deploy" class="code-header">pub unconstrained fn <span class="fn">deploy</span>&lt;let N: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     &mut self,
     path: str&lt;N&gt;,
 ) -> <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;</code>
@@ -303,7 +303,7 @@ relative to the current workspace:</p>
 );
 </code></pre>
 </div>
-</div><code id="call_private" class="code-header">pub unconstrained fn <span class="fn">call_private</span>&lt;T, let M: u32&gt;(
+</div><code id="call_private" class="code-header">pub unconstrained fn <span class="fn">call_private</span>&lt;T, let M: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     _self: Self,
     from: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;,
@@ -327,7 +327,7 @@ let contract_addr = env.deploy(&quot;SampleContract&quot;).without_initializer()
 let return_value = env.call_private(caller, SampleContract::at(contract_addr).sample_private_function());
 </code></pre>
 </div>
-</div><code id="view_private" class="code-header">pub unconstrained fn <span class="fn">view_private</span>&lt;T, let M: u32&gt;(
+</div><code id="view_private" class="code-header">pub unconstrained fn <span class="fn">view_private</span>&lt;T, let M: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     _self: Self,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;,
 ) -> T
@@ -339,7 +339,7 @@ where
 <p>Unlike <code>call_private</code>, no transaction is created and no block is mined (since <code>#[view]</code> functions are only
 executable in a static context, and these produce no side effects).</p>
 </div>
-</div><code id="simulate_utility" class="code-header">pub unconstrained fn <span class="fn">simulate_utility</span>&lt;T, let M: u32&gt;(
+</div><code id="simulate_utility" class="code-header">pub unconstrained fn <span class="fn">simulate_utility</span>&lt;T, let M: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     _self: Self,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;,
 ) -> T
@@ -354,7 +354,7 @@ let contract_addr = env.deploy(&quot;SampleContract&quot;).without_initializer()
 let return_value = env.simulate_utility(SampleContract::at(contract_addr).sample_utility_function());
 </code></pre>
 </div>
-</div><code id="call_public" class="code-header">pub unconstrained fn <span class="fn">call_public</span>&lt;T, let M: u32&gt;(
+</div><code id="call_public" class="code-header">pub unconstrained fn <span class="fn">call_public</span>&lt;T, let M: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     _self: Self,
     from: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;,
@@ -377,7 +377,7 @@ let contract_addr = env.deploy(&quot;SampleContract&quot;).without_initializer()
 let return_value = env.call_public(caller, SampleContract::at(contract_addr).sample_public_function());
 </code></pre>
 </div>
-</div><code id="view_public" class="code-header">pub unconstrained fn <span class="fn">view_public</span>&lt;T, let M: u32&gt;(
+</div><code id="view_public" class="code-header">pub unconstrained fn <span class="fn">view_public</span>&lt;T, let M: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     _self: Self,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicStaticCallInterface.html" class="struct">PublicStaticCallInterface</a>&lt;M, T&gt;,
 ) -> T

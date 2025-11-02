@@ -23,19 +23,19 @@
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_interface</a></div><h1>Trait <span id="trait" class="trait">NoteHash</span></h1><pre><code>pub trait NoteHash {
     <span class="comment">// Required methods</span>
-    pub fn <a href="#compute_note_hash"><span class="fn">compute_note_hash</span></a>(self, storage_slot: Field) -> Field;
+    pub fn <a href="#compute_note_hash"><span class="fn">compute_note_hash</span></a>(self, storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a>;
     pub fn <a href="#compute_nullifier"><span class="fn">compute_nullifier</span></a>(
         self,
         context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-        note_hash_for_nullify: Field,
-    ) -> Field;
+        note_hash_for_nullify: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    ) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a>;
     pub unconstrained fn <a href="#compute_nullifier_unconstrained"><span class="fn">compute_nullifier_unconstrained</span></a>(
         self,
-        note_hash_for_nullify: Field,
-    ) -> Field;
+        note_hash_for_nullify: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+    ) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a>;
 }</code></pre>
 
-<h2>Required methods</h2><div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self, storage_slot: Field) -> Field</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self, storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the non-siloed note hash, i.e. the inner hash computed by the contract during private execution. Note
@@ -47,8 +47,8 @@ value (to prevent brute force trial-hashing attacks).</p>
 </div><code id="compute_nullifier" class="code-header">pub fn <span class="fn">compute_nullifier</span>(
     self,
     context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    note_hash_for_nullify: Field,
-) -> Field</code>
+    note_hash_for_nullify: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the non-siloed nullifier (also called inner-nullifier), which will be later siloed by contract address
@@ -63,8 +63,8 @@ circuits.</p>
 </div>
 </div><code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(
     self,
-    note_hash_for_nullify: Field,
-) -> Field</code>
+    note_hash_for_nullify: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Like <code>compute_nullifier</code>, except this variant is unconstrained: there are no guarantees on the returned value

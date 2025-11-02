@@ -29,7 +29,7 @@
 </ul><h2>In module map</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.HashMap.html" class="struct">HashMap</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">std</a>::<a href="../index.html">collections</a>::<a href="index.html">map</a></div><h1>Struct <span id="struct" class="struct">HashMap</span></h1><pre><code>pub struct HashMap&lt;K, V, let N: u32, B&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">std</a>::<a href="../index.html">collections</a>::<a href="index.html">map</a></div><h1>Struct <span id="struct" class="struct">HashMap</span></h1><pre><code>pub struct HashMap&lt;K, V, let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, B&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
 <div class="comments">
@@ -50,7 +50,7 @@ map.insert(3, 4);
 let two = map.get(1).unwrap();
 </code></pre>
 </div>
-<h2>Implementations</h2><h3><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;</code></h3>
+<h2>Implementations</h2><h3><code class="code-header">impl&lt;B, K, let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, V&gt; <a href="../../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;</code></h3>
 
 <div class="padded-methods"><code id="with_hasher" class="code-header">pub fn <span class="fn">with_hasher</span>(_build_hasher: B) -> Self
 where
@@ -75,7 +75,7 @@ map.clear();
 assert(map.is_empty());
 </code></pre>
 </div>
-</div><code id="contains_key" class="code-header">pub fn <span class="fn">contains_key</span>(self, key: K) -> bool
+</div><code id="contains_key" class="code-header">pub fn <span class="fn">contains_key</span>(self, key: K) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a>
 where
     K: <a href="../../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     K: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
@@ -93,7 +93,7 @@ the value associated with the key.</p>
 }
 </code></pre>
 </div>
-</div><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
+</div><code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns <code>true</code> if the length of the hash map is empty.</p>
@@ -207,7 +207,7 @@ because the keys are untouched and the underlying hashmap thus does not need to 
 map.iter_values_mut(|v| v / 2);
 </code></pre>
 </div>
-</div><code id="retain" class="code-header">pub fn <span class="fn">retain</span>(&mut self, f: fn(K, V) -> bool)</code>
+</div><code id="retain" class="code-header">pub fn <span class="fn">retain</span>(&mut self, f: fn(K, V) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a>)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Retains only the key-value pairs for which the given function returns true.
@@ -216,7 +216,7 @@ Any key-value pairs for which the function returns false will be removed from th
 <pre><code class="language-noir">map.retain(|k, v| (k != 0) &amp; (v != 0));
 </code></pre>
 </div>
-</div><code id="len" class="code-header">pub fn <span class="fn">len</span>(self) -> u32</code>
+</div><code id="len" class="code-header">pub fn <span class="fn">len</span>(self) -> <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the current length of this hash map.</p>
@@ -237,7 +237,7 @@ map.remove(1);
 assert(map.len() == 2);
 </code></pre>
 </div>
-</div><code id="capacity" class="code-header">pub fn <span class="fn">capacity</span>(_self: Self) -> u32</code>
+</div><code id="capacity" class="code-header">pub fn <span class="fn">capacity</span>(_self: Self) -> <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the maximum capacity of this hashmap. This is always equal to the capacity
@@ -308,7 +308,7 @@ map.remove(12);
 assert(map.is_empty());
 </code></pre>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Default-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
+</div></div><h2>Trait implementations</h2><h3 id="impl-Default-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, V&gt; <a href="../../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
 where
     B: <a href="../../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;,
     B: <a href="../../../std/default/trait.Default.html" class="trait">Default</a></code></h3>
@@ -322,14 +322,14 @@ where
 assert(hashmap.is_empty());
 </code></pre>
 </div>
-</div></div><h3 id="impl-Eq-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
+</div></div><h3 id="impl-Eq-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, V&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
 where
     K: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     K: <a href="../../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     V: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     B: <a href="../../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Checks if two HashMaps are equal.</p>

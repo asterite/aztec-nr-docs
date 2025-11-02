@@ -22,35 +22,35 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">protocol_types</a>::<a href="index.html">poseidon2</a></div><h1>Struct <span id="struct" class="struct">Poseidon2Sponge</span></h1><pre><code>pub struct Poseidon2Sponge {
-    pub cache: [Field; 3],
-    pub state: [Field; 4],
-    pub cache_size: u32,
-    pub squeeze_mode: bool,
+    pub cache: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 3],
+    pub state: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 4],
+    pub cache_size: <a href="../../std/primitive.u32.html" class="primitive">u32</a>,
+    pub squeeze_mode: <a href="../../std/primitive.bool.html" class="primitive">bool</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="cache" class="struct-field"><code class="code-header">cache: [Field; 3]</code></div>
-<div class="padded-description"></div><div id="state" class="struct-field"><code class="code-header">state: [Field; 4]</code></div>
-<div class="padded-description"></div><div id="cache_size" class="struct-field"><code class="code-header">cache_size: u32</code></div>
-<div class="padded-description"></div><div id="squeeze_mode" class="struct-field"><code class="code-header">squeeze_mode: bool</code></div>
+<h2>Fields</h2><div id="cache" class="struct-field"><code class="code-header">cache: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 3]</code></div>
+<div class="padded-description"></div><div id="state" class="struct-field"><code class="code-header">state: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 4]</code></div>
+<div class="padded-description"></div><div id="cache_size" class="struct-field"><code class="code-header">cache_size: <a href="../../std/primitive.u32.html" class="primitive">u32</a></code></div>
+<div class="padded-description"></div><div id="squeeze_mode" class="struct-field"><code class="code-header">squeeze_mode: <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../protocol_types/poseidon2/struct.Poseidon2Sponge.html" class="struct">Poseidon2Sponge</a></code></h3>
 
-<div class="padded-methods"><code id="hash" class="code-header">pub fn <span class="fn">hash</span>&lt;let N: u32&gt;(input: [Field; N], message_size: u32) -> Field</code>
+<div class="padded-methods"><code id="hash" class="code-header">pub fn <span class="fn">hash</span>&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt;(input: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; N], message_size: <a href="../../std/primitive.u32.html" class="primitive">u32</a>) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-<code id="absorb" class="code-header">pub fn <span class="fn">absorb</span>(&mut self, input: Field)</code>
+<code id="absorb" class="code-header">pub fn <span class="fn">absorb</span>(&mut self, input: <a href="../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
-<code id="squeeze" class="code-header">pub fn <span class="fn">squeeze</span>(&mut self) -> Field</code>
+<code id="squeeze" class="code-header">pub fn <span class="fn">squeeze</span>(&mut self) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-Poseidon2Sponge"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/poseidon2/struct.Poseidon2Sponge.html" class="struct">Poseidon2Sponge</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 9]) -> Self</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 9]) -> Self</code>
 
 </div><h3 id="impl-Eq-for-Poseidon2Sponge"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/poseidon2/struct.Poseidon2Sponge.html" class="struct">Poseidon2Sponge</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Serialize-for-Poseidon2Sponge"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/poseidon2/struct.Poseidon2Sponge.html" class="struct">Poseidon2Sponge</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 9]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 9]</code>
 
 </div></main>
 </body>

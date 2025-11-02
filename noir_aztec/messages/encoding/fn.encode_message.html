@@ -14,11 +14,11 @@
 <li><a href="global.MAX_MESSAGE_LEN.html" class="global">MAX_MESSAGE_LEN</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">messages</a>::<a href="index.html">encoding</a></div><h1>Function <span class="fn">encode_message</span></h1><pre><code>pub fn encode_message&lt;let N: u32&gt;(
-    msg_type: u64,
-    msg_metadata: u64,
-    msg_content: [Field; N],
-) -> [Field; N + 1]</code></pre>
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">messages</a>::<a href="index.html">encoding</a></div><h1>Function <span class="fn">encode_message</span></h1><pre><code>pub fn encode_message&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
+    msg_type: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>,
+    msg_metadata: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>,
+    msg_content: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N],
+) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N + 1]</code></pre>
 
 <div class="comments">
 <p>Encodes a message following aztec-nr's standard message encoding. This message can later be decoded with

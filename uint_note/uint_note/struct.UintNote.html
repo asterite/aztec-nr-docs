@@ -31,15 +31,15 @@
 </div>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(value: u128, owner: <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> Self</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(value: <a href="../../std/primitive.u128.html" class="primitive">u128</a>, owner: <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> Self</code>
 
-<code id="get_value" class="code-header">pub fn <span class="fn">get_value</span>(self) -> u128</code>
+<code id="get_value" class="code-header">pub fn <span class="fn">get_value</span>(self) -> <a href="../../std/primitive.u128.html" class="primitive">u128</a></code>
 
 <code id="get_owner" class="code-header">pub fn <span class="fn">get_owner</span>(self) -> <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <code id="partial" class="code-header">pub fn <span class="fn">partial</span>(
     owner: <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-    storage_slot: Field,
+    storage_slot: <a href="../../std/primitive.Field.html" class="primitive">Field</a>,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
     recipient: <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     completer: <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
@@ -59,22 +59,22 @@ note. <code>recipient</code> will typically be the same as <code>owner</code>.</
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-UintNote"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-NoteHash-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">compute_note_hash</span>(self, storage_slot: Field) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">compute_note_hash</span>(self, storage_slot: <a href="../../std/primitive.Field.html" class="primitive">Field</a>) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <code class="code-header">pub fn <span class="fn">compute_nullifier</span>(
     self,
     context: &mut <a href="../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
-    note_hash_for_nullify: Field,
-) -> Field</code>
+    note_hash_for_nullify: <a href="../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <code class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(
     self,
-    note_hash_for_nullify: Field,
-) -> Field</code>
+    note_hash_for_nullify: <a href="../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div><h3 id="impl-NoteProperties&lt;UintNoteProperties&gt;-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteProperties.html" class="trait">NoteProperties</a>&lt;<a href="../../uint_note/uint_note/struct.UintNoteProperties.html" class="struct">UintNoteProperties</a>&gt; for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
@@ -82,17 +82,17 @@ note. <code>recipient</code> will typically be the same as <code>owner</code>.</
 
 </div><h3 id="impl-NoteType-for-UintNote"><code class="code-header">impl <a href="../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_id</span>() -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_id</span>() -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div><h3 id="impl-Packable-for-UintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self) -> [Field; 3]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self) -> [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 3]</code>
 
-<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [Field; 3]) -> Self</code>
+<code class="code-header">pub fn <span class="fn">unpack</span>(packed: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 3]) -> Self</code>
 
 </div><h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 3]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 3]</code>
 
 </div></main>
 </body>

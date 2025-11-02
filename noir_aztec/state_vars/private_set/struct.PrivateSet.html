@@ -22,7 +22,7 @@
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">private_set</a></div><h1>Struct <span id="struct" class="struct">PrivateSet</span></h1><pre><code>pub struct PrivateSet&lt;Note, Context&gt; {
     pub context: Context,
-    pub storage_slot: Field,
+    pub storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
 }
 </code></pre>
 <div class="comments">
@@ -142,7 +142,7 @@ given storage_slot.</li>
 <p>docs:start:struct</p>
 </div>
 <h2>Fields</h2><div id="context" class="struct-field"><code class="code-header">context: Context</code></div>
-<div class="padded-description"></div><div id="storage_slot" class="struct-field"><code class="code-header">storage_slot: Field</code></div>
+<div class="padded-description"></div><div id="storage_slot" class="struct-field"><code class="code-header">storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="view_notes" class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(
@@ -250,7 +250,7 @@ yield a <code>unique_siloed_note_hash</code> (see the protocol spec for more).</
 </ul>
 <p>docs:start:insert</p>
 </div>
-</div><code id="pop_notes" class="code-header">pub fn <span class="fn">pop_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: u32&gt;(
+</div><code id="pop_notes" class="code-header">pub fn <span class="fn">pop_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     self,
     options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;,
 ) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Note, 16&gt;
@@ -389,7 +389,7 @@ easier ways to customize your own note encryption options.</p>
 </li>
 </ul>
 </div>
-</div><code id="get_notes" class="code-header">pub fn <span class="fn">get_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: u32&gt;(
+</div><code id="get_notes" class="code-header">pub fn <span class="fn">get_notes</span>&lt;PreprocessorArgs, FilterArgs, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     self,
     options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;,
 ) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, 16&gt;
@@ -464,7 +464,7 @@ note was indeed emitted by some earlier execution frame of this tx.</li>
 </div>
 </div></div><h3><code class="code-header">impl&lt;Context, Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, Context&gt;</code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: Field) -> Self</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(context: Context, storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> Self</code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a new PrivateSet state variable.</p>
@@ -487,7 +487,7 @@ have to worry about this, as it's managed behind the scenes.</li>
 </div>
 </div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-PrivateSet<T, Context>"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;T, Context&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div></main>
 </body>

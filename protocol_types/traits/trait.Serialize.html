@@ -128,10 +128,10 @@
 </ul></nav>
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">protocol_types</a>::<a href="index.html">traits</a></div><h1>Trait <span id="trait" class="trait">Serialize</span></h1><pre><code>pub trait Serialize {
-    let N: u32;
+    let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>;
 
     <span class="comment">// Required methods</span>
-    pub fn <a href="#serialize"><span class="fn">serialize</span></a>(self) -> [Field; N];
+    pub fn <a href="#serialize"><span class="fn">serialize</span></a>(self) -> [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; N];
 }</code></pre>
 
 <div class="comments">
@@ -165,7 +165,7 @@ fail with an arguments hash mismatch error message.</p>
 }
 </code></pre>
 </div>
-<h2>Required methods</h2><div class="padded-methods"><code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; N]</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; N]</code>
 
 </div><h2>Implementors</h2><h3 id="impl-Serialize-for-(T0, T1)"><code class="code-header">impl&lt;T0, T1&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T0, T1)
 where
@@ -226,13 +226,13 @@ where
 
 <h3 id="impl-Serialize-for-BlockHeader"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
-<h3 id="impl-Serialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
+<h3 id="impl-Serialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
 
 <h3 id="impl-Serialize-for-CallContext"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
-<h3 id="impl-Serialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+<h3 id="impl-Serialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
 
@@ -260,7 +260,7 @@ where
 
 <h3 id="impl-Serialize-for-FeePayload"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/authwit/entrypoint/fee/struct.FeePayload.html" class="struct">FeePayload</a></code></h3>
 
-<h3 id="impl-Serialize-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for Field</code></h3>
+<h3 id="impl-Serialize-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></h3>
 
 <h3 id="impl-Serialize-for-FunctionCall"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/authwit/entrypoint/function_call/struct.FunctionCall.html" class="struct">FunctionCall</a></code></h3>
 
@@ -278,7 +278,7 @@ where
 
 <h3 id="impl-Serialize-for-HasArray"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArray</code></h3>
 
-<h3 id="impl-Serialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArrayWithGenerics&lt;T, N&gt;
+<h3 id="impl-Serialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArrayWithGenerics&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
 
@@ -292,7 +292,7 @@ where
 
 <h3 id="impl-Serialize-for-L2ToL1Message"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a></code></h3>
 
-<h3 id="impl-Serialize-for-Log<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Serialize-for-Log<N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Serialize-for-LogHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a></code></h3>
 
@@ -402,31 +402,31 @@ where
 
 <h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
-<h3 id="impl-Serialize-for-[T; M]"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for [T; M]
+<h3 id="impl-Serialize-for-[T; M]"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for [T; M]
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
 
-<h3 id="impl-Serialize-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for bool</code></h3>
+<h3 id="impl-Serialize-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 
-<h3 id="impl-Serialize-for-i16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for i16</code></h3>
+<h3 id="impl-Serialize-for-i16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.i16.html" class="primitive">i16</a></code></h3>
 
-<h3 id="impl-Serialize-for-i32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for i32</code></h3>
+<h3 id="impl-Serialize-for-i32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.i32.html" class="primitive">i32</a></code></h3>
 
-<h3 id="impl-Serialize-for-i64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for i64</code></h3>
+<h3 id="impl-Serialize-for-i64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.i64.html" class="primitive">i64</a></code></h3>
 
-<h3 id="impl-Serialize-for-i8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for i8</code></h3>
+<h3 id="impl-Serialize-for-i8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.i8.html" class="primitive">i8</a></code></h3>
 
-<h3 id="impl-Serialize-for-str&lt;M&gt;"><code class="code-header">impl&lt;let M: u32&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for str&lt;M&gt;</code></h3>
+<h3 id="impl-Serialize-for-str&lt;M&gt;"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for str&lt;M&gt;</code></h3>
 
-<h3 id="impl-Serialize-for-u128"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for u128</code></h3>
+<h3 id="impl-Serialize-for-u128"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.u128.html" class="primitive">u128</a></code></h3>
 
-<h3 id="impl-Serialize-for-u16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for u16</code></h3>
+<h3 id="impl-Serialize-for-u16"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.u16.html" class="primitive">u16</a></code></h3>
 
-<h3 id="impl-Serialize-for-u32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for u32</code></h3>
+<h3 id="impl-Serialize-for-u32"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.u32.html" class="primitive">u32</a></code></h3>
 
-<h3 id="impl-Serialize-for-u64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for u64</code></h3>
+<h3 id="impl-Serialize-for-u64"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.u64.html" class="primitive">u64</a></code></h3>
 
-<h3 id="impl-Serialize-for-u8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for u8</code></h3>
+<h3 id="impl-Serialize-for-u8"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.u8.html" class="primitive">u8</a></code></h3>
 
 </main>
 </body>

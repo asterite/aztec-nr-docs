@@ -25,7 +25,7 @@
 <div class="padded-description"></div><div id="vk_data" class="struct-field"><code class="code-header">vk_data: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;127&gt;</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/private_kernel_data/struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></code></h3>
 
-<div class="padded-methods"><code id="validate_vk_in_vk_tree" class="code-header">pub fn <span class="fn">validate_vk_in_vk_tree</span>&lt;let N: u32&gt;(self, allowed_indices: [u32; N])</code>
+<div class="padded-methods"><code id="validate_vk_in_vk_tree" class="code-header">pub fn <span class="fn">validate_vk_in_vk_tree</span>&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, allowed_indices: [<a href="../../../std/primitive.u32.html" class="primitive">u32</a>; N])</code>
 
 <div class="padded-description"><div class="comments">
 <p>Validates that the vk hash exists in the vk tree at the expected index.
@@ -34,7 +34,7 @@ This function is different, in that it lets us set only PRIVATE_KERNEL_RESET_IND
 in the allowed_indices to allow all the reset circuits.
 So unfortunately we can't use the same function in vk_data.nr.</p>
 </div>
-</div><code id="verify" class="code-header">pub fn <span class="fn">verify</span>(self, is_last_inner_kernel: bool)</code>
+</div><code id="verify" class="code-header">pub fn <span class="fn">verify</span>(self, is_last_inner_kernel: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>)</code>
 
 </div></main>
 </body>

@@ -36,10 +36,10 @@
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">protocol_types</a>::<a href="index.html">traits</a></div><h1>Trait <span id="trait" class="trait">Hash</span></h1><pre><code>pub trait Hash {
     <span class="comment">// Required methods</span>
-    pub fn <a href="#hash"><span class="fn">hash</span></a>(self) -> Field;
+    pub fn <a href="#hash"><span class="fn">hash</span></a>(self) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a>;
 }</code></pre>
 
-<h2>Required methods</h2><div class="padded-methods"><code id="hash" class="code-header">pub fn <span class="fn">hash</span>(self) -> Field</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="hash" class="code-header">pub fn <span class="fn">hash</span>(self) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 </div><h2>Implementors</h2><h3 id="impl-Hash-for-AppPayload"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../noir_aztec/authwit/entrypoint/app/struct.AppPayload.html" class="struct">AppPayload</a></code></h3>
 
@@ -51,7 +51,7 @@
 
 <h3 id="impl-Hash-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<h3 id="impl-Hash-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+<h3 id="impl-Hash-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
 

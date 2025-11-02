@@ -32,25 +32,25 @@
 
 <code id="at_historical" class="code-header">pub unconstrained fn <span class="fn">at_historical</span>(
     contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-    block_number: u32,
+    block_number: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
 ) -> Self</code>
 
-<code id="block_number" class="code-header">pub fn <span class="fn">block_number</span>(self) -> u32</code>
+<code id="block_number" class="code-header">pub fn <span class="fn">block_number</span>(self) -> <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
-<code id="timestamp" class="code-header">pub fn <span class="fn">timestamp</span>(self) -> u64</code>
+<code id="timestamp" class="code-header">pub fn <span class="fn">timestamp</span>(self) -> <a href="../../../std/primitive.u64.html" class="primitive">u64</a></code>
 
 <code id="this_address" class="code-header">pub fn <span class="fn">this_address</span>(self) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
-<code id="version" class="code-header">pub fn <span class="fn">version</span>(self) -> Field</code>
+<code id="version" class="code-header">pub fn <span class="fn">version</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-<code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self) -> Field</code>
+<code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
-<code id="raw_storage_read" class="code-header">pub unconstrained fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(
+<code id="raw_storage_read" class="code-header">pub unconstrained fn <span class="fn">raw_storage_read</span>&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     self,
-    storage_slot: Field,
-) -> [Field; N]</code>
+    storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
+) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N]</code>
 
-<code id="storage_read" class="code-header">pub unconstrained fn <span class="fn">storage_read</span>&lt;T&gt;(self, storage_slot: Field) -> T
+<code id="storage_read" class="code-header">pub unconstrained fn <span class="fn">storage_read</span>&lt;T&gt;(self, storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code>
 
