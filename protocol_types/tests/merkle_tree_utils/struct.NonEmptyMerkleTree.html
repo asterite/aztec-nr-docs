@@ -13,8 +13,8 @@
 <li><a href="#get_sibling_path">get_sibling_path</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#update_leaf">update_leaf</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-NonEmptyMerkleTree">Empty</a></li>
-<li><a href="#impl-Eq-for-NonEmptyMerkleTree">Eq</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>">Empty</a></li>
+<li><a href="#impl-Eq-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>">Eq</a></li>
 </ul><h2>In module merkle_tree_utils</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.compute_zero_hashes.html" class="fn">compute_zero_hashes</a></div></li>
 </ul></nav>
@@ -29,30 +29,27 @@
     _tree_height: [Field; TREE_HEIGHT],
     _supertree_height: [Field; SUPERTREE_HEIGHT],
     _subtree_height: [Field; SUBTREE_HEIGHT],
-) -> <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code>
+) -> Self</code>
 
-<code id="get_sibling_path" class="code-header">pub fn <span class="fn">get_sibling_path</span>(
-    self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;,
-    leaf_index: u32,
-) -> [Field; TREE_HEIGHT]</code>
+<code id="get_sibling_path" class="code-header">pub fn <span class="fn">get_sibling_path</span>(self, leaf_index: u32) -> [Field; TREE_HEIGHT]</code>
 
-<code id="update_leaf" class="code-header">pub fn <span class="fn">update_leaf</span>(&mut self: &mut <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;, index: u32, value: Field)</code>
+<code id="update_leaf" class="code-header">pub fn <span class="fn">update_leaf</span>(&mut self, index: u32, value: Field)</code>
 
-<code id="get_root" class="code-header">pub fn <span class="fn">get_root</span>(self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;) -> Field</code>
+<code id="get_root" class="code-header">pub fn <span class="fn">get_root</span>(self) -> Field</code>
 
-<code id="get_next_available_index" class="code-header">pub fn <span class="fn">get_next_available_index</span>(_self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;) -> u32</code>
+<code id="get_next_available_index" class="code-header">pub fn <span class="fn">get_next_available_index</span>(_self: Self) -> u32</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-NonEmptyMerkleTree"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-NonEmptyMerkleTree"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
+</div><h3 id="impl-Eq-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;, _other: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div></main>
 </body>

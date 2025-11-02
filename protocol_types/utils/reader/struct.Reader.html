@@ -25,30 +25,27 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: u32&gt; <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;</code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(data: [Field; N]) -> <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(data: [Field; N]) -> Self</code>
 
-<code id="read" class="code-header">pub fn <span class="fn">read</span>(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;) -> Field</code>
+<code id="read" class="code-header">pub fn <span class="fn">read</span>(&mut self) -> Field</code>
 
-<code id="read_u32" class="code-header">pub fn <span class="fn">read_u32</span>(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;) -> u32</code>
+<code id="read_u32" class="code-header">pub fn <span class="fn">read_u32</span>(&mut self) -> u32</code>
 
-<code id="read_u64" class="code-header">pub fn <span class="fn">read_u64</span>(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;) -> u64</code>
+<code id="read_u64" class="code-header">pub fn <span class="fn">read_u64</span>(&mut self) -> u64</code>
 
-<code id="read_bool" class="code-header">pub fn <span class="fn">read_bool</span>(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;) -> bool</code>
+<code id="read_bool" class="code-header">pub fn <span class="fn">read_bool</span>(&mut self) -> bool</code>
 
-<code id="read_array" class="code-header">pub fn <span class="fn">read_array</span>&lt;let K: u32&gt;(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;) -> [Field; K]</code>
+<code id="read_array" class="code-header">pub fn <span class="fn">read_array</span>&lt;let K: u32&gt;(&mut self) -> [Field; K]</code>
 
-<code id="read_struct" class="code-header">pub fn <span class="fn">read_struct</span>&lt;T, let K: u32&gt;(
-    &mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;,
-    deserialise: fn([Field; K]) -> T,
-) -> T</code>
+<code id="read_struct" class="code-header">pub fn <span class="fn">read_struct</span>&lt;T, let K: u32&gt;(&mut self, deserialise: fn([Field; K]) -> T) -> T</code>
 
 <code id="read_struct_array" class="code-header">pub fn <span class="fn">read_struct_array</span>&lt;T, let K: u32, let C: u32&gt;(
-    &mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;,
+    &mut self,
     deserialise: fn([Field; K]) -> T,
     result: [T; C],
 ) -> [T; C]</code>
 
-<code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self: <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;)</code>
+<code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self)</code>
 
 </div></main>
 </body>

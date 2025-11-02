@@ -26,23 +26,23 @@
 <div class="padded-description"></div><div id="partial" class="struct-field"><code class="code-header">partial: <a href="../../../protocol_types/abis/partial_state_reference/struct.PartialStateReference.html" class="struct">PartialStateReference</a></code></div>
 <div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-StateReference"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 8]) -> <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 8]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-StateReference"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-StateReference"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a>, _other: <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Serialize-for-StateReference"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/state_reference/struct.StateReference.html" class="struct">StateReference</a>) -> [Field; 8]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 8]</code>
 
 </div></main>
 </body>

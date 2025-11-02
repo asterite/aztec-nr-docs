@@ -18,10 +18,10 @@
 <li><a href="#pop_hint">pop_hint</a></li>
 <li><a href="#push">push</a></li>
 <li><a href="#push_hint">push_hint</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ClaimedLengthArray">Deserialize</a></li>
-<li><a href="#impl-Empty-for-ClaimedLengthArray">Empty</a></li>
-<li><a href="#impl-Eq-for-ClaimedLengthArray">Eq</a></li>
-<li><a href="#impl-Serialize-for-ClaimedLengthArray">Serialize</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ClaimedLengthArray<T, N>">Deserialize</a></li>
+<li><a href="#impl-Empty-for-ClaimedLengthArray<T, N>">Empty</a></li>
+<li><a href="#impl-Eq-for-ClaimedLengthArray<T, N>">Eq</a></li>
+<li><a href="#impl-Serialize-for-ClaimedLengthArray<T, N>">Serialize</a></li>
 </ul><h2>In module arrays</h2><h3>Modules</h3><ul class="item-list"><li><a href="assert_array_appended/index.html" class="module">assert_array_appended</a></div></li>
 <li><a href="assert_array_prepended/index.html" class="module">assert_array_prepended</a></div></li>
 <li><a href="assert_exposed_sorted_transformed_value_array/index.html" class="module">assert_exposed_sorted_transformed_value_array</a></div></li>
@@ -68,69 +68,67 @@ Validation must include:</p>
 <div class="padded-description"></div><div id="length" class="struct-field"><code class="code-header">length: u32</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;</code></h3>
 
-<div class="padded-methods"><code id="push" class="code-header">pub fn <span class="fn">push</span>(&mut self: &mut <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, item: T)
+<div class="padded-methods"><code id="push" class="code-header">pub fn <span class="fn">push</span>(&mut self, item: T)
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="assert_dense_trimmed" class="code-header">pub fn <span class="fn">assert_dense_trimmed</span>(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;)
+<code id="assert_dense_trimmed" class="code-header">pub fn <span class="fn">assert_dense_trimmed</span>(self)
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="assert_empty" class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, msg: str&lt;S&gt;)
+<code id="assert_empty" class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="push_hint" class="code-header">pub unconstrained fn <span class="fn">push_hint</span>(&mut self: &mut <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, item: T)
+<code id="push_hint" class="code-header">pub unconstrained fn <span class="fn">push_hint</span>(&mut self, item: T)
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="pop_hint" class="code-header">pub unconstrained fn <span class="fn">pop_hint</span>(&mut self: &mut <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;) -> T
+<code id="pop_hint" class="code-header">pub unconstrained fn <span class="fn">pop_hint</span>(&mut self) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="for_each" class="code-header">pub fn <span class="fn">for_each</span>&lt;Env&gt;(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, f: fn[Env](T))
+<code id="for_each" class="code-header">pub fn <span class="fn">for_each</span>&lt;Env&gt;(self, f: fn[Env](T))
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="for_each_i" class="code-header">pub fn <span class="fn">for_each_i</span>&lt;Env&gt;(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, f: fn[Env](T, u32))
+<code id="for_each_i" class="code-header">pub fn <span class="fn">for_each_i</span>&lt;Env&gt;(self, f: fn[Env](T, u32))
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-<code id="from_bounded_vec" class="code-header">pub fn <span class="fn">from_bounded_vec</span>(vec: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, N&gt;) -> <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+<code id="from_bounded_vec" class="code-header">pub fn <span class="fn">from_bounded_vec</span>(vec: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, N&gt;) -> Self
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(
     serialized: [Field; N * &lt;(resolved type) as Deserialize&gt;::N + 1],
-) -> <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;</code>
+) -> Self</code>
 
-</div><h3 id="impl-Empty-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+</div><h3 id="impl-Empty-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+</div><h3 id="impl-Eq-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;, other: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> bool</code>
 
-</div><h3 id="impl-Serialize-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+</div><h3 id="impl-Serialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(
-    self: <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;,
-) -> [Field; N * &lt;(resolved type) as Serialize&gt;::N + 1]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; N * &lt;(resolved type) as Serialize&gt;::N + 1]</code>
 
 </div></main>
 </body>

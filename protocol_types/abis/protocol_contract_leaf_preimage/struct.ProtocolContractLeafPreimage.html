@@ -33,46 +33,33 @@ The tree is created never updated within the kernels, so we don't need the funct
 <div class="padded-description"></div><div id="next_address" class="struct-field"><code class="code-header">next_address: Field</code></div>
 <div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-ProtocolContractLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-ProtocolContractLeafPreimage"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(
-    self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>,
-    other: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>,
-) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> bool</code>
 
 </div><h3 id="impl-IndexedTreeLeafPreimage&lt;Field&gt;-for-ProtocolContractLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.IndexedTreeLeafPreimage.html" class="trait">IndexedTreeLeafPreimage</a>&lt;Field&gt; for <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_next_key</span>(self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_next_key</span>(self) -> Field</code>
 
-<code class="code-header">pub fn <span class="fn">points_to_infinity</span>(self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">points_to_infinity</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">update_pointers</span>(
-    self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>,
-    _next_key: Field,
-    _next_index: u32,
-) -> <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code>
+<code class="code-header">pub fn <span class="fn">update_pointers</span>(self, _next_key: Field, _next_index: u32) -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">update_value</span>(
-    self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>,
-    _value: Field,
-) -> <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code>
+<code class="code-header">pub fn <span class="fn">update_value</span>(self, _value: Field) -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">build_insertion_leaf</span>(
-    _value: Field,
-    _low_leaf: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>,
-) -> <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code>
+<code class="code-header">pub fn <span class="fn">build_insertion_leaf</span>(_value: Field, _low_leaf: Self) -> Self</code>
 
 </div><h3 id="impl-LeafPreimage-for-ProtocolContractLeafPreimage"><code class="code-header">impl <a href="../../../protocol_types/merkle_tree/leaf_preimage/trait.LeafPreimage.html" class="trait">LeafPreimage</a> for <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_key</span>(self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_key</span>(self) -> Field</code>
 
-<code class="code-header">pub fn <span class="fn">as_leaf</span>(self: <a href="../../../protocol_types/abis/protocol_contract_leaf_preimage/struct.ProtocolContractLeafPreimage.html" class="struct">ProtocolContractLeafPreimage</a>) -> Field</code>
+<code class="code-header">pub fn <span class="fn">as_leaf</span>(self) -> Field</code>
 
 </div></main>
 </body>

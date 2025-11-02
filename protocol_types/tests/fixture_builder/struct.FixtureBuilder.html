@@ -300,290 +300,225 @@
 <div class="padded-description"></div><div id="value_offset" class="struct-field"><code class="code-header">value_offset: Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>() -> Self</code>
 
-<code id="new_from_counter" class="code-header">pub fn <span class="fn">new_from_counter</span>(counter_start: u32) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="new_from_counter" class="code-header">pub fn <span class="fn">new_from_counter</span>(counter_start: u32) -> Self</code>
 
-<code id="as_parent_contract" class="code-header">pub fn <span class="fn">as_parent_contract</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="as_parent_contract" class="code-header">pub fn <span class="fn">as_parent_contract</span>(&mut self) -> Self</code>
 
-<code id="in_vk_tree" class="code-header">pub fn <span class="fn">in_vk_tree</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, vk_index: u32) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="in_vk_tree" class="code-header">pub fn <span class="fn">in_vk_tree</span>(&mut self, vk_index: u32) -> Self</code>
 
 <code id="vk_tree_root" class="code-header">pub fn <span class="fn">vk_tree_root</span>() -> Field</code>
 
-<code id="set_protocol_contract_root" class="code-header">pub fn <span class="fn">set_protocol_contract_root</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>)</code>
+<code id="set_protocol_contract_root" class="code-header">pub fn <span class="fn">set_protocol_contract_root</span>(&mut self)</code>
 
-<code id="use_protocol_contract" class="code-header">pub fn <span class="fn">use_protocol_contract</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    contract_index: u32,
-) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="use_protocol_contract" class="code-header">pub fn <span class="fn">use_protocol_contract</span>(&mut self, contract_index: u32) -> Self</code>
 
-<code id="use_contract" class="code-header">pub fn <span class="fn">use_contract</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    contract_data: <a href="../../../protocol_types/tests/fixtures/contracts/struct.ContractData.html" class="struct">ContractData</a>,
-) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="use_contract" class="code-header">pub fn <span class="fn">use_contract</span>(&mut self, contract_data: <a href="../../../protocol_types/tests/fixtures/contracts/struct.ContractData.html" class="struct">ContractData</a>) -> Self</code>
 
-<code id="use_function" class="code-header">pub fn <span class="fn">use_function</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    function_data: <a href="../../../protocol_types/tests/fixtures/contract_functions/struct.ContractFunction.html" class="struct">ContractFunction</a>,
-    vk: [Field; 127],
-) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="use_function" class="code-header">pub fn <span class="fn">use_function</span>(&mut self, function_data: <a href="../../../protocol_types/tests/fixtures/contract_functions/struct.ContractFunction.html" class="struct">ContractFunction</a>, vk: [Field; 127]) -> Self</code>
 
-<code id="use_last_archive" class="code-header">pub fn <span class="fn">use_last_archive</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="use_last_archive" class="code-header">pub fn <span class="fn">use_last_archive</span>(&mut self) -> Self</code>
 
-<code id="is_static_call" class="code-header">pub fn <span class="fn">is_static_call</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="is_static_call" class="code-header">pub fn <span class="fn">is_static_call</span>(&mut self) -> Self</code>
 
-<code id="is_first_call" class="code-header">pub fn <span class="fn">is_first_call</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<code id="is_first_call" class="code-header">pub fn <span class="fn">is_first_call</span>(&mut self) -> Self</code>
 
-<code id="to_tx_constant_data" class="code-header">pub fn <span class="fn">to_tx_constant_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/tx_constant_data/struct.TxConstantData.html" class="struct">TxConstantData</a></code>
+<code id="to_tx_constant_data" class="code-header">pub fn <span class="fn">to_tx_constant_data</span>(self) -> <a href="../../../protocol_types/abis/tx_constant_data/struct.TxConstantData.html" class="struct">TxConstantData</a></code>
 
-<code id="to_block_constant_data" class="code-header">pub fn <span class="fn">to_block_constant_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code>
+<code id="to_block_constant_data" class="code-header">pub fn <span class="fn">to_block_constant_data</span>(self) -> <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code>
 
-<code id="build_tx_request" class="code-header">pub fn <span class="fn">build_tx_request</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/transaction/tx_request/struct.TxRequest.html" class="struct">TxRequest</a></code>
+<code id="build_tx_request" class="code-header">pub fn <span class="fn">build_tx_request</span>(self) -> <a href="../../../protocol_types/abis/transaction/tx_request/struct.TxRequest.html" class="struct">TxRequest</a></code>
 
-<code id="build_call_context" class="code-header">pub fn <span class="fn">build_call_context</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code>
+<code id="build_call_context" class="code-header">pub fn <span class="fn">build_call_context</span>(self) -> <a href="../../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code>
 
-<code id="build_private_call_request" class="code-header">pub fn <span class="fn">build_private_call_request</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a></code>
+<code id="build_private_call_request" class="code-header">pub fn <span class="fn">build_private_call_request</span>(self) -> <a href="../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a></code>
 
-<code id="to_private_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_private_circuit_public_inputs</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-) -> <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code>
+<code id="to_private_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_private_circuit_public_inputs</span>(self) -> <a href="../../../protocol_types/abis/private_circuit_public_inputs/struct.PrivateCircuitPublicInputs.html" class="struct">PrivateCircuitPublicInputs</a></code>
 
-<code id="to_private_verification_key_hints" class="code-header">pub fn <span class="fn">to_private_verification_key_hints</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-) -> <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateVerificationKeyHints.html" class="struct">PrivateVerificationKeyHints</a></code>
+<code id="to_private_verification_key_hints" class="code-header">pub fn <span class="fn">to_private_verification_key_hints</span>(self) -> <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateVerificationKeyHints.html" class="struct">PrivateVerificationKeyHints</a></code>
 
-<code id="compute_update_tree_and_hints" class="code-header">pub fn <span class="fn">compute_update_tree_and_hints</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>)</code>
+<code id="compute_update_tree_and_hints" class="code-header">pub fn <span class="fn">compute_update_tree_and_hints</span>(&mut self)</code>
 
-<code id="set_historical_header_from_call_data" class="code-header">pub fn <span class="fn">set_historical_header_from_call_data</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    private_call: <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateCallData.html" class="struct">PrivateCallData</a>,
-)</code>
+<code id="set_historical_header_from_call_data" class="code-header">pub fn <span class="fn">set_historical_header_from_call_data</span>(&mut self, private_call: <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateCallData.html" class="struct">PrivateCallData</a>)</code>
 
-<code id="to_private_call_data" class="code-header">pub fn <span class="fn">to_private_call_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateCallData.html" class="struct">PrivateCallData</a></code>
+<code id="to_private_call_data" class="code-header">pub fn <span class="fn">to_private_call_data</span>(self) -> <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateCallData.html" class="struct">PrivateCallData</a></code>
 
-<code id="to_private_accumulated_data_builder" class="code-header">pub fn <span class="fn">to_private_accumulated_data_builder</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-) -> <a href="../../../protocol_types/abis/accumulated_data/private_accumulated_data_builder/struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></code>
+<code id="to_private_accumulated_data_builder" class="code-header">pub fn <span class="fn">to_private_accumulated_data_builder</span>(self) -> <a href="../../../protocol_types/abis/accumulated_data/private_accumulated_data_builder/struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></code>
 
-<code id="to_private_accumulated_data" class="code-header">pub fn <span class="fn">to_private_accumulated_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/accumulated_data/private_accumulated_data/struct.PrivateAccumulatedData.html" class="struct">PrivateAccumulatedData</a></code>
+<code id="to_private_accumulated_data" class="code-header">pub fn <span class="fn">to_private_accumulated_data</span>(self) -> <a href="../../../protocol_types/abis/accumulated_data/private_accumulated_data/struct.PrivateAccumulatedData.html" class="struct">PrivateAccumulatedData</a></code>
 
-<code id="to_public_call_request" class="code-header">pub fn <span class="fn">to_public_call_request</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a></code>
+<code id="to_public_call_request" class="code-header">pub fn <span class="fn">to_public_call_request</span>(self) -> <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a></code>
 
 <code id="to_private_to_public_accumulated_data" class="code-header">pub fn <span class="fn">to_private_to_public_accumulated_data</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    self,
     revertible: bool,
 ) -> <a href="../../../protocol_types/abis/accumulated_data/private_to_public_accumulated_data/struct.PrivateToPublicAccumulatedData.html" class="struct">PrivateToPublicAccumulatedData</a></code>
 
-<code id="to_private_to_rollup_accumulated_data" class="code-header">pub fn <span class="fn">to_private_to_rollup_accumulated_data</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-) -> <a href="../../../protocol_types/abis/accumulated_data/private_to_rollup_accumulated_data/struct.PrivateToRollupAccumulatedData.html" class="struct">PrivateToRollupAccumulatedData</a></code>
+<code id="to_private_to_rollup_accumulated_data" class="code-header">pub fn <span class="fn">to_private_to_rollup_accumulated_data</span>(self) -> <a href="../../../protocol_types/abis/accumulated_data/private_to_rollup_accumulated_data/struct.PrivateToRollupAccumulatedData.html" class="struct">PrivateToRollupAccumulatedData</a></code>
 
-<code id="to_private_validation_requests" class="code-header">pub fn <span class="fn">to_private_validation_requests</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/validation_requests/private_validation_requests/struct.PrivateValidationRequests.html" class="struct">PrivateValidationRequests</a></code>
+<code id="to_private_validation_requests" class="code-header">pub fn <span class="fn">to_private_validation_requests</span>(self) -> <a href="../../../protocol_types/abis/validation_requests/private_validation_requests/struct.PrivateValidationRequests.html" class="struct">PrivateValidationRequests</a></code>
 
-<code id="to_private_kernel_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_private_kernel_circuit_public_inputs</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-) -> <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code>
+<code id="to_private_kernel_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_private_kernel_circuit_public_inputs</span>(self) -> <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code>
 
-<code id="to_private_kernel_data" class="code-header">pub fn <span class="fn">to_private_kernel_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/private_kernel_data/struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></code>
+<code id="to_private_kernel_data" class="code-header">pub fn <span class="fn">to_private_kernel_data</span>(self) -> <a href="../../../protocol_types/abis/private_kernel_data/struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></code>
 
 <code id="to_private_to_public_kernel_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_private_to_public_kernel_circuit_public_inputs</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    self,
 ) -> <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_to_public_kernel_circuit_public_inputs/struct.PrivateToPublicKernelCircuitPublicInputs.html" class="struct">PrivateToPublicKernelCircuitPublicInputs</a></code>
 
 <code id="to_private_to_rollup_kernel_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_private_to_rollup_kernel_circuit_public_inputs</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    self,
 ) -> <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_to_rollup_kernel_circuit_public_inputs/struct.PrivateToRollupKernelCircuitPublicInputs.html" class="struct">PrivateToRollupKernelCircuitPublicInputs</a></code>
 
-<code id="to_private_tube_data" class="code-header">pub fn <span class="fn">to_private_tube_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/tube/struct.PrivateTubeData.html" class="struct">PrivateTubeData</a></code>
+<code id="to_private_tube_data" class="code-header">pub fn <span class="fn">to_private_tube_data</span>(self) -> <a href="../../../protocol_types/abis/tube/struct.PrivateTubeData.html" class="struct">PrivateTubeData</a></code>
 
-<code id="to_public_tube_data" class="code-header">pub fn <span class="fn">to_public_tube_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/tube/struct.PublicTubeData.html" class="struct">PublicTubeData</a></code>
+<code id="to_public_tube_data" class="code-header">pub fn <span class="fn">to_public_tube_data</span>(self) -> <a href="../../../protocol_types/abis/tube/struct.PublicTubeData.html" class="struct">PublicTubeData</a></code>
 
-<code id="to_avm_accumulated_data" class="code-header">pub fn <span class="fn">to_avm_accumulated_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a></code>
+<code id="to_avm_accumulated_data" class="code-header">pub fn <span class="fn">to_avm_accumulated_data</span>(self) -> <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a></code>
 
 <code id="to_private_to_avm_accumulated_data" class="code-header">pub fn <span class="fn">to_private_to_avm_accumulated_data</span>(
-    self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    self,
     revertible: bool,
 ) -> <a href="../../../protocol_types/abis/accumulated_data/private_to_avm_accumulated_data/struct.PrivateToAvmAccumulatedData.html" class="struct">PrivateToAvmAccumulatedData</a></code>
 
-<code id="to_avm_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_avm_circuit_public_inputs</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code>
+<code id="to_avm_circuit_public_inputs" class="code-header">pub fn <span class="fn">to_avm_circuit_public_inputs</span>(self) -> <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code>
 
-<code id="to_avm_proof_data" class="code-header">pub fn <span class="fn">to_avm_proof_data</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmProofData.html" class="struct">AvmProofData</a></code>
+<code id="to_avm_proof_data" class="code-header">pub fn <span class="fn">to_avm_proof_data</span>(self) -> <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmProofData.html" class="struct">AvmProofData</a></code>
 
-<code id="add_new_note_hash" class="code-header">pub fn <span class="fn">add_new_note_hash</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, value: Field)</code>
+<code id="add_new_note_hash" class="code-header">pub fn <span class="fn">add_new_note_hash</span>(&mut self, value: Field)</code>
 
-<code id="add_siloed_note_hash" class="code-header">pub fn <span class="fn">add_siloed_note_hash</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, value: Field)</code>
+<code id="add_siloed_note_hash" class="code-header">pub fn <span class="fn">add_siloed_note_hash</span>(&mut self, value: Field)</code>
 
-<code id="add_siloed_unique_note_hash" class="code-header">pub fn <span class="fn">add_siloed_unique_note_hash</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, value: Field)</code>
+<code id="add_siloed_unique_note_hash" class="code-header">pub fn <span class="fn">add_siloed_unique_note_hash</span>(&mut self, value: Field)</code>
 
-<code id="append_note_hashes" class="code-header">pub fn <span class="fn">append_note_hashes</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_note_hashes: u32)</code>
+<code id="append_note_hashes" class="code-header">pub fn <span class="fn">append_note_hashes</span>(&mut self, num_note_hashes: u32)</code>
 
-<code id="append_siloed_note_hashes" class="code-header">pub fn <span class="fn">append_siloed_note_hashes</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_note_hashes: u32)</code>
+<code id="append_siloed_note_hashes" class="code-header">pub fn <span class="fn">append_siloed_note_hashes</span>(&mut self, num_note_hashes: u32)</code>
 
-<code id="append_siloed_unique_note_hashes" class="code-header">pub fn <span class="fn">append_siloed_unique_note_hashes</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    num_note_hashes: u32,
-)</code>
+<code id="append_siloed_unique_note_hashes" class="code-header">pub fn <span class="fn">append_siloed_unique_note_hashes</span>(&mut self, num_note_hashes: u32)</code>
 
-<code id="append_note_hashes_with_logs" class="code-header">pub fn <span class="fn">append_note_hashes_with_logs</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_note_hashes: u32)</code>
+<code id="append_note_hashes_with_logs" class="code-header">pub fn <span class="fn">append_note_hashes_with_logs</span>(&mut self, num_note_hashes: u32)</code>
 
-<code id="append_padded_note_hashes" class="code-header">pub fn <span class="fn">append_padded_note_hashes</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_note_hashes: u32)</code>
+<code id="append_padded_note_hashes" class="code-header">pub fn <span class="fn">append_padded_note_hashes</span>(&mut self, num_note_hashes: u32)</code>
 
-<code id="set_protocol_nullifier" class="code-header">pub fn <span class="fn">set_protocol_nullifier</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>)</code>
+<code id="set_protocol_nullifier" class="code-header">pub fn <span class="fn">set_protocol_nullifier</span>(&mut self)</code>
 
-<code id="add_nullifier" class="code-header">pub fn <span class="fn">add_nullifier</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, value: Field)</code>
+<code id="add_nullifier" class="code-header">pub fn <span class="fn">add_nullifier</span>(&mut self, value: Field)</code>
 
-<code id="add_nullifier_for_note_hash" class="code-header">pub fn <span class="fn">add_nullifier_for_note_hash</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    value: Field,
-    note_hash: Field,
-)</code>
+<code id="add_nullifier_for_note_hash" class="code-header">pub fn <span class="fn">add_nullifier_for_note_hash</span>(&mut self, value: Field, note_hash: Field)</code>
 
-<code id="add_siloed_nullifier" class="code-header">pub fn <span class="fn">add_siloed_nullifier</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, value: Field)</code>
+<code id="add_siloed_nullifier" class="code-header">pub fn <span class="fn">add_siloed_nullifier</span>(&mut self, value: Field)</code>
 
-<code id="add_siloed_nullifier_for_note_hash" class="code-header">pub fn <span class="fn">add_siloed_nullifier_for_note_hash</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    value: Field,
-    note_hash: Field,
-)</code>
+<code id="add_siloed_nullifier_for_note_hash" class="code-header">pub fn <span class="fn">add_siloed_nullifier_for_note_hash</span>(&mut self, value: Field, note_hash: Field)</code>
 
-<code id="append_nullifiers" class="code-header">pub fn <span class="fn">append_nullifiers</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_extra_nullifier: u32)</code>
+<code id="append_nullifiers" class="code-header">pub fn <span class="fn">append_nullifiers</span>(&mut self, num_extra_nullifier: u32)</code>
 
-<code id="append_siloed_nullifiers" class="code-header">pub fn <span class="fn">append_siloed_nullifiers</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_extra_nullifier: u32)</code>
+<code id="append_siloed_nullifiers" class="code-header">pub fn <span class="fn">append_siloed_nullifiers</span>(&mut self, num_extra_nullifier: u32)</code>
 
-<code id="append_padded_nullifiers" class="code-header">pub fn <span class="fn">append_padded_nullifiers</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_nullifiers: u32)</code>
+<code id="append_padded_nullifiers" class="code-header">pub fn <span class="fn">append_padded_nullifiers</span>(&mut self, num_nullifiers: u32)</code>
 
-<code id="add_l2_to_l1_message" class="code-header">pub fn <span class="fn">add_l2_to_l1_message</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    content: Field,
-    recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
-)</code>
+<code id="add_l2_to_l1_message" class="code-header">pub fn <span class="fn">add_l2_to_l1_message</span>(&mut self, content: Field, recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>)</code>
 
-<code id="add_siloed_l2_to_l1_message" class="code-header">pub fn <span class="fn">add_siloed_l2_to_l1_message</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    content: Field,
-    recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
-)</code>
+<code id="add_siloed_l2_to_l1_message" class="code-header">pub fn <span class="fn">add_siloed_l2_to_l1_message</span>(&mut self, content: Field, recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>)</code>
 
-<code id="append_l2_to_l1_msgs" class="code-header">pub fn <span class="fn">append_l2_to_l1_msgs</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num: u32)</code>
+<code id="append_l2_to_l1_msgs" class="code-header">pub fn <span class="fn">append_l2_to_l1_msgs</span>(&mut self, num: u32)</code>
 
-<code id="add_read_request_for_pending_note_hash" class="code-header">pub fn <span class="fn">add_read_request_for_pending_note_hash</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    note_hash_index: u32,
-) -> u32</code>
+<code id="add_read_request_for_pending_note_hash" class="code-header">pub fn <span class="fn">add_read_request_for_pending_note_hash</span>(&mut self, note_hash_index: u32) -> u32</code>
 
-<code id="append_note_hash_read_requests" class="code-header">pub fn <span class="fn">append_note_hash_read_requests</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_reads: u32)</code>
+<code id="append_note_hash_read_requests" class="code-header">pub fn <span class="fn">append_note_hash_read_requests</span>(&mut self, num_reads: u32)</code>
 
-<code id="add_read_request_for_pending_nullifier" class="code-header">pub fn <span class="fn">add_read_request_for_pending_nullifier</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    nullifier_index: u32,
-) -> u32</code>
+<code id="add_read_request_for_pending_nullifier" class="code-header">pub fn <span class="fn">add_read_request_for_pending_nullifier</span>(&mut self, nullifier_index: u32) -> u32</code>
 
-<code id="append_nullifier_read_requests" class="code-header">pub fn <span class="fn">append_nullifier_read_requests</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_reads: u32)</code>
+<code id="append_nullifier_read_requests" class="code-header">pub fn <span class="fn">append_nullifier_read_requests</span>(&mut self, num_reads: u32)</code>
 
 <code id="add_request_for_key_validation" class="code-header">pub fn <span class="fn">add_request_for_key_validation</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    &mut self,
     pk_m: <a href="../../../std/embedded_curve_ops/struct.EmbeddedCurvePoint.html" class="struct">EmbeddedCurvePoint</a>,
     sk_app: Field,
     sk_app_generator: Field,
 )</code>
 
-<code id="append_key_validation_requests" class="code-header">pub fn <span class="fn">append_key_validation_requests</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_requests: u32)</code>
+<code id="append_key_validation_requests" class="code-header">pub fn <span class="fn">append_key_validation_requests</span>(&mut self, num_requests: u32)</code>
 
 <code id="add_private_log" class="code-header">pub fn <span class="fn">add_private_log</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    &mut self,
     fields: [Field; 18],
     length: u32,
     note_hash_counter: u32,
 )</code>
 
-<code id="append_private_logs_for_note" class="code-header">pub fn <span class="fn">append_private_logs_for_note</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    num_logs: u32,
-    note_hash_counter: u32,
-)</code>
+<code id="append_private_logs_for_note" class="code-header">pub fn <span class="fn">append_private_logs_for_note</span>(&mut self, num_logs: u32, note_hash_counter: u32)</code>
 
-<code id="append_private_logs" class="code-header">pub fn <span class="fn">append_private_logs</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_logs: u32)</code>
+<code id="append_private_logs" class="code-header">pub fn <span class="fn">append_private_logs</span>(&mut self, num_logs: u32)</code>
 
-<code id="append_private_logs_with_lengths" class="code-header">pub fn <span class="fn">append_private_logs_with_lengths</span>&lt;let N: u32&gt;(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    lengths: [u32; N],
-)</code>
+<code id="append_private_logs_with_lengths" class="code-header">pub fn <span class="fn">append_private_logs_with_lengths</span>&lt;let N: u32&gt;(&mut self, lengths: [u32; N])</code>
 
 <code id="add_siloed_private_log" class="code-header">pub fn <span class="fn">add_siloed_private_log</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    &mut self,
     fields: [Field; 18],
     length: u32,
     note_hash_counter: u32,
 )</code>
 
 <code id="append_siloed_private_logs_for_note" class="code-header">pub fn <span class="fn">append_siloed_private_logs_for_note</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    &mut self,
     num_logs: u32,
     note_hash_counter: u32,
 )</code>
 
 <code id="append_siloed_private_logs_for_note_with_lengths" class="code-header">pub fn <span class="fn">append_siloed_private_logs_for_note_with_lengths</span>&lt;let N: u32&gt;(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    &mut self,
     lengths: [u32; N],
     note_hash_counter: u32,
 )</code>
 
-<code id="append_siloed_private_logs" class="code-header">pub fn <span class="fn">append_siloed_private_logs</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_logs: u32)</code>
+<code id="append_siloed_private_logs" class="code-header">pub fn <span class="fn">append_siloed_private_logs</span>(&mut self, num_logs: u32)</code>
 
-<code id="append_padded_private_logs" class="code-header">pub fn <span class="fn">append_padded_private_logs</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_logs: u32)</code>
+<code id="append_padded_private_logs" class="code-header">pub fn <span class="fn">append_padded_private_logs</span>(&mut self, num_logs: u32)</code>
 
-<code id="add_public_log" class="code-header">pub fn <span class="fn">add_public_log</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, fields: [Field; 13], length: u32)</code>
+<code id="add_public_log" class="code-header">pub fn <span class="fn">add_public_log</span>(&mut self, fields: [Field; 13], length: u32)</code>
 
-<code id="append_public_logs" class="code-header">pub fn <span class="fn">append_public_logs</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num_logs: u32)</code>
+<code id="append_public_logs" class="code-header">pub fn <span class="fn">append_public_logs</span>(&mut self, num_logs: u32)</code>
 
-<code id="append_public_logs_with_lengths" class="code-header">pub fn <span class="fn">append_public_logs_with_lengths</span>&lt;let N: u32&gt;(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    lengths: [u32; N],
-)</code>
+<code id="append_public_logs_with_lengths" class="code-header">pub fn <span class="fn">append_public_logs_with_lengths</span>&lt;let N: u32&gt;(&mut self, lengths: [u32; N])</code>
 
-<code id="add_contract_class_log_hash" class="code-header">pub fn <span class="fn">add_contract_class_log_hash</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    hash: Field,
-    length: u32,
-)</code>
+<code id="add_contract_class_log_hash" class="code-header">pub fn <span class="fn">add_contract_class_log_hash</span>(&mut self, hash: Field, length: u32)</code>
 
 <code id="add_private_call_request_for_private_call" class="code-header">pub fn <span class="fn">add_private_call_request_for_private_call</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
+    &mut self,
     private_call: <a href="../../../protocol_types/abis/private_kernel/private_call_data/struct.PrivateCallData.html" class="struct">PrivateCallData</a>,
 )</code>
 
-<code id="add_private_call_request" class="code-header">pub fn <span class="fn">add_private_call_request</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>)</code>
+<code id="add_private_call_request" class="code-header">pub fn <span class="fn">add_private_call_request</span>(&mut self)</code>
 
-<code id="append_private_call_requests" class="code-header">pub fn <span class="fn">append_private_call_requests</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num: u32)</code>
+<code id="append_private_call_requests" class="code-header">pub fn <span class="fn">append_private_call_requests</span>(&mut self, num: u32)</code>
 
-<code id="add_public_call_request" class="code-header">pub fn <span class="fn">add_public_call_request</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>,
-    request: <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>,
-)</code>
+<code id="add_public_call_request" class="code-header">pub fn <span class="fn">add_public_call_request</span>(&mut self, request: <a href="../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>)</code>
 
-<code id="append_public_call_requests" class="code-header">pub fn <span class="fn">append_public_call_requests</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, num: u32)</code>
+<code id="append_public_call_requests" class="code-header">pub fn <span class="fn">append_public_call_requests</span>(&mut self, num: u32)</code>
 
-<code id="set_fee_payer" class="code-header">pub fn <span class="fn">set_fee_payer</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, fee_payer: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>)</code>
+<code id="set_fee_payer" class="code-header">pub fn <span class="fn">set_fee_payer</span>(&mut self, fee_payer: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>)</code>
 
-<code id="make_fee_payer" class="code-header">pub fn <span class="fn">make_fee_payer</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+<code id="make_fee_payer" class="code-header">pub fn <span class="fn">make_fee_payer</span>(&mut self) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
-<code id="set_gas_used" class="code-header">pub fn <span class="fn">set_gas_used</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, da_gas: u32, l2_gas: u32)</code>
+<code id="set_gas_used" class="code-header">pub fn <span class="fn">set_gas_used</span>(&mut self, da_gas: u32, l2_gas: u32)</code>
 
-<code id="set_public_teardown_call_request" class="code-header">pub fn <span class="fn">set_public_teardown_call_request</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>)</code>
+<code id="set_public_teardown_call_request" class="code-header">pub fn <span class="fn">set_public_teardown_call_request</span>(&mut self)</code>
 
-<code id="end_setup" class="code-header">pub fn <span class="fn">end_setup</span>(&mut self: &mut <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>)</code>
+<code id="end_setup" class="code-header">pub fn <span class="fn">end_setup</span>(&mut self)</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Empty-for-FixtureBuilder"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-FixtureBuilder"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>, _other: <a href="../../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div></main>
 </body>

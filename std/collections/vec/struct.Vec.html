@@ -25,31 +25,31 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;T&gt; <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;</code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>() -> <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>() -> Self</code>
 
-<code id="from_slice" class="code-header">pub fn <span class="fn">from_slice</span>(slice: [T]) -> <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;</code>
+<code id="from_slice" class="code-header">pub fn <span class="fn">from_slice</span>(slice: [T]) -> Self</code>
 
-<code id="get" class="code-header">pub fn <span class="fn">get</span>(self: <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;, index: u32) -> T</code>
+<code id="get" class="code-header">pub fn <span class="fn">get</span>(self, index: u32) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Get an element from the vector at the given index.
 Panics if the given index
 points beyond the end of the vector.</p>
 </div>
-</div><code id="set" class="code-header">pub fn <span class="fn">set</span>(&mut self: &mut <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;, index: u32, value: T)</code>
+</div><code id="set" class="code-header">pub fn <span class="fn">set</span>(&mut self, index: u32, value: T)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Write an element to the vector at the given index.
 Panics if the given index points beyond the end of the vector (<code>self.len()</code>).</p>
 </div>
-</div><code id="push" class="code-header">pub fn <span class="fn">push</span>(&mut self: &mut <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;, elem: T)</code>
+</div><code id="push" class="code-header">pub fn <span class="fn">push</span>(&mut self, elem: T)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Push a new element to the end of the vector, returning a
 new vector with a length one greater than the
 original unmodified vector.</p>
 </div>
-</div><code id="pop" class="code-header">pub fn <span class="fn">pop</span>(&mut self: &mut <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;) -> T</code>
+</div><code id="pop" class="code-header">pub fn <span class="fn">pop</span>(&mut self) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Pop an element from the end of the given vector, returning
@@ -57,19 +57,19 @@ a new vector with a length of one less than the given vector,
 as well as the popped element.
 Panics if the given vector's length is zero.</p>
 </div>
-</div><code id="insert" class="code-header">pub fn <span class="fn">insert</span>(&mut self: &mut <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;, index: u32, elem: T)</code>
+</div><code id="insert" class="code-header">pub fn <span class="fn">insert</span>(&mut self, index: u32, elem: T)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Insert an element at a specified index, shifting all elements
 after it to the right</p>
 </div>
-</div><code id="remove" class="code-header">pub fn <span class="fn">remove</span>(&mut self: &mut <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;, index: u32) -> T</code>
+</div><code id="remove" class="code-header">pub fn <span class="fn">remove</span>(&mut self, index: u32) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Remove an element at a specified index, shifting all elements
 after it to the left, returning the removed element</p>
 </div>
-</div><code id="len" class="code-header">pub fn <span class="fn">len</span>(self: <a href="../../../std/collections/vec/struct.Vec.html" class="struct">Vec</a>&lt;T&gt;) -> u32</code>
+</div><code id="len" class="code-header">pub fn <span class="fn">len</span>(self) -> u32</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the number of elements in the vector</p>

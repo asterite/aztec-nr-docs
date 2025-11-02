@@ -27,37 +27,29 @@
 <div class="padded-description"></div><div id="contract_address" class="struct-field"><code class="code-header">contract_address: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
 <div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 6]) -> <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 6]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(
-    self: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>,
-    msg: str&lt;S&gt;,
-)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(
-    _self: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>,
-    _other: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>,
-) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Scoped&lt;KeyValidationRequestAndGenerator&gt;-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../../../protocol_types/abis/side_effect/trait.Scoped.html" class="trait">Scoped</a>&lt;<a href="../../../../protocol_types/abis/validation_requests/key_validation_request_and_generator/struct.KeyValidationRequestAndGenerator.html" class="struct">KeyValidationRequestAndGenerator</a>&gt; for <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">contract_address</span>(self: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">contract_address</span>(self) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
-<code class="code-header">pub fn <span class="fn">inner</span>(
-    self: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>,
-) -> <a href="../../../../protocol_types/abis/validation_requests/key_validation_request_and_generator/struct.KeyValidationRequestAndGenerator.html" class="struct">KeyValidationRequestAndGenerator</a></code>
+<code class="code-header">pub fn <span class="fn">inner</span>(self) -> <a href="../../../../protocol_types/abis/validation_requests/key_validation_request_and_generator/struct.KeyValidationRequestAndGenerator.html" class="struct">KeyValidationRequestAndGenerator</a></code>
 
 </div><h3 id="impl-Serialize-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>) -> [Field; 6]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 6]</code>
 
 </div></main>
 </body>

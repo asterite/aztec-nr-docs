@@ -8,8 +8,8 @@
 <body>
 <nav class="sidebar">
 <h1><a href="../../index.html">aztec-nr</a></h1><div><a href="../../all.html">All items</a></div>
-<h2><a href="#struct">Struct BuildHasherDefault</a></h2><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-BuildHasher-for-BuildHasherDefault">BuildHasher</a></li>
-<li><a href="#impl-Default-for-BuildHasherDefault">Default</a></li>
+<h2><a href="#struct">Struct BuildHasherDefault</a></h2><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-BuildHasher-for-BuildHasherDefault<H>">BuildHasher</a></li>
+<li><a href="#impl-Default-for-BuildHasherDefault<H>">Default</a></li>
 </ul><h2>In module hash</h2><h3>Modules</h3><ul class="item-list"><li><a href="keccak/index.html" class="module">keccak</a></div></li>
 </ul><h3>Structs</h3><ul class="item-list"><li><a href="struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a></div></li>
 </ul><h3>Traits</h3><ul class="item-list"><li><a href="trait.BuildHasher.html" class="trait">BuildHasher</a></div></li>
@@ -29,19 +29,19 @@
 <main>
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">std</a>::<a href="index.html">hash</a></div><h1>Struct <span id="struct" class="struct">BuildHasherDefault</span></h1><pre><code>pub struct BuildHasherDefault&lt;H&gt; {}
 </code></pre>
-<h2>Trait implementations</h2><h3 id="impl-BuildHasher-for-BuildHasherDefault"><code class="code-header">impl&lt;H&gt; <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a> for <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;
+<h2>Trait implementations</h2><h3 id="impl-BuildHasher-for-BuildHasherDefault<H>"><code class="code-header">impl&lt;H&gt; <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a> for <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;
 where
     H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a>,
     H: <a href="../../std/default/trait.Default.html" class="trait">Default</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">build_hasher</span>(_self: <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;) -> H</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">build_hasher</span>(_self: Self) -> H</code>
 
-</div><h3 id="impl-Default-for-BuildHasherDefault"><code class="code-header">impl&lt;H&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;
+</div><h3 id="impl-Default-for-BuildHasherDefault<H>"><code class="code-header">impl&lt;H&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;
 where
     H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a>,
     H: <a href="../../std/default/trait.Default.html" class="trait">Default</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">default</span>() -> <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">default</span>() -> Self</code>
 
 </div></main>
 </body>

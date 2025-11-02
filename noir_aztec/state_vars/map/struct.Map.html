@@ -10,7 +10,7 @@
 <h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
 <h2><a href="#struct">Struct Map</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#at">at</a></li>
 <li><a href="#new">new</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-Map">HasStorageSlot&lt;1&gt;</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-Map<K, T, Context>">HasStorageSlot&lt;1&gt;</a></li>
 </ul><h2>In module map</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.Map.html" class="struct">Map</a></div></li>
 </ul></nav>
 <main>
@@ -92,7 +92,7 @@ ensuring cryptographically secure slot separation.</p>
     context: Context,
     storage_slot: Field,
     state_var_constructor: fn(Context, Field) -> V,
-) -> <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, V, Context&gt;</code>
+) -> Self</code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a new Map state variable.</p>
@@ -115,7 +115,7 @@ typically the constructor of the state
 variable type being stored in the Map.</li>
 </ul>
 </div>
-</div><code id="at" class="code-header">pub fn <span class="fn">at</span>(self: <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, V, Context&gt;, key: K) -> V
+</div><code id="at" class="code-header">pub fn <span class="fn">at</span>(self, key: K) -> V
 where
     K: <a href="../../../protocol_types/traits/trait.ToField.html" class="trait">ToField</a></code>
 
@@ -147,9 +147,9 @@ let current_note = user_balance.get_note();
 user_balance.replace(new_note);
 </code></pre>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-Map"><code class="code-header">impl&lt;Context, K, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;</code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-Map<K, T, Context>"><code class="code-header">impl&lt;Context, K, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self: <a href="../../../noir_aztec/state_vars/map/struct.Map.html" class="struct">Map</a>&lt;K, T, Context&gt;) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> Field</code>
 
 </div></main>
 </body>

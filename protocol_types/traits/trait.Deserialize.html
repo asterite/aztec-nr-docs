@@ -25,13 +25,13 @@
 <li><a href="#impl-Deserialize-for-AztecAddress">AztecAddress</a></li>
 <li><a href="#impl-Deserialize-for-BlockConstantData">BlockConstantData</a></li>
 <li><a href="#impl-Deserialize-for-BlockHeader">BlockHeader</a></li>
-<li><a href="#impl-Deserialize-for-BoundedVec">BoundedVec</a></li>
+<li><a href="#impl-Deserialize-for-BoundedVec<T, M>">BoundedVec<T, M></a></li>
 <li><a href="#impl-Deserialize-for-CallContext">CallContext</a></li>
-<li><a href="#impl-Deserialize-for-ClaimedLengthArray">ClaimedLengthArray</a></li>
+<li><a href="#impl-Deserialize-for-ClaimedLengthArray<T, N>">ClaimedLengthArray<T, N></a></li>
 <li><a href="#impl-Deserialize-for-ContentCommitment">ContentCommitment</a></li>
 <li><a href="#impl-Deserialize-for-ContractClassId">ContractClassId</a></li>
 <li><a href="#impl-Deserialize-for-ContractInstance">ContractInstance</a></li>
-<li><a href="#impl-Deserialize-for-Counted">Counted</a></li>
+<li><a href="#impl-Deserialize-for-Counted<T>">Counted<T></a></li>
 <li><a href="#impl-Deserialize-for-EmbeddedCurvePoint">EmbeddedCurvePoint</a></li>
 <li><a href="#impl-Deserialize-for-EpochConstantData">EpochConstantData</a></li>
 <li><a href="#impl-Deserialize-for-EthAddress">EthAddress</a></li>
@@ -45,13 +45,13 @@
 <li><a href="#impl-Deserialize-for-GasSettings">GasSettings</a></li>
 <li><a href="#impl-Deserialize-for-GlobalVariables">GlobalVariables</a></li>
 <li><a href="#impl-Deserialize-for-HasArray">HasArray</a></li>
-<li><a href="#impl-Deserialize-for-HasArrayWithGenerics">HasArrayWithGenerics</a></li>
+<li><a href="#impl-Deserialize-for-HasArrayWithGenerics<T, N>">HasArrayWithGenerics<T, N></a></li>
 <li><a href="#impl-Deserialize-for-IndexedTaggingSecret">IndexedTaggingSecret</a></li>
 <li><a href="#impl-Deserialize-for-IvpkM">IvpkM</a></li>
 <li><a href="#impl-Deserialize-for-KeyValidationRequest">KeyValidationRequest</a></li>
 <li><a href="#impl-Deserialize-for-KeyValidationRequestAndGenerator">KeyValidationRequestAndGenerator</a></li>
 <li><a href="#impl-Deserialize-for-L2ToL1Message">L2ToL1Message</a></li>
-<li><a href="#impl-Deserialize-for-Log">Log</a></li>
+<li><a href="#impl-Deserialize-for-Log<N>">Log<N></a></li>
 <li><a href="#impl-Deserialize-for-LogHash">LogHash</a></li>
 <li><a href="#impl-Deserialize-for-MessageContext">MessageContext</a></li>
 <li><a href="#impl-Deserialize-for-MockStruct">MockStruct</a></li>
@@ -60,7 +60,7 @@
 <li><a href="#impl-Deserialize-for-NoteHash">NoteHash</a></li>
 <li><a href="#impl-Deserialize-for-NpkM">NpkM</a></li>
 <li><a href="#impl-Deserialize-for-Nullifier">Nullifier</a></li>
-<li><a href="#impl-Deserialize-for-Option">Option</a></li>
+<li><a href="#impl-Deserialize-for-Option<T>">Option<T></a></li>
 <li><a href="#impl-Deserialize-for-OvpkM">OvpkM</a></li>
 <li><a href="#impl-Deserialize-for-PartialAddress">PartialAddress</a></li>
 <li><a href="#impl-Deserialize-for-PartialStateReference">PartialStateReference</a></li>
@@ -85,7 +85,7 @@
 <li><a href="#impl-Deserialize-for-ReadRequest">ReadRequest</a></li>
 <li><a href="#impl-Deserialize-for-RecursiveProof">RecursiveProof</a></li>
 <li><a href="#impl-Deserialize-for-RecursiveProof">RecursiveProof</a></li>
-<li><a href="#impl-Deserialize-for-Scoped">Scoped</a></li>
+<li><a href="#impl-Deserialize-for-Scoped<T>">Scoped<T></a></li>
 <li><a href="#impl-Deserialize-for-ScopedKeyValidationRequestAndGenerator">ScopedKeyValidationRequestAndGenerator</a></li>
 <li><a href="#impl-Deserialize-for-ScopedNoteHash">ScopedNoteHash</a></li>
 <li><a href="#impl-Deserialize-for-ScopedNullifier">ScopedNullifier</a></li>
@@ -211,13 +211,13 @@ where
 
 <h3 id="impl-Deserialize-for-BlockHeader"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
-<h3 id="impl-Deserialize-for-BoundedVec"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
+<h3 id="impl-Deserialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
 
 <h3 id="impl-Deserialize-for-CallContext"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
-<h3 id="impl-Deserialize-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+<h3 id="impl-Deserialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
 
@@ -227,7 +227,7 @@ where
 
 <h3 id="impl-Deserialize-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<h3 id="impl-Deserialize-for-Counted"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
+<h3 id="impl-Deserialize-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
 
@@ -257,7 +257,7 @@ where
 
 <h3 id="impl-Deserialize-for-HasArray"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArray</code></h3>
 
-<h3 id="impl-Deserialize-for-HasArrayWithGenerics"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArrayWithGenerics&lt;T, N&gt;
+<h3 id="impl-Deserialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArrayWithGenerics&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
 
@@ -271,7 +271,7 @@ where
 
 <h3 id="impl-Deserialize-for-L2ToL1Message"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a></code></h3>
 
-<h3 id="impl-Deserialize-for-Log"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Deserialize-for-Log<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Deserialize-for-LogHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a></code></h3>
 
@@ -289,7 +289,7 @@ where
 
 <h3 id="impl-Deserialize-for-Nullifier"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
 
-<h3 id="impl-Deserialize-for-Option"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
+<h3 id="impl-Deserialize-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
 
@@ -337,11 +337,11 @@ where
 
 <h3 id="impl-Deserialize-for-ReadRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
-<h3 id="impl-Deserialize-for-Scoped"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
+<h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
+<h3 id="impl-Deserialize-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
 

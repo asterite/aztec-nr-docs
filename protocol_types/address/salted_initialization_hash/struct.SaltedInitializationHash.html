@@ -24,23 +24,19 @@
 <h2>Fields</h2><div id="inner" class="struct-field"><code class="code-header">inner: Field</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code></h3>
 
-<div class="padded-methods"><code id="from_field" class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code>
+<div class="padded-methods"><code id="from_field" class="code-header">pub fn <span class="fn">from_field</span>(field: Field) -> Self</code>
 
-<code id="compute" class="code-header">pub fn <span class="fn">compute</span>(
-    salt: Field,
-    initialization_hash: Field,
-    deployer: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
-) -> <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code>
+<code id="compute" class="code-header">pub fn <span class="fn">compute</span>(salt: Field, initialization_hash: Field, deployer: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> Self</code>
 
-<code id="assert_is_zero" class="code-header">pub fn <span class="fn">assert_is_zero</span>(self: <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a>)</code>
+<code id="assert_is_zero" class="code-header">pub fn <span class="fn">assert_is_zero</span>(self)</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Eq-for-SaltedInitializationHash"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a>, _other: <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-ToField-for-SaltedInitializationHash"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.ToField.html" class="trait">ToField</a> for <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">to_field</span>(self: <a href="../../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a>) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">to_field</span>(self) -> Field</code>
 
 </div></main>
 </body>

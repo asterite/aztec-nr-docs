@@ -13,20 +13,20 @@
 </ul><h3>Implementors</h3><ul class="sidebar-list"><li><a href="#impl-Packable-for-AddressNote">AddressNote</a></li>
 <li><a href="#impl-Packable-for-AztecAddress">AztecAddress</a></li>
 <li><a href="#impl-Packable-for-ContractClassId">ContractClassId</a></li>
-<li><a href="#impl-Packable-for-DelayedPublicMutableValues">DelayedPublicMutableValues</a></li>
+<li><a href="#impl-Packable-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">DelayedPublicMutableValues<T, INITIAL_DELAY></a></li>
 <li><a href="#impl-Packable-for-EmbeddedCurvePoint">EmbeddedCurvePoint</a></li>
 <li><a href="#impl-Packable-for-EthAddress">EthAddress</a></li>
 <li><a href="#impl-Packable-for-Field">Field</a></li>
-<li><a href="#impl-Packable-for-HasArrayWithGenerics">HasArrayWithGenerics</a></li>
+<li><a href="#impl-Packable-for-HasArrayWithGenerics<T, N>">HasArrayWithGenerics<T, N></a></li>
 <li><a href="#impl-Packable-for-MockStruct">MockStruct</a></li>
 <li><a href="#impl-Packable-for-MockStruct">MockStruct</a></li>
 <li><a href="#impl-Packable-for-NoteMetadata">NoteMetadata</a></li>
 <li><a href="#impl-Packable-for-PartialUintNote">PartialUintNote</a></li>
-<li><a href="#impl-Packable-for-RetrievedNote">RetrievedNote</a></li>
+<li><a href="#impl-Packable-for-RetrievedNote<Note>">RetrievedNote<Note></a></li>
 <li><a href="#impl-Packable-for-Smol">Smol</a></li>
 <li><a href="#impl-Packable-for-UintNote">UintNote</a></li>
 <li><a href="#impl-Packable-for-ValueNote">ValueNote</a></li>
-<li><a href="#impl-Packable-for-WithHash">WithHash</a></li>
+<li><a href="#impl-Packable-for-WithHash<T, M>">WithHash<T, M></a></li>
 <li><a href="#impl-Packable-for-[T; M]">[T; M]</a></li>
 <li><a href="#impl-Packable-for-bool">bool</a></li>
 <li><a href="#impl-Packable-for-i16">i16</a></li>
@@ -81,7 +81,7 @@ in the contract's public storage).</p>
 
 <h3 id="impl-Packable-for-ContractClassId"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../protocol_types/contract_class_id/struct.ContractClassId.html" class="struct">ContractClassId</a></code></h3>
 
-<h3 id="impl-Packable-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+<h3 id="impl-Packable-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
 
@@ -91,7 +91,7 @@ where
 
 <h3 id="impl-Packable-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for Field</code></h3>
 
-<h3 id="impl-Packable-for-HasArrayWithGenerics"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for HasArrayWithGenerics&lt;T, N&gt;
+<h3 id="impl-Packable-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for HasArrayWithGenerics&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</code></h3>
 
@@ -103,7 +103,7 @@ where
 
 <h3 id="impl-Packable-for-PartialUintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
-<h3 id="impl-Packable-for-RetrievedNote"><code class="code-header">impl&lt;Note&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
+<h3 id="impl-Packable-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
 where
     Note: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</code></h3>
 
@@ -113,7 +113,7 @@ where
 
 <h3 id="impl-Packable-for-ValueNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
-<h3 id="impl-Packable-for-WithHash"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
+<h3 id="impl-Packable-for-WithHash<T, M>"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code></h3>
 

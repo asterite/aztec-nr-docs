@@ -11,7 +11,7 @@
 <h2><a href="#struct">Struct PrivateCallInterface</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#call">call</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#view">view</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface&lt;M&gt;-for-PrivateCallInterface">CallInterface&lt;M&gt;</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-CallInterface&lt;M&gt;-for-PrivateCallInterface<M, T>">CallInterface&lt;M&gt;</a></li>
 </ul><h2>In module call_interfaces</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a></div></li>
 <li><a href="struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a></div></li>
 <li><a href="struct.PublicCallInterface.html" class="struct">PublicCallInterface</a></div></li>
@@ -31,11 +31,11 @@
     name: str&lt;M&gt;,
     args: [Field],
     is_static: bool,
-) -> <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;
+) -> Self
 where
     T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
 
-<code id="call" class="code-header">pub fn <span class="fn">call</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+<code id="call" class="code-header">pub fn <span class="fn">call</span>(self, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
 
@@ -114,7 +114,7 @@ of every #[private] function as <code>context</code>, through the
 <li><code>T</code> - Whatever data the called function has returned.</li>
 </ul>
 </div>
-</div><code id="view" class="code-header">pub fn <span class="fn">view</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
+</div><code id="view" class="code-header">pub fn <span class="fn">view</span>(self, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T
 where
     T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
 
@@ -135,17 +135,17 @@ of every #[private] function as <code>context</code>, through the
 <li><code>T</code> - Whatever data the called function has returned.</li>
 </ul>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-CallInterface&lt;M&gt;-for-PrivateCallInterface"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
+</div></div><h2>Trait implementations</h2><h3 id="impl-CallInterface&lt;M&gt;-for-PrivateCallInterface<M, T>"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../../noir_aztec/context/call_interfaces/trait.CallInterface.html" class="trait">CallInterface</a>&lt;M&gt; for <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_args</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> [Field]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_args</span>(self) -> [Field]</code>
 
-<code class="code-header">pub fn <span class="fn">get_selector</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
+<code class="code-header">pub fn <span class="fn">get_selector</span>(self) -> <a href="../../../protocol_types/abis/function_selector/struct.FunctionSelector.html" class="struct">FunctionSelector</a></code>
 
-<code class="code-header">pub fn <span class="fn">get_name</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> str&lt;M&gt;</code>
+<code class="code-header">pub fn <span class="fn">get_name</span>(self) -> str&lt;M&gt;</code>
 
-<code class="code-header">pub fn <span class="fn">get_contract_address</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+<code class="code-header">pub fn <span class="fn">get_contract_address</span>(self) -> <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
-<code class="code-header">pub fn <span class="fn">get_is_static</span>(self: <a href="../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;) -> bool</code>
+<code class="code-header">pub fn <span class="fn">get_is_static</span>(self) -> bool</code>
 
 </div></main>
 </body>

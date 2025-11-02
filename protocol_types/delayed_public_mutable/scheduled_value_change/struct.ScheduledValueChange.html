@@ -14,8 +14,8 @@
 <li><a href="#get_time_horizon">get_time_horizon</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#schedule_change">schedule_change</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-ScheduledValueChange">Empty</a></li>
-<li><a href="#impl-Eq-for-ScheduledValueChange">Eq</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-ScheduledValueChange<T>">Empty</a></li>
+<li><a href="#impl-Eq-for-ScheduledValueChange<T>">Eq</a></li>
 </ul><h2>In module scheduled_value_change</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a></div></li>
 </ul></nav>
 <main>
@@ -24,9 +24,9 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;</code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(pre: T, post: T, timestamp_of_change: u64) -> <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(pre: T, post: T, timestamp_of_change: u64) -> Self</code>
 
-<code id="get_current_at" class="code-header">pub fn <span class="fn">get_current_at</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;, timestamp: u64) -> T</code>
+<code id="get_current_at" class="code-header">pub fn <span class="fn">get_current_at</span>(self, timestamp: u64) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the value stored in the data structure at a given timestamp. This function can be called both in public
@@ -35,20 +35,16 @@ included) and in private (where <code>timestamp</code> is the historical timesta
 Reading in private is only safe if the transaction's <code>include_by_timestamp</code> property is set to a value lower or
 equal to the time horizon (see <code>get_time_horizon()</code>).</p>
 </div>
-</div><code id="get_scheduled" class="code-header">pub fn <span class="fn">get_scheduled</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;) -> (T, u64)</code>
+</div><code id="get_scheduled" class="code-header">pub fn <span class="fn">get_scheduled</span>(self) -> (T, u64)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the scheduled change, i.e. the post-change value and the timestamp at which it will become the current
 value. Note that this timestamp may be in the past if the change has already taken place.
 Additionally, further changes might be later scheduled, potentially canceling the one returned by this function.</p>
 </div>
-</div><code id="get_previous" class="code-header">pub fn <span class="fn">get_previous</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;) -> (T, u64)</code>
+</div><code id="get_previous" class="code-header">pub fn <span class="fn">get_previous</span>(self) -> (T, u64)</code>
 
-<code id="get_time_horizon" class="code-header">pub fn <span class="fn">get_time_horizon</span>(
-    self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;,
-    historical_timestamp: u64,
-    minimum_delay: u64,
-) -> u64</code>
+<code id="get_time_horizon" class="code-header">pub fn <span class="fn">get_time_horizon</span>(self, historical_timestamp: u64, minimum_delay: u64) -> u64</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the largest timestamp at which the value returned by <code>get_current_at</code> is known to remain the current
@@ -65,7 +61,7 @@ if the transaction's <code>include_by_timestamp</code> property is set to a valu
 computed using the same historical timestamp.</p>
 </div>
 </div><code id="schedule_change" class="code-header">pub fn <span class="fn">schedule_change</span>(
-    &mut self: &mut <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;,
+    &mut self,
     new_value: T,
     current_timestamp: u64,
     minimum_delay: u64,
@@ -76,21 +72,21 @@ computed using the same historical timestamp.</p>
 <p>Mutates the value by scheduling a change at the current timestamp. This function is only meaningful when
 called in public with the current timestamp.</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-ScheduledValueChange"><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
+</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-ScheduledValueChange<T>"><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-ScheduledValueChange"><code class="code-header">impl&lt;T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
+</div><h3 id="impl-Eq-for-ScheduledValueChange<T>"><code class="code-header">impl&lt;T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
 where
     T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;, other: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> bool</code>
 
 </div></main>
 </body>

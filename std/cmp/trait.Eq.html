@@ -25,17 +25,17 @@
 <li><a href="#impl-Eq-for-BinaryOp">BinaryOp</a></li>
 <li><a href="#impl-Eq-for-BlockConstantData">BlockConstantData</a></li>
 <li><a href="#impl-Eq-for-BlockHeader">BlockHeader</a></li>
-<li><a href="#impl-Eq-for-BoundedVec">BoundedVec</a></li>
+<li><a href="#impl-Eq-for-BoundedVec<T, MaxLen>">BoundedVec<T, MaxLen></a></li>
 <li><a href="#impl-Eq-for-CallContext">CallContext</a></li>
-<li><a href="#impl-Eq-for-ClaimedLengthArray">ClaimedLengthArray</a></li>
+<li><a href="#impl-Eq-for-ClaimedLengthArray<T, N>">ClaimedLengthArray<T, N></a></li>
 <li><a href="#impl-Eq-for-CompoundStruct">CompoundStruct</a></li>
 <li><a href="#impl-Eq-for-ContentCommitment">ContentCommitment</a></li>
 <li><a href="#impl-Eq-for-ContractClassId">ContractClassId</a></li>
 <li><a href="#impl-Eq-for-ContractClassLog">ContractClassLog</a></li>
 <li><a href="#impl-Eq-for-ContractInstance">ContractInstance</a></li>
-<li><a href="#impl-Eq-for-Counted">Counted</a></li>
+<li><a href="#impl-Eq-for-Counted<T>">Counted<T></a></li>
 <li><a href="#impl-Eq-for-CtString">CtString</a></li>
-<li><a href="#impl-Eq-for-DelayedPublicMutableValues">DelayedPublicMutableValues</a></li>
+<li><a href="#impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">DelayedPublicMutableValues<T, INITIAL_DELAY></a></li>
 <li><a href="#impl-Eq-for-EmbeddedCurvePoint">EmbeddedCurvePoint</a></li>
 <li><a href="#impl-Eq-for-EmbeddedCurveScalar">EmbeddedCurveScalar</a></li>
 <li><a href="#impl-Eq-for-EpochConstantData">EpochConstantData</a></li>
@@ -50,28 +50,28 @@
 <li><a href="#impl-Eq-for-GasFees">GasFees</a></li>
 <li><a href="#impl-Eq-for-GasSettings">GasSettings</a></li>
 <li><a href="#impl-Eq-for-GlobalVariables">GlobalVariables</a></li>
-<li><a href="#impl-Eq-for-HashMap">HashMap</a></li>
+<li><a href="#impl-Eq-for-HashMap<K, V, N, B>">HashMap<K, V, N, B></a></li>
 <li><a href="#impl-Eq-for-IvpkM">IvpkM</a></li>
 <li><a href="#impl-Eq-for-KeyValidationRequest">KeyValidationRequest</a></li>
 <li><a href="#impl-Eq-for-KeyValidationRequestAndGenerator">KeyValidationRequestAndGenerator</a></li>
 <li><a href="#impl-Eq-for-L2ToL1Message">L2ToL1Message</a></li>
-<li><a href="#impl-Eq-for-Log">Log</a></li>
+<li><a href="#impl-Eq-for-Log<N>">Log<N></a></li>
 <li><a href="#impl-Eq-for-LogHash">LogHash</a></li>
-<li><a href="#impl-Eq-for-MembershipWitness">MembershipWitness</a></li>
-<li><a href="#impl-Eq-for-MerkleTree">MerkleTree</a></li>
+<li><a href="#impl-Eq-for-MembershipWitness<N>">MembershipWitness<N></a></li>
+<li><a href="#impl-Eq-for-MerkleTree<N>">MerkleTree<N></a></li>
 <li><a href="#impl-Eq-for-MessageContext">MessageContext</a></li>
 <li><a href="#impl-Eq-for-MockStruct">MockStruct</a></li>
 <li><a href="#impl-Eq-for-Module">Module</a></li>
 <li><a href="#impl-Eq-for-NestedRecursiveProof">NestedRecursiveProof</a></li>
 <li><a href="#impl-Eq-for-NestedRecursiveProof">NestedRecursiveProof</a></li>
-<li><a href="#impl-Eq-for-NonEmptyMerkleTree">NonEmptyMerkleTree</a></li>
+<li><a href="#impl-Eq-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>">NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT></a></li>
 <li><a href="#impl-Eq-for-NoteHash">NoteHash</a></li>
 <li><a href="#impl-Eq-for-NoteHashLeafPreimage">NoteHashLeafPreimage</a></li>
 <li><a href="#impl-Eq-for-NoteMetadata">NoteMetadata</a></li>
 <li><a href="#impl-Eq-for-NpkM">NpkM</a></li>
 <li><a href="#impl-Eq-for-Nullifier">Nullifier</a></li>
 <li><a href="#impl-Eq-for-NullifierLeafPreimage">NullifierLeafPreimage</a></li>
-<li><a href="#impl-Eq-for-Option">Option</a></li>
+<li><a href="#impl-Eq-for-Option<T>">Option<T></a></li>
 <li><a href="#impl-Eq-for-OrderHint">OrderHint</a></li>
 <li><a href="#impl-Eq-for-Ordering">Ordering</a></li>
 <li><a href="#impl-Eq-for-OvpkM">OvpkM</a></li>
@@ -113,16 +113,16 @@
 <li><a href="#impl-Eq-for-ReadRequest">ReadRequest</a></li>
 <li><a href="#impl-Eq-for-RecursiveProof">RecursiveProof</a></li>
 <li><a href="#impl-Eq-for-RecursiveProof">RecursiveProof</a></li>
-<li><a href="#impl-Eq-for-RetrievedNote">RetrievedNote</a></li>
+<li><a href="#impl-Eq-for-RetrievedNote<Note>">RetrievedNote<Note></a></li>
 <li><a href="#impl-Eq-for-SaltedInitializationHash">SaltedInitializationHash</a></li>
-<li><a href="#impl-Eq-for-ScheduledDelayChange">ScheduledDelayChange</a></li>
-<li><a href="#impl-Eq-for-ScheduledValueChange">ScheduledValueChange</a></li>
-<li><a href="#impl-Eq-for-Scoped">Scoped</a></li>
+<li><a href="#impl-Eq-for-ScheduledDelayChange<INITIAL_DELAY>">ScheduledDelayChange<INITIAL_DELAY></a></li>
+<li><a href="#impl-Eq-for-ScheduledValueChange<T>">ScheduledValueChange<T></a></li>
+<li><a href="#impl-Eq-for-Scoped<T>">Scoped<T></a></li>
 <li><a href="#impl-Eq-for-ScopedKeyValidationRequestAndGenerator">ScopedKeyValidationRequestAndGenerator</a></li>
 <li><a href="#impl-Eq-for-ScopedNoteHash">ScopedNoteHash</a></li>
 <li><a href="#impl-Eq-for-ScopedNullifier">ScopedNullifier</a></li>
 <li><a href="#impl-Eq-for-ScopedReadRequest">ScopedReadRequest</a></li>
-<li><a href="#impl-Eq-for-SplitOrderHints">SplitOrderHints</a></li>
+<li><a href="#impl-Eq-for-SplitOrderHints<N>">SplitOrderHints<N></a></li>
 <li><a href="#impl-Eq-for-SpongeBlob">SpongeBlob</a></li>
 <li><a href="#impl-Eq-for-StateReference">StateReference</a></li>
 <li><a href="#impl-Eq-for-TpkM">TpkM</a></li>
@@ -135,12 +135,12 @@
 <li><a href="#impl-Eq-for-TxRequest">TxRequest</a></li>
 <li><a href="#impl-Eq-for-Type">Type</a></li>
 <li><a href="#impl-Eq-for-TypeDefinition">TypeDefinition</a></li>
-<li><a href="#impl-Eq-for-UHashMap">UHashMap</a></li>
+<li><a href="#impl-Eq-for-UHashMap<K, V, B>">UHashMap<K, V, B></a></li>
 <li><a href="#impl-Eq-for-UintNote">UintNote</a></li>
 <li><a href="#impl-Eq-for-UnaryOp">UnaryOp</a></li>
 <li><a href="#impl-Eq-for-ValueNote">ValueNote</a></li>
-<li><a href="#impl-Eq-for-VerificationKey">VerificationKey</a></li>
-<li><a href="#impl-Eq-for-VkData">VkData</a></li>
+<li><a href="#impl-Eq-for-VerificationKey<N>">VerificationKey<N></a></li>
+<li><a href="#impl-Eq-for-VkData<VK_LENGTH>">VkData<VK_LENGTH></a></li>
 <li><a href="#impl-Eq-for-[T; N]">[T; N]</a></li>
 <li><a href="#impl-Eq-for-[T]">[T]</a></li>
 <li><a href="#impl-Eq-for-bool">bool</a></li>
@@ -219,13 +219,13 @@ where
 
 <h3 id="impl-Eq-for-BlockHeader"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
-<h3 id="impl-Eq-for-BoundedVec"><code class="code-header">impl&lt;let MaxLen: u32, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, MaxLen&gt;
+<h3 id="impl-Eq-for-BoundedVec<T, MaxLen>"><code class="code-header">impl&lt;let MaxLen: u32, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, MaxLen&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
 <h3 id="impl-Eq-for-CallContext"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
-<h3 id="impl-Eq-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+<h3 id="impl-Eq-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
@@ -239,13 +239,13 @@ where
 
 <h3 id="impl-Eq-for-ContractInstance"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<h3 id="impl-Eq-for-Counted"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
+<h3 id="impl-Eq-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
 <h3 id="impl-Eq-for-CtString"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for CtString</code></h3>
 
-<h3 id="impl-Eq-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+<h3 id="impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
@@ -277,7 +277,7 @@ where
 
 <h3 id="impl-Eq-for-GlobalVariables"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
-<h3 id="impl-Eq-for-HashMap"><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
+<h3 id="impl-Eq-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
 where
     K: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     K: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
@@ -292,13 +292,13 @@ where
 
 <h3 id="impl-Eq-for-L2ToL1Message"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a></code></h3>
 
-<h3 id="impl-Eq-for-Log"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Eq-for-Log<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Eq-for-LogHash"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a></code></h3>
 
-<h3 id="impl-Eq-for-MembershipWitness"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Eq-for-MembershipWitness<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/merkle_tree/membership/struct.MembershipWitness.html" class="struct">MembershipWitness</a>&lt;N&gt;</code></h3>
 
-<h3 id="impl-Eq-for-MerkleTree"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/merkle_tree/merkle_tree/struct.MerkleTree.html" class="struct">MerkleTree</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Eq-for-MerkleTree<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/merkle_tree/merkle_tree/struct.MerkleTree.html" class="struct">MerkleTree</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Eq-for-MessageContext"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../noir_aztec/messages/processing/message_context/struct.MessageContext.html" class="struct">MessageContext</a></code></h3>
 
@@ -306,11 +306,11 @@ where
 
 <h3 id="impl-Eq-for-Module"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for Module</code></h3>
 
-<h3 id="impl-Eq-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Eq-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
-<h3 id="impl-Eq-for-NonEmptyMerkleTree"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
+<h3 id="impl-Eq-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Eq-for-NonEmptyMerkleTree<SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT>"><code class="code-header">impl&lt;let SUBTREE_HEIGHT: u32, let SUBTREE_ITEMS: u32, let SUPERTREE_HEIGHT: u32, let TREE_HEIGHT: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code></h3>
 
 <h3 id="impl-Eq-for-NoteHash"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></h3>
 
@@ -324,7 +324,7 @@ where
 
 <h3 id="impl-Eq-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
-<h3 id="impl-Eq-for-Option"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
+<h3 id="impl-Eq-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
@@ -406,23 +406,23 @@ where
 
 <h3 id="impl-Eq-for-ReadRequest"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Eq-for-RecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Eq-for-RecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
-<h3 id="impl-Eq-for-RetrievedNote"><code class="code-header">impl&lt;Note&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
+<h3 id="impl-Eq-for-RecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
+<h3 id="impl-Eq-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
 where
     Note: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
 <h3 id="impl-Eq-for-SaltedInitializationHash"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code></h3>
 
-<h3 id="impl-Eq-for-ScheduledDelayChange"><code class="code-header">impl&lt;let INITIAL_DELAY: u64&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
+<h3 id="impl-Eq-for-ScheduledDelayChange<INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
 
-<h3 id="impl-Eq-for-ScheduledValueChange"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
+<h3 id="impl-Eq-for-ScheduledValueChange<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
-<h3 id="impl-Eq-for-Scoped"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
+<h3 id="impl-Eq-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
 where
     T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
@@ -434,7 +434,7 @@ where
 
 <h3 id="impl-Eq-for-ScopedReadRequest"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a></code></h3>
 
-<h3 id="impl-Eq-for-SplitOrderHints"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Eq-for-SplitOrderHints<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/utils/arrays/assert_split_sorted_transformed_value_arrays/get_split_order_hints/struct.SplitOrderHints.html" class="struct">SplitOrderHints</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Eq-for-SpongeBlob"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/sponge_blob/struct.SpongeBlob.html" class="struct">SpongeBlob</a></code></h3>
 
@@ -460,7 +460,7 @@ where
 
 <h3 id="impl-Eq-for-TypeDefinition"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for TypeDefinition</code></h3>
 
-<h3 id="impl-Eq-for-UHashMap"><code class="code-header">impl&lt;B, K, V&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/umap/struct.UHashMap.html" class="struct">UHashMap</a>&lt;K, V, B&gt;
+<h3 id="impl-Eq-for-UHashMap<K, V, B>"><code class="code-header">impl&lt;B, K, V&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/umap/struct.UHashMap.html" class="struct">UHashMap</a>&lt;K, V, B&gt;
 where
     K: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     K: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
@@ -473,9 +473,9 @@ where
 
 <h3 id="impl-Eq-for-ValueNote"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
-<h3 id="impl-Eq-for-VerificationKey"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Eq-for-VerificationKey<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/verification_key/struct.VerificationKey.html" class="struct">VerificationKey</a>&lt;N&gt;</code></h3>
 
-<h3 id="impl-Eq-for-VkData"><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
+<h3 id="impl-Eq-for-VkData<VK_LENGTH>"><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
 
 <h3 id="impl-Eq-for-[T; N]"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for [T; N]
 where

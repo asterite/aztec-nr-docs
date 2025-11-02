@@ -11,9 +11,9 @@
 <h2><a href="#struct">Struct DelayedPublicMutableValues</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#sdc">sdc</a></li>
 <li><a href="#svc">svc</a></li>
 </ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-DelayedPublicMutableValues">Eq</a></li>
-<li><a href="#impl-Hash-for-DelayedPublicMutableValues">Hash</a></li>
-<li><a href="#impl-Packable-for-DelayedPublicMutableValues">Packable</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Eq</a></li>
+<li><a href="#impl-Hash-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Hash</a></li>
+<li><a href="#impl-Packable-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Packable</a></li>
 </ul><h2>In module delayed_public_mutable_values</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.unpack_delay_change.html" class="fn">unpack_delay_change</a></div></li>
 <li><a href="fn.unpack_value_change.html" class="fn">unpack_value_change</a></div></li>
@@ -41,29 +41,27 @@ is &quot;hacky&quot; but there is no way around it.</p>
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
     svc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;,
     sdc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;,
-) -> <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;</code>
+) -> Self</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
     T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;, _other: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
-</div><h3 id="impl-Hash-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+</div><h3 id="impl-Hash-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self) -> Field</code>
 
-</div><h3 id="impl-Packable-for-DelayedPublicMutableValues"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+</div><h3 id="impl-Packable-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: u64, T&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self: <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;) -> [Field; &lt;T as Packable&gt;::N * 2 + 1]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self) -> [Field; &lt;T as Packable&gt;::N * 2 + 1]</code>
 
-<code class="code-header">pub fn <span class="fn">unpack</span>(
-    fields: [Field; &lt;T as Packable&gt;::N * 2 + 1],
-) -> <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;</code>
+<code class="code-header">pub fn <span class="fn">unpack</span>(fields: [Field; &lt;T as Packable&gt;::N * 2 + 1]) -> Self</code>
 
 </div></main>
 </body>

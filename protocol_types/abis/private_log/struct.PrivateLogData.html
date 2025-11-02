@@ -16,7 +16,7 @@
 <li><a href="#impl-Empty-for-PrivateLogData">Empty</a></li>
 <li><a href="#impl-Eq-for-PrivateLogData">Eq</a></li>
 <li><a href="#impl-Ordered-for-PrivateLogData">Ordered</a></li>
-<li><a href="#impl-Ordered-for-Scoped">Ordered</a></li>
+<li><a href="#impl-Ordered-for-Scoped<PrivateLogData>">Ordered</a></li>
 <li><a href="#impl-Serialize-for-PrivateLogData">Serialize</a></li>
 </ul><h2>In module private_log</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateLogData.html" class="struct">PrivateLogData</a></div></li>
 </ul><h3>Type aliases</h3><ul class="item-list"><li><a href="type.PrivateLog.html" class="type">PrivateLog</a></div></li>
@@ -33,35 +33,35 @@
 <div class="padded-description"></div><div id="counter" class="struct-field"><code class="code-header">counter: u32</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code></h3>
 
-<div class="padded-methods"><code id="scope" class="code-header">pub fn <span class="fn">scope</span>(self: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;</code>
+<div class="padded-methods"><code id="scope" class="code-header">pub fn <span class="fn">scope</span>(self, contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;Self&gt;</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-PrivateLogData"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 21]) -> <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 21]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-PrivateLogData"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-PrivateLogData"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>, _other: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Ordered-for-PrivateLogData"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">counter</span>(self: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>) -> u32</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">counter</span>(self) -> u32</code>
 
-</div><h3 id="impl-Ordered-for-Scoped"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;</code></h3>
+</div><h3 id="impl-Ordered-for-Scoped<PrivateLogData>"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">counter</span>(self: <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;) -> u32</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">counter</span>(self) -> u32</code>
 
 </div><h3 id="impl-Serialize-for-PrivateLogData"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>) -> [Field; 21]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 21]</code>
 
 </div></main>
 </body>

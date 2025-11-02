@@ -30,27 +30,27 @@
 <div class="padded-description"></div><div id="gas_settings" class="struct-field"><code class="code-header">gas_settings: <a href="../../../../protocol_types/abis/gas_settings/struct.GasSettings.html" class="struct">GasSettings</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(chain_id: Field, version: Field, gas_settings: <a href="../../../../protocol_types/abis/gas_settings/struct.GasSettings.html" class="struct">GasSettings</a>) -> <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(chain_id: Field, version: Field, gas_settings: <a href="../../../../protocol_types/abis/gas_settings/struct.GasSettings.html" class="struct">GasSettings</a>) -> Self</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-TxContext"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 10]) -> <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 10]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-TxContext"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-TxContext"><code class="code-header">impl <a href="../../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a>, _other: <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Serialize-for-TxContext"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../../protocol_types/abis/transaction/tx_context/struct.TxContext.html" class="struct">TxContext</a>) -> [Field; 10]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 10]</code>
 
 </div></main>
 </body>

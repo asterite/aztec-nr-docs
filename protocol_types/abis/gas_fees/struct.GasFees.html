@@ -28,29 +28,29 @@
 <div class="padded-description"></div><div id="fee_per_l2_gas" class="struct-field"><code class="code-header">fee_per_l2_gas: u128</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(fee_per_da_gas: u128, fee_per_l2_gas: u128) -> <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(fee_per_da_gas: u128, fee_per_l2_gas: u128) -> Self</code>
 
-<code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>) -> bool</code>
+<code id="is_empty" class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-GasFees"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 2]) -> <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 2]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-GasFees"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-GasFees"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>, _other: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Serialize-for-GasFees"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/gas_fees/struct.GasFees.html" class="struct">GasFees</a>) -> [Field; 2]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 2]</code>
 
 </div></main>
 </body>

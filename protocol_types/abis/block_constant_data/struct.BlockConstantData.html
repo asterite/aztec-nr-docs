@@ -35,23 +35,23 @@
 <div class="padded-description"></div><div id="global_variables" class="struct-field"><code class="code-header">global_variables: <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></div>
 <div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-BlockConstantData"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 15]) -> <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 15]) -> Self</code>
 
 </div><h3 id="impl-Empty-for-BlockConstantData"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a>) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a>, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-BlockConstantData"><code class="code-header">impl <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a>, _other: <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Serialize-for-BlockConstantData"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../../protocol_types/abis/block_constant_data/struct.BlockConstantData.html" class="struct">BlockConstantData</a>) -> [Field; 15]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 15]</code>
 
 </div></main>
 </body>

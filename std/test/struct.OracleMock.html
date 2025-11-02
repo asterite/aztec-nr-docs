@@ -23,19 +23,19 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a></code></h3>
 
-<div class="padded-methods"><code id="mock" class="code-header">pub unconstrained fn <span class="fn">mock</span>&lt;let N: u32&gt;(name: str&lt;N&gt;) -> <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a></code>
+<div class="padded-methods"><code id="mock" class="code-header">pub unconstrained fn <span class="fn">mock</span>&lt;let N: u32&gt;(name: str&lt;N&gt;) -> Self</code>
 
-<code id="with_params" class="code-header">pub unconstrained fn <span class="fn">with_params</span>&lt;P&gt;(self: <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a>, params: P) -> <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a></code>
+<code id="with_params" class="code-header">pub unconstrained fn <span class="fn">with_params</span>&lt;P&gt;(self, params: P) -> Self</code>
 
-<code id="get_last_params" class="code-header">pub unconstrained fn <span class="fn">get_last_params</span>&lt;P&gt;(self: <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a>) -> P</code>
+<code id="get_last_params" class="code-header">pub unconstrained fn <span class="fn">get_last_params</span>&lt;P&gt;(self) -> P</code>
 
-<code id="returns" class="code-header">pub unconstrained fn <span class="fn">returns</span>&lt;R&gt;(self: <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a>, returns: R) -> <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a></code>
+<code id="returns" class="code-header">pub unconstrained fn <span class="fn">returns</span>&lt;R&gt;(self, returns: R) -> Self</code>
 
-<code id="times" class="code-header">pub unconstrained fn <span class="fn">times</span>(self: <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a>, times: u64) -> <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a></code>
+<code id="times" class="code-header">pub unconstrained fn <span class="fn">times</span>(self, times: u64) -> Self</code>
 
-<code id="clear" class="code-header">pub unconstrained fn <span class="fn">clear</span>(self: <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a>)</code>
+<code id="clear" class="code-header">pub unconstrained fn <span class="fn">clear</span>(self)</code>
 
-<code id="times_called" class="code-header">pub unconstrained fn <span class="fn">times_called</span>(self: <a href="../../std/test/struct.OracleMock.html" class="struct">OracleMock</a>) -> Field</code>
+<code id="times_called" class="code-header">pub unconstrained fn <span class="fn">times_called</span>(self) -> Field</code>
 
 </div></main>
 </body>

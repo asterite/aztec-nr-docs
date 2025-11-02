@@ -13,8 +13,8 @@
 <li><a href="#vk">vk</a></li>
 </ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#validate_allowed_in_vk_tree">validate_allowed_in_vk_tree</a></li>
 <li><a href="#validate_in_vk_tree">validate_in_vk_tree</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-VkData">Empty</a></li>
-<li><a href="#impl-Eq-for-VkData">Eq</a></li>
+</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-VkData<VK_LENGTH>">Empty</a></li>
+<li><a href="#impl-Eq-for-VkData<VK_LENGTH>">Eq</a></li>
 </ul><h2>In module vk_data</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.VkData.html" class="struct">VkData</a></div></li>
 </ul></nav>
 <main>
@@ -30,24 +30,24 @@
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
 
 <div class="padded-methods"><code id="validate_allowed_in_vk_tree" class="code-header">pub fn <span class="fn">validate_allowed_in_vk_tree</span>&lt;let N: u32&gt;(
-    self: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;,
+    self,
     vk_tree_root: Field,
     allowed_indices: [u32; N],
 )</code>
 
-<code id="validate_in_vk_tree" class="code-header">pub fn <span class="fn">validate_in_vk_tree</span>(self: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;, vk_tree_root: Field)</code>
+<code id="validate_in_vk_tree" class="code-header">pub fn <span class="fn">validate_in_vk_tree</span>(self, vk_tree_root: Field)</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-VkData"><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
+</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-VkData<VK_LENGTH>"><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
-<code class="code-header">pub fn <span class="fn">is_empty</span>(self: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;) -> bool</code>
+<code class="code-header">pub fn <span class="fn">is_empty</span>(self) -> bool</code>
 
-<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;, msg: str&lt;S&gt;)</code>
+<code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: u32&gt;(self, msg: str&lt;S&gt;)</code>
 
-</div><h3 id="impl-Eq-for-VkData"><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
+</div><h3 id="impl-Eq-for-VkData<VK_LENGTH>"><code class="code-header">impl&lt;let VK_LENGTH: u32&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;, _other: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div></main>
 </body>

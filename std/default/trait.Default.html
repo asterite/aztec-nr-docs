@@ -14,17 +14,17 @@
 <li><a href="#impl-Default-for-(A, B, C)">(A, B, C)</a></li>
 <li><a href="#impl-Default-for-(A, B, C, D)">(A, B, C, D)</a></li>
 <li><a href="#impl-Default-for-(A, B, C, D, E)">(A, B, C, D, E)</a></li>
-<li><a href="#impl-Default-for-BuildHasherDefault">BuildHasherDefault</a></li>
+<li><a href="#impl-Default-for-BuildHasherDefault<H>">BuildHasherDefault<H></a></li>
 <li><a href="#impl-Default-for-Field">Field</a></li>
-<li><a href="#impl-Default-for-HashMap">HashMap</a></li>
-<li><a href="#impl-Default-for-Option">Option</a></li>
+<li><a href="#impl-Default-for-HashMap<K, V, N, B>">HashMap<K, V, N, B></a></li>
+<li><a href="#impl-Default-for-Option<T>">Option<T></a></li>
 <li><a href="#impl-Default-for-Poseidon2Hasher">Poseidon2Hasher</a></li>
 <li><a href="#impl-Default-for-Poseidon2Hasher">Poseidon2Hasher</a></li>
 <li><a href="#impl-Default-for-PoseidonHasher">PoseidonHasher</a></li>
 <li><a href="#impl-Default-for-PublicKeys">PublicKeys</a></li>
-<li><a href="#impl-Default-for-Slot">Slot</a></li>
-<li><a href="#impl-Default-for-Slot">Slot</a></li>
-<li><a href="#impl-Default-for-UHashMap">UHashMap</a></li>
+<li><a href="#impl-Default-for-Slot<K, V>">Slot<K, V></a></li>
+<li><a href="#impl-Default-for-Slot<K, V>">Slot<K, V></a></li>
+<li><a href="#impl-Default-for-UHashMap<K, V, B>">UHashMap<K, V, B></a></li>
 <li><a href="#impl-Default-for-[T; N]">[T; N]</a></li>
 <li><a href="#impl-Default-for-[T]">[T]</a></li>
 <li><a href="#impl-Default-for-bool">bool</a></li>
@@ -76,33 +76,33 @@ where
     D: <a href="../../std/default/trait.Default.html" class="trait">Default</a>,
     E: <a href="../../std/default/trait.Default.html" class="trait">Default</a></code></h3>
 
-<h3 id="impl-Default-for-BuildHasherDefault"><code class="code-header">impl&lt;H&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;
+<h3 id="impl-Default-for-BuildHasherDefault<H>"><code class="code-header">impl&lt;H&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/hash/struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a>&lt;H&gt;
 where
     H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a>,
     H: <a href="../../std/default/trait.Default.html" class="trait">Default</a></code></h3>
 
 <h3 id="impl-Default-for-Field"><code class="code-header">impl <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Field</code></h3>
 
-<h3 id="impl-Default-for-HashMap"><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
+<h3 id="impl-Default-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: u32, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
 where
     B: <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;,
     B: <a href="../../std/default/trait.Default.html" class="trait">Default</a></code></h3>
 
-<h3 id="impl-Default-for-Option"><code class="code-header">impl&lt;T&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;</code></h3>
-
-<h3 id="impl-Default-for-Poseidon2Hasher"><code class="code-header">impl <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Poseidon2Hasher</code></h3>
+<h3 id="impl-Default-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;</code></h3>
 
 <h3 id="impl-Default-for-Poseidon2Hasher"><code class="code-header">impl <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../poseidon/poseidon2/struct.Poseidon2Hasher.html" class="struct">Poseidon2Hasher</a></code></h3>
+
+<h3 id="impl-Default-for-Poseidon2Hasher"><code class="code-header">impl <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Poseidon2Hasher</code></h3>
 
 <h3 id="impl-Default-for-PoseidonHasher"><code class="code-header">impl <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../poseidon/poseidon/struct.PoseidonHasher.html" class="struct">PoseidonHasher</a></code></h3>
 
 <h3 id="impl-Default-for-PublicKeys"><code class="code-header">impl <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../protocol_types/public_keys/struct.PublicKeys.html" class="struct">PublicKeys</a></code></h3>
 
-<h3 id="impl-Default-for-Slot"><code class="code-header">impl&lt;K, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Slot&lt;K, V&gt;</code></h3>
+<h3 id="impl-Default-for-Slot<K, V>"><code class="code-header">impl&lt;K, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Slot&lt;K, V&gt;</code></h3>
 
-<h3 id="impl-Default-for-Slot"><code class="code-header">impl&lt;K, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Slot&lt;K, V&gt;</code></h3>
+<h3 id="impl-Default-for-Slot<K, V>"><code class="code-header">impl&lt;K, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for Slot&lt;K, V&gt;</code></h3>
 
-<h3 id="impl-Default-for-UHashMap"><code class="code-header">impl&lt;B, K, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/collections/umap/struct.UHashMap.html" class="struct">UHashMap</a>&lt;K, V, B&gt;
+<h3 id="impl-Default-for-UHashMap<K, V, B>"><code class="code-header">impl&lt;B, K, V&gt; <a href="../../std/default/trait.Default.html" class="trait">Default</a> for <a href="../../std/collections/umap/struct.UHashMap.html" class="struct">UHashMap</a>&lt;K, V, B&gt;
 where
     B: <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;,
     B: <a href="../../std/default/trait.Default.html" class="trait">Default</a></code></h3>

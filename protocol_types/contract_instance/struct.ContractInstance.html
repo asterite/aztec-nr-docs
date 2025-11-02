@@ -36,23 +36,23 @@
 <div class="padded-description"></div><div id="public_keys" class="struct-field"><code class="code-header">public_keys: <a href="../../protocol_types/public_keys/struct.PublicKeys.html" class="struct">PublicKeys</a></code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<div class="padded-methods"><code id="to_address" class="code-header">pub fn <span class="fn">to_address</span>(self: <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a>) -> <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+<div class="padded-methods"><code id="to_address" class="code-header">pub fn <span class="fn">to_address</span>(self) -> <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 16]) -> <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [Field; 16]) -> Self</code>
 
 </div><h3 id="impl-Eq-for-ContractInstance"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a>, _other: <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a>) -> bool</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> bool</code>
 
 </div><h3 id="impl-Hash-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Hash.html" class="trait">Hash</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self: <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a>) -> Field</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">hash</span>(self) -> Field</code>
 
 </div><h3 id="impl-Serialize-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self: <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a>) -> [Field; 16]</code>
+<div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [Field; 16]</code>
 
 </div></main>
 </body>

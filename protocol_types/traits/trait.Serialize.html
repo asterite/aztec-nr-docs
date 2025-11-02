@@ -25,13 +25,13 @@
 <li><a href="#impl-Serialize-for-AztecAddress">AztecAddress</a></li>
 <li><a href="#impl-Serialize-for-BlockConstantData">BlockConstantData</a></li>
 <li><a href="#impl-Serialize-for-BlockHeader">BlockHeader</a></li>
-<li><a href="#impl-Serialize-for-BoundedVec">BoundedVec</a></li>
+<li><a href="#impl-Serialize-for-BoundedVec<T, M>">BoundedVec<T, M></a></li>
 <li><a href="#impl-Serialize-for-CallContext">CallContext</a></li>
-<li><a href="#impl-Serialize-for-ClaimedLengthArray">ClaimedLengthArray</a></li>
+<li><a href="#impl-Serialize-for-ClaimedLengthArray<T, N>">ClaimedLengthArray<T, N></a></li>
 <li><a href="#impl-Serialize-for-ContentCommitment">ContentCommitment</a></li>
 <li><a href="#impl-Serialize-for-ContractClassId">ContractClassId</a></li>
 <li><a href="#impl-Serialize-for-ContractInstance">ContractInstance</a></li>
-<li><a href="#impl-Serialize-for-Counted">Counted</a></li>
+<li><a href="#impl-Serialize-for-Counted<T>">Counted<T></a></li>
 <li><a href="#impl-Serialize-for-EmbeddedCurvePoint">EmbeddedCurvePoint</a></li>
 <li><a href="#impl-Serialize-for-EmbeddedCurveScalar">EmbeddedCurveScalar</a></li>
 <li><a href="#impl-Serialize-for-EpochConstantData">EpochConstantData</a></li>
@@ -48,13 +48,13 @@
 <li><a href="#impl-Serialize-for-GasSettings">GasSettings</a></li>
 <li><a href="#impl-Serialize-for-GlobalVariables">GlobalVariables</a></li>
 <li><a href="#impl-Serialize-for-HasArray">HasArray</a></li>
-<li><a href="#impl-Serialize-for-HasArrayWithGenerics">HasArrayWithGenerics</a></li>
+<li><a href="#impl-Serialize-for-HasArrayWithGenerics<T, N>">HasArrayWithGenerics<T, N></a></li>
 <li><a href="#impl-Serialize-for-IndexedTaggingSecret">IndexedTaggingSecret</a></li>
 <li><a href="#impl-Serialize-for-IvpkM">IvpkM</a></li>
 <li><a href="#impl-Serialize-for-KeyValidationRequest">KeyValidationRequest</a></li>
 <li><a href="#impl-Serialize-for-KeyValidationRequestAndGenerator">KeyValidationRequestAndGenerator</a></li>
 <li><a href="#impl-Serialize-for-L2ToL1Message">L2ToL1Message</a></li>
-<li><a href="#impl-Serialize-for-Log">Log</a></li>
+<li><a href="#impl-Serialize-for-Log<N>">Log<N></a></li>
 <li><a href="#impl-Serialize-for-LogHash">LogHash</a></li>
 <li><a href="#impl-Serialize-for-MockStruct">MockStruct</a></li>
 <li><a href="#impl-Serialize-for-NestedRecursiveProof">NestedRecursiveProof</a></li>
@@ -63,7 +63,7 @@
 <li><a href="#impl-Serialize-for-NoteMetadata">NoteMetadata</a></li>
 <li><a href="#impl-Serialize-for-NpkM">NpkM</a></li>
 <li><a href="#impl-Serialize-for-Nullifier">Nullifier</a></li>
-<li><a href="#impl-Serialize-for-Option">Option</a></li>
+<li><a href="#impl-Serialize-for-Option<T>">Option<T></a></li>
 <li><a href="#impl-Serialize-for-OvpkM">OvpkM</a></li>
 <li><a href="#impl-Serialize-for-PartialAddress">PartialAddress</a></li>
 <li><a href="#impl-Serialize-for-PartialStateReference">PartialStateReference</a></li>
@@ -88,8 +88,8 @@
 <li><a href="#impl-Serialize-for-ReadRequest">ReadRequest</a></li>
 <li><a href="#impl-Serialize-for-RecursiveProof">RecursiveProof</a></li>
 <li><a href="#impl-Serialize-for-RecursiveProof">RecursiveProof</a></li>
-<li><a href="#impl-Serialize-for-RetrievedNote">RetrievedNote</a></li>
-<li><a href="#impl-Serialize-for-Scoped">Scoped</a></li>
+<li><a href="#impl-Serialize-for-RetrievedNote<Note>">RetrievedNote<Note></a></li>
+<li><a href="#impl-Serialize-for-Scoped<T>">Scoped<T></a></li>
 <li><a href="#impl-Serialize-for-ScopedKeyValidationRequestAndGenerator">ScopedKeyValidationRequestAndGenerator</a></li>
 <li><a href="#impl-Serialize-for-ScopedNoteHash">ScopedNoteHash</a></li>
 <li><a href="#impl-Serialize-for-ScopedNullifier">ScopedNullifier</a></li>
@@ -226,13 +226,13 @@ where
 
 <h3 id="impl-Serialize-for-BlockHeader"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
-<h3 id="impl-Serialize-for-BoundedVec"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
+<h3 id="impl-Serialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
 
 <h3 id="impl-Serialize-for-CallContext"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
-<h3 id="impl-Serialize-for-ClaimedLengthArray"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
+<h3 id="impl-Serialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
 
@@ -242,7 +242,7 @@ where
 
 <h3 id="impl-Serialize-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
-<h3 id="impl-Serialize-for-Counted"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
+<h3 id="impl-Serialize-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
 
@@ -278,7 +278,7 @@ where
 
 <h3 id="impl-Serialize-for-HasArray"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArray</code></h3>
 
-<h3 id="impl-Serialize-for-HasArrayWithGenerics"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArrayWithGenerics&lt;T, N&gt;
+<h3 id="impl-Serialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: u32, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArrayWithGenerics&lt;T, N&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
 
@@ -292,15 +292,15 @@ where
 
 <h3 id="impl-Serialize-for-L2ToL1Message"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a></code></h3>
 
-<h3 id="impl-Serialize-for-Log"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
+<h3 id="impl-Serialize-for-Log<N>"><code class="code-header">impl&lt;let N: u32&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;N&gt;</code></h3>
 
 <h3 id="impl-Serialize-for-LogHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a></code></h3>
 
 <h3 id="impl-Serialize-for-MockStruct"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/test/mocks/mock_struct/struct.MockStruct.html" class="struct">MockStruct</a></code></h3>
 
-<h3 id="impl-Serialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Serialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Serialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
 <h3 id="impl-Serialize-for-NoteHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></h3>
 
@@ -310,7 +310,7 @@ where
 
 <h3 id="impl-Serialize-for-Nullifier"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
 
-<h3 id="impl-Serialize-for-Option"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
+<h3 id="impl-Serialize-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
 
@@ -358,15 +358,15 @@ where
 
 <h3 id="impl-Serialize-for-ReadRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Serialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Serialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
-<h3 id="impl-Serialize-for-RetrievedNote"><code class="code-header">impl&lt;Note&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
+<h3 id="impl-Serialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
+<h3 id="impl-Serialize-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
 where
     Note: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
 
-<h3 id="impl-Serialize-for-Scoped"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
+<h3 id="impl-Serialize-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
 where
     T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
 

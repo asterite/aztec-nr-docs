@@ -9,14 +9,14 @@
 <nav class="sidebar">
 <h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
 <h2><a href="#trait">Trait Ordered</a></h2><h3>Required methods</h3><ul class="sidebar-list"><li><a href="#counter">counter</a></li>
-</ul><h3>Implementors</h3><ul class="sidebar-list"><li><a href="#impl-Ordered-for-Counted">Counted</a></li>
+</ul><h3>Implementors</h3><ul class="sidebar-list"><li><a href="#impl-Ordered-for-Counted<T>">Counted<T></a></li>
 <li><a href="#impl-Ordered-for-NoteHash">NoteHash</a></li>
 <li><a href="#impl-Ordered-for-Nullifier">Nullifier</a></li>
 <li><a href="#impl-Ordered-for-PrivateCallRequest">PrivateCallRequest</a></li>
 <li><a href="#impl-Ordered-for-PrivateLogData">PrivateLogData</a></li>
 <li><a href="#impl-Ordered-for-ReadRequest">ReadRequest</a></li>
-<li><a href="#impl-Ordered-for-Scoped">Scoped</a></li>
-<li><a href="#impl-Ordered-for-Scoped">Scoped</a></li>
+<li><a href="#impl-Ordered-for-Scoped<Counted<T>>">Scoped<Counted<T>></a></li>
+<li><a href="#impl-Ordered-for-Scoped<PrivateLogData>">Scoped<PrivateLogData></a></li>
 <li><a href="#impl-Ordered-for-ScopedNoteHash">ScopedNoteHash</a></li>
 <li><a href="#impl-Ordered-for-ScopedNullifier">ScopedNullifier</a></li>
 <li><a href="#impl-Ordered-for-TestTwoValues">TestTwoValues</a></li>
@@ -38,7 +38,7 @@
 
 <h2>Required methods</h2><div class="padded-methods"><code id="counter" class="code-header">pub fn <span class="fn">counter</span>(self: Self) -> u32</code>
 
-</div><h2>Implementors</h2><h3 id="impl-Ordered-for-Counted"><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;</code></h3>
+</div><h2>Implementors</h2><h3 id="impl-Ordered-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;</code></h3>
 
 <h3 id="impl-Ordered-for-NoteHash"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></h3>
 
@@ -50,9 +50,9 @@
 
 <h3 id="impl-Ordered-for-ReadRequest"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Ordered-for-Scoped"><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;&gt;</code></h3>
+<h3 id="impl-Ordered-for-Scoped<Counted<T>>"><code class="code-header">impl&lt;T&gt; <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;&gt;</code></h3>
 
-<h3 id="impl-Ordered-for-Scoped"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;</code></h3>
+<h3 id="impl-Ordered-for-Scoped<PrivateLogData>"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;</code></h3>
 
 <h3 id="impl-Ordered-for-ScopedNoteHash"><code class="code-header">impl <a href="../../../protocol_types/abis/side_effect/trait.Ordered.html" class="trait">Ordered</a> for <a href="../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a></code></h3>
 
