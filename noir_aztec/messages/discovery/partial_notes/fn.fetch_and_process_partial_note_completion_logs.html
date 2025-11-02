@@ -14,7 +14,10 @@
 <li><a href="global.MAX_PARTIAL_NOTE_PRIVATE_PACKED_LEN.html" class="global">MAX_PARTIAL_NOTE_PRIVATE_PACKED_LEN</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::<a href="index.html">partial_notes</a></div><h1>Function <span class="fn">fetch_and_process_partial_note_completion_logs</span></h1><pre><code>pub unconstrained fn fetch_and_process_partial_note_completion_logs&lt;Env&gt;(contract_address: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>, compute_note_hash_and_nullifier: ComputeNoteHashAndNullifier&lt;Env&gt;)</code></pre>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">discovery</a>::<a href="index.html">partial_notes</a></div><h1>Function <span class="fn">fetch_and_process_partial_note_completion_logs</span></h1><pre><code>pub unconstrained fn fetch_and_process_partial_note_completion_logs&lt;Env&gt;(
+    contract_address: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    compute_note_hash_and_nullifier: ComputeNoteHashAndNullifier&lt;Env&gt;,
+)</code></pre>
 
 <div class="comments">
 <p>Searches for logs that would result in the completion of pending partial notes, ultimately resulting in the notes

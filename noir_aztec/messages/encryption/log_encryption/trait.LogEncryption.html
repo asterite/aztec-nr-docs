@@ -20,8 +20,14 @@
 <main>
 <div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">encryption</a>::<a href="index.html">log_encryption</a></div><h1>Trait <span id="trait" class="trait">LogEncryption</span></h1><pre><code>pub trait LogEncryption {
     <span class="comment">// Required methods</span>
-    pub fn <a href="#encrypt_log"><span class="fn">encrypt_log</span></a>&lt;let PlaintextLen: u32&gt;(plaintext: [Field; PlaintextLen], recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> [Field; 17];
-    pub unconstrained fn <a href="#decrypt_log"><span class="fn">decrypt_log</span></a>(ciphertext: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 17&gt;, recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 14&gt;;
+    pub fn <a href="#encrypt_log"><span class="fn">encrypt_log</span></a>&lt;let PlaintextLen: u32&gt;(
+        plaintext: [Field; PlaintextLen],
+        recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    ) -> [Field; 17];
+    pub unconstrained fn <a href="#decrypt_log"><span class="fn">decrypt_log</span></a>(
+        ciphertext: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 17&gt;,
+        recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    ) -> <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 14&gt;;
 }</code></pre>
 
 <div class="comments">
@@ -38,7 +44,10 @@ emitted on-chain or delivered out-of-band, and decrypting those logs back into t
 <p>To preserve privacy, <code>encrypt_log</code> returns a fixed-length array ensuring all log types are indistinguishable
 on-chain. Implementations of this trait must handle padding the encrypted log to match this standardized length.</p>
 </div>
-<h2>Required methods</h2><div class="padded-methods"><code id="encrypt_log" class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: u32&gt;(plaintext: [Field; PlaintextLen], recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> [Field; 17]</code>
+<h2>Required methods</h2><div class="padded-methods"><code id="encrypt_log" class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: u32&gt;(
+    plaintext: [Field; PlaintextLen],
+    recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+) -> [Field; 17]</code>
 
 <div class="padded-description"><div class="comments">
 <p>Encrypts a plaintext field array into a private log that can be emitted on-chain.</p>
@@ -50,7 +59,10 @@ on-chain. Implementations of this trait must handle padding the encrypted log to
 <h3>Returns</h3>
 <p>Fixed-size array of encrypted Field elements representing the private log</p>
 </div>
-</div><code id="decrypt_log" class="code-header">pub unconstrained fn <span class="fn">decrypt_log</span>(ciphertext: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 17&gt;, recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 14&gt;</code>
+</div><code id="decrypt_log" class="code-header">pub unconstrained fn <span class="fn">decrypt_log</span>(
+    ciphertext: <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 17&gt;,
+    recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+) -> <a href="../../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Field, 14&gt;</code>
 
 <div class="padded-description"><div class="comments">
 <p>Decrypts a private log back into its original plaintext fields.

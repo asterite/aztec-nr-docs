@@ -30,7 +30,10 @@
 
 <code id="at" class="code-header">pub unconstrained fn <span class="fn">at</span>(contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
 
-<code id="at_historical" class="code-header">pub unconstrained fn <span class="fn">at_historical</span>(contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>, block_number: u32) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
+<code id="at_historical" class="code-header">pub unconstrained fn <span class="fn">at_historical</span>(
+    contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
+    block_number: u32,
+) -> <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a></code>
 
 <code id="block_number" class="code-header">pub fn <span class="fn">block_number</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> u32</code>
 
@@ -42,7 +45,10 @@
 
 <code id="chain_id" class="code-header">pub fn <span class="fn">chain_id</span>(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> Field</code>
 
-<code id="raw_storage_read" class="code-header">pub unconstrained fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> [Field; N]</code>
+<code id="raw_storage_read" class="code-header">pub unconstrained fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(
+    self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>,
+    storage_slot: Field,
+) -> [Field; N]</code>
 
 <code id="storage_read" class="code-header">pub unconstrained fn <span class="fn">storage_read</span>&lt;T&gt;(self: <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>, storage_slot: Field) -> T
 where

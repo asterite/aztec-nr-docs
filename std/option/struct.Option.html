@@ -82,7 +82,10 @@ only that it will be of type <code>T</code>.</p>
 <p>Returns the wrapped value if <code>self.is_some()</code>. Otherwise, calls the given function to return
 a default value.</p>
 </div>
-</div><code id="expect" class="code-header">pub fn <span class="fn">expect</span>&lt;let N: u32, MessageTypes&gt;(self: <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;, message: fmtstr&lt;N, MessageTypes&gt;) -> T</code>
+</div><code id="expect" class="code-header">pub fn <span class="fn">expect</span>&lt;let N: u32, MessageTypes&gt;(
+    self: <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;,
+    message: fmtstr&lt;N, MessageTypes&gt;,
+) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Asserts <code>self.is_some()</code> with a provided custom message and returns the contained <code>Some</code> value</p>
@@ -92,11 +95,7 @@ a default value.</p>
 <div class="padded-description"><div class="comments">
 <p>If self is <code>Some(x)</code>, this returns <code>Some(f(x))</code>. Otherwise, this returns <code>None</code>.</p>
 </div>
-</div><code id="map_or" class="code-header">pub fn <span class="fn">map_or</span>&lt;U, Env&gt;(
-    self: <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;,
-    default: U,
-    f: fn[Env](T) -> U,
-) -> U</code>
+</div><code id="map_or" class="code-header">pub fn <span class="fn">map_or</span>&lt;U, Env&gt;(self: <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;, default: U, f: fn[Env](T) -> U) -> U</code>
 
 <div class="padded-description"><div class="comments">
 <p>If self is <code>Some(x)</code>, this returns <code>f(x)</code>. Otherwise, this returns the given default value.</p>

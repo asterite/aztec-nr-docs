@@ -29,7 +29,10 @@
         context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
         note_hash_for_nullify: Field,
     ) -> Field;
-    pub unconstrained fn <a href="#compute_nullifier_unconstrained"><span class="fn">compute_nullifier_unconstrained</span></a>(self: Self, note_hash_for_nullify: Field) -> Field;
+    pub unconstrained fn <a href="#compute_nullifier_unconstrained"><span class="fn">compute_nullifier_unconstrained</span></a>(
+        self: Self,
+        note_hash_for_nullify: Field,
+    ) -> Field;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="compute_note_hash" class="code-header">pub fn <span class="fn">compute_note_hash</span>(self: Self, storage_slot: Field) -> Field</code>
@@ -58,7 +61,10 @@ to reduce the total gate count of the circuit.</p>
 we require the kernel's assistance to do this in order to prevent having to reveal private keys to application
 circuits.</p>
 </div>
-</div><code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(self: Self, note_hash_for_nullify: Field) -> Field</code>
+</div><code id="compute_nullifier_unconstrained" class="code-header">pub unconstrained fn <span class="fn">compute_nullifier_unconstrained</span>(
+    self: Self,
+    note_hash_for_nullify: Field,
+) -> Field</code>
 
 <div class="padded-description"><div class="comments">
 <p>Like <code>compute_nullifier</code>, except this variant is unconstrained: there are no guarantees on the returned value

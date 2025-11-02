@@ -23,11 +23,7 @@
 </code></pre>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;let INITIAL_DELAY: u64&gt; <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
 
-<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
-    pre: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;u64&gt;,
-    post: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;u64&gt;,
-    timestamp_of_change: u64,
-) -> <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code>
+<div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(pre: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;u64&gt;, post: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;u64&gt;, timestamp_of_change: u64) -> <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code>
 
 <code id="get_current" class="code-header">pub fn <span class="fn">get_current</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;, current_timestamp: u64) -> u64</code>
 
@@ -60,7 +56,10 @@ new delay. For example, if reducing from 3 days to 1 day, the reduction will be 
 days.</li>
 </ul>
 </div>
-</div><code id="get_effective_minimum_delay_at" class="code-header">pub fn <span class="fn">get_effective_minimum_delay_at</span>(self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;, historical_timestamp: u64) -> u64</code>
+</div><code id="get_effective_minimum_delay_at" class="code-header">pub fn <span class="fn">get_effective_minimum_delay_at</span>(
+    self: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;,
+    historical_timestamp: u64,
+) -> u64</code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the minimum delay before a value might mutate due to a scheduled change, from the perspective of some

@@ -12,7 +12,10 @@
 <li><a href="fn.find_last_index.html" class="fn">find_last_index</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">utils</a>::<a href="../index.html">arrays</a>::<a href="index.html">find_index</a></div><h1>Function <span class="fn">find_last_index</span></h1><pre><code>pub unconstrained fn find_last_index&lt;T, let N: u32, Env&gt;(array: [T; N], find: fn[Env](T) -> bool) -> u32</code></pre>
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">utils</a>::<a href="../index.html">arrays</a>::<a href="index.html">find_index</a></div><h1>Function <span class="fn">find_last_index</span></h1><pre><code>pub unconstrained fn find_last_index&lt;T, let N: u32, Env&gt;(
+    array: [T; N],
+    find: fn[Env](T) -> bool,
+) -> u32</code></pre>
 
 <div class="comments">
 <p>Helper function to find the index of the last element in an array that satisfies a given predicate.

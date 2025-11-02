@@ -66,7 +66,10 @@ fn sample_test() {
 <div class="padded-description"><div class="comments">
 <p>Creates a new <code>TestEnvironment</code>. This function should only be called once per test.</p>
 </div>
-</div><code id="public_context" class="code-header">pub unconstrained fn <span class="fn">public_context</span>&lt;Env, T&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, f: fn[Env](&mut <a href="../../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T) -> T</code>
+</div><code id="public_context" class="code-header">pub unconstrained fn <span class="fn">public_context</span>&lt;Env, T&gt;(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    f: fn[Env](&mut <a href="../../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T,
+) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Creates a <code>PublicContext</code>, which allows using aztec-nr features as if inside a public contract function. Useful
@@ -104,7 +107,10 @@ of it - it becomes invalid once <code>public_context</code> returns.</p>
 <p>Variant of <code>public_context</code> which allows specifying the contract address in which the public context will
 execute, which will affect note and nullifier siloing, storage access, etc.</p>
 </div>
-</div><code id="private_context" class="code-header">pub unconstrained fn <span class="fn">private_context</span>&lt;Env, T&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, f: fn[Env](&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T) -> T</code>
+</div><code id="private_context" class="code-header">pub unconstrained fn <span class="fn">private_context</span>&lt;Env, T&gt;(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    f: fn[Env](&mut <a href="../../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>) -> T,
+) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Creates a <code>PrivateContext</code>, which allows using aztec-nr features as if inside a private contract function.
@@ -153,7 +159,10 @@ execute, which will affect note and nullifier siloing, storage access, etc.</p>
 <div class="padded-description"><div class="comments">
 <p>Variant of <code>private_context</code> which allows specifying multiple configuration values via <code>PrivateContextOptions</code>.</p>
 </div>
-</div><code id="utility_context" class="code-header">pub unconstrained fn <span class="fn">utility_context</span>&lt;Env, T&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, f: fn[Env](<a href="../../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> T) -> T</code>
+</div><code id="utility_context" class="code-header">pub unconstrained fn <span class="fn">utility_context</span>&lt;Env, T&gt;(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    f: fn[Env](<a href="../../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>) -> T,
+) -> T</code>
 
 <div class="padded-description"><div class="comments">
 <p>Creates a <code>UtilityContext</code>, which allows using aztec-nr features as if inside a utility contract function.
@@ -223,12 +232,17 @@ at the specified timestamp (e.g. via <code>call_private</code> or <code>private_
 <p>Mines an empty block (i.e. with no transactions). Note that block timestamps do not automatically advance - this
 must be done by calling <code>mine_block_at</code> or <code>set_next_block_timestamp</code>.</p>
 </div>
-</div><code id="advance_next_block_timestamp_by" class="code-header">pub unconstrained fn <span class="fn">advance_next_block_timestamp_by</span>(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, duration: u64)</code>
+</div><code id="advance_next_block_timestamp_by" class="code-header">pub unconstrained fn <span class="fn">advance_next_block_timestamp_by</span>(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    duration: u64,
+)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sets the timestamp of the next block to be mined to be ahead of the last one by <code>duration</code>.</p>
 </div>
-</div><code id="create_contract_account" class="code-header">pub unconstrained fn <span class="fn">create_contract_account</span>(&mut self: &mut <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+</div><code id="create_contract_account" class="code-header">pub unconstrained fn <span class="fn">create_contract_account</span>(
+    &mut self: &mut <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Creates a new account that can be used as the <code>from</code> parameter in contract calls, e.g. in <code>private_call</code> or
@@ -242,7 +256,9 @@ function.</p>
 generate multiple addresses. These addresses are also different from the ones that <code>create_light_account</code>
 returns, and so these two functions can be mixed and match to create a set of unique accounts.</p>
 </div>
-</div><code id="create_light_account" class="code-header">pub unconstrained fn <span class="fn">create_light_account</span>(&mut self: &mut <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
+</div><code id="create_light_account" class="code-header">pub unconstrained fn <span class="fn">create_light_account</span>(
+    &mut self: &mut <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+) -> <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code>
 
 <div class="padded-description"><div class="comments">
 <p>Creates a new account that can be used as the <code>from</code> parameter in contract calls, e.g. in <code>private_call</code> or
@@ -255,7 +271,10 @@ that rely on private authwits, use <code>create_contract_account</code> instead.
 generate multiple addresses. These addresses are also different from the ones that <code>create_contract_account</code>
 returns, and so these two functions can be mixed and match to create a set of unique accounts.</p>
 </div>
-</div><code id="deploy" class="code-header">pub unconstrained fn <span class="fn">deploy</span>&lt;let N: u32&gt;(&mut self: &mut <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, path: str&lt;N&gt;) -> <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;</code>
+</div><code id="deploy" class="code-header">pub unconstrained fn <span class="fn">deploy</span>&lt;let N: u32&gt;(
+    &mut self: &mut <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    path: str&lt;N&gt;,
+) -> <a href="../../../../noir_aztec/test/helpers/utils/struct.ContractDeployment.html" class="struct">ContractDeployment</a>&lt;N&gt;</code>
 
 <div class="padded-description"><div class="comments">
 <p>Prepares a contract for deployment, so that its private, public and utility functions can be called. The
@@ -315,7 +334,10 @@ let contract_addr = env.deploy(&quot;SampleContract&quot;).without_initializer()
 let return_value = env.call_private(caller, SampleContract::at(contract_addr).sample_private_function());
 </code></pre>
 </div>
-</div><code id="view_private" class="code-header">pub unconstrained fn <span class="fn">view_private</span>&lt;T, let M: u32&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;) -> T
+</div><code id="view_private" class="code-header">pub unconstrained fn <span class="fn">view_private</span>&lt;T, let M: u32&gt;(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;,
+) -> T
 where
     T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
 
@@ -324,7 +346,10 @@ where
 <p>Unlike <code>call_private</code>, no transaction is created and no block is mined (since <code>#[view]</code> functions are only
 executable in a static context, and these produce no side effects).</p>
 </div>
-</div><code id="simulate_utility" class="code-header">pub unconstrained fn <span class="fn">simulate_utility</span>&lt;T, let M: u32&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;) -> T
+</div><code id="simulate_utility" class="code-header">pub unconstrained fn <span class="fn">simulate_utility</span>&lt;T, let M: u32&gt;(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;,
+) -> T
 where
     T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
 
@@ -359,7 +384,10 @@ let contract_addr = env.deploy(&quot;SampleContract&quot;).without_initializer()
 let return_value = env.call_public(caller, SampleContract::at(contract_addr).sample_public_function());
 </code></pre>
 </div>
-</div><code id="view_public" class="code-header">pub unconstrained fn <span class="fn">view_public</span>&lt;T, let M: u32&gt;(_self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>, call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicStaticCallInterface.html" class="struct">PublicStaticCallInterface</a>&lt;M, T&gt;) -> T
+</div><code id="view_public" class="code-header">pub unconstrained fn <span class="fn">view_public</span>&lt;T, let M: u32&gt;(
+    _self: <a href="../../../../noir_aztec/test/helpers/test_environment/struct.TestEnvironment.html" class="struct">TestEnvironment</a>,
+    call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicStaticCallInterface.html" class="struct">PublicStaticCallInterface</a>&lt;M, T&gt;,
+) -> T
 where
     T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
 

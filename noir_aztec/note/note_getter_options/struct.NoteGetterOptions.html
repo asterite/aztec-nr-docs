@@ -58,7 +58,10 @@
 <div class="padded-description"></div><div id="status" class="struct-field"><code class="code-header">status: u8</code></div>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;FilterArgs, let M: u32, Note&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;</code></h3>
 
-<div class="padded-methods"><code id="with_filter" class="code-header">pub fn <span class="fn">with_filter</span>(filter: fn([<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], filter_args: FilterArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;
+<div class="padded-methods"><code id="with_filter" class="code-header">pub fn <span class="fn">with_filter</span>(
+    filter: fn([<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], FilterArgs) -> [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16],
+    filter_args: FilterArgs,
+) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, Field, FilterArgs&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code>
@@ -95,7 +98,10 @@ where
 
 </div><h3><code class="code-header">impl&lt;let M: u32, Note, PreprocessorArgs&gt; <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;</code></h3>
 
-<div class="padded-methods"><code id="with_preprocessor" class="code-header">pub fn <span class="fn">with_preprocessor</span>(preprocessor: fn([<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], PreprocessorArgs) -> [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], preprocessor_args: PreprocessorArgs) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;
+<div class="padded-methods"><code id="with_preprocessor" class="code-header">pub fn <span class="fn">with_preprocessor</span>(
+    preprocessor: fn([<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16], PreprocessorArgs) -> [<a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;&gt;; 16],
+    preprocessor_args: PreprocessorArgs,
+) -> <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, Field&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code>

@@ -13,7 +13,10 @@
 <li><a href="fn.view_notes.html" class="fn">view_notes</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter</a></div><h1>Function <span class="fn">get_note</span></h1><pre><code>pub fn get_note&lt;Note&gt;(context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>, storage_slot: Field) -> (<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, Field)
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter</a></div><h1>Function <span class="fn">get_note</span></h1><pre><code>pub fn get_note&lt;Note&gt;(
+    context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>,
+    storage_slot: Field,
+) -> (<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, Field)
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,

@@ -30,11 +30,7 @@
     <span class="comment">// Required methods</span>
     pub fn <a href="#get_next_key"><span class="fn">get_next_key</span></a>(self: Self) -> Field;
     pub fn <a href="#points_to_infinity"><span class="fn">points_to_infinity</span></a>(self: Self) -> bool;
-    pub fn <a href="#update_pointers"><span class="fn">update_pointers</span></a>(
-        self: Self,
-        next_key: Field,
-        next_index: u32,
-    ) -> Self;
+    pub fn <a href="#update_pointers"><span class="fn">update_pointers</span></a>(self: Self, next_key: Field, next_index: u32) -> Self;
     pub fn <a href="#update_value"><span class="fn">update_value</span></a>(self: Self, value: Value) -> Self;
     pub fn <a href="#build_insertion_leaf"><span class="fn">build_insertion_leaf</span></a>(value: Value, low_leaf: Self) -> Self;
 }</code></pre>
@@ -43,11 +39,7 @@
 
 <code id="points_to_infinity" class="code-header">pub fn <span class="fn">points_to_infinity</span>(self: Self) -> bool</code>
 
-<code id="update_pointers" class="code-header">pub fn <span class="fn">update_pointers</span>(
-    self: Self,
-    next_key: Field,
-    next_index: u32,
-) -> Self</code>
+<code id="update_pointers" class="code-header">pub fn <span class="fn">update_pointers</span>(self: Self, next_key: Field, next_index: u32) -> Self</code>
 
 <code id="update_value" class="code-header">pub fn <span class="fn">update_value</span>(self: Self, value: Value) -> Self</code>
 

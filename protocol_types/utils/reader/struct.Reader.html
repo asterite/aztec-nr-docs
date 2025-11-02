@@ -37,7 +37,10 @@
 
 <code id="read_array" class="code-header">pub fn <span class="fn">read_array</span>&lt;let K: u32&gt;(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;) -> [Field; K]</code>
 
-<code id="read_struct" class="code-header">pub fn <span class="fn">read_struct</span>&lt;T, let K: u32&gt;(&mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;, deserialise: fn([Field; K]) -> T) -> T</code>
+<code id="read_struct" class="code-header">pub fn <span class="fn">read_struct</span>&lt;T, let K: u32&gt;(
+    &mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;,
+    deserialise: fn([Field; K]) -> T,
+) -> T</code>
 
 <code id="read_struct_array" class="code-header">pub fn <span class="fn">read_struct_array</span>&lt;T, let K: u32, let C: u32&gt;(
     &mut self: &mut <a href="../../../protocol_types/utils/reader/struct.Reader.html" class="struct">Reader</a>&lt;N&gt;,

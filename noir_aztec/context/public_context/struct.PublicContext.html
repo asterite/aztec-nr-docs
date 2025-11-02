@@ -152,11 +152,7 @@ where
 <li><code>log</code> - The data to log, must implement Serialize trait</li>
 </ul>
 </div>
-</div><code id="note_hash_exists" class="code-header">pub fn <span class="fn">note_hash_exists</span>(
-    _self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
-    note_hash: Field,
-    leaf_index: u64,
-) -> bool</code>
+</div><code id="note_hash_exists" class="code-header">pub fn <span class="fn">note_hash_exists</span>(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, note_hash: Field, leaf_index: u64) -> bool</code>
 
 <div class="padded-description"><div class="comments">
 <p>Checks if a given note hash exists in the note hash tree at a particular
@@ -272,11 +268,7 @@ consume them.</p>
 <li>Will revert if message doesn't exist or was already consumed</li>
 </ul>
 </div>
-</div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(
-    _self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
-    recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>,
-    content: Field,
-)</code>
+</div><code id="message_portal" class="code-header">pub fn <span class="fn">message_portal</span>(_self: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, recipient: <a href="../../../protocol_types/address/eth_address/struct.EthAddress.html" class="struct">EthAddress</a>, content: Field)</code>
 
 <div class="padded-description"><div class="comments">
 <p>Sends an &quot;L2 -&gt; L1 message&quot; from this function (Aztec, L2) to a smart
@@ -644,7 +636,10 @@ or any nested function calls).</p>
 <li><code>bool</code> - True if in staticcall context, false otherwise</li>
 </ul>
 </div>
-</div><code id="raw_storage_read" class="code-header">pub fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(_self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field) -> [Field; N]</code>
+</div><code id="raw_storage_read" class="code-header">pub fn <span class="fn">raw_storage_read</span>&lt;let N: u32&gt;(
+    _self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
+    storage_slot: Field,
+) -> [Field; N]</code>
 
 <div class="padded-description"><div class="comments">
 <p>Reads raw field values from public storage.
@@ -704,11 +699,7 @@ variable abstractions to perform writes: PublicMutable &amp; PublicImmutable.</p
 <li><code>values</code> - Array of N Fields to write to storage</li>
 </ul>
 </div>
-</div><code id="storage_write" class="code-header">pub fn <span class="fn">storage_write</span>&lt;T&gt;(
-    self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>,
-    storage_slot: Field,
-    value: T,
-)
+</div><code id="storage_write" class="code-header">pub fn <span class="fn">storage_write</span>&lt;T&gt;(self: <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, storage_slot: Field, value: T)
 where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code>
 

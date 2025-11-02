@@ -13,7 +13,10 @@
 <li><a href="fn.view_notes.html" class="fn">view_notes</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter</a></div><h1>Function <span class="fn">view_notes</span></h1><pre><code>pub unconstrained fn view_notes&lt;Note, let M: u32&gt;(storage_slot: Field, options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Note, 10&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::<a href="index.html">note_getter</a></div><h1>Function <span class="fn">view_notes</span></h1><pre><code>pub unconstrained fn view_notes&lt;Note, let M: u32&gt;(
+    storage_slot: Field,
+    options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, M&gt;,
+) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Note, 10&gt;
 where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,

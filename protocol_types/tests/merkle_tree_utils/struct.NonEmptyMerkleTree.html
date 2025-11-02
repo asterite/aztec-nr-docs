@@ -31,13 +31,12 @@
     _subtree_height: [Field; SUBTREE_HEIGHT],
 ) -> <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;</code>
 
-<code id="get_sibling_path" class="code-header">pub fn <span class="fn">get_sibling_path</span>(self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;, leaf_index: u32) -> [Field; TREE_HEIGHT]</code>
+<code id="get_sibling_path" class="code-header">pub fn <span class="fn">get_sibling_path</span>(
+    self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;,
+    leaf_index: u32,
+) -> [Field; TREE_HEIGHT]</code>
 
-<code id="update_leaf" class="code-header">pub fn <span class="fn">update_leaf</span>(
-    &mut self: &mut <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;,
-    index: u32,
-    value: Field,
-)</code>
+<code id="update_leaf" class="code-header">pub fn <span class="fn">update_leaf</span>(&mut self: &mut <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;, index: u32, value: Field)</code>
 
 <code id="get_root" class="code-header">pub fn <span class="fn">get_root</span>(self: <a href="../../../protocol_types/tests/merkle_tree_utils/struct.NonEmptyMerkleTree.html" class="struct">NonEmptyMerkleTree</a>&lt;SUBTREE_ITEMS, TREE_HEIGHT, SUPERTREE_HEIGHT, SUBTREE_HEIGHT&gt;) -> Field</code>
 
