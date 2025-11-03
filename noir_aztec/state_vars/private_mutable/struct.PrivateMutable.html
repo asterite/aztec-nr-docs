@@ -101,10 +101,10 @@ current value at the given storage_slot.</li>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="initialize" class="code-header">pub fn <span class="fn">initialize</span>(self, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></code>
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a PrivateMutable state variable instance with its first note.</p>
@@ -160,10 +160,10 @@ slot and can leak privacy information (see <code>compute_initialization_nullifie
 documentation).</p>
 </div>
 </div><code id="replace" class="code-header">pub fn <span class="fn">replace</span>(self, new_note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></code>
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Replaces the current note of a PrivateMutable state variable with a new note.</p>
@@ -203,10 +203,10 @@ decide how to encrypt and deliver this note to its intended recipient.</li>
 maintaining the invariant that a PrivateMutable has exactly one current note.</p>
 </div>
 </div><code id="initialize_or_replace" class="code-header">pub fn <span class="fn">initialize_or_replace</span>(self, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></code>
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes the PrivateMutable if it's uninitialized, or replaces the current
@@ -230,10 +230,10 @@ See NoteEmission documentation for more details.</li>
 </ul>
 </div>
 </div><code id="get_note" class="code-header">pub fn <span class="fn">get_note</span>(self) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
-    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></code>
+    Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Reads the current note of a PrivateMutable state variable instance.</p>
@@ -325,10 +325,10 @@ if the underlying note's <code>compute_nullifier()</code> method is designed to 
 </div></div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_mutable/struct.PrivateMutable.html" class="struct">PrivateMutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="is_initialized" class="code-header">pub unconstrained fn <span class="fn">is_initialized</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a>
-where
+<div class="where-clause">where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Checks whether this PrivateMutable has been initialized.</p>
@@ -341,11 +341,11 @@ nullifier exists), <code>false</code> otherwise.</li>
 </ul>
 </div>
 </div><code id="view_note" class="code-header">pub unconstrained fn <span class="fn">view_note</span>(self) -> Note
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the current note in this PrivateMutable without consuming it.</p>

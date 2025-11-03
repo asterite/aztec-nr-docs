@@ -29,6 +29,7 @@
 <li><a href="#remove">remove</a></li>
 </ul><h2>In module std</h2><h3>Modules</h3><ul class="item-list"><li><a href="aes128/index.html" class="module">aes128</a></div></li>
 <li><a href="append/index.html" class="module">append</a></div></li>
+<li><a href="array/index.html" class="module">array</a></div></li>
 <li><a href="cmp/index.html" class="module">cmp</a></div></li>
 <li><a href="collections/index.html" class="module">collections</a></div></li>
 <li><a href="compat/index.html" class="module">compat</a></div></li>
@@ -42,9 +43,11 @@
 <li><a href="hint/index.html" class="module">hint</a></div></li>
 <li><a href="mem/index.html" class="module">mem</a></div></li>
 <li><a href="meta/index.html" class="module">meta</a></div></li>
+<li><a href="ops/index.html" class="module">ops</a></div></li>
 <li><a href="option/index.html" class="module">option</a></div></li>
 <li><a href="panic/index.html" class="module">panic</a></div></li>
 <li><a href="runtime/index.html" class="module">runtime</a></div></li>
+<li><a href="slice/index.html" class="module">slice</a></div></li>
 <li><a href="test/index.html" class="module">test</a></div></li>
 </ul><h3>Primitive types</h3><ul class="item-list"><li><a href="primitive.array.html" class="primitive">array</a></div></li>
 <li><a href="primitive.bool.html" class="primitive">bool</a></div></li>
@@ -155,8 +158,8 @@ This returns a new slice and leaves both input slices unchanged.</p>
 <code id="filter" class="code-header">pub fn <span class="fn">filter</span>&lt;Env&gt;(self, predicate: fn[Env](T) -> <a href="../std/primitive.bool.html" class="primitive">bool</a>) -> Self</code>
 
 <code id="join" class="code-header">pub fn <span class="fn">join</span>(self, separator: T) -> T
-where
-    T: <a href="../std/append/trait.Append.html" class="trait">Append</a></code>
+<div class="where-clause">where
+    T: <a href="../std/append/trait.Append.html" class="trait">Append</a></div></code>
 
 <code id="all" class="code-header">pub fn <span class="fn">all</span>&lt;Env&gt;(self, predicate: fn[Env](T) -> <a href="../std/primitive.bool.html" class="primitive">bool</a>) -> <a href="../std/primitive.bool.html" class="primitive">bool</a></code>
 

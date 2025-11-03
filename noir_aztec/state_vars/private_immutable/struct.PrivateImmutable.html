@@ -60,10 +60,10 @@ value at the given storage_slot.</li>
 <h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_immutable/struct.PrivateImmutable.html" class="struct">PrivateImmutable</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="is_initialized" class="code-header">pub unconstrained fn <span class="fn">is_initialized</span>(self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a>
-where
+<div class="where-clause">where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Checks whether this PrivateImmutable has been initialized.</p>
@@ -75,11 +75,11 @@ nullifier exists), <code>false</code> otherwise.</li>
 <p>docs:start:is_initialized</p>
 </div>
 </div><code id="view_note" class="code-header">pub unconstrained fn <span class="fn">view_note</span>(self) -> Note
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns the permanent note in this PrivateImmutable without consuming it.</p>
@@ -144,10 +144,10 @@ the storage location.</p>
 </div></div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_immutable/struct.PrivateImmutable.html" class="struct">PrivateImmutable</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="initialize" class="code-header">pub fn <span class="fn">initialize</span>(self, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;</code>
+    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Initializes a PrivateImmutable state variable instance with a permanent note.</p>
@@ -184,10 +184,10 @@ documentation).</p>
 <p>docs:start:initialize</p>
 </div>
 </div><code id="get_note" class="code-header">pub fn <span class="fn">get_note</span>(self) -> Note
-where
+<div class="where-clause">where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;</code>
+    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Reads the permanent note of a PrivateImmutable state variable instance.</p>

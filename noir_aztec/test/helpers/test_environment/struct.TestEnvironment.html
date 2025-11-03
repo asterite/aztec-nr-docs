@@ -308,8 +308,8 @@ relative to the current workspace:</p>
     from: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateCallInterface.html" class="struct">PrivateCallInterface</a>&lt;M, T&gt;,
 ) -> T
-where
-    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Performs a private contract function call, including the processing of any nested private calls and enqueued
@@ -331,8 +331,8 @@ let return_value = env.call_private(caller, SampleContract::at(contract_addr).sa
     _self: Self,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PrivateStaticCallInterface.html" class="struct">PrivateStaticCallInterface</a>&lt;M, T&gt;,
 ) -> T
-where
-    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Variant of <code>call_private</code> for private <code>#[view]</code> functions.</p>
@@ -343,8 +343,8 @@ executable in a static context, and these produce no side effects).</p>
     _self: Self,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.UtilityCallInterface.html" class="struct">UtilityCallInterface</a>&lt;M, T&gt;,
 ) -> T
-where
-    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Performs a utility contract function call and returns the result of the called function.</p>
@@ -359,8 +359,8 @@ let return_value = env.simulate_utility(SampleContract::at(contract_addr).sample
     from: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicCallInterface.html" class="struct">PublicCallInterface</a>&lt;M, T&gt;,
 ) -> T
-where
-    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Performs a public contract function call, including the processing of any nested public calls. Returns the
@@ -381,8 +381,8 @@ let return_value = env.call_public(caller, SampleContract::at(contract_addr).sam
     _self: Self,
     call_interface: <a href="../../../../noir_aztec/context/call_interfaces/struct.PublicStaticCallInterface.html" class="struct">PublicStaticCallInterface</a>&lt;M, T&gt;,
 ) -> T
-where
-    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Variant of <code>call_public</code> for public <code>#[view]</code> functions.</p>

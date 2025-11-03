@@ -61,41 +61,41 @@
 <div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">std</a>::<a href="index.html">hash</a></div><h1>Trait <span id="trait" class="trait">Hash</span></h1><pre><code>pub trait Hash {
     <span class="comment">// Required methods</span>
     pub fn <a href="#hash"><span class="fn">hash</span></a>&lt;H&gt;(self, state: &mut H)
-    where
-        H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a>;
+<div class="where-clause">    where
+        H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a></div>;
 }</code></pre>
 
 <h2>Required methods</h2><div class="padded-methods"><code id="hash" class="code-header">pub fn <span class="fn">hash</span>&lt;H&gt;(self, state: &mut H)
-where
-    H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a></code>
+<div class="where-clause">where
+    H: <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a></div></code>
 
 </div><h2>Implementors</h2><h3 id="impl-Hash-for-()"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for ()</code></h3>
 
 <h3 id="impl-Hash-for-(A, B)"><code class="code-header">impl&lt;A, B&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for (A, B)
-where
+<div class="where-clause">where
     A: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
-    B: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+    B: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-(A, B, C)"><code class="code-header">impl&lt;A, B, C&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for (A, B, C)
-where
+<div class="where-clause">where
     A: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     B: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
-    C: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+    C: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-(A, B, C, D)"><code class="code-header">impl&lt;A, B, C, D&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for (A, B, C, D)
-where
+<div class="where-clause">where
     A: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     B: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     C: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
-    D: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+    D: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-(A, B, C, D, E)"><code class="code-header">impl&lt;A, B, C, D, E&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for (A, B, C, D, E)
-where
+<div class="where-clause">where
     A: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     B: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     C: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     D: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
-    E: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+    E: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-BinaryOp"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/meta/op/struct.BinaryOp.html" class="struct">BinaryOp</a></code></h3>
 
@@ -112,8 +112,8 @@ where
 <h3 id="impl-Hash-for-Module"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/primitive.Module.html" class="primitive">Module</a></code></h3>
 
 <h3 id="impl-Hash-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
-where
-    T: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-Quoted"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/primitive.Quoted.html" class="primitive">Quoted</a></code></h3>
 
@@ -128,12 +128,12 @@ where
 <h3 id="impl-Hash-for-UnaryOp"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/meta/op/struct.UnaryOp.html" class="struct">UnaryOp</a></code></h3>
 
 <h3 id="impl-Hash-for-[T; N]"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for [T; N]
-where
-    T: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-[T]"><code class="code-header">impl&lt;T&gt; <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for [T]
-where
-    T: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a></div></code></h3>
 
 <h3 id="impl-Hash-for-bool"><code class="code-header">impl <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 

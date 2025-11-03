@@ -28,6 +28,7 @@
 <li><a href="#impl-Serialize-for-BoundedVec<T, M>">BoundedVec<T, M></a></li>
 <li><a href="#impl-Serialize-for-CallContext">CallContext</a></li>
 <li><a href="#impl-Serialize-for-ClaimedLengthArray<T, N>">ClaimedLengthArray<T, N></a></li>
+<li><a href="#impl-Serialize-for-CompressedString<N, M>">CompressedString<N, M></a></li>
 <li><a href="#impl-Serialize-for-ContentCommitment">ContentCommitment</a></li>
 <li><a href="#impl-Serialize-for-ContractClassId">ContractClassId</a></li>
 <li><a href="#impl-Serialize-for-ContractInstance">ContractInstance</a></li>
@@ -40,6 +41,7 @@
 <li><a href="#impl-Serialize-for-Fancier">Fancier</a></li>
 <li><a href="#impl-Serialize-for-FeePayload">FeePayload</a></li>
 <li><a href="#impl-Serialize-for-Field">Field</a></li>
+<li><a href="#impl-Serialize-for-FieldCompressedString">FieldCompressedString</a></li>
 <li><a href="#impl-Serialize-for-FunctionCall">FunctionCall</a></li>
 <li><a href="#impl-Serialize-for-FunctionData">FunctionData</a></li>
 <li><a href="#impl-Serialize-for-FunctionSelector">FunctionSelector</a></li>
@@ -168,43 +170,43 @@ fail with an arguments hash mismatch error message.</p>
 <h2>Required methods</h2><div class="padded-methods"><code id="serialize" class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; N]</code>
 
 </div><h2>Implementors</h2><h3 id="impl-Serialize-for-(T0, T1)"><code class="code-header">impl&lt;T0, T1&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T0, T1)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T0 as Serialize&gt;::N&gt;,
-    T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;</code></h3>
+    T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-(T0, T1, T2)"><code class="code-header">impl&lt;T0, T1, T2&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T0, T1, T2)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T0 as Serialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;,
-    T2: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T2 as Serialize&gt;::N&gt;</code></h3>
+    T2: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T2 as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-(T0, T1, T2, T3)"><code class="code-header">impl&lt;T0, T1, T2, T3&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T0, T1, T2, T3)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T0 as Serialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;,
     T2: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T2 as Serialize&gt;::N&gt;,
-    T3: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T3 as Serialize&gt;::N&gt;</code></h3>
+    T3: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T3 as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-(T0, T1, T2, T3, T4)"><code class="code-header">impl&lt;T0, T1, T2, T3, T4&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T0, T1, T2, T3, T4)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T0 as Serialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;,
     T2: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T2 as Serialize&gt;::N&gt;,
     T3: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T3 as Serialize&gt;::N&gt;,
-    T4: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T4 as Serialize&gt;::N&gt;</code></h3>
+    T4: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T4 as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-(T0, T1, T2, T3, T4, T5)"><code class="code-header">impl&lt;T0, T1, T2, T3, T4, T5&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T0, T1, T2, T3, T4, T5)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T0 as Serialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;,
     T2: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T2 as Serialize&gt;::N&gt;,
     T3: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T3 as Serialize&gt;::N&gt;,
     T4: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T4 as Serialize&gt;::N&gt;,
-    T5: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T5 as Serialize&gt;::N&gt;</code></h3>
+    T5: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T5 as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-(T1,)"><code class="code-header">impl&lt;T1&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for (T1,)
-where
-    T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T1: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T1 as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-AppPayload"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/authwit/entrypoint/app/struct.AppPayload.html" class="struct">AppPayload</a></code></h3>
 
@@ -227,14 +229,16 @@ where
 <h3 id="impl-Serialize-for-BlockHeader"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
 <h3 id="impl-Serialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-CallContext"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
 <h3 id="impl-Serialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</div></code></h3>
+
+<h3 id="impl-Serialize-for-CompressedString<N, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../compressed_string/struct.CompressedString.html" class="struct">CompressedString</a>&lt;N, M&gt;</code></h3>
 
 <h3 id="impl-Serialize-for-ContentCommitment"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/content_commitment/struct.ContentCommitment.html" class="struct">ContentCommitment</a></code></h3>
 
@@ -243,8 +247,8 @@ where
 <h3 id="impl-Serialize-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
 <h3 id="impl-Serialize-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-EmbeddedCurvePoint"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/embedded_curve_ops/struct.EmbeddedCurvePoint.html" class="struct">EmbeddedCurvePoint</a></code></h3>
 
@@ -261,6 +265,8 @@ where
 <h3 id="impl-Serialize-for-FeePayload"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/authwit/entrypoint/fee/struct.FeePayload.html" class="struct">FeePayload</a></code></h3>
 
 <h3 id="impl-Serialize-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></h3>
+
+<h3 id="impl-Serialize-for-FieldCompressedString"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../compressed_string/struct.FieldCompressedString.html" class="struct">FieldCompressedString</a></code></h3>
 
 <h3 id="impl-Serialize-for-FunctionCall"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/authwit/entrypoint/function_call/struct.FunctionCall.html" class="struct">FunctionCall</a></code></h3>
 
@@ -279,8 +285,8 @@ where
 <h3 id="impl-Serialize-for-HasArray"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArray</code></h3>
 
 <h3 id="impl-Serialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for HasArrayWithGenerics&lt;T, N&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-IndexedTaggingSecret"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/indexed_tagging_secret/struct.IndexedTaggingSecret.html" class="struct">IndexedTaggingSecret</a></code></h3>
 
@@ -311,8 +317,8 @@ where
 <h3 id="impl-Serialize-for-Nullifier"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
 
 <h3 id="impl-Serialize-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-OvpkM"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/public_keys/struct.OvpkM.html" class="struct">OvpkM</a></code></h3>
 
@@ -363,12 +369,12 @@ where
 <h3 id="impl-Serialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
 <h3 id="impl-Serialize-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
-where
-    Note: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    Note: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
@@ -403,8 +409,8 @@ where
 <h3 id="impl-Serialize-for-UintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
 <h3 id="impl-Serialize-for-[T; M]"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for [T; M]
-where
-    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Serialize-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 

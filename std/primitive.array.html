@@ -24,6 +24,7 @@
 <li><a href="#sort_via">sort_via</a></li>
 </ul><h2>In module std</h2><h3>Modules</h3><ul class="item-list"><li><a href="aes128/index.html" class="module">aes128</a></div></li>
 <li><a href="append/index.html" class="module">append</a></div></li>
+<li><a href="array/index.html" class="module">array</a></div></li>
 <li><a href="cmp/index.html" class="module">cmp</a></div></li>
 <li><a href="collections/index.html" class="module">collections</a></div></li>
 <li><a href="compat/index.html" class="module">compat</a></div></li>
@@ -37,9 +38,11 @@
 <li><a href="hint/index.html" class="module">hint</a></div></li>
 <li><a href="mem/index.html" class="module">mem</a></div></li>
 <li><a href="meta/index.html" class="module">meta</a></div></li>
+<li><a href="ops/index.html" class="module">ops</a></div></li>
 <li><a href="option/index.html" class="module">option</a></div></li>
 <li><a href="panic/index.html" class="module">panic</a></div></li>
 <li><a href="runtime/index.html" class="module">runtime</a></div></li>
+<li><a href="slice/index.html" class="module">slice</a></div></li>
 <li><a href="test/index.html" class="module">test</a></div></li>
 </ul><h3>Primitive types</h3><ul class="item-list"><li><a href="primitive.array.html" class="primitive">array</a></div></li>
 <li><a href="primitive.bool.html" class="primitive">bool</a></div></li>
@@ -84,8 +87,8 @@
 <div><a href="../index.html">aztec-nr</a> - <a href="index.html">std</a></div><h1>Primitive type <span id="primitive" class="primitive">array</span></h1><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: <a href="../std/primitive.u32.html" class="primitive">u32</a>, T&gt; [T; N]</code></h3>
 
 <div class="padded-methods"><code id="sort_via" class="code-header">pub fn <span class="fn">sort_via</span>&lt;Env&gt;(self, ordering: fn[Env](T, T) -> <a href="../std/primitive.bool.html" class="primitive">bool</a>) -> Self
-where
-    T: <a href="../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+<div class="where-clause">where
+    T: <a href="../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns a new sorted array by sorting it with a custom comparison function.
@@ -262,9 +265,9 @@ the given array is interpreted as-is as a string.</p>
 </div></div><h3><code class="code-header">impl&lt;let N: <a href="../std/primitive.u32.html" class="primitive">u32</a>, T&gt; [T; N]</code></h3>
 
 <div class="padded-methods"><code id="sort" class="code-header">pub fn <span class="fn">sort</span>(self) -> Self
-where
+<div class="where-clause">where
     T: <a href="../std/cmp/trait.Ord.html" class="trait">Ord</a>,
-    T: <a href="../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    T: <a href="../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns a new sorted array. The original array remains untouched. Notice that this function will

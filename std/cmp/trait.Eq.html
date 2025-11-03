@@ -29,6 +29,7 @@
 <li><a href="#impl-Eq-for-CallContext">CallContext</a></li>
 <li><a href="#impl-Eq-for-ClaimedLengthArray<T, N>">ClaimedLengthArray<T, N></a></li>
 <li><a href="#impl-Eq-for-CompoundStruct">CompoundStruct</a></li>
+<li><a href="#impl-Eq-for-CompressedString<N, M>">CompressedString<N, M></a></li>
 <li><a href="#impl-Eq-for-ContentCommitment">ContentCommitment</a></li>
 <li><a href="#impl-Eq-for-ContractClassId">ContractClassId</a></li>
 <li><a href="#impl-Eq-for-ContractClassLog">ContractClassLog</a></li>
@@ -42,6 +43,7 @@
 <li><a href="#impl-Eq-for-EthAddress">EthAddress</a></li>
 <li><a href="#impl-Eq-for-EventSelector">EventSelector</a></li>
 <li><a href="#impl-Eq-for-Field">Field</a></li>
+<li><a href="#impl-Eq-for-FieldCompressedString">FieldCompressedString</a></li>
 <li><a href="#impl-Eq-for-FixtureBuilder">FixtureBuilder</a></li>
 <li><a href="#impl-Eq-for-FunctionData">FunctionData</a></li>
 <li><a href="#impl-Eq-for-FunctionDefinition">FunctionDefinition</a></li>
@@ -172,30 +174,30 @@
 </div><h2>Implementors</h2><h3 id="impl-Eq-for-()"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for ()</code></h3>
 
 <h3 id="impl-Eq-for-(A, B)"><code class="code-header">impl&lt;A, B&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for (A, B)
-where
+<div class="where-clause">where
     A: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    B: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+    B: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-(A, B, C)"><code class="code-header">impl&lt;A, B, C&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for (A, B, C)
-where
+<div class="where-clause">where
     A: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     B: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    C: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+    C: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-(A, B, C, D)"><code class="code-header">impl&lt;A, B, C, D&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for (A, B, C, D)
-where
+<div class="where-clause">where
     A: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     B: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     C: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    D: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+    D: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-(A, B, C, D, E)"><code class="code-header">impl&lt;A, B, C, D, E&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for (A, B, C, D, E)
-where
+<div class="where-clause">where
     A: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     B: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     C: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     D: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    E: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+    E: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-AddressNote"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../address_note/address_note/struct.AddressNote.html" class="struct">AddressNote</a></code></h3>
 
@@ -220,16 +222,18 @@ where
 <h3 id="impl-Eq-for-BlockHeader"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
 <h3 id="impl-Eq-for-BoundedVec<T, MaxLen>"><code class="code-header">impl&lt;let MaxLen: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, MaxLen&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-CallContext"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
 <h3 id="impl-Eq-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-CompoundStruct"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for CompoundStruct</code></h3>
+
+<h3 id="impl-Eq-for-CompressedString<N, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../compressed_string/struct.CompressedString.html" class="struct">CompressedString</a>&lt;N, M&gt;</code></h3>
 
 <h3 id="impl-Eq-for-ContentCommitment"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/content_commitment/struct.ContentCommitment.html" class="struct">ContentCommitment</a></code></h3>
 
@@ -240,14 +244,14 @@ where
 <h3 id="impl-Eq-for-ContractInstance"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
 <h3 id="impl-Eq-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-CtString"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/primitive.CtString.html" class="primitive">CtString</a></code></h3>
 
 <h3 id="impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-EmbeddedCurvePoint"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/embedded_curve_ops/struct.EmbeddedCurvePoint.html" class="struct">EmbeddedCurvePoint</a></code></h3>
 
@@ -260,6 +264,8 @@ where
 <h3 id="impl-Eq-for-EventSelector"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../noir_aztec/event/event_selector/struct.EventSelector.html" class="struct">EventSelector</a></code></h3>
 
 <h3 id="impl-Eq-for-Field"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></h3>
+
+<h3 id="impl-Eq-for-FieldCompressedString"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../compressed_string/struct.FieldCompressedString.html" class="struct">FieldCompressedString</a></code></h3>
 
 <h3 id="impl-Eq-for-FixtureBuilder"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/tests/fixture_builder/struct.FixtureBuilder.html" class="struct">FixtureBuilder</a></code></h3>
 
@@ -278,11 +284,11 @@ where
 <h3 id="impl-Eq-for-GlobalVariables"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></h3>
 
 <h3 id="impl-Eq-for-HashMap<K, V, N, B>"><code class="code-header">impl&lt;B, K, let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, V&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/map/struct.HashMap.html" class="struct">HashMap</a>&lt;K, V, N, B&gt;
-where
+<div class="where-clause">where
     K: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     K: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     V: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    B: <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;</code></h3>
+    B: <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;</div></code></h3>
 
 <h3 id="impl-Eq-for-IvpkM"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/public_keys/struct.IvpkM.html" class="struct">IvpkM</a></code></h3>
 
@@ -325,8 +331,8 @@ where
 <h3 id="impl-Eq-for-NullifierLeafPreimage"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/nullifier_leaf_preimage/struct.NullifierLeafPreimage.html" class="struct">NullifierLeafPreimage</a></code></h3>
 
 <h3 id="impl-Eq-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-OrderHint"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/utils/arrays/assert_exposed_sorted_transformed_value_array/get_order_hints/struct.OrderHint.html" class="struct">OrderHint</a></code></h3>
 
@@ -406,25 +412,25 @@ where
 
 <h3 id="impl-Eq-for-ReadRequest"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></h3>
 
-<h3 id="impl-Eq-for-RecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
-
 <h3 id="impl-Eq-for-RecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
+<h3 id="impl-Eq-for-RecursiveProof"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
+
 <h3 id="impl-Eq-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
-where
-    Note: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    Note: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-SaltedInitializationHash"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/address/salted_initialization_hash/struct.SaltedInitializationHash.html" class="struct">SaltedInitializationHash</a></code></h3>
 
 <h3 id="impl-Eq-for-ScheduledDelayChange<INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../std/primitive.u64.html" class="primitive">u64</a>&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
 
 <h3 id="impl-Eq-for-ScheduledValueChange<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
@@ -461,11 +467,11 @@ where
 <h3 id="impl-Eq-for-TypeDefinition"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/primitive.TypeDefinition.html" class="primitive">TypeDefinition</a></code></h3>
 
 <h3 id="impl-Eq-for-UHashMap<K, V, B>"><code class="code-header">impl&lt;B, K, V&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/collections/umap/struct.UHashMap.html" class="struct">UHashMap</a>&lt;K, V, B&gt;
-where
+<div class="where-clause">where
     K: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
     K: <a href="../../std/hash/trait.Hash.html" class="trait">Hash</a>,
     V: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    B: <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;</code></h3>
+    B: <a href="../../std/hash/trait.BuildHasher.html" class="trait">BuildHasher</a>&lt;H = &lt;B as BuildHasher&gt;::H&gt;</div></code></h3>
 
 <h3 id="impl-Eq-for-UintNote"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../uint_note/uint_note/struct.UintNote.html" class="struct">UintNote</a></code></h3>
 
@@ -478,12 +484,12 @@ where
 <h3 id="impl-Eq-for-VkData<VK_LENGTH>"><code class="code-header">impl&lt;let VK_LENGTH: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;VK_LENGTH&gt;</code></h3>
 
 <h3 id="impl-Eq-for-[T; N]"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for [T; N]
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-[T]"><code class="code-header">impl&lt;T&gt; <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for [T]
-where
-    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <h3 id="impl-Eq-for-bool"><code class="code-header">impl <a href="../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 

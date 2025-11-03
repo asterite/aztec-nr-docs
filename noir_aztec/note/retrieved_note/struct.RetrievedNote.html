@@ -31,22 +31,22 @@ pending (created in the current transaction) or settled (created in a previous t
 <div class="padded-description"></div><div id="contract_address" class="struct-field"><code class="code-header">contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
 <div class="padded-description"></div><div id="metadata" class="struct-field"><code class="code-header">metadata: <a href="../../../noir_aztec/note/note_metadata/struct.NoteMetadata.html" class="struct">NoteMetadata</a></code></div>
 <div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Eq-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
-where
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(_self: Self, _other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Packable-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
-where
-    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">pack</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; &lt;(resolved type) as Packable&gt;::N + 3]</code>
 
 <code class="code-header">pub fn <span class="fn">unpack</span>(packed: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; &lt;(resolved type) as Packable&gt;::N + 3]) -> Self</code>
 
 </div><h3 id="impl-Serialize-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
-where
-    Note: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    Note: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; &lt;(resolved type) as Serialize&gt;::N + 3]</code>
 

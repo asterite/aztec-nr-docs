@@ -36,16 +36,16 @@
     args: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>],
     is_static: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
 ) -> Self
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <code id="with_gas" class="code-header">pub fn <span class="fn">with_gas</span>(&mut self, gas_opts: <a href="../../../noir_aztec/context/gas/struct.GasOpts.html" class="struct">GasOpts</a>) -> &mut Self
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <code id="call" class="code-header">pub unconstrained fn <span class="fn">call</span>(self, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Makes the call to this public function.</p>
@@ -62,8 +62,8 @@ of every #[public] function as <code>context</code>, through the
 </ul>
 </div>
 </div><code id="view" class="code-header">pub unconstrained fn <span class="fn">view</span>(self, context: &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>) -> T
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Makes a read-only call to this public function.</p>
@@ -83,8 +83,8 @@ of every #[public] function as <code>context</code>, through the
 </ul>
 </div>
 </div><code id="enqueue" class="code-header">pub fn <span class="fn">enqueue</span>(self, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Enqueues a call to this public function, to be executed later.</p>
@@ -115,8 +115,8 @@ of every #[private] function as <code>context</code>, through the
 </ul>
 </div>
 </div><code id="enqueue_view" class="code-header">pub fn <span class="fn">enqueue_view</span>(self, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Enqueues a read-only call to this public function.</p>
@@ -131,8 +131,8 @@ of every #[private] function as <code>context</code>, through the
 </ul>
 </div>
 </div><code id="set_as_teardown" class="code-header">pub fn <span class="fn">set_as_teardown</span>(self, context: &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>)
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Enqueues a call to this public function, and designates it to be the

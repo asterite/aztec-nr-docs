@@ -17,6 +17,7 @@
 <li><a href="#impl-Packable-for-EmbeddedCurvePoint">EmbeddedCurvePoint</a></li>
 <li><a href="#impl-Packable-for-EthAddress">EthAddress</a></li>
 <li><a href="#impl-Packable-for-Field">Field</a></li>
+<li><a href="#impl-Packable-for-FieldCompressedString">FieldCompressedString</a></li>
 <li><a href="#impl-Packable-for-HasArrayWithGenerics<T, N>">HasArrayWithGenerics<T, N></a></li>
 <li><a href="#impl-Packable-for-MockStruct">MockStruct</a></li>
 <li><a href="#impl-Packable-for-MockStruct">MockStruct</a></li>
@@ -82,8 +83,8 @@ in the contract's public storage).</p>
 <h3 id="impl-Packable-for-ContractClassId"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../protocol_types/contract_class_id/struct.ContractClassId.html" class="struct">ContractClassId</a></code></h3>
 
 <h3 id="impl-Packable-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Packable-for-EmbeddedCurvePoint"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../std/embedded_curve_ops/struct.EmbeddedCurvePoint.html" class="struct">EmbeddedCurvePoint</a></code></h3>
 
@@ -91,9 +92,11 @@ where
 
 <h3 id="impl-Packable-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></h3>
 
+<h3 id="impl-Packable-for-FieldCompressedString"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../compressed_string/struct.FieldCompressedString.html" class="struct">FieldCompressedString</a></code></h3>
+
 <h3 id="impl-Packable-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for HasArrayWithGenerics&lt;T, N&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Packable-for-MockStruct"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for MockStruct</code></h3>
 
@@ -104,8 +107,8 @@ where
 <h3 id="impl-Packable-for-PartialUintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
 <h3 id="impl-Packable-for-RetrievedNote<Note>"><code class="code-header">impl&lt;Note&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;
-where
-    Note: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    Note: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;(resolved type) as Packable&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Packable-for-Smol"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for Smol</code></h3>
 
@@ -114,12 +117,12 @@ where
 <h3 id="impl-Packable-for-ValueNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../value_note/value_note/struct.ValueNote.html" class="struct">ValueNote</a></code></h3>
 
 <h3 id="impl-Packable-for-WithHash<T, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</div></code></h3>
 
 <h3 id="impl-Packable-for-[T; M]"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for [T; M]
-where
-    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;T as Packable&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Packable-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 

@@ -149,11 +149,11 @@ given storage_slot.</li>
     self,
     options: <a href="../../../noir_aztec/note/note_viewer_options/struct.NoteViewerOptions.html" class="struct">NoteViewerOptions</a>&lt;Note, &lt;Note as Packable&gt;::N&gt;,
 ) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Note, 10&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns a collection of notes which belong to this PrivateSet, according
@@ -171,11 +171,11 @@ call to the PXE.</li>
 </div></div><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, &mut <a href="../../../noir_aztec/context/private_context/struct.PrivateContext.html" class="struct">PrivateContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="insert" class="code-header">pub fn <span class="fn">insert</span>(self, note: Note) -> <a href="../../../noir_aztec/note/note_emission/struct.NoteEmission.html" class="struct">NoteEmission</a>&lt;Note&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = &lt;Note as Packable&gt;::N&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Inserts a new <code>note</code> into the PrivateSet.</p>
@@ -254,11 +254,11 @@ yield a <code>unique_siloed_note_hash</code> (see the protocol spec for more).</
     self,
     options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;,
 ) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;Note, 16&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Pops a collection of &quot;current&quot; notes (i.e. not-yet-nullified notes) which
@@ -348,10 +348,10 @@ supports efficient non-membership proofs.</li>
 </ul>
 </div>
 </div><code id="remove" class="code-header">pub fn <span class="fn">remove</span>(self, retrieved_note: <a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;)
-where
+<div class="where-clause">where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Permanently removes (conceptually) the given note from this PrivateSet,
@@ -393,11 +393,11 @@ easier ways to customize your own note encryption options.</p>
     self,
     options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;,
 ) -> <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, 16&gt;
-where
+<div class="where-clause">where
     Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
-    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code>
+    Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
 <div class="padded-description"><div class="comments">
 <p>Returns a collection of which belong to this PrivateSet.</p>

@@ -28,6 +28,7 @@
 <li><a href="#impl-Deserialize-for-BoundedVec<T, M>">BoundedVec<T, M></a></li>
 <li><a href="#impl-Deserialize-for-CallContext">CallContext</a></li>
 <li><a href="#impl-Deserialize-for-ClaimedLengthArray<T, N>">ClaimedLengthArray<T, N></a></li>
+<li><a href="#impl-Deserialize-for-CompressedString<N, M>">CompressedString<N, M></a></li>
 <li><a href="#impl-Deserialize-for-ContentCommitment">ContentCommitment</a></li>
 <li><a href="#impl-Deserialize-for-ContractClassId">ContractClassId</a></li>
 <li><a href="#impl-Deserialize-for-ContractInstance">ContractInstance</a></li>
@@ -38,6 +39,7 @@
 <li><a href="#impl-Deserialize-for-EventSelector">EventSelector</a></li>
 <li><a href="#impl-Deserialize-for-Fancier">Fancier</a></li>
 <li><a href="#impl-Deserialize-for-Field">Field</a></li>
+<li><a href="#impl-Deserialize-for-FieldCompressedString">FieldCompressedString</a></li>
 <li><a href="#impl-Deserialize-for-FunctionData">FunctionData</a></li>
 <li><a href="#impl-Deserialize-for-FunctionSelector">FunctionSelector</a></li>
 <li><a href="#impl-Deserialize-for-Gas">Gas</a></li>
@@ -155,43 +157,43 @@ deserializing return values from function calls in Noir. Since the same function
 </div><h2>Implementors</h2><h3 id="impl-Deserialize-for-()"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for ()</code></h3>
 
 <h3 id="impl-Deserialize-for-(T0, T1)"><code class="code-header">impl&lt;T0, T1&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for (T0, T1)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T0 as Deserialize&gt;::N&gt;,
-    T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;</code></h3>
+    T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-(T0, T1, T2)"><code class="code-header">impl&lt;T0, T1, T2&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for (T0, T1, T2)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T0 as Deserialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;,
-    T2: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T2 as Deserialize&gt;::N&gt;</code></h3>
+    T2: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T2 as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-(T0, T1, T2, T3)"><code class="code-header">impl&lt;T0, T1, T2, T3&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for (T0, T1, T2, T3)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T0 as Deserialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;,
     T2: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T2 as Deserialize&gt;::N&gt;,
-    T3: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T3 as Deserialize&gt;::N&gt;</code></h3>
+    T3: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T3 as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-(T0, T1, T2, T3, T4)"><code class="code-header">impl&lt;T0, T1, T2, T3, T4&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for (T0, T1, T2, T3, T4)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T0 as Deserialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;,
     T2: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T2 as Deserialize&gt;::N&gt;,
     T3: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T3 as Deserialize&gt;::N&gt;,
-    T4: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T4 as Deserialize&gt;::N&gt;</code></h3>
+    T4: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T4 as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-(T0, T1, T2, T3, T4, T5)"><code class="code-header">impl&lt;T0, T1, T2, T3, T4, T5&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for (T0, T1, T2, T3, T4, T5)
-where
+<div class="where-clause">where
     T0: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T0 as Deserialize&gt;::N&gt;,
     T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;,
     T2: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T2 as Deserialize&gt;::N&gt;,
     T3: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T3 as Deserialize&gt;::N&gt;,
     T4: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T4 as Deserialize&gt;::N&gt;,
-    T5: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T5 as Deserialize&gt;::N&gt;</code></h3>
+    T5: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T5 as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-(T1,)"><code class="code-header">impl&lt;T1&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for (T1,)
-where
-    T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T1: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T1 as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-AppendOnlyTreeSnapshot"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a></code></h3>
 
@@ -212,14 +214,16 @@ where
 <h3 id="impl-Deserialize-for-BlockHeader"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/block_header/struct.BlockHeader.html" class="struct">BlockHeader</a></code></h3>
 
 <h3 id="impl-Deserialize-for-BoundedVec<T, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, M&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-CallContext"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/call_context/struct.CallContext.html" class="struct">CallContext</a></code></h3>
 
 <h3 id="impl-Deserialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</div></code></h3>
+
+<h3 id="impl-Deserialize-for-CompressedString<N, M>"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../compressed_string/struct.CompressedString.html" class="struct">CompressedString</a>&lt;N, M&gt;</code></h3>
 
 <h3 id="impl-Deserialize-for-ContentCommitment"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/content_commitment/struct.ContentCommitment.html" class="struct">ContentCommitment</a></code></h3>
 
@@ -228,8 +232,8 @@ where
 <h3 id="impl-Deserialize-for-ContractInstance"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/contract_instance/struct.ContractInstance.html" class="struct">ContractInstance</a></code></h3>
 
 <h3 id="impl-Deserialize-for-Counted<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;T&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-EmbeddedCurvePoint"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/embedded_curve_ops/struct.EmbeddedCurvePoint.html" class="struct">EmbeddedCurvePoint</a></code></h3>
 
@@ -242,6 +246,8 @@ where
 <h3 id="impl-Deserialize-for-Fancier"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for Fancier</code></h3>
 
 <h3 id="impl-Deserialize-for-Field"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.Field.html" class="primitive">Field</a></code></h3>
+
+<h3 id="impl-Deserialize-for-FieldCompressedString"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../compressed_string/struct.FieldCompressedString.html" class="struct">FieldCompressedString</a></code></h3>
 
 <h3 id="impl-Deserialize-for-FunctionData"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/function_data/struct.FunctionData.html" class="struct">FunctionData</a></code></h3>
 
@@ -258,8 +264,8 @@ where
 <h3 id="impl-Deserialize-for-HasArray"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArray</code></h3>
 
 <h3 id="impl-Deserialize-for-HasArrayWithGenerics<T, N>"><code class="code-header">impl&lt;let N: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for HasArrayWithGenerics&lt;T, N&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-IndexedTaggingSecret"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/indexed_tagging_secret/struct.IndexedTaggingSecret.html" class="struct">IndexedTaggingSecret</a></code></h3>
 
@@ -279,9 +285,9 @@ where
 
 <h3 id="impl-Deserialize-for-MockStruct"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../noir_aztec/test/mocks/mock_struct/struct.MockStruct.html" class="struct">MockStruct</a></code></h3>
 
-<h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
-
 <h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
+
+<h3 id="impl-Deserialize-for-NestedRecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/recursive_proof/struct.NestedRecursiveProof.html" class="struct">NestedRecursiveProof</a></code></h3>
 
 <h3 id="impl-Deserialize-for-NoteHash"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/note_hash/struct.NoteHash.html" class="struct">NoteHash</a></code></h3>
 
@@ -290,8 +296,8 @@ where
 <h3 id="impl-Deserialize-for-Nullifier"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></h3>
 
 <h3 id="impl-Deserialize-for-Option<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/option/struct.Option.html" class="struct">Option</a>&lt;T&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-OvpkM"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/public_keys/struct.OvpkM.html" class="struct">OvpkM</a></code></h3>
 
@@ -342,8 +348,8 @@ where
 <h3 id="impl-Deserialize-for-RecursiveProof"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/proof/rollup_recursive_proof/struct.RecursiveProof.html" class="struct">RecursiveProof</a></code></h3>
 
 <h3 id="impl-Deserialize-for-Scoped<T>"><code class="code-header">impl&lt;T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;T&gt;
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-ScopedKeyValidationRequestAndGenerator"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a></code></h3>
 
@@ -376,8 +382,8 @@ where
 <h3 id="impl-Deserialize-for-TxRequest"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../protocol_types/abis/transaction/tx_request/struct.TxRequest.html" class="struct">TxRequest</a></code></h3>
 
 <h3 id="impl-Deserialize-for-[T; M]"><code class="code-header">impl&lt;let M: <a href="../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for [T; M]
-where
-    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;T as Deserialize&gt;::N&gt;</div></code></h3>
 
 <h3 id="impl-Deserialize-for-bool"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../std/primitive.bool.html" class="primitive">bool</a></code></h3>
 

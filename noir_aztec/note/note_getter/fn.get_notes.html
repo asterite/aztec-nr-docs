@@ -18,11 +18,11 @@
     storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
     options: <a href="../../../noir_aztec/note/note_getter_options/struct.NoteGetterOptions.html" class="struct">NoteGetterOptions</a>&lt;Note, M, PreprocessorArgs, FilterArgs&gt;,
 ) -> (<a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../noir_aztec/note/retrieved_note/struct.RetrievedNote.html" class="struct">RetrievedNote</a>&lt;Note&gt;, 16&gt;, <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;<a href="../../../std/primitive.Field.html" class="primitive">Field</a>, 16&gt;)
-where
+<div class="where-clause">where
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteType.html" class="trait">NoteType</a>,
     Note: <a href="../../../noir_aztec/note/note_interface/trait.NoteHash.html" class="trait">NoteHash</a>,
     Note: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a>,
-    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</code></pre>
+    Note: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</div></code></pre>
 
 <div class="comments">
 <p>Returns a BoundedVec of notes that have been proven to have been created by this contract, either in the current or

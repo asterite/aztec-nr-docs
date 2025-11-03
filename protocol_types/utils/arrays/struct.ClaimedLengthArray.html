@@ -69,48 +69,48 @@ Validation must include:</p>
 <div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;</code></h3>
 
 <div class="padded-methods"><code id="push" class="code-header">pub fn <span class="fn">push</span>(&mut self, item: T)
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="assert_dense_trimmed" class="code-header">pub fn <span class="fn">assert_dense_trimmed</span>(self)
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="assert_empty" class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: <a href="../../../std/primitive.str.html" class="primitive">str</a>&lt;S&gt;)
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="push_hint" class="code-header">pub unconstrained fn <span class="fn">push_hint</span>(&mut self, item: T)
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="pop_hint" class="code-header">pub unconstrained fn <span class="fn">pop_hint</span>(&mut self) -> T
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="for_each" class="code-header">pub fn <span class="fn">for_each</span>&lt;Env&gt;(self, f: fn[Env](T))
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="for_each_i" class="code-header">pub fn <span class="fn">for_each_i</span>&lt;Env&gt;(self, f: fn[Env](T, <a href="../../../std/primitive.u32.html" class="primitive">u32</a>))
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 <code id="from_bounded_vec" class="code-header">pub fn <span class="fn">from_bounded_vec</span>(vec: <a href="../../../std/collections/bounded_vec/struct.BoundedVec.html" class="struct">BoundedVec</a>&lt;T, N&gt;) -> Self
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code>
 
 </div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a>&lt;N = &lt;(resolved type) as Deserialize&gt;::N&gt;</div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(
     serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N * &lt;(resolved type) as Deserialize&gt;::N + 1],
 ) -> Self</code>
 
 </div><h3 id="impl-Empty-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a></div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 
@@ -119,14 +119,14 @@ where
 <code class="code-header">pub fn <span class="fn">assert_empty</span>&lt;let S: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, msg: <a href="../../../std/primitive.str.html" class="primitive">str</a>&lt;S&gt;)</code>
 
 </div><h3 id="impl-Eq-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></code></h3>
+<div class="where-clause">where
+    T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">eq</span>(self, other: Self) -> <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code>
 
 </div><h3 id="impl-Serialize-for-ClaimedLengthArray<T, N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a> for <a href="../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;T, N&gt;
-where
-    T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</code></h3>
+<div class="where-clause">where
+    T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;(resolved type) as Serialize&gt;::N&gt;</div></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">serialize</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N * &lt;(resolved type) as Serialize&gt;::N + 1]</code>
 
