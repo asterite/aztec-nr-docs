@@ -7,10 +7,14 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PublicContext</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#args_hash">args_hash</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PublicContext</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#args_hash">args_hash</a></li>
 <li><a href="#compute_args_hash">compute_args_hash</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#base_fee_per_da_gas">base_fee_per_da_gas</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#base_fee_per_da_gas">base_fee_per_da_gas</a></li>
 <li><a href="#base_fee_per_l2_gas">base_fee_per_l2_gas</a></li>
 <li><a href="#block_number">block_number</a></li>
 <li><a href="#call_public_function">call_public_function</a></li>
@@ -39,14 +43,17 @@
 <li><a href="#timestamp">timestamp</a></li>
 <li><a href="#transaction_fee">transaction_fee</a></li>
 <li><a href="#version">version</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-PublicContext">Empty</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Empty-for-PublicContext">Empty</a></li>
 <li><a href="#impl-Eq-for-PublicContext">Eq</a></li>
-</ul><h2>In module public_context</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicContext.html" class="struct">PublicContext</a></div></li>
+</ul><h2>In module public_context</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicContext.html" class="struct">PublicContext</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.avm_return.html" class="fn">avm_return</a></div></li>
 <li><a href="fn.calldata_copy.html" class="fn">calldata_copy</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">public_context</a></div><h1>Struct <span id="struct" class="struct">PublicContext</span></h1><pre><code>pub struct PublicContext {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">context</a>::<a href="index.html">public_context</a></div><h1>Struct <span id="struct" class="struct">PublicContext</span></h1>
+<pre><code>pub struct PublicContext {
     pub args_hash: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../std/primitive.Field.html" class="primitive">Field</a>&gt;,
     pub compute_args_hash: fn() -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
 }
@@ -121,9 +128,11 @@ bytecode&quot; instead of the ACIR that private functions (standalone circuits)
 compile to. Therefore the approach to optimising a public function is
 fundamentally different from optimising a public function.</p>
 </div>
-<h2>Fields</h2><div id="args_hash" class="struct-field"><code class="code-header">args_hash: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../std/primitive.Field.html" class="primitive">Field</a>&gt;</code></div>
+<h2>Fields</h2>
+<div id="args_hash" class="struct-field"><code class="code-header">args_hash: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../std/primitive.Field.html" class="primitive">Field</a>&gt;</code></div>
 <div class="padded-description"></div><div id="compute_args_hash" class="struct-field"><code class="code-header">compute_args_hash: fn() -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(compute_args_hash: fn() -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a>) -> Self</code>
 
@@ -710,7 +719,8 @@ variable abstractions to perform writes: PublicMutable &amp; PublicImmutable.</p
 <li><code>T</code> - The type to write to storage.</li>
 </ul>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PublicContext"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-Empty-for-PublicContext"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 

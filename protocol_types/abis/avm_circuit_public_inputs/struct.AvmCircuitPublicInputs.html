@@ -7,8 +7,11 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct AvmCircuitPublicInputs</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#accumulated_data">accumulated_data</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct AvmCircuitPublicInputs</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#accumulated_data">accumulated_data</a></li>
 <li><a href="#accumulated_data_array_lengths">accumulated_data_array_lengths</a></li>
 <li><a href="#effective_gas_fees">effective_gas_fees</a></li>
 <li><a href="#end_gas_used">end_gas_used</a></li>
@@ -28,17 +31,21 @@
 <li><a href="#start_gas_used">start_gas_used</a></li>
 <li><a href="#start_tree_snapshots">start_tree_snapshots</a></li>
 <li><a href="#transaction_fee">transaction_fee</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#to_columns">to_columns</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#to_columns">to_columns</a></li>
 <li><a href="#to_columns_flat">to_columns_flat</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-AvmCircuitPublicInputs">Deserialize</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Deserialize-for-AvmCircuitPublicInputs">Deserialize</a></li>
 <li><a href="#impl-Empty-for-AvmCircuitPublicInputs">Empty</a></li>
 <li><a href="#impl-Eq-for-AvmCircuitPublicInputs">Eq</a></li>
 <li><a href="#impl-Serialize-for-AvmCircuitPublicInputs">Serialize</a></li>
-</ul><h2>In module avm_circuit_public_inputs</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></div></li>
+</ul><h2>In module avm_circuit_public_inputs</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></div></li>
 <li><a href="struct.AvmProofData.html" class="struct">AvmProofData</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">avm_circuit_public_inputs</a></div><h1>Struct <span id="struct" class="struct">AvmCircuitPublicInputs</span></h1><pre><code>pub struct AvmCircuitPublicInputs {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">avm_circuit_public_inputs</a></div><h1>Struct <span id="struct" class="struct">AvmCircuitPublicInputs</span></h1>
+<pre><code>pub struct AvmCircuitPublicInputs {
     pub global_variables: <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a>,
     pub start_tree_snapshots: <a href="../../../protocol_types/abis/tree_snapshots/struct.TreeSnapshots.html" class="struct">TreeSnapshots</a>,
     pub start_gas_used: <a href="../../../protocol_types/abis/gas/struct.Gas.html" class="struct">Gas</a>,
@@ -61,7 +68,8 @@
     pub reverted: <a href="../../../std/primitive.bool.html" class="primitive">bool</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="global_variables" class="struct-field"><code class="code-header">global_variables: <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></div>
+<h2>Fields</h2>
+<div id="global_variables" class="struct-field"><code class="code-header">global_variables: <a href="../../../protocol_types/abis/global_variables/struct.GlobalVariables.html" class="struct">GlobalVariables</a></code></div>
 <div class="padded-description"></div><div id="start_tree_snapshots" class="struct-field"><code class="code-header">start_tree_snapshots: <a href="../../../protocol_types/abis/tree_snapshots/struct.TreeSnapshots.html" class="struct">TreeSnapshots</a></code></div>
 <div class="padded-description"></div><div id="start_gas_used" class="struct-field"><code class="code-header">start_gas_used: <a href="../../../protocol_types/abis/gas/struct.Gas.html" class="struct">Gas</a></code></div>
 <div class="padded-description"></div><div id="gas_settings" class="struct-field"><code class="code-header">gas_settings: <a href="../../../protocol_types/abis/gas_settings/struct.GasSettings.html" class="struct">GasSettings</a></code></div>
@@ -81,13 +89,15 @@
 <div class="padded-description"></div><div id="accumulated_data" class="struct-field"><code class="code-header">accumulated_data: <a href="../../../protocol_types/abis/accumulated_data/avm_accumulated_data/struct.AvmAccumulatedData.html" class="struct">AvmAccumulatedData</a></code></div>
 <div class="padded-description"></div><div id="transaction_fee" class="struct-field"><code class="code-header">transaction_fee: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
 <div class="padded-description"></div><div id="reverted" class="struct-field"><code class="code-header">reverted: <a href="../../../std/primitive.bool.html" class="primitive">bool</a></code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
 <div class="padded-methods"><code id="to_columns" class="code-header">pub fn <span class="fn">to_columns</span>(self) -> [[<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 681]; 4]</code>
 
 <code id="to_columns_flat" class="code-header">pub fn <span class="fn">to_columns_flat</span>(self) -> [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 2724]</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-AvmCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Deserialize-for-AvmCircuitPublicInputs"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/avm_circuit_public_inputs/struct.AvmCircuitPublicInputs.html" class="struct">AvmCircuitPublicInputs</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 1020]) -> Self</code>
 

@@ -7,23 +7,31 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PrivateKernelData</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#public_inputs">public_inputs</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateKernelData</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#public_inputs">public_inputs</a></li>
 <li><a href="#vk_data">vk_data</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#validate_vk_in_vk_tree">validate_vk_in_vk_tree</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#validate_vk_in_vk_tree">validate_vk_in_vk_tree</a></li>
 <li><a href="#verify">verify</a></li>
-</ul><h2>In module private_kernel_data</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></div></li>
+</ul><h2>In module private_kernel_data</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></div></li>
 <li><a href="struct.PrivateKernelDataWithoutPublicInputs.html" class="struct">PrivateKernelDataWithoutPublicInputs</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">private_kernel_data</a></div><h1>Struct <span id="struct" class="struct">PrivateKernelData</span></h1><pre><code>pub struct PrivateKernelData {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">private_kernel_data</a></div><h1>Struct <span id="struct" class="struct">PrivateKernelData</span></h1>
+<pre><code>pub struct PrivateKernelData {
     pub public_inputs: <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a>,
     pub vk_data: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;127&gt;,
 }
 </code></pre>
-<h2>Fields</h2><div id="public_inputs" class="struct-field"><code class="code-header">public_inputs: <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code></div>
+<h2>Fields</h2>
+<div id="public_inputs" class="struct-field"><code class="code-header">public_inputs: <a href="../../../protocol_types/abis/kernel_circuit_public_inputs/private_kernel_circuit_public_inputs/struct.PrivateKernelCircuitPublicInputs.html" class="struct">PrivateKernelCircuitPublicInputs</a></code></div>
 <div class="padded-description"></div><div id="vk_data" class="struct-field"><code class="code-header">vk_data: <a href="../../../protocol_types/proof/vk_data/struct.VkData.html" class="struct">VkData</a>&lt;127&gt;</code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/private_kernel_data/struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../protocol_types/abis/private_kernel_data/struct.PrivateKernelData.html" class="struct">PrivateKernelData</a></code></h3>
 
 <div class="padded-methods"><code id="validate_vk_in_vk_tree" class="code-header">pub fn <span class="fn">validate_vk_in_vk_tree</span>&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(self, allowed_indices: [<a href="../../../std/primitive.u32.html" class="primitive">u32</a>; N])</code>
 

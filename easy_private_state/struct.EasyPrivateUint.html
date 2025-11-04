@@ -7,16 +7,22 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../index.html">aztec-nr</a></h1><div><a href="../all.html">All items</a></div>
-<h2><a href="#struct">Struct EasyPrivateUint</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#add">add</a></li>
+<h1><a href="../index.html">aztec-nr</a></h1>
+<div><a href="../all.html">All items</a></div>
+<h2><a href="#struct">Struct EasyPrivateUint</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#add">add</a></li>
 <li><a href="#get_value">get_value</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#sub">sub</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-EasyPrivateUint<Context>">HasStorageSlot&lt;1&gt;</a></li>
-</ul><h2>In crate easy_private_state</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.EasyPrivateUint.html" class="struct">EasyPrivateUint</a></div></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-EasyPrivateUint<Context>">HasStorageSlot&lt;1&gt;</a></li>
+</ul><h2>In crate easy_private_state</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.EasyPrivateUint.html" class="struct">EasyPrivateUint</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../index.html">aztec-nr</a> - <a href="index.html">easy_private_state</a></div><h1>Struct <span id="struct" class="struct">EasyPrivateUint</span></h1><pre><code>pub struct EasyPrivateUint&lt;Context&gt;
+<div><a href="../index.html">aztec-nr</a> - <a href="index.html">easy_private_state</a></div><h1>Struct <span id="struct" class="struct">EasyPrivateUint</span></h1>
+<pre><code>pub struct EasyPrivateUint&lt;Context&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
 <div class="comments">
@@ -34,7 +40,8 @@ whilst all other state variables are defined <em>within</em> aztecnr.</li>
 <li>Decremented by the owner of the private state.</li>
 </ul>
 </div>
-<h2>Implementations</h2><h3><code class="code-header">impl <a href="../easy_private_state/struct.EasyPrivateUint.html" class="struct">EasyPrivateUint</a>&lt;<a href="../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../easy_private_state/struct.EasyPrivateUint.html" class="struct">EasyPrivateUint</a>&lt;<a href="../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="get_value" class="code-header">pub unconstrained fn <span class="fn">get_value</span>(self) -> <a href="../std/primitive.Field.html" class="primitive">Field</a></code>
 
@@ -48,7 +55,8 @@ whilst all other state variables are defined <em>within</em> aztecnr.</li>
 
 <code id="sub" class="code-header">pub fn <span class="fn">sub</span>(self, subtrahend: <a href="../std/primitive.u64.html" class="primitive">u64</a>, owner: <a href="../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>)</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-EasyPrivateUint<Context>"><code class="code-header">impl&lt;Context&gt; <a href="../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../easy_private_state/struct.EasyPrivateUint.html" class="struct">EasyPrivateUint</a>&lt;Context&gt;</code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-HasStorageSlot&lt;1&gt;-for-EasyPrivateUint<Context>"><code class="code-header">impl&lt;Context&gt; <a href="../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../easy_private_state/struct.EasyPrivateUint.html" class="struct">EasyPrivateUint</a>&lt;Context&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> <a href="../std/primitive.Field.html" class="primitive">Field</a></code>
 

@@ -7,21 +7,28 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PrivateAccumulatedDataBuilder</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#contract_class_logs_hashes">contract_class_logs_hashes</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateAccumulatedDataBuilder</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#contract_class_logs_hashes">contract_class_logs_hashes</a></li>
 <li><a href="#l2_to_l1_msgs">l2_to_l1_msgs</a></li>
 <li><a href="#note_hashes">note_hashes</a></li>
 <li><a href="#nullifiers">nullifiers</a></li>
 <li><a href="#private_call_stack">private_call_stack</a></li>
 <li><a href="#private_logs">private_logs</a></li>
 <li><a href="#public_call_requests">public_call_requests</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#finish">finish</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-PrivateAccumulatedDataBuilder">Empty</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#finish">finish</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Empty-for-PrivateAccumulatedDataBuilder">Empty</a></li>
 <li><a href="#impl-Eq-for-PrivateAccumulatedDataBuilder">Eq</a></li>
-</ul><h2>In module private_accumulated_data_builder</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></div></li>
+</ul><h2>In module private_accumulated_data_builder</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">abis</a>::<a href="../index.html">accumulated_data</a>::<a href="index.html">private_accumulated_data_builder</a></div><h1>Struct <span id="struct" class="struct">PrivateAccumulatedDataBuilder</span></h1><pre><code>pub struct PrivateAccumulatedDataBuilder {
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">abis</a>::<a href="../index.html">accumulated_data</a>::<a href="index.html">private_accumulated_data_builder</a></div><h1>Struct <span id="struct" class="struct">PrivateAccumulatedDataBuilder</span></h1>
+<pre><code>pub struct PrivateAccumulatedDataBuilder {
     pub note_hashes: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>, 64&gt;,
     pub nullifiers: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a>, 64&gt;,
     pub l2_to_l1_msgs: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a>&gt;&gt;, 8&gt;,
@@ -31,18 +38,21 @@
     pub private_call_stack: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a>, 8&gt;,
 }
 </code></pre>
-<h2>Fields</h2><div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>, 64&gt;</code></div>
+<h2>Fields</h2>
+<div id="note_hashes" class="struct-field"><code class="code-header">note_hashes: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/note_hash/struct.ScopedNoteHash.html" class="struct">ScopedNoteHash</a>, 64&gt;</code></div>
 <div class="padded-description"></div><div id="nullifiers" class="struct-field"><code class="code-header">nullifiers: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a>, 64&gt;</code></div>
 <div class="padded-description"></div><div id="l2_to_l1_msgs" class="struct-field"><code class="code-header">l2_to_l1_msgs: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../../protocol_types/messaging/l2_to_l1_message/struct.L2ToL1Message.html" class="struct">L2ToL1Message</a>&gt;&gt;, 8&gt;</code></div>
 <div class="padded-description"></div><div id="private_logs" class="struct-field"><code class="code-header">private_logs: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../../protocol_types/abis/private_log/struct.PrivateLogData.html" class="struct">PrivateLogData</a>&gt;, 32&gt;</code></div>
 <div class="padded-description"></div><div id="contract_class_logs_hashes" class="struct-field"><code class="code-header">contract_class_logs_hashes: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/side_effect/scoped/struct.Scoped.html" class="struct">Scoped</a>&lt;<a href="../../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../../protocol_types/abis/log_hash/struct.LogHash.html" class="struct">LogHash</a>&gt;&gt;, 1&gt;</code></div>
 <div class="padded-description"></div><div id="public_call_requests" class="struct-field"><code class="code-header">public_call_requests: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/side_effect/counted/struct.Counted.html" class="struct">Counted</a>&lt;<a href="../../../../protocol_types/abis/public_call_request/struct.PublicCallRequest.html" class="struct">PublicCallRequest</a>&gt;, 32&gt;</code></div>
 <div class="padded-description"></div><div id="private_call_stack" class="struct-field"><code class="code-header">private_call_stack: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/private_call_request/struct.PrivateCallRequest.html" class="struct">PrivateCallRequest</a>, 8&gt;</code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data_builder/struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data_builder/struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></code></h3>
 
 <div class="padded-methods"><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self) -> <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data/struct.PrivateAccumulatedData.html" class="struct">PrivateAccumulatedData</a></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PrivateAccumulatedDataBuilder"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data_builder/struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Empty-for-PrivateAccumulatedDataBuilder"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/accumulated_data/private_accumulated_data_builder/struct.PrivateAccumulatedDataBuilder.html" class="struct">PrivateAccumulatedDataBuilder</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 

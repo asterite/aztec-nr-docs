@@ -7,19 +7,25 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PublicImmutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PublicImmutable</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#compute_initialization_nullifier">compute_initialization_nullifier</a></li>
 <li><a href="#initialize">initialize</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#read">read</a></li>
 <li><a href="#read">read</a></li>
 <li><a href="#read">read</a></li>
 <li><a href="#read_unsafe">read_unsafe</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;M+1&gt;-for-PublicImmutable<T, Context>">HasStorageSlot&lt;M+1&gt;</a></li>
-</ul><h2>In module public_immutable</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicImmutable.html" class="struct">PublicImmutable</a></div></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;M+1&gt;-for-PublicImmutable<T, Context>">HasStorageSlot&lt;M+1&gt;</a></li>
+</ul><h2>In module public_immutable</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicImmutable.html" class="struct">PublicImmutable</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">public_immutable</a></div><h1>Struct <span id="struct" class="struct">PublicImmutable</span></h1><pre><code>pub struct PublicImmutable&lt;T, Context&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">public_immutable</a></div><h1>Struct <span id="struct" class="struct">PublicImmutable</span></h1>
+<pre><code>pub struct PublicImmutable&lt;T, Context&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
 <div class="comments">
@@ -68,7 +74,8 @@ pub struct Config \{
 }
 </code></pre>
 </div>
-<h2>Implementations</h2><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="initialize" class="code-header">pub fn <span class="fn">initialize</span>(self, value: T)
 <div class="where-clause">where
@@ -213,7 +220,8 @@ is an unconstrained environment on the user's local device.</p>
 <li><code>T</code> - The permanent value stored in this PublicImmutable.</li>
 </ul>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;M+1&gt;-for-PublicImmutable<T, Context>"><code class="code-header">impl&lt;Context, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-HasStorageSlot&lt;M+1&gt;-for-PublicImmutable<T, Context>"><code class="code-header">impl&lt;Context, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M + 1&gt; for <a href="../../../noir_aztec/state_vars/public_immutable/struct.PublicImmutable.html" class="struct">PublicImmutable</a>&lt;T, Context&gt;
 <div class="where-clause">where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</div></code></h3>
 

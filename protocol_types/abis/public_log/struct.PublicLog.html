@@ -7,25 +7,33 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PublicLog</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PublicLog</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
 <li><a href="#log">log</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-PublicLog">Deserialize</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Deserialize-for-PublicLog">Deserialize</a></li>
 <li><a href="#impl-Empty-for-PublicLog">Empty</a></li>
 <li><a href="#impl-Eq-for-PublicLog">Eq</a></li>
 <li><a href="#impl-Scoped&lt;Log<13>&gt;-for-PublicLog">Scoped&lt;Log<13>&gt;</a></li>
 <li><a href="#impl-Serialize-for-PublicLog">Serialize</a></li>
-</ul><h2>In module public_log</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicLog.html" class="struct">PublicLog</a></div></li>
+</ul><h2>In module public_log</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicLog.html" class="struct">PublicLog</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">public_log</a></div><h1>Struct <span id="struct" class="struct">PublicLog</span></h1><pre><code>pub struct PublicLog {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">public_log</a></div><h1>Struct <span id="struct" class="struct">PublicLog</span></h1>
+<pre><code>pub struct PublicLog {
     pub log: <a href="../../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;13&gt;,
     pub contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="log" class="struct-field"><code class="code-header">log: <a href="../../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;13&gt;</code></div>
+<h2>Fields</h2>
+<div id="log" class="struct-field"><code class="code-header">log: <a href="../../../protocol_types/abis/log/struct.Log.html" class="struct">Log</a>&lt;13&gt;</code></div>
 <div class="padded-description"></div><div id="contract_address" class="struct-field"><code class="code-header">contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
-<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-PublicLog"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/public_log/struct.PublicLog.html" class="struct">PublicLog</a></code></h3>
+<div class="padded-description"></div><h2>Trait implementations</h2>
+<h3 id="impl-Deserialize-for-PublicLog"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/public_log/struct.PublicLog.html" class="struct">PublicLog</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 15]) -> Self</code>
 

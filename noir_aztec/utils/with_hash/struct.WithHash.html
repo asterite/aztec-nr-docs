@@ -7,18 +7,24 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct WithHash</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_hash">get_hash</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct WithHash</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#get_hash">get_hash</a></li>
 <li><a href="#get_value">get_value</a></li>
 <li><a href="#historical_public_storage_read">historical_public_storage_read</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#public_storage_read">public_storage_read</a></li>
 <li><a href="#utility_public_storage_read">utility_public_storage_read</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Packable-for-WithHash<T, M>">Packable</a></li>
-</ul><h2>In module with_hash</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.WithHash.html" class="struct">WithHash</a></div></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Packable-for-WithHash<T, M>">Packable</a></li>
+</ul><h2>In module with_hash</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.WithHash.html" class="struct">WithHash</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::<a href="index.html">with_hash</a></div><h1>Struct <span id="struct" class="struct">WithHash</span></h1><pre><code>pub struct WithHash&lt;T, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">utils</a>::<a href="index.html">with_hash</a></div><h1>Struct <span id="struct" class="struct">WithHash</span></h1>
+<pre><code>pub struct WithHash&lt;T, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
 <div class="comments">
@@ -32,7 +38,8 @@ of required tree inclusion proofs from <code>M</code> to 1.</p>
 <li><code>M</code>: The number of field elements required to pack values of type <code>T</code></li>
 </ul>
 </div>
-<h2>Implementations</h2><h3><code class="code-header">impl&lt;let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;</code></h3>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;</code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(value: T) -> Self
 <div class="where-clause">where
@@ -71,7 +78,8 @@ of required tree inclusion proofs from <code>M</code> to 1.</p>
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;,
     T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Packable-for-WithHash<T, M>"><code class="code-header">impl&lt;let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Packable-for-WithHash<T, M>"><code class="code-header">impl&lt;let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a> for <a href="../../../noir_aztec/utils/with_hash/struct.WithHash.html" class="struct">WithHash</a>&lt;T, M&gt;
 <div class="where-clause">where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</div></code></h3>
 

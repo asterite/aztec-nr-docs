@@ -7,16 +7,22 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PublicMutable</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PublicMutable</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#new">new</a></li>
 <li><a href="#read">read</a></li>
 <li><a href="#read">read</a></li>
 <li><a href="#write">write</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;M&gt;-for-PublicMutable<T, Context>">HasStorageSlot&lt;M&gt;</a></li>
-</ul><h2>In module public_mutable</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicMutable.html" class="struct">PublicMutable</a></div></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;M&gt;-for-PublicMutable<T, Context>">HasStorageSlot&lt;M&gt;</a></li>
+</ul><h2>In module public_mutable</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PublicMutable.html" class="struct">PublicMutable</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">public_mutable</a></div><h1>Struct <span id="struct" class="struct">PublicMutable</span></h1><pre><code>pub struct PublicMutable&lt;T, Context&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">public_mutable</a></div><h1>Struct <span id="struct" class="struct">PublicMutable</span></h1>
+<pre><code>pub struct PublicMutable&lt;T, Context&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
 <div class="comments">
@@ -50,7 +56,8 @@ directly in Aztec's public data tree. This enables direct read and write
 access to the current state during public function execution.</p>
 <p>docs:start:public_mutable_struct</p>
 </div>
-<h2>Implementations</h2><h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;T&gt; <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, &mut <a href="../../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="read" class="code-header">pub fn <span class="fn">read</span>(self) -> T
 <div class="where-clause">where
@@ -116,7 +123,8 @@ behind the scenes.</li>
 </ul>
 <p>docs:start:public_mutable_struct_new</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;M&gt;-for-PublicMutable<T, Context>"><code class="code-header">impl&lt;Context, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M&gt; for <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-HasStorageSlot&lt;M&gt;-for-PublicMutable<T, Context>"><code class="code-header">impl&lt;Context, let M: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;M&gt; for <a href="../../../noir_aztec/state_vars/public_mutable/struct.PublicMutable.html" class="struct">PublicMutable</a>&lt;T, Context&gt;
 <div class="where-clause">where
     T: <a href="../../../protocol_types/traits/trait.Packable.html" class="trait">Packable</a>&lt;N = M&gt;</div></code></h3>
 

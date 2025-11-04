@@ -7,13 +7,16 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2>In module indexed_tree</h2><h3>Modules</h3><ul class="item-list"><li><a href="check_valid_low_leaf/index.html" class="module">check_valid_low_leaf</a></div></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2>In module indexed_tree</h2>
+<h3>Modules</h3><ul class="item-list"><li><a href="check_valid_low_leaf/index.html" class="module">check_valid_low_leaf</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.batch_insert.html" class="fn">batch_insert</a></div></li>
 <li><a href="fn.insert.html" class="fn">insert</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">batch_insert</span></h1><pre><code>pub fn batch_insert&lt;Value, Leaf, let SubtreeWidth: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SiblingPathLength: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SubtreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">indexed_tree</a></div><h1>Function <span class="fn">batch_insert</span></h1>
+<pre><code>pub fn batch_insert&lt;Value, Leaf, let SubtreeWidth: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SiblingPathLength: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let SubtreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>, let TreeHeight: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     start_snapshot: <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a>,
     values_to_insert: [Value; SubtreeWidth],
     sorted_values: [Value; SubtreeWidth],

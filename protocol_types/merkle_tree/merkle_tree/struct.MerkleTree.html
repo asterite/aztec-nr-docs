@@ -7,29 +7,38 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct MerkleTree</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#leaves">leaves</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct MerkleTree</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#leaves">leaves</a></li>
 <li><a href="#nodes">nodes</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_root">get_root</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#get_root">get_root</a></li>
 <li><a href="#get_sibling_path">get_sibling_path</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#new_sha">new_sha</a></li>
 <li><a href="#sibling_index">sibling_index</a></li>
 <li><a href="#update_leaf">update_leaf</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-MerkleTree<N>">Empty</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Empty-for-MerkleTree<N>">Empty</a></li>
 <li><a href="#impl-Eq-for-MerkleTree<N>">Eq</a></li>
-</ul><h2>In module merkle_tree</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.MerkleTree.html" class="struct">MerkleTree</a></div></li>
+</ul><h2>In module merkle_tree</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.MerkleTree.html" class="struct">MerkleTree</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.sibling_index.html" class="fn">sibling_index</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">merkle_tree</a></div><h1>Struct <span id="struct" class="struct">MerkleTree</span></h1><pre><code>pub struct MerkleTree&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">merkle_tree</a>::<a href="index.html">merkle_tree</a></div><h1>Struct <span id="struct" class="struct">MerkleTree</span></h1>
+<pre><code>pub struct MerkleTree&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; {
     pub leaves: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N],
     pub nodes: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N - 1],
 }
 </code></pre>
-<h2>Fields</h2><div id="leaves" class="struct-field"><code class="code-header">leaves: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N]</code></div>
+<h2>Fields</h2>
+<div id="leaves" class="struct-field"><code class="code-header">leaves: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N]</code></div>
 <div class="padded-description"></div><div id="nodes" class="struct-field"><code class="code-header">nodes: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N - 1]</code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/merkle_tree/merkle_tree/struct.MerkleTree.html" class="struct">MerkleTree</a>&lt;N&gt;</code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/merkle_tree/merkle_tree/struct.MerkleTree.html" class="struct">MerkleTree</a>&lt;N&gt;</code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(leaves: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; N]) -> Self</code>
 
@@ -50,7 +59,8 @@
     _tree_height: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; K],
 )</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-MerkleTree<N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/merkle_tree/merkle_tree/struct.MerkleTree.html" class="struct">MerkleTree</a>&lt;N&gt;</code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Empty-for-MerkleTree<N>"><code class="code-header">impl&lt;let N: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/merkle_tree/merkle_tree/struct.MerkleTree.html" class="struct">MerkleTree</a>&lt;N&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 

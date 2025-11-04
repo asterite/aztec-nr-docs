@@ -7,18 +7,24 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
-<h2><a href="#trait">Trait LogEncryption</a></h2><h3>Required methods</h3><ul class="sidebar-list"><li><a href="#decrypt_log">decrypt_log</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#trait">Trait LogEncryption</a></h2>
+<h3>Required methods</h3>
+<ul class="sidebar-list"><li><a href="#decrypt_log">decrypt_log</a></li>
 <li><a href="#encrypt_log">encrypt_log</a></li>
-</ul><h3>Implementors</h3><ul class="sidebar-list"><li><a href="#impl-LogEncryption-for-AES128">AES128</a></li>
-</ul><h2>In module log_encryption</h2><h3>Traits</h3><ul class="item-list"><li><a href="trait.LogEncryption.html" class="trait">LogEncryption</a></div></li>
+</ul><h3>Implementors</h3>
+<ul class="sidebar-list"><li><a href="#impl-LogEncryption-for-AES128">AES128</a></li>
+</ul><h2>In module log_encryption</h2>
+<h3>Traits</h3><ul class="item-list"><li><a href="trait.LogEncryption.html" class="trait">LogEncryption</a></div></li>
 </ul><h3>Globals</h3><ul class="item-list"><li><a href="global.EPH_PK_SIGN_BYTE_SIZE_IN_BYTES.html" class="global">EPH_PK_SIGN_BYTE_SIZE_IN_BYTES</a></div></li>
 <li><a href="global.EPH_PK_X_SIZE_IN_FIELDS.html" class="global">EPH_PK_X_SIZE_IN_FIELDS</a></div></li>
 <li><a href="global.PRIVATE_LOG_PLAINTEXT_SIZE_IN_BYTES.html" class="global">PRIVATE_LOG_PLAINTEXT_SIZE_IN_BYTES</a></div></li>
 <li><a href="global.PRIVATE_LOG_PLAINTEXT_SIZE_IN_FIELDS.html" class="global">PRIVATE_LOG_PLAINTEXT_SIZE_IN_FIELDS</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">encryption</a>::<a href="index.html">log_encryption</a></div><h1>Trait <span id="trait" class="trait">LogEncryption</span></h1><pre><code>pub trait LogEncryption {
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">noir_aztec</a>::<a href="../../index.html">messages</a>::<a href="../index.html">encryption</a>::<a href="index.html">log_encryption</a></div><h1>Trait <span id="trait" class="trait">LogEncryption</span></h1>
+<pre><code>pub trait LogEncryption {
     <span class="comment">// Required methods</span>
     pub fn <a href="#encrypt_log"><span class="fn">encrypt_log</span></a>&lt;let PlaintextLen: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
         plaintext: [<a href="../../../../std/primitive.Field.html" class="primitive">Field</a>; PlaintextLen],
@@ -44,7 +50,8 @@ emitted on-chain or delivered out-of-band, and decrypting those logs back into t
 <p>To preserve privacy, <code>encrypt_log</code> returns a fixed-length array ensuring all log types are indistinguishable
 on-chain. Implementations of this trait must handle padding the encrypted log to match this standardized length.</p>
 </div>
-<h2>Required methods</h2><div class="padded-methods"><code id="encrypt_log" class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
+<h2>Required methods</h2>
+<div class="padded-methods"><code id="encrypt_log" class="code-header">pub fn <span class="fn">encrypt_log</span>&lt;let PlaintextLen: <a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;(
     plaintext: [<a href="../../../../std/primitive.Field.html" class="primitive">Field</a>; PlaintextLen],
     recipient: <a href="../../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
 ) -> [<a href="../../../../std/primitive.Field.html" class="primitive">Field</a>; 17]</code>
@@ -79,7 +86,8 @@ This function is unconstrained since decryption happens when processing logs in 
 the <code>Contract::process_log</code> function is designed to work with all the private logs, emitted by a given contract
 and not just by 1 log type.</p>
 </div>
-</div></div><h2>Implementors</h2><h3 id="impl-LogEncryption-for-AES128"><code class="code-header">impl <a href="../../../../noir_aztec/messages/encryption/log_encryption/trait.LogEncryption.html" class="trait">LogEncryption</a> for <a href="../../../../noir_aztec/messages/encryption/aes128/struct.AES128.html" class="struct">AES128</a></code></h3>
+</div></div><h2>Implementors</h2>
+<h3 id="impl-LogEncryption-for-AES128"><code class="code-header">impl <a href="../../../../noir_aztec/messages/encryption/log_encryption/trait.LogEncryption.html" class="trait">LogEncryption</a> for <a href="../../../../noir_aztec/messages/encryption/aes128/struct.AES128.html" class="struct">AES128</a></code></h3>
 
 </main>
 </body>

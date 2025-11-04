@@ -7,20 +7,27 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PrivateSet</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#context">context</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateSet</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#context">context</a></li>
 <li><a href="#storage_slot">storage_slot</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#get_notes">get_notes</a></li>
 <li><a href="#insert">insert</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#pop_notes">pop_notes</a></li>
 <li><a href="#remove">remove</a></li>
 <li><a href="#view_notes">view_notes</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-PrivateSet<T, Context>">HasStorageSlot&lt;1&gt;</a></li>
-</ul><h2>In module private_set</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateSet.html" class="struct">PrivateSet</a></div></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-HasStorageSlot&lt;1&gt;-for-PrivateSet<T, Context>">HasStorageSlot&lt;1&gt;</a></li>
+</ul><h2>In module private_set</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateSet.html" class="struct">PrivateSet</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">private_set</a></div><h1>Struct <span id="struct" class="struct">PrivateSet</span></h1><pre><code>pub struct PrivateSet&lt;Note, Context&gt; {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">state_vars</a>::<a href="index.html">private_set</a></div><h1>Struct <span id="struct" class="struct">PrivateSet</span></h1>
+<pre><code>pub struct PrivateSet&lt;Note, Context&gt; {
     pub context: Context,
     pub storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
 }
@@ -141,9 +148,11 @@ given storage_slot.</li>
 </ul>
 <p>docs:start:struct</p>
 </div>
-<h2>Fields</h2><div id="context" class="struct-field"><code class="code-header">context: Context</code></div>
+<h2>Fields</h2>
+<div id="context" class="struct-field"><code class="code-header">context: Context</code></div>
 <div class="padded-description"></div><div id="storage_slot" class="struct-field"><code class="code-header">storage_slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;Note&gt; <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;Note, <a href="../../../noir_aztec/context/utility_context/struct.UtilityContext.html" class="struct">UtilityContext</a>&gt;</code></h3>
 
 <div class="padded-methods"><code id="view_notes" class="code-header">pub unconstrained fn <span class="fn">view_notes</span>(
     self,
@@ -485,7 +494,8 @@ have to worry about this, as it's managed behind the scenes.</li>
 </ul>
 <p>docs:start:new</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-HasStorageSlot&lt;1&gt;-for-PrivateSet<T, Context>"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;T, Context&gt;</code></h3>
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-HasStorageSlot&lt;1&gt;-for-PrivateSet<T, Context>"><code class="code-header">impl&lt;Context, T&gt; <a href="../../../noir_aztec/state_vars/storage/trait.HasStorageSlot.html" class="trait">HasStorageSlot</a>&lt;1&gt; for <a href="../../../noir_aztec/state_vars/private_set/struct.PrivateSet.html" class="struct">PrivateSet</a>&lt;T, Context&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">get_storage_slot</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 

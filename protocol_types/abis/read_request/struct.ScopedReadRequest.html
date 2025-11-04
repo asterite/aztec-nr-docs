@@ -7,34 +7,44 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct ScopedReadRequest</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct ScopedReadRequest</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
 <li><a href="#read_request">read_request</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#counter">counter</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#counter">counter</a></li>
 <li><a href="#value">value</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ScopedReadRequest">Deserialize</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ScopedReadRequest">Deserialize</a></li>
 <li><a href="#impl-Empty-for-ScopedReadRequest">Empty</a></li>
 <li><a href="#impl-Eq-for-ScopedReadRequest">Eq</a></li>
 <li><a href="#impl-Scoped&lt;ReadRequest&gt;-for-ScopedReadRequest">Scoped&lt;ReadRequest&gt;</a></li>
 <li><a href="#impl-Serialize-for-ScopedReadRequest">Serialize</a></li>
-</ul><h2>In module read_request</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.ReadRequest.html" class="struct">ReadRequest</a></div></li>
+</ul><h2>In module read_request</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.ReadRequest.html" class="struct">ReadRequest</a></div></li>
 <li><a href="struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">read_request</a></div><h1>Struct <span id="struct" class="struct">ScopedReadRequest</span></h1><pre><code>pub struct ScopedReadRequest {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">read_request</a></div><h1>Struct <span id="struct" class="struct">ScopedReadRequest</span></h1>
+<pre><code>pub struct ScopedReadRequest {
     pub read_request: <a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a>,
     pub contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="read_request" class="struct-field"><code class="code-header">read_request: <a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></div>
+<h2>Fields</h2>
+<div id="read_request" class="struct-field"><code class="code-header">read_request: <a href="../../../protocol_types/abis/read_request/struct.ReadRequest.html" class="struct">ReadRequest</a></code></div>
 <div class="padded-description"></div><div id="contract_address" class="struct-field"><code class="code-header">contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a></code></h3>
 
 <div class="padded-methods"><code id="value" class="code-header">pub fn <span class="fn">value</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <code id="counter" class="code-header">pub fn <span class="fn">counter</span>(self) -> <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ScopedReadRequest"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a></code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Deserialize-for-ScopedReadRequest"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 3]) -> Self</code>
 

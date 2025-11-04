@@ -7,21 +7,28 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct ScheduledDelayChange</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#get_current">get_current</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct ScheduledDelayChange</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#get_current">get_current</a></li>
 <li><a href="#get_effective_minimum_delay_at">get_effective_minimum_delay_at</a></li>
 <li><a href="#get_scheduled">get_scheduled</a></li>
 <li><a href="#new">new</a></li>
 <li><a href="#schedule_change">schedule_change</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-ScheduledDelayChange<INITIAL_DELAY>">Empty</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Empty-for-ScheduledDelayChange<INITIAL_DELAY>">Empty</a></li>
 <li><a href="#impl-Eq-for-ScheduledDelayChange<INITIAL_DELAY>">Eq</a></li>
-</ul><h2>In module scheduled_delay_change</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a></div></li>
+</ul><h2>In module scheduled_delay_change</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">delayed_public_mutable</a>::<a href="index.html">scheduled_delay_change</a></div><h1>Struct <span id="struct" class="struct">ScheduledDelayChange</span></h1><pre><code>pub struct ScheduledDelayChange&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt;
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">delayed_public_mutable</a>::<a href="index.html">scheduled_delay_change</a></div><h1>Struct <span id="struct" class="struct">ScheduledDelayChange</span></h1>
+<pre><code>pub struct ScheduledDelayChange&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt;
 { <span class="comment">/* private fields */</span> }
 </code></pre>
-<h2>Implementations</h2><h3><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt; <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt; <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(pre: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt;, post: <a href="../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt;, timestamp_of_change: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>) -> Self</code>
 
@@ -65,7 +72,8 @@ which a value change could be scheduled), but it also considers scenarios in whi
 scheduled to happen in the near future, resulting in a way to schedule a change with an overall delay lower than
 the current one.</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Empty-for-ScheduledDelayChange<INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-Empty-for-ScheduledDelayChange<INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt; <a href="../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 

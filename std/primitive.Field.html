@@ -7,8 +7,11 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../index.html">aztec-nr</a></h1><div><a href="../all.html">All items</a></div>
-<h2><a href="#primitive">Primitive type Field</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#assert_max_bit_size">assert_max_bit_size</a></li>
+<h1><a href="../index.html">aztec-nr</a></h1>
+<div><a href="../all.html">All items</a></div>
+<h2><a href="#primitive">Primitive type Field</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#assert_max_bit_size">assert_max_bit_size</a></li>
 <li><a href="#from_be_bytes">from_be_bytes</a></li>
 <li><a href="#from_le_bytes">from_le_bytes</a></li>
 <li><a href="#lt">lt</a></li>
@@ -18,7 +21,8 @@
 <li><a href="#to_be_bytes">to_be_bytes</a></li>
 <li><a href="#to_le_bits">to_le_bits</a></li>
 <li><a href="#to_le_bytes">to_le_bytes</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Add-for-Field">Add</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Add-for-Field">Add</a></li>
 <li><a href="#impl-AsPrimitive&lt;bool&gt;-for-Field">AsPrimitive&lt;bool&gt;</a></li>
 <li><a href="#impl-AsPrimitive&lt;u128&gt;-for-Field">AsPrimitive&lt;u128&gt;</a></li>
 <li><a href="#impl-AsPrimitive&lt;u16&gt;-for-Field">AsPrimitive&lt;u16&gt;</a></li>
@@ -41,7 +45,8 @@
 <li><a href="#impl-WrappingAdd-for-Field">WrappingAdd</a></li>
 <li><a href="#impl-WrappingMul-for-Field">WrappingMul</a></li>
 <li><a href="#impl-WrappingSub-for-Field">WrappingSub</a></li>
-</ul><h2>In module std</h2><h3>Modules</h3><ul class="item-list"><li><a href="aes128/index.html" class="module">aes128</a></div></li>
+</ul><h2>In module std</h2>
+<h3>Modules</h3><ul class="item-list"><li><a href="aes128/index.html" class="module">aes128</a></div></li>
 <li><a href="append/index.html" class="module">append</a></div></li>
 <li><a href="cmp/index.html" class="module">cmp</a></div></li>
 <li><a href="collections/index.html" class="module">collections</a></div></li>
@@ -102,7 +107,9 @@
 <li><a href="fn.wrapping_sub.html" class="fn">wrapping_sub</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../index.html">aztec-nr</a> - <a href="index.html">std</a></div><h1>Primitive type <span id="primitive" class="primitive">Field</span></h1><h2>Implementations</h2><h3><code class="code-header">impl <a href="../std/primitive.Field.html" class="primitive">Field</a></code></h3>
+<div><a href="../index.html">aztec-nr</a> - <a href="index.html">std</a></div><h1>Primitive type <span id="primitive" class="primitive">Field</span></h1>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../std/primitive.Field.html" class="primitive">Field</a></code></h3>
 
 <div class="padded-methods"><code id="assert_max_bit_size" class="code-header">pub fn <span class="fn">assert_max_bit_size</span>&lt;let BIT_SIZE: <a href="../std/primitive.u32.html" class="primitive">u32</a>&gt;(self)</code>
 
@@ -173,7 +180,8 @@ If the provided byte array overflows the field modulus then the Field will silen
 <p>Convert a big endian byte array to a field element.
 If the provided byte array overflows the field modulus then the Field will silently wrap around.</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Add-for-Field"><code class="code-header">impl <a href="../std/ops/trait.Add.html" class="trait">Add</a> for <a href="../std/primitive.Field.html" class="primitive">Field</a></code></h3>
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-Add-for-Field"><code class="code-header">impl <a href="../std/ops/trait.Add.html" class="trait">Add</a> for <a href="../std/primitive.Field.html" class="primitive">Field</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">add</span>(self, other: Self) -> Self</code>
 

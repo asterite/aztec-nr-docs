@@ -7,22 +7,28 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../index.html">aztec-nr</a></h1><div><a href="../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PartialUintNote</a></h2><h3>Methods</h3><ul class="sidebar-list"><li><a href="#complete">complete</a></li>
+<h1><a href="../../index.html">aztec-nr</a></h1>
+<div><a href="../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PartialUintNote</a></h2>
+<h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#complete">complete</a></li>
 <li><a href="#complete_from_private">complete_from_private</a></li>
 <li><a href="#compute_validity_commitment">compute_validity_commitment</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-PartialUintNote">Deserialize</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Deserialize-for-PartialUintNote">Deserialize</a></li>
 <li><a href="#impl-Eq-for-PartialUintNote">Eq</a></li>
 <li><a href="#impl-FromField-for-PartialUintNote">FromField</a></li>
 <li><a href="#impl-Packable-for-PartialUintNote">Packable</a></li>
 <li><a href="#impl-Serialize-for-PartialUintNote">Serialize</a></li>
 <li><a href="#impl-ToField-for-PartialUintNote">ToField</a></li>
-</ul><h2>In module uint_note</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PartialUintNote.html" class="struct">PartialUintNote</a></div></li>
+</ul><h2>In module uint_note</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PartialUintNote.html" class="struct">PartialUintNote</a></div></li>
 <li><a href="struct.UintNote.html" class="struct">UintNote</a></div></li>
 <li><a href="struct.UintNoteProperties.html" class="struct">UintNoteProperties</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span id="struct" class="struct">PartialUintNote</span></h1><pre><code>pub struct PartialUintNote
+<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">uint_note</a>::<a href="index.html">uint_note</a></div><h1>Struct <span id="struct" class="struct">PartialUintNote</span></h1>
+<pre><code>pub struct PartialUintNote
 { <span class="comment">/* private fields */</span> }
 </code></pre>
 <div class="comments">
@@ -31,7 +37,8 @@ slot, but the value field has not yet been set. A partial note can be completed 
 function (revealing the value to the public), resulting in a UintNote that can be used like any other one (except
 of course that its value is known).</p>
 </div>
-<h2>Implementations</h2><h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+<h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
 <div class="padded-methods"><code id="complete" class="code-header">pub fn <span class="fn">complete</span>(self, context: &mut <a href="../../noir_aztec/context/public_context/struct.PublicContext.html" class="struct">PublicContext</a>, completer: <a href="../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>, value: <a href="../../std/primitive.u128.html" class="primitive">u128</a>)</code>
 
@@ -58,7 +65,8 @@ this commitment from the nullifier tree and verify that both the partial note (e
 corresponds to the correct owner, and that we're using the correct state variable) and completer are
 legitimate.</p>
 </div>
-</div></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-PartialUintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
+</div></div><h2>Trait implementations</h2>
+<h3 id="impl-Deserialize-for-PartialUintNote"><code class="code-header">impl <a href="../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../uint_note/uint_note/struct.PartialUintNote.html" class="struct">PartialUintNote</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../std/primitive.Field.html" class="primitive">Field</a>; 1]) -> Self</code>
 

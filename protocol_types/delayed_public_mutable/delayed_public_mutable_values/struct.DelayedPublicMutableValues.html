@@ -7,19 +7,26 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct DelayedPublicMutableValues</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#sdc">sdc</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct DelayedPublicMutableValues</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#sdc">sdc</a></li>
 <li><a href="#svc">svc</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#new">new</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Eq</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#new">new</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Eq</a></li>
 <li><a href="#impl-Hash-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Hash</a></li>
 <li><a href="#impl-Packable-for-DelayedPublicMutableValues<T, INITIAL_DELAY>">Packable</a></li>
-</ul><h2>In module delayed_public_mutable_values</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a></div></li>
+</ul><h2>In module delayed_public_mutable_values</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a></div></li>
 </ul><h3>Functions</h3><ul class="item-list"><li><a href="fn.unpack_delay_change.html" class="fn">unpack_delay_change</a></div></li>
 <li><a href="fn.unpack_value_change.html" class="fn">unpack_value_change</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">delayed_public_mutable</a>::<a href="index.html">delayed_public_mutable_values</a></div><h1>Struct <span id="struct" class="struct">DelayedPublicMutableValues</span></h1><pre><code>pub struct DelayedPublicMutableValues&lt;T, let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt; {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">delayed_public_mutable</a>::<a href="index.html">delayed_public_mutable_values</a></div><h1>Struct <span id="struct" class="struct">DelayedPublicMutableValues</span></h1>
+<pre><code>pub struct DelayedPublicMutableValues&lt;T, let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>&gt; {
     pub svc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;,
     pub sdc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;,
 }
@@ -34,16 +41,19 @@ svc.timestamp_of_change are stored in the same slot). For that reason we expose 
 <code>unpack_delay_change</code> functions that can be used to extract the values from the packed representation. This
 is &quot;hacky&quot; but there is no way around it.</p>
 </div>
-<h2>Fields</h2><div id="svc" class="struct-field"><code class="code-header">svc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;</code></div>
+<h2>Fields</h2>
+<div id="svc" class="struct-field"><code class="code-header">svc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;</code></div>
 <div class="padded-description"></div><div id="sdc" class="struct-field"><code class="code-header">sdc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;</code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;</code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;</code></h3>
 
 <div class="padded-methods"><code id="new" class="code-header">pub fn <span class="fn">new</span>(
     svc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_value_change/struct.ScheduledValueChange.html" class="struct">ScheduledValueChange</a>&lt;T&gt;,
     sdc: <a href="../../../protocol_types/delayed_public_mutable/scheduled_delay_change/struct.ScheduledDelayChange.html" class="struct">ScheduledDelayChange</a>&lt;INITIAL_DELAY&gt;,
 ) -> Self</code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Eq-for-DelayedPublicMutableValues<T, INITIAL_DELAY>"><code class="code-header">impl&lt;let INITIAL_DELAY: <a href="../../../std/primitive.u64.html" class="primitive">u64</a>, T&gt; <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a> for <a href="../../../protocol_types/delayed_public_mutable/delayed_public_mutable_values/struct.DelayedPublicMutableValues.html" class="struct">DelayedPublicMutableValues</a>&lt;T, INITIAL_DELAY&gt;
 <div class="where-clause">where
     T: <a href="../../../std/cmp/trait.Eq.html" class="trait">Eq</a></div></code></h3>
 

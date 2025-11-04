@@ -7,8 +7,15 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#mod">Module shared_secret</a></h2><h3>Module items</h3><ul class="sidebar-list"><li><a href="#functions">Functions</a></li></ul><h2>In module oracle</h2><h3>Modules</h3><ul class="item-list"><li><a href="../aes128_decrypt/index.html" class="module">aes128_decrypt</a></div></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#mod">Module shared_secret</a></h2>
+<h3>Module items</h3>
+<ul class="sidebar-list">
+<li><a href="#functions">Functions</a></li>
+</ul>
+<h2>In module oracle</h2>
+<h3>Modules</h3><ul class="item-list"><li><a href="../aes128_decrypt/index.html" class="module">aes128_decrypt</a></div></li>
 <li><a href="../auth_witness/index.html" class="module">auth_witness</a></div></li>
 <li><a href="../block_header/index.html" class="module">block_header</a></div></li>
 <li><a href="../call_private_function/index.html" class="module">call_private_function</a></div></li>
@@ -34,7 +41,8 @@
 <li><a href="../version/index.html" class="module">version</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::shared_secret</div><h1>Module <span id="mod" class="module">shared_secret</span></h1><h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.get_shared_secret.html" class="fn">get_shared_secret</a></div><div class="item-description">Returns an app-siloed shared secret between <code>address</code> and someone who knows the secret key behind an
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::shared_secret</div><h1>Module <span id="mod" class="module">shared_secret</span></h1>
+<h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.get_shared_secret.html" class="fn">get_shared_secret</a></div><div class="item-description">Returns an app-siloed shared secret between <code>address</code> and someone who knows the secret key behind an
 ephemeral public key <code>ephPk</code>. The app-siloing means that contracts cannot retrieve secrets that belong to
 other contracts, and therefore cannot e.g. decrypt their messages. This is an important security consideration
 given that both the <code>address</code> and <code>ephPk</code> are public information.</div></li>

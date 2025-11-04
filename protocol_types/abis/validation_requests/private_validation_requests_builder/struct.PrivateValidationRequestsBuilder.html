@@ -7,33 +7,43 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../../index.html">aztec-nr</a></h1><div><a href="../../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct PrivateValidationRequestsBuilder</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#note_hash_read_requests">note_hash_read_requests</a></li>
+<h1><a href="../../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct PrivateValidationRequestsBuilder</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#note_hash_read_requests">note_hash_read_requests</a></li>
 <li><a href="#nullifier_read_requests">nullifier_read_requests</a></li>
 <li><a href="#scoped_key_validation_requests_and_generators">scoped_key_validation_requests_and_generators</a></li>
 <li><a href="#split_counter">split_counter</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#finish">finish</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Empty-for-PrivateValidationRequestsBuilder">Empty</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#finish">finish</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Empty-for-PrivateValidationRequestsBuilder">Empty</a></li>
 <li><a href="#impl-Eq-for-PrivateValidationRequestsBuilder">Eq</a></li>
-</ul><h2>In module private_validation_requests_builder</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateValidationRequestsBuilder.html" class="struct">PrivateValidationRequestsBuilder</a></div></li>
+</ul><h2>In module private_validation_requests_builder</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.PrivateValidationRequestsBuilder.html" class="struct">PrivateValidationRequestsBuilder</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">abis</a>::<a href="../index.html">validation_requests</a>::<a href="index.html">private_validation_requests_builder</a></div><h1>Struct <span id="struct" class="struct">PrivateValidationRequestsBuilder</span></h1><pre><code>pub struct PrivateValidationRequestsBuilder {
+<div><a href="../../../../index.html">aztec-nr</a> - <a href="../../../index.html">protocol_types</a>::<a href="../../index.html">abis</a>::<a href="../index.html">validation_requests</a>::<a href="index.html">private_validation_requests_builder</a></div><h1>Struct <span id="struct" class="struct">PrivateValidationRequestsBuilder</span></h1>
+<pre><code>pub struct PrivateValidationRequestsBuilder {
     pub note_hash_read_requests: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>, 64&gt;,
     pub nullifier_read_requests: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>, 64&gt;,
     pub scoped_key_validation_requests_and_generators: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>, 64&gt;,
     pub split_counter: <a href="../../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;,
 }
 </code></pre>
-<h2>Fields</h2><div id="note_hash_read_requests" class="struct-field"><code class="code-header">note_hash_read_requests: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>, 64&gt;</code></div>
+<h2>Fields</h2>
+<div id="note_hash_read_requests" class="struct-field"><code class="code-header">note_hash_read_requests: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>, 64&gt;</code></div>
 <div class="padded-description"></div><div id="nullifier_read_requests" class="struct-field"><code class="code-header">nullifier_read_requests: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/read_request/struct.ScopedReadRequest.html" class="struct">ScopedReadRequest</a>, 64&gt;</code></div>
 <div class="padded-description"></div><div id="scoped_key_validation_requests_and_generators" class="struct-field"><code class="code-header">scoped_key_validation_requests_and_generators: <a href="../../../../protocol_types/utils/arrays/struct.ClaimedLengthArray.html" class="struct">ClaimedLengthArray</a>&lt;<a href="../../../../protocol_types/abis/validation_requests/scoped_key_validation_request_and_generator/struct.ScopedKeyValidationRequestAndGenerator.html" class="struct">ScopedKeyValidationRequestAndGenerator</a>, 64&gt;</code></div>
 <div class="padded-description"></div><div id="split_counter" class="struct-field"><code class="code-header">split_counter: <a href="../../../../std/option/struct.Option.html" class="struct">Option</a>&lt;<a href="../../../../std/primitive.u32.html" class="primitive">u32</a>&gt;</code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests_builder/struct.PrivateValidationRequestsBuilder.html" class="struct">PrivateValidationRequestsBuilder</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests_builder/struct.PrivateValidationRequestsBuilder.html" class="struct">PrivateValidationRequestsBuilder</a></code></h3>
 
 <div class="padded-methods"><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self) -> <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests/struct.PrivateValidationRequests.html" class="struct">PrivateValidationRequests</a></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Empty-for-PrivateValidationRequestsBuilder"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests_builder/struct.PrivateValidationRequestsBuilder.html" class="struct">PrivateValidationRequestsBuilder</a></code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Empty-for-PrivateValidationRequestsBuilder"><code class="code-header">impl <a href="../../../../protocol_types/traits/trait.Empty.html" class="trait">Empty</a> for <a href="../../../../protocol_types/abis/validation_requests/private_validation_requests_builder/struct.PrivateValidationRequestsBuilder.html" class="struct">PrivateValidationRequestsBuilder</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">empty</span>() -> Self</code>
 

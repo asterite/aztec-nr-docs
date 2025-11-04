@@ -7,12 +7,17 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct ScopedNullifier</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct ScopedNullifier</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#contract_address">contract_address</a></li>
 <li><a href="#nullifier">nullifier</a></li>
-</ul><h3>Methods</h3><ul class="sidebar-list"><li><a href="#expose_to_public">expose_to_public</a></li>
+</ul><h3>Methods</h3>
+<ul class="sidebar-list"><li><a href="#expose_to_public">expose_to_public</a></li>
 <li><a href="#nullified_note_hash">nullified_note_hash</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ScopedNullifier">Deserialize</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Deserialize-for-ScopedNullifier">Deserialize</a></li>
 <li><a href="#impl-Empty-for-ScopedNullifier">Empty</a></li>
 <li><a href="#impl-Eq-for-ScopedNullifier">Eq</a></li>
 <li><a href="#impl-Ordered-for-ScopedNullifier">Ordered</a></li>
@@ -20,24 +25,29 @@
 <li><a href="#impl-Readable&lt;ScopedReadRequest&gt;-for-ScopedNullifier">Readable&lt;ScopedReadRequest&gt;</a></li>
 <li><a href="#impl-Scoped&lt;Nullifier&gt;-for-ScopedNullifier">Scoped&lt;Nullifier&gt;</a></li>
 <li><a href="#impl-Serialize-for-ScopedNullifier">Serialize</a></li>
-</ul><h2>In module nullifier</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.Nullifier.html" class="struct">Nullifier</a></div></li>
+</ul><h2>In module nullifier</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.Nullifier.html" class="struct">Nullifier</a></div></li>
 <li><a href="struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">nullifier</a></div><h1>Struct <span id="struct" class="struct">ScopedNullifier</span></h1><pre><code>pub struct ScopedNullifier {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">nullifier</a></div><h1>Struct <span id="struct" class="struct">ScopedNullifier</span></h1>
+<pre><code>pub struct ScopedNullifier {
     pub nullifier: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a>,
     pub contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="nullifier" class="struct-field"><code class="code-header">nullifier: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></div>
+<h2>Fields</h2>
+<div id="nullifier" class="struct-field"><code class="code-header">nullifier: <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code></div>
 <div class="padded-description"></div><div id="contract_address" class="struct-field"><code class="code-header">contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a></code></div>
-<div class="padded-description"></div><h2>Implementations</h2><h3><code class="code-header">impl <a href="../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></code></h3>
+<div class="padded-description"></div><h2>Implementations</h2>
+<h3><code class="code-header">impl <a href="../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></code></h3>
 
 <div class="padded-methods"><code id="nullified_note_hash" class="code-header">pub fn <span class="fn">nullified_note_hash</span>(self) -> <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <code id="expose_to_public" class="code-header">pub fn <span class="fn">expose_to_public</span>(self) -> <a href="../../../protocol_types/abis/nullifier/struct.Nullifier.html" class="struct">Nullifier</a></code>
 
-</div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-ScopedNullifier"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></code></h3>
+</div><h2>Trait implementations</h2>
+<h3 id="impl-Deserialize-for-ScopedNullifier"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/nullifier/struct.ScopedNullifier.html" class="struct">ScopedNullifier</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 4]) -> Self</code>
 

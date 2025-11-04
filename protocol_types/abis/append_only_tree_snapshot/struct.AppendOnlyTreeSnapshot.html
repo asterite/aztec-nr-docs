@@ -7,24 +7,32 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../../index.html">aztec-nr</a></h1><div><a href="../../../all.html">All items</a></div>
-<h2><a href="#struct">Struct AppendOnlyTreeSnapshot</a></h2><h3>Fields</h3><ul class="sidebar-list"><li><a href="#next_available_leaf_index">next_available_leaf_index</a></li>
+<h1><a href="../../../index.html">aztec-nr</a></h1>
+<div><a href="../../../all.html">All items</a></div>
+<h2><a href="#struct">Struct AppendOnlyTreeSnapshot</a></h2>
+<h3>Fields</h3>
+<ul class="sidebar-list"><li><a href="#next_available_leaf_index">next_available_leaf_index</a></li>
 <li><a href="#root">root</a></li>
-</ul><h3>Trait implementations</h3><ul class="sidebar-list"><li><a href="#impl-Deserialize-for-AppendOnlyTreeSnapshot">Deserialize</a></li>
+</ul><h3>Trait implementations</h3>
+<ul class="sidebar-list"><li><a href="#impl-Deserialize-for-AppendOnlyTreeSnapshot">Deserialize</a></li>
 <li><a href="#impl-Empty-for-AppendOnlyTreeSnapshot">Empty</a></li>
 <li><a href="#impl-Eq-for-AppendOnlyTreeSnapshot">Eq</a></li>
 <li><a href="#impl-Serialize-for-AppendOnlyTreeSnapshot">Serialize</a></li>
-</ul><h2>In module append_only_tree_snapshot</h2><h3>Structs</h3><ul class="item-list"><li><a href="struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a></div></li>
+</ul><h2>In module append_only_tree_snapshot</h2>
+<h3>Structs</h3><ul class="item-list"><li><a href="struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">append_only_tree_snapshot</a></div><h1>Struct <span id="struct" class="struct">AppendOnlyTreeSnapshot</span></h1><pre><code>pub struct AppendOnlyTreeSnapshot {
+<div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">protocol_types</a>::<a href="../index.html">abis</a>::<a href="index.html">append_only_tree_snapshot</a></div><h1>Struct <span id="struct" class="struct">AppendOnlyTreeSnapshot</span></h1>
+<pre><code>pub struct AppendOnlyTreeSnapshot {
     pub root: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>,
     pub next_available_leaf_index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a>,
 }
 </code></pre>
-<h2>Fields</h2><div id="root" class="struct-field"><code class="code-header">root: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
+<h2>Fields</h2>
+<div id="root" class="struct-field"><code class="code-header">root: <a href="../../../std/primitive.Field.html" class="primitive">Field</a></code></div>
 <div class="padded-description"></div><div id="next_available_leaf_index" class="struct-field"><code class="code-header">next_available_leaf_index: <a href="../../../std/primitive.u32.html" class="primitive">u32</a></code></div>
-<div class="padded-description"></div><h2>Trait implementations</h2><h3 id="impl-Deserialize-for-AppendOnlyTreeSnapshot"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a></code></h3>
+<div class="padded-description"></div><h2>Trait implementations</h2>
+<h3 id="impl-Deserialize-for-AppendOnlyTreeSnapshot"><code class="code-header">impl <a href="../../../protocol_types/traits/trait.Deserialize.html" class="trait">Deserialize</a> for <a href="../../../protocol_types/abis/append_only_tree_snapshot/struct.AppendOnlyTreeSnapshot.html" class="struct">AppendOnlyTreeSnapshot</a></code></h3>
 
 <div class="padded-methods"><code class="code-header">pub fn <span class="fn">deserialize</span>(serialized: [<a href="../../../std/primitive.Field.html" class="primitive">Field</a>; 2]) -> Self</code>
 

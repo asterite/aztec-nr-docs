@@ -7,13 +7,18 @@
 </head>
 <body>
 <nav class="sidebar">
-<h1><a href="../../index.html">aztec-nr</a></h1><div><a href="../../all.html">All items</a></div>
-<h2><a href="#trait">Trait Hasher</a></h2><h3>Required methods</h3><ul class="sidebar-list"><li><a href="#finish">finish</a></li>
+<h1><a href="../../index.html">aztec-nr</a></h1>
+<div><a href="../../all.html">All items</a></div>
+<h2><a href="#trait">Trait Hasher</a></h2>
+<h3>Required methods</h3>
+<ul class="sidebar-list"><li><a href="#finish">finish</a></li>
 <li><a href="#write">write</a></li>
-</ul><h3>Implementors</h3><ul class="sidebar-list"><li><a href="#impl-Hasher-for-Poseidon2Hasher">Poseidon2Hasher</a></li>
+</ul><h3>Implementors</h3>
+<ul class="sidebar-list"><li><a href="#impl-Hasher-for-Poseidon2Hasher">Poseidon2Hasher</a></li>
 <li><a href="#impl-Hasher-for-Poseidon2Hasher">Poseidon2Hasher</a></li>
 <li><a href="#impl-Hasher-for-PoseidonHasher">PoseidonHasher</a></li>
-</ul><h2>In module hash</h2><h3>Modules</h3><ul class="item-list"><li><a href="keccak/index.html" class="module">keccak</a></div></li>
+</ul><h2>In module hash</h2>
+<h3>Modules</h3><ul class="item-list"><li><a href="keccak/index.html" class="module">keccak</a></div></li>
 </ul><h3>Structs</h3><ul class="item-list"><li><a href="struct.BuildHasherDefault.html" class="struct">BuildHasherDefault</a></div></li>
 </ul><h3>Traits</h3><ul class="item-list"><li><a href="trait.BuildHasher.html" class="trait">BuildHasher</a></div></li>
 <li><a href="trait.Hash.html" class="trait">Hash</a></div></li>
@@ -30,17 +35,20 @@
 <li><a href="fn.sha256_compression.html" class="fn">sha256_compression</a></div></li>
 </ul></nav>
 <main>
-<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">std</a>::<a href="index.html">hash</a></div><h1>Trait <span id="trait" class="trait">Hasher</span></h1><pre><code>pub trait Hasher {
+<div><a href="../../index.html">aztec-nr</a> - <a href="../index.html">std</a>::<a href="index.html">hash</a></div><h1>Trait <span id="trait" class="trait">Hasher</span></h1>
+<pre><code>pub trait Hasher {
     <span class="comment">// Required methods</span>
     pub fn <a href="#finish"><span class="fn">finish</span></a>(self) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a>;
     pub fn <a href="#write"><span class="fn">write</span></a>(&mut self: &mut Self, input: <a href="../../std/primitive.Field.html" class="primitive">Field</a>);
 }</code></pre>
 
-<h2>Required methods</h2><div class="padded-methods"><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
+<h2>Required methods</h2>
+<div class="padded-methods"><code id="finish" class="code-header">pub fn <span class="fn">finish</span>(self) -> <a href="../../std/primitive.Field.html" class="primitive">Field</a></code>
 
 <code id="write" class="code-header">pub fn <span class="fn">write</span>(&mut self: &mut Self, input: <a href="../../std/primitive.Field.html" class="primitive">Field</a>)</code>
 
-</div><h2>Implementors</h2><h3 id="impl-Hasher-for-Poseidon2Hasher"><code class="code-header">impl <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a> for Poseidon2Hasher</code></h3>
+</div><h2>Implementors</h2>
+<h3 id="impl-Hasher-for-Poseidon2Hasher"><code class="code-header">impl <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a> for Poseidon2Hasher</code></h3>
 
 <h3 id="impl-Hasher-for-Poseidon2Hasher"><code class="code-header">impl <a href="../../std/hash/trait.Hasher.html" class="trait">Hasher</a> for <a href="../../poseidon/poseidon2/struct.Poseidon2Hasher.html" class="struct">Poseidon2Hasher</a></code></h3>
 
