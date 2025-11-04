@@ -21,7 +21,7 @@
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::<a href="index.html">capsules</a></div><h1>Function <span class="fn">store</span></h1>
 <pre><code>pub unconstrained fn store&lt;T&gt;(contract_address: <a href="../../../protocol_types/address/aztec_address/struct.AztecAddress.html" class="struct">AztecAddress</a>, slot: <a href="../../../std/primitive.Field.html" class="primitive">Field</a>, value: T)
 <div class="where-clause">where
-    T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a>&lt;N = &lt;T as Serialize&gt;::N&gt;</div></code></pre>
+    T: <a href="../../../protocol_types/traits/trait.Serialize.html" class="trait">Serialize</a></div></code></pre>
 
 <div class="comments">
 <p>Stores arbitrary information in a per-contract non-volatile database, which can later be retrieved with <code>load</code>. If
