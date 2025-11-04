@@ -16,7 +16,8 @@
 <li><a href="#functions">Functions</a></li>
 </ul>
 <h2>In module note</h2>
-<h3>Modules</h3><ul class="item-list"><li><a href="../constants/index.html" class="module">constants</a></div></li>
+<h3>Modules</h3><ul class="item-list">
+<li><a href="../constants/index.html" class="module">constants</a></div></li>
 <li><a href="../lifecycle/index.html" class="module">lifecycle</a></div></li>
 <li><a href="../note_emission/index.html" class="module">note_emission</a></div></li>
 <li><a href="../note_getter/index.html" class="module">note_getter</a></div></li>
@@ -26,17 +27,22 @@
 <li><a href="../note_viewer_options/index.html" class="module">note_viewer_options</a></div></li>
 <li><a href="../retrieved_note/index.html" class="module">retrieved_note</a></div></li>
 <li><a href="../utils/index.html" class="module">utils</a></div></li>
-</ul></nav>
+</ul>
+</nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">note</a>::note_getter</div><h1>Module <span id="mod" class="module">note_getter</span></h1>
-<h2 id="re-exports">Re-exports</h2><ul class="item-list"><li><div class="item-name"><code>pub use noir_aztec::note::constants::<a href="../../../noir_aztec/note/constants/global.MAX_NOTES_PER_PAGE.html" class="global">MAX_NOTES_PER_PAGE</a>;</code></div></li>
-</ul><h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.get_note.html" class="fn">get_note</a></div><div class="item-description"></div></li>
+<h2 id="re-exports">Re-exports</h2><ul class="item-list">
+<li><div class="item-name"><code>pub use noir_aztec::note::constants::<a href="../../../noir_aztec/note/constants/global.MAX_NOTES_PER_PAGE.html" class="global">MAX_NOTES_PER_PAGE</a>;</code></div></li>
+</ul>
+<h2 id="functions">Functions</h2><ul class="item-list">
+<li><div class="item-name"><a href="fn.get_note.html" class="fn">get_note</a></div><div class="item-description"></div></li>
 <li><div class="item-name"><a href="fn.get_notes.html" class="fn">get_notes</a></div><div class="item-description">Returns a BoundedVec of notes that have been proven to have been created by this contract, either in the current or
 past transactions (i.e. pending or settled notes). A second BoundedVec contains the note hashes used for the read
 requests, which can save constraints when computing the note's nullifiers.</div></li>
 <li><div class="item-name"><a href="fn.view_notes.html" class="fn">view_notes</a></div><div class="item-description">Unconstrained variant of <code>get_notes</code>, meant to be used in unconstrained execution contexts. Notably only the note
 content is returned, and not any of the information used when proving its existence (e.g. note nonce, note hash,
 etc.).</div></li>
-</ul></main>
+</ul>
+</main>
 </body>
 </html>

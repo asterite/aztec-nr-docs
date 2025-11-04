@@ -16,7 +16,8 @@
 <li><a href="#functions">Functions</a></li>
 </ul>
 <h2>In module macros</h2>
-<h3>Modules</h3><ul class="item-list"><li><a href="../authorization/index.html" class="module">authorization</a></div></li>
+<h3>Modules</h3><ul class="item-list">
+<li><a href="../authorization/index.html" class="module">authorization</a></div></li>
 <li><a href="../aztec/index.html" class="module">aztec</a></div></li>
 <li><a href="../dispatch/index.html" class="module">dispatch</a></div></li>
 <li><a href="../events/index.html" class="module">events</a></div></li>
@@ -24,11 +25,15 @@
 <li><a href="../notes/index.html" class="module">notes</a></div></li>
 <li><a href="../storage/index.html" class="module">storage</a></div></li>
 <li><a href="../utils/index.html" class="module">utils</a></div></li>
-</ul></nav>
+</ul>
+</nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">macros</a>::functions</div><h1>Module <span id="mod" class="module">functions</span></h1>
-<h2 id="modules">Modules</h2><ul class="item-list"><li><div class="item-name"><a href="initialization_utils/index.html" class="module">initialization_utils</a></div><div class="item-description"></div></li>
-</ul><h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.authorize_once.html" class="fn">authorize_once</a></div><div class="item-description">Private and public functions can require an authorization check to be performed before execution. This
+<h2 id="modules">Modules</h2><ul class="item-list">
+<li><div class="item-name"><a href="initialization_utils/index.html" class="module">initialization_utils</a></div><div class="item-description"></div></li>
+</ul>
+<h2 id="functions">Functions</h2><ul class="item-list">
+<li><div class="item-name"><a href="fn.authorize_once.html" class="fn">authorize_once</a></div><div class="item-description">Private and public functions can require an authorization check to be performed before execution. This
 is typically the case when the function allows performing an action on behalf of someone who is not
 the caller.
 This macro injects the necessary code to perform the check via the authwit mechanism and additionally
@@ -50,6 +55,7 @@ once and only once, preventing replay attacks.</div></li>
 They are typically used either to obtain some information from the contract (e.g. token balance of a user) or to
 modify internal contract-related state of PXE (e.g. processing logs in Aztec.nr during sync).</div></li>
 <li><div class="item-name"><a href="fn.view.html" class="fn">view</a></div><div class="item-description">View functions can only be called in a static execution context.</div></li>
-</ul></main>
+</ul>
+</main>
 </body>
 </html>

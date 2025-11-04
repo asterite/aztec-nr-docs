@@ -15,7 +15,8 @@
 <li><a href="#functions">Functions</a></li>
 </ul>
 <h2>In module oracle</h2>
-<h3>Modules</h3><ul class="item-list"><li><a href="../aes128_decrypt/index.html" class="module">aes128_decrypt</a></div></li>
+<h3>Modules</h3><ul class="item-list">
+<li><a href="../aes128_decrypt/index.html" class="module">aes128_decrypt</a></div></li>
 <li><a href="../auth_witness/index.html" class="module">auth_witness</a></div></li>
 <li><a href="../block_header/index.html" class="module">block_header</a></div></li>
 <li><a href="../call_private_function/index.html" class="module">call_private_function</a></div></li>
@@ -39,10 +40,12 @@
 <li><a href="../simulate_utility_function/index.html" class="module">simulate_utility_function</a></div></li>
 <li><a href="../storage/index.html" class="module">storage</a></div></li>
 <li><a href="../version/index.html" class="module">version</a></div></li>
-</ul></nav>
+</ul>
+</nav>
 <main>
 <div><a href="../../../index.html">aztec-nr</a> - <a href="../../index.html">noir_aztec</a>::<a href="../index.html">oracle</a>::capsules</div><h1>Module <span id="mod" class="module">capsules</span></h1>
-<h2 id="functions">Functions</h2><ul class="item-list"><li><div class="item-name"><a href="fn.copy.html" class="fn">copy</a></div><div class="item-description">Copies a number of contiguous entries in the per-contract non-volatile database. This allows for efficient data
+<h2 id="functions">Functions</h2><ul class="item-list">
+<li><div class="item-name"><a href="fn.copy.html" class="fn">copy</a></div><div class="item-description">Copies a number of contiguous entries in the per-contract non-volatile database. This allows for efficient data
 structures by avoiding repeated calls to <code>loadCapsule</code> and <code>storeCapsule</code>.
 Supports overlapping source and destination regions (which will result in the overlapped source values being
 overwritten). All copied slots must exist in the database (i.e. have been stored and not deleted)</div></li>
@@ -51,6 +54,7 @@ overwritten). All copied slots must exist in the database (i.e. have been stored
 nothing was stored at the given slot.</div></li>
 <li><div class="item-name"><a href="fn.store.html" class="fn">store</a></div><div class="item-description">Stores arbitrary information in a per-contract non-volatile database, which can later be retrieved with <code>load</code>. If
 data was already stored at this slot, it is overwritten.</div></li>
-</ul></main>
+</ul>
+</main>
 </body>
 </html>
